@@ -1,0 +1,188 @@
+{
+    "advancedQueryCapabilities": {
+        "supportsCountDistinct": true,
+        "supportsDistinct": true,
+        "supportsHavingClause": true,
+        "supportsOrderBy": true,
+        "supportsPagination": true,
+        "supportsQueryWithDistance": true,
+        "supportsReturningQueryExtent": true,
+        "supportsSqlExpression": true,
+        "supportsStatistics": true,
+        "supportsTrueCurve": true,
+        "useStandardizedQueries": true
+    },
+    "canModifyLayer": true,
+    "canScaleSymbols": false,
+    "capabilities": "Map,Query,Data",
+    "copyrightText": "City of Greeley, Planning",
+    "currentVersion": 10.91,
+    "dateFieldsTimeReference": null,
+    "defaultSubtypeCode": null,
+    "defaultVisibility": true,
+    "description": "Area updated through growth management related ordinances and resolutions. The latest LREGA was adopted as a part of the 2060 Comprehensive Plan.",
+    "displayField": "Acres",
+    "drawingInfo": {
+        "labelingInfo": null,
+        "renderer": {
+            "description": "",
+            "label": "",
+            "symbol": {
+                "color": [
+                    215,
+                    158,
+                    158,
+                    255
+                ],
+                "outline": {
+                    "color": [
+                        168,
+                        56,
+                        0,
+                        255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 3
+                },
+                "style": "esriSFSSolid",
+                "type": "esriSFS"
+            },
+            "type": "simple"
+        },
+        "transparency": 60
+    },
+    "extent": {
+        "spatialReference": {
+            "wkt": "PROJCS[\"NAD_1983_HARN_StatePlane_Colorado_North_FIPS_0501\",GEOGCS[\"GCS_North_American_1983_HARN\",DATUM[\"D_North_American_1983_HARN\",SPHEROID[\"GRS_1980\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Lambert_Conformal_Conic\"],PARAMETER[\"False_Easting\",3000000.000316083],PARAMETER[\"False_Northing\",999999.999996],PARAMETER[\"Central_Meridian\",-105.5],PARAMETER[\"Standard_Parallel_1\",39.71666666666667],PARAMETER[\"Standard_Parallel_2\",40.78333333333333],PARAMETER[\"Latitude_Of_Origin\",39.33333333333334],UNIT[\"Foot_US\",0.3048006096012192]]"
+        },
+        "xmax": 3250577.457844615,
+        "xmin": 3165005.7858124375,
+        "ymax": 1419201.599566847,
+        "ymin": 1381035.036136359
+    },
+    "fields": [
+        {
+            "alias": "OBJECTID",
+            "domain": null,
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "Acres",
+            "domain": null,
+            "name": "Acres",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Shape",
+            "domain": null,
+            "name": "Shape",
+            "type": "esriFieldTypeGeometry"
+        },
+        {
+            "alias": "NAME",
+            "domain": null,
+            "length": 50,
+            "name": "NAME",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "TYPE",
+            "domain": null,
+            "length": 50,
+            "name": "TYPE",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "GIS_ACRES",
+            "domain": null,
+            "name": "GIS_ACRES",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "DESCRIPTION",
+            "domain": null,
+            "length": 254,
+            "name": "DESCRIPTION",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "TRAKID",
+            "domain": null,
+            "length": 20,
+            "name": "TRAKID",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Shape.area",
+            "domain": null,
+            "name": "Shape.area",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Shape.len",
+            "domain": null,
+            "name": "Shape.len",
+            "type": "esriFieldTypeDouble"
+        }
+    ],
+    "geometryField": {
+        "alias": "Shape",
+        "name": "Shape",
+        "type": "esriFieldTypeGeometry"
+    },
+    "geometryProperties": {
+        "shapeAreaFieldName": "Shape.area",
+        "shapeLengthFieldName": "Shape.len",
+        "units": "esriFeet"
+    },
+    "geometryType": "esriGeometryPolygon",
+    "hasAttachments": false,
+    "hasGeometryProperties": true,
+    "hasLabels": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "id": 0,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "R9_SDE_ROWID_UK"
+        },
+        {
+            "description": "",
+            "fields": "Shape",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "a2_ix1"
+        }
+    ],
+    "isDataVersioned": true,
+    "maxRecordCount": 1000,
+    "maxScale": 0,
+    "minScale": 0,
+    "name": "ComDev.DBO.LREGA",
+    "ownershipBasedAccessControlForFeatures": {
+        "allowOthersToQuery": true
+    },
+    "parentLayer": null,
+    "relationships": [],
+    "serviceItemId": "c0b9d377e5be4658904f552605be13b4",
+    "sourceSpatialReference": {
+        "wkt": "PROJCS[\"NAD_1983_HARN_StatePlane_Colorado_North_FIPS_0501\",GEOGCS[\"GCS_North_American_1983_HARN\",DATUM[\"D_North_American_1983_HARN\",SPHEROID[\"GRS_1980\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Lambert_Conformal_Conic\"],PARAMETER[\"False_Easting\",3000000.000316083],PARAMETER[\"False_Northing\",999999.999996],PARAMETER[\"Central_Meridian\",-105.5],PARAMETER[\"Standard_Parallel_1\",39.71666666666667],PARAMETER[\"Standard_Parallel_2\",40.78333333333333],PARAMETER[\"Latitude_Of_Origin\",39.33333333333334],UNIT[\"Foot_US\",0.3048006096012192]]"
+    },
+    "subLayers": [],
+    "subtypeField": null,
+    "subtypeFieldName": null,
+    "subtypes": [],
+    "supportedQueryFormats": "JSON, geoJSON",
+    "supportsAdvancedQueries": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsDatumTransformation": true,
+    "supportsStatistics": true,
+    "type": "Feature Layer",
+    "typeIdField": null,
+    "useStandardizedQueries": true
+}

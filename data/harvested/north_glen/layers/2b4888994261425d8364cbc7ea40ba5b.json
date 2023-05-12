@@ -1,0 +1,531 @@
+{
+    "advancedQueryCapabilities": {
+        "supportsCountDistinct": true,
+        "supportsDistinct": true,
+        "supportsHavingClause": true,
+        "supportsLod": false,
+        "supportsOrderBy": true,
+        "supportsPagination": true,
+        "supportsPercentileStatistics": true,
+        "supportsQueryWithDatumTransformation": true,
+        "supportsQueryWithDistance": true,
+        "supportsQueryWithLodSR": false,
+        "supportsReturningQueryExtent": true,
+        "supportsSqlExpression": true,
+        "supportsSqlFormat": false,
+        "supportsStatistics": true,
+        "supportsTimeRelation": true,
+        "supportsTrueCurve": true,
+        "useStandardizedQueries": true
+    },
+    "archivingInfo": {
+        "startArchivingMoment": -1,
+        "supportsQueryWithHistoricMoment": false
+    },
+    "canModifyLayer": false,
+    "canScaleSymbols": false,
+    "capabilities": "Query,Map,Data",
+    "cimVersion": "2.7.0",
+    "copyrightText": "",
+    "currentVersion": 10.9,
+    "dateFieldsTimeReference": {
+        "respectsDaylightSaving": true,
+        "timeZone": "Mountain Standard Time"
+    },
+    "datesInUnknownTimezone": false,
+    "defaultSubtypeCode": null,
+    "defaultVisibility": true,
+    "description": "",
+    "displayField": "ANNEXNAME",
+    "drawingInfo": {
+        "labelingInfo": null,
+        "renderer": {
+            "authoringInfo": {
+                "colorRamp": {
+                    "colorRamps": [
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                252,
+                                210,
+                                234,
+                                255
+                            ],
+                            "toColor": [
+                                252,
+                                210,
+                                234,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                182,
+                                252,
+                                179,
+                                255
+                            ],
+                            "toColor": [
+                                182,
+                                252,
+                                179,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                194,
+                                250,
+                                252,
+                                255
+                            ],
+                            "toColor": [
+                                194,
+                                250,
+                                252,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                252,
+                                228,
+                                179,
+                                255
+                            ],
+                            "toColor": [
+                                252,
+                                228,
+                                179,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                179,
+                                183,
+                                252,
+                                255
+                            ],
+                            "toColor": [
+                                179,
+                                183,
+                                252,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                227,
+                                252,
+                                212,
+                                255
+                            ],
+                            "toColor": [
+                                227,
+                                252,
+                                212,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                252,
+                                184,
+                                251,
+                                255
+                            ],
+                            "toColor": [
+                                252,
+                                184,
+                                251,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                252,
+                                207,
+                                197,
+                                255
+                            ],
+                            "toColor": [
+                                252,
+                                207,
+                                197,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                216,
+                                212,
+                                252,
+                                255
+                            ],
+                            "toColor": [
+                                216,
+                                212,
+                                252,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                179,
+                                252,
+                                213,
+                                255
+                            ],
+                            "toColor": [
+                                179,
+                                252,
+                                213,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                251,
+                                252,
+                                179,
+                                255
+                            ],
+                            "toColor": [
+                                251,
+                                252,
+                                179,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                252,
+                                182,
+                                218,
+                                255
+                            ],
+                            "toColor": [
+                                252,
+                                182,
+                                218,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                199,
+                                229,
+                                252,
+                                255
+                            ],
+                            "toColor": [
+                                199,
+                                229,
+                                252,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        }
+                    ],
+                    "type": "multipart"
+                }
+            },
+            "field1": "County_Tax_District",
+            "fieldDelimiter": ",",
+            "type": "uniqueValue",
+            "uniqueValueInfos": [
+                {
+                    "label": "Boulder County 8.485%",
+                    "symbol": {
+                        "color": [
+                            207,
+                            199,
+                            252,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.7
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "Boulder County 8.485%"
+                },
+                {
+                    "label": "Weld 6.4%",
+                    "symbol": {
+                        "color": [
+                            182,
+                            252,
+                            179,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.7
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "Weld 6.4%"
+                },
+                {
+                    "label": "Weld 7.4%",
+                    "symbol": {
+                        "color": [
+                            252,
+                            214,
+                            187,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.7
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "Weld 7.4%"
+                }
+            ]
+        },
+        "scaleSymbols": true,
+        "transparency": 0
+    },
+    "extent": {
+        "spatialReference": {
+            "falseM": -100000,
+            "falseX": -118265500,
+            "falseY": -95180100,
+            "falseZ": 0,
+            "latestWkid": 2876,
+            "mTolerance": 2,
+            "mUnits": 10000,
+            "wkid": 2876,
+            "xyTolerance": 3.2000000029802345e-05,
+            "xyUnits": 37138342.128391795,
+            "zTolerance": 2,
+            "zUnits": 1
+        },
+        "xmax": 3146016.3159175664,
+        "xmin": 3110714.699184686,
+        "ymax": 1280441.73863405,
+        "ymin": 1243236.5400794
+    },
+    "fields": [
+        {
+            "alias": "OBJECTID",
+            "domain": null,
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "ANNEXNAME",
+            "domain": null,
+            "length": 254,
+            "name": "ANNEXNAME",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "YEAR",
+            "domain": null,
+            "name": "YEAR",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "ACRES",
+            "domain": null,
+            "name": "ACRES",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "County_Tax_District",
+            "domain": null,
+            "length": 50,
+            "name": "County_Tax_District",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Shape",
+            "domain": null,
+            "name": "Shape",
+            "type": "esriFieldTypeGeometry"
+        },
+        {
+            "alias": "GlobalID",
+            "domain": null,
+            "length": 38,
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID"
+        },
+        {
+            "alias": "Ordinance Number",
+            "domain": null,
+            "length": 50,
+            "name": "Ordinance",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Recording Number",
+            "domain": null,
+            "length": 50,
+            "name": "Recording",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Effective Date",
+            "domain": null,
+            "length": 8,
+            "name": "Effective",
+            "type": "esriFieldTypeDate"
+        },
+        {
+            "alias": "Shape.STArea()",
+            "domain": null,
+            "name": "Shape.STArea()",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Shape.STLength()",
+            "domain": null,
+            "name": "Shape.STLength()",
+            "type": "esriFieldTypeDouble"
+        }
+    ],
+    "geometryField": {
+        "alias": "Shape",
+        "name": "Shape",
+        "type": "esriFieldTypeGeometry"
+    },
+    "geometryProperties": {
+        "shapeAreaFieldName": "Shape.STArea()",
+        "shapeLengthFieldName": "Shape.STLength()",
+        "units": "esriFeet"
+    },
+    "geometryType": "esriGeometryPolygon",
+    "hasAttachments": false,
+    "hasGeometryProperties": true,
+    "hasLabels": false,
+    "hasMetadata": true,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "id": 16,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "R133_pk"
+        },
+        {
+            "description": "",
+            "fields": "GlobalID",
+            "isAscending": true,
+            "isUnique": false,
+            "name": "UUID_133"
+        },
+        {
+            "description": "",
+            "fields": "GlobalID,OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "UUID_OID_133"
+        },
+        {
+            "description": "",
+            "fields": "Shape",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "S128_idx"
+        }
+    ],
+    "isDataArchived": false,
+    "isDataVersioned": true,
+    "maxRecordCount": 10000,
+    "maxScale": 0,
+    "minScale": 0,
+    "name": "Erie Annexations Tax Districts",
+    "ownershipBasedAccessControlForFeatures": {
+        "allowOthersToQuery": true
+    },
+    "parentLayer": null,
+    "preferredTimeReference": null,
+    "referenceScale": 0.0,
+    "relationships": [],
+    "serviceItemId": "e2ec77b01ead43b6949a4b43b250b7ca",
+    "sourceSpatialReference": {
+        "falseM": 0,
+        "falseX": -118265499.99999578,
+        "falseY": -95180099.99998587,
+        "falseZ": 0,
+        "latestWkid": 2876,
+        "mTolerance": 2,
+        "mUnits": 1,
+        "wkid": 2876,
+        "xyTolerance": 3.2000000029802345e-05,
+        "xyUnits": 249999.99976716924,
+        "zTolerance": 2,
+        "zUnits": 1
+    },
+    "subLayers": [],
+    "subtypeField": null,
+    "subtypeFieldName": null,
+    "subtypes": [],
+    "supportedQueryFormats": "JSON, geoJSON, PBF",
+    "supportsAdvancedQueries": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsDatumTransformation": true,
+    "supportsDynamicLegends": true,
+    "supportsExceedsLimitStatistics": true,
+    "supportsStatistics": true,
+    "type": "Feature Layer",
+    "typeIdField": null,
+    "useStandardizedQueries": true
+}

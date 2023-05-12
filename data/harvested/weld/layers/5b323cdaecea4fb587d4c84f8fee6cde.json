@@ -1,0 +1,687 @@
+{
+    "advancedEditingCapabilities": {
+        "supportedApplyEditsUploadIDFormats": "JSON",
+        "supportedSqlFormatsInCalculate": [
+            "standard"
+        ],
+        "supportsApplyEditsbyUploadID": true,
+        "supportsAsyncApplyEdits": true,
+        "supportsReturnEditResults": true
+    },
+    "advancedQueryAnalyticCapabilities": {
+        "supportsAsync": true,
+        "supportsLinearRegression": true,
+        "supportsPercentileAnalytic": true
+    },
+    "advancedQueryCapabilities": {
+        "supportedLodTypes": [
+            "geohash"
+        ],
+        "supportedOperationsWithCacheHint": [
+            "query",
+            "queryTopFilter",
+            "queryAnalytics",
+            "queryAttachments",
+            "queryRelated"
+        ],
+        "supportedSpatialAggregationStatistics": [
+            "EnvelopeAggregate",
+            "CentroidAggregate",
+            "ConvexHullAggregate"
+        ],
+        "supportsAdvancedQueryRelated": true,
+        "supportsCountDistinct": true,
+        "supportsDefaultSR": true,
+        "supportsDisjointSpatialRel": true,
+        "supportsDistinct": true,
+        "supportsFullTextSearch": true,
+        "supportsHavingClause": true,
+        "supportsLod": true,
+        "supportsMaxRecordCountFactor": true,
+        "supportsOrderBy": true,
+        "supportsOutFieldSQLExpression": true,
+        "supportsPagination": true,
+        "supportsPaginationOnAggregatedQueries": true,
+        "supportsPercentileStatistics": true,
+        "supportsQueryAnalytic": true,
+        "supportsQueryAttachmentsCountOnly": true,
+        "supportsQueryRelatedPagination": true,
+        "supportsQueryWithCacheHint": true,
+        "supportsQueryWithDatumTransformation": true,
+        "supportsQueryWithDistance": true,
+        "supportsQueryWithLodSR": false,
+        "supportsQueryWithResultType": true,
+        "supportsReturningGeometryCentroid": true,
+        "supportsReturningGeometryProperties": true,
+        "supportsReturningQueryExtent": true,
+        "supportsSpatialAggregationStatistics": true,
+        "supportsSqlExpression": true,
+        "supportsStatistics": true,
+        "supportsTopFeaturesQuery": true
+    },
+    "allowGeometryUpdates": true,
+    "cacheMaxAge": 30,
+    "capabilities": "Query",
+    "copyrightText": "",
+    "currentVersion": 11,
+    "dateFieldsTimeReference": {
+        "respectsDaylightSaving": false,
+        "timeZone": "UTC"
+    },
+    "defaultVisibility": false,
+    "description": "PLBI_Zoning",
+    "displayField": "Townname",
+    "drawingInfo": {
+        "labelingInfo": null,
+        "renderer": {
+            "symbol": {
+                "color": [
+                    252,
+                    239,
+                    189,
+                    255
+                ],
+                "outline": {
+                    "color": [
+                        110,
+                        110,
+                        110,
+                        255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 0.7
+                },
+                "style": "esriSFSSolid",
+                "type": "esriSFS"
+            },
+            "type": "simple"
+        },
+        "scaleSymbols": true,
+        "transparency": 0
+    },
+    "editingInfo": {
+        "dataLastEditDate": 1683714097439,
+        "lastEditDate": 1683714097439,
+        "schemaLastEditDate": 1683714097439
+    },
+    "extent": {
+        "spatialReference": {
+            "latestWkid": 3857,
+            "wkid": 102100
+        },
+        "xmax": -11528883.86473882,
+        "xmin": -11695114.1434194,
+        "ymax": 5014793.096019046,
+        "ymin": 4863816.917358919
+    },
+    "fields": [
+        {
+            "alias": "FID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "name": "OBJECTID",
+            "nullable": false,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "AREA",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "AREA",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "PERIMETER",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "PERIMETER",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "SQMILES",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "SQMILES",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "ACRES",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "ACRES",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "calcmiles",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "calcmiles",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Townname",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 25,
+            "name": "Townname",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "CONAME",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 15,
+            "name": "CONAME",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Distance",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "Distance",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "SUM_AREA",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "SUM_AREA",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "SUM_PERIME",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "SUM_PERIME",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "CASE_NBR",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 15,
+            "name": "CASE_NBR",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "A",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "A",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "R_1",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "R_1",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "R_2",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "R_2",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "R_3",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "R_3",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "R_4",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "R_4",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "R_5",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "R_5",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "C_1",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "C_1",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "C_2",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "C_2",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "C_3",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "C_3",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "C_4",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "C_4",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "I_1",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "I_1",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "I_2",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "I_2",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "I_3",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "I_3",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "E",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "E",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "PUD",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "PUD",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "MASTERZ",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 5,
+            "name": "MASTERZ",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "RECP_NUM",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 10,
+            "name": "RECP_NUM",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "YEAR",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 4,
+            "name": "YEAR",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "DATE_",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 8,
+            "name": "DATE_",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDate"
+        },
+        {
+            "alias": "ZONING",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 100,
+            "name": "ZONING",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "ZONE_SYMB",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 10,
+            "name": "ZONE_SYMB",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "CASE_NAME",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 30,
+            "name": "CASE_NAME",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Town",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 25,
+            "name": "Town",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "SUM_Count",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "SUM_Count",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "As_of_date",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 8,
+            "name": "As_of_date",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDate"
+        },
+        {
+            "alias": "Shape_Leng",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "Shape_Leng",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Shape__Area",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "name": "Shape__Area",
+            "nullable": true,
+            "sqlType": "sqlTypeDouble",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Shape__Length",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "name": "Shape__Length",
+            "nullable": true,
+            "sqlType": "sqlTypeDouble",
+            "type": "esriFieldTypeDouble"
+        }
+    ],
+    "geometryProperties": {
+        "shapeAreaFieldName": "Shape__Area",
+        "shapeLengthFieldName": "Shape__Length",
+        "units": "esriMeters"
+    },
+    "geometryType": "esriGeometryPolygon",
+    "globalIdField": "",
+    "hasAttachments": false,
+    "hasContingentValuesDefinition": false,
+    "hasGeometryProperties": true,
+    "hasM": false,
+    "hasMetadata": true,
+    "hasStaticData": false,
+    "hasZ": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "id": 0,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "PK__ZONING_O__F4B70D858937E20E"
+        },
+        {
+            "description": "",
+            "fields": "Shape",
+            "isAscending": true,
+            "isUnique": false,
+            "name": "user_2158.ZONING_OPEN_DATA_ZONING_OPEN_DATA2_Shape_sidx"
+        },
+        {
+            "description": "",
+            "fields": "Shape__Area",
+            "isAscending": true,
+            "isUnique": false,
+            "name": "Shape__Area_Index"
+        },
+        {
+            "description": "",
+            "fields": "Shape__Length",
+            "isAscending": true,
+            "isUnique": false,
+            "name": "Shape__Length_Index"
+        }
+    ],
+    "infoInEstimates": [
+        "extent",
+        "count"
+    ],
+    "isDataVersioned": false,
+    "maxRecordCount": 2000,
+    "maxRecordCountFactor": 1,
+    "maxScale": 0,
+    "minScale": 0,
+    "name": "Zoning_open_data",
+    "objectIdField": "OBJECTID",
+    "preferredTimeReference": null,
+    "relationships": [],
+    "serviceItemId": "5b323cdaecea4fb587d4c84f8fee6cde",
+    "standardMaxRecordCount": 4000,
+    "standardMaxRecordCountNoGeometry": 32000,
+    "supportedAppendFormats": "sqlite,geoPackage,shapefile,filegdb,featureCollection,geojson,csv,excel",
+    "supportedContingentValuesFormats": "JSON, PBF",
+    "supportedExportFormats": "csv,shapefile,sqlite,geoPackage,filegdb,featureCollection,geojson,excel",
+    "supportedQueryFormats": "JSON, geoJSON, PBF",
+    "supportedSpatialRelationships": [
+        "esriSpatialRelIntersects",
+        "esriSpatialRelContains",
+        "esriSpatialRelCrosses",
+        "esriSpatialRelEnvelopeIntersects",
+        "esriSpatialRelIndexIntersects",
+        "esriSpatialRelOverlaps",
+        "esriSpatialRelTouches",
+        "esriSpatialRelWithin",
+        "esriSpatialRelDisjoint",
+        "esriSpatialRelRelation"
+    ],
+    "supportedSyncDataOptions": 4,
+    "supportsASyncCalculate": true,
+    "supportsAdvancedQueries": true,
+    "supportsAppend": true,
+    "supportsApplyEditsWithGlobalIds": false,
+    "supportsAttachmentsByUploadId": true,
+    "supportsAttachmentsResizing": true,
+    "supportsCalculate": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsExceedsLimitStatistics": true,
+    "supportsFieldDescriptionProperty": true,
+    "supportsLayerOverrides": true,
+    "supportsMultiScaleGeometry": true,
+    "supportsQuantizationEditMode": true,
+    "supportsReturningQueryGeometry": true,
+    "supportsRollbackOnFailureParameter": true,
+    "supportsStatistics": true,
+    "supportsTilesAndBasicQueriesMode": true,
+    "supportsTruncate": true,
+    "supportsValidateSql": true,
+    "templates": [
+        {
+            "description": "",
+            "drawingTool": "esriFeatureEditToolPolygon",
+            "name": "Zoning_open_data",
+            "prototype": {
+                "attributes": {
+                    "A": null,
+                    "ACRES": null,
+                    "AREA": null,
+                    "As_of_date": null,
+                    "CASE_NAME": null,
+                    "CASE_NBR": null,
+                    "CONAME": null,
+                    "C_1": null,
+                    "C_2": null,
+                    "C_3": null,
+                    "C_4": null,
+                    "DATE_": null,
+                    "Distance": null,
+                    "E": null,
+                    "I_1": null,
+                    "I_2": null,
+                    "I_3": null,
+                    "MASTERZ": null,
+                    "PERIMETER": null,
+                    "PUD": null,
+                    "RECP_NUM": null,
+                    "R_1": null,
+                    "R_2": null,
+                    "R_3": null,
+                    "R_4": null,
+                    "R_5": null,
+                    "SQMILES": null,
+                    "SUM_AREA": null,
+                    "SUM_Count": null,
+                    "SUM_PERIME": null,
+                    "Shape_Leng": null,
+                    "Town": null,
+                    "Townname": null,
+                    "YEAR": null,
+                    "ZONE_SYMB": null,
+                    "ZONING": null,
+                    "calcmiles": null
+                }
+            }
+        }
+    ],
+    "tileMaxRecordCount": 4000,
+    "type": "Feature Layer",
+    "typeIdField": "",
+    "types": [],
+    "uniqueIdField": {
+        "isSystemMaintained": true,
+        "name": "OBJECTID"
+    },
+    "useStandardizedQueries": true
+}

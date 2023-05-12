@@ -1,0 +1,567 @@
+{
+    "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
+    "@type": "dcat:Catalog",
+    "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
+    "dataset": [
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "adminjohnstown"
+            },
+            "description": "{{description}}",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/pages/337732478b7944e0bf487b3d2637c4c0",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=337732478b7944e0bf487b3d2637c4c0",
+            "issued": "2020-12-17T22:48:41.000Z",
+            "keyword": [
+                ""
+            ],
+            "landingPage": "https://townof-johnstown.hub.arcgis.com/pages/337732478b7944e0bf487b3d2637c4c0",
+            "license": "",
+            "modified": "2022-07-03T22:45:43.000Z",
+            "publisher": {
+                "name": "adminjohnstown"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Data"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "adminjohnstown"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/maps/c75e35d3a73a4beaabc0caa8e02b1b82_0",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://services5.arcgis.com/dLSpoSuiU8QkkRAK/arcgis/rest/services/Annexation/FeatureServer/0",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/datasets/c75e35d3a73a4beaabc0caa8e02b1b82_0.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/datasets/c75e35d3a73a4beaabc0caa8e02b1b82_0.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/datasets/c75e35d3a73a4beaabc0caa8e02b1b82_0.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/datasets/c75e35d3a73a4beaabc0caa8e02b1b82_0.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=c75e35d3a73a4beaabc0caa8e02b1b82&sublayer=0",
+            "issued": "2022-07-11T12:47:14.000Z",
+            "keyword": [
+                "Annexation",
+                "Annexations",
+                "Johnstown",
+                "Colorado"
+            ],
+            "landingPage": "https://townof-johnstown.hub.arcgis.com/maps/c75e35d3a73a4beaabc0caa8e02b1b82_0",
+            "license": "",
+            "modified": "2022-08-30T21:05:39.142Z",
+            "publisher": {
+                "name": "adminjohnstown"
+            },
+            "spatial": "-105.0033,40.2790,-104.8764,40.4213",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Annexation"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "adminjohnstown"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/maps/bf4506f8ed4045fd8385848438445fb2_0",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://services5.arcgis.com/dLSpoSuiU8QkkRAK/arcgis/rest/services/Subdivision/FeatureServer/0",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/datasets/bf4506f8ed4045fd8385848438445fb2_0.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/datasets/bf4506f8ed4045fd8385848438445fb2_0.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/datasets/bf4506f8ed4045fd8385848438445fb2_0.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/datasets/bf4506f8ed4045fd8385848438445fb2_0.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=bf4506f8ed4045fd8385848438445fb2&sublayer=0",
+            "issued": "2022-08-30T21:07:21.000Z",
+            "keyword": [
+                "Subdivsions",
+                "Johnstown",
+                "Colorado"
+            ],
+            "landingPage": "https://townof-johnstown.hub.arcgis.com/maps/bf4506f8ed4045fd8385848438445fb2_0",
+            "license": "",
+            "modified": "2022-12-15T15:01:57.380Z",
+            "publisher": {
+                "name": "adminjohnstown"
+            },
+            "spatial": "-104.9934,40.2916,-104.8954,40.4214",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Subdivision"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "adminjohnstown"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/maps/2b9329248d874a72941a767faab8e617_3",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://services5.arcgis.com/dLSpoSuiU8QkkRAK/arcgis/rest/services/Town_Limits/FeatureServer/3",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/datasets/2b9329248d874a72941a767faab8e617_3.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/datasets/2b9329248d874a72941a767faab8e617_3.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/datasets/2b9329248d874a72941a767faab8e617_3.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/datasets/2b9329248d874a72941a767faab8e617_3.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=2b9329248d874a72941a767faab8e617&sublayer=3",
+            "issued": "2022-07-11T13:09:08.000Z",
+            "keyword": [
+                "Town Limits",
+                "Johnstown",
+                "Colorado"
+            ],
+            "landingPage": "https://townof-johnstown.hub.arcgis.com/maps/2b9329248d874a72941a767faab8e617_3",
+            "license": "",
+            "modified": "2022-07-11T13:37:58.811Z",
+            "publisher": {
+                "name": "adminjohnstown"
+            },
+            "spatial": "-105.0033,40.2790,-104.8764,40.4213",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Town Limits"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "adminjohnstown"
+            },
+            "description": "{{description}}",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/apps/a818975e763e4c2a86658827dd5eb760",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://johnstown.maps.arcgis.com/apps/webappviewer/index.html?id=a818975e763e4c2a86658827dd5eb760",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=a818975e763e4c2a86658827dd5eb760",
+            "issued": "2020-12-11T21:14:26.000Z",
+            "keyword": [
+                "Johnstown",
+                "subdivisions"
+            ],
+            "landingPage": "https://townof-johnstown.hub.arcgis.com/apps/a818975e763e4c2a86658827dd5eb760",
+            "license": "",
+            "modified": "2022-10-27T13:50:41.000Z",
+            "publisher": {
+                "name": "adminjohnstown"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Annexations and Subdivisions"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "adminjohnstown"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/maps/dcbfdbec881449c88d29f261c255691c_0",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://services5.arcgis.com/dLSpoSuiU8QkkRAK/arcgis/rest/services/ZoningDistricts/FeatureServer/0",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/datasets/dcbfdbec881449c88d29f261c255691c_0.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/datasets/dcbfdbec881449c88d29f261c255691c_0.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/datasets/dcbfdbec881449c88d29f261c255691c_0.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/datasets/dcbfdbec881449c88d29f261c255691c_0.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=dcbfdbec881449c88d29f261c255691c&sublayer=0",
+            "issued": "2022-08-24T14:34:57.000Z",
+            "keyword": [
+                "Test Zoning"
+            ],
+            "landingPage": "https://townof-johnstown.hub.arcgis.com/maps/dcbfdbec881449c88d29f261c255691c_0",
+            "license": "",
+            "modified": "2022-08-24T14:34:58.869Z",
+            "publisher": {
+                "name": "adminjohnstown"
+            },
+            "spatial": "-105.0033,40.2790,-104.8764,40.4213",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Zoning Districts"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "adminjohnstown"
+            },
+            "description": "{{description}}",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/apps/5d43f686ef214a429792a08020fd9682",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://johnstown.maps.arcgis.com/apps/webappviewer/index.html?id=5d43f686ef214a429792a08020fd9682",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=5d43f686ef214a429792a08020fd9682",
+            "issued": "2022-09-29T22:01:58.000Z",
+            "keyword": [
+                "Town of Johnstown",
+                "Town Limits",
+                "Colorado"
+            ],
+            "landingPage": "https://townof-johnstown.hub.arcgis.com/apps/5d43f686ef214a429792a08020fd9682",
+            "license": "",
+            "modified": "2022-10-27T13:54:48.000Z",
+            "publisher": {
+                "name": "adminjohnstown"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Town Limits"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "adminjohnstown"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/maps/5c52e4ca56224ec6a9eaeddc2a941e46",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=5c52e4ca56224ec6a9eaeddc2a941e46",
+            "issued": "2022-09-29T21:43:51.000Z",
+            "keyword": [
+                ""
+            ],
+            "landingPage": "https://townof-johnstown.hub.arcgis.com/maps/5c52e4ca56224ec6a9eaeddc2a941e46",
+            "license": "",
+            "modified": "2022-11-01T19:26:36.000Z",
+            "publisher": {
+                "name": "adminjohnstown"
+            },
+            "spatial": "-105.0057,40.3559,-104.9032,40.4227",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Town Limits"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "adminjohnstown"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/apps/879f1a7e990c434cb08f70a7c8dcef1d",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://johnstown.maps.arcgis.com/apps/instant/minimalist/index.html?appid=879f1a7e990c434cb08f70a7c8dcef1d",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=879f1a7e990c434cb08f70a7c8dcef1d",
+            "issued": "2022-08-24T15:35:21.000Z",
+            "keyword": [
+                "Johnstown",
+                "zoning"
+            ],
+            "landingPage": "https://townof-johnstown.hub.arcgis.com/apps/879f1a7e990c434cb08f70a7c8dcef1d",
+            "license": "",
+            "modified": "2022-10-27T14:04:00.000Z",
+            "publisher": {
+                "name": "adminjohnstown"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Zoning Districts"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "adminjohnstown"
+            },
+            "description": "{{description}}",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/apps/f1b5c9ed7a8d43aa9e3e3cc699575e1f",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://johnstown.maps.arcgis.com/apps/webappviewer/index.html?id=f1b5c9ed7a8d43aa9e3e3cc699575e1f",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=f1b5c9ed7a8d43aa9e3e3cc699575e1f",
+            "issued": "2020-12-17T20:13:45.000Z",
+            "keyword": [
+                "Johnstown",
+                "Development"
+            ],
+            "landingPage": "https://townof-johnstown.hub.arcgis.com/apps/f1b5c9ed7a8d43aa9e3e3cc699575e1f",
+            "license": "",
+            "modified": "2022-10-27T14:00:14.000Z",
+            "publisher": {
+                "name": "adminjohnstown"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Development Projects"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "adminjohnstown"
+            },
+            "description": "{{description}}",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://townof-johnstown.hub.arcgis.com/apps/72609eb0667e42ce8231510688405717",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://experience.arcgis.com/experience/72609eb0667e42ce8231510688405717/",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=72609eb0667e42ce8231510688405717",
+            "issued": "2022-10-27T21:15:17.000Z",
+            "keyword": [],
+            "landingPage": "https://townof-johnstown.hub.arcgis.com/apps/72609eb0667e42ce8231510688405717",
+            "license": "",
+            "modified": "2022-11-17T20:22:20.000Z",
+            "publisher": {
+                "name": "adminjohnstown"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Snowplow Routes"
+        }
+    ],
+    "describedBy": "https://project-open-data.cio.gov/v1.1/schema/catalog.json"
+}

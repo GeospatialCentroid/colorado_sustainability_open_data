@@ -1,0 +1,624 @@
+{
+    "advancedQueryCapabilities": {
+        "supportsCountDistinct": true,
+        "supportsDistinct": true,
+        "supportsHavingClause": true,
+        "supportsOrderBy": true,
+        "supportsPagination": true,
+        "supportsQueryWithDistance": true,
+        "supportsReturningQueryExtent": true,
+        "supportsSqlExpression": true,
+        "supportsStatistics": true,
+        "supportsTrueCurve": true,
+        "useStandardizedQueries": true
+    },
+    "canModifyLayer": true,
+    "canScaleSymbols": false,
+    "capabilities": "Map,Query,Data",
+    "copyrightText": "",
+    "currentVersion": 10.91,
+    "dateFieldsTimeReference": null,
+    "defaultSubtypeCode": null,
+    "defaultVisibility": true,
+    "description": "",
+    "displayField": "STREETNAME",
+    "drawingInfo": {
+        "labelingInfo": [
+            {
+                "labelExpression": "[HOUSENUM]",
+                "labelPlacement": "esriServerPointLabelPlacementCenterCenter",
+                "maxScale": 0,
+                "minScale": 0,
+                "symbol": {
+                    "angle": 0,
+                    "backgroundColor": null,
+                    "borderLineColor": null,
+                    "borderLineSize": null,
+                    "color": [
+                        115,
+                        38,
+                        0,
+                        255
+                    ],
+                    "font": {
+                        "decoration": "none",
+                        "family": "Arial",
+                        "size": 8,
+                        "style": "normal",
+                        "weight": "bold"
+                    },
+                    "haloColor": [
+                        255,
+                        255,
+                        255,
+                        255
+                    ],
+                    "haloSize": 1,
+                    "horizontalAlignment": "center",
+                    "kerning": true,
+                    "rightToLeft": false,
+                    "type": "esriTS",
+                    "verticalAlignment": "bottom",
+                    "xoffset": 0,
+                    "yoffset": 0
+                },
+                "useCodedValues": true,
+                "where": null
+            }
+        ],
+        "renderer": {
+            "description": "",
+            "label": "",
+            "symbol": {
+                "angle": 0,
+                "color": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "outline": null,
+                "size": 1,
+                "style": "esriSMSCircle",
+                "type": "esriSMS",
+                "xoffset": 0,
+                "yoffset": 0
+            },
+            "type": "simple"
+        },
+        "transparency": 0
+    },
+    "extent": {
+        "spatialReference": {
+            "latestVcsWkid": 5703,
+            "latestWkid": 2876,
+            "vcsWkid": 5703,
+            "wkid": 2876
+        },
+        "xmax": 3247563.99311918,
+        "xmin": 3162602.8394711018,
+        "ymax": 1419237.7200205773,
+        "ymin": 1363622.854100734
+    },
+    "fields": [
+        {
+            "alias": "OBJECTID",
+            "domain": null,
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "ADDRESSTYPE",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "RES",
+                        "name": "Residential"
+                    },
+                    {
+                        "code": "COM",
+                        "name": "Commercial"
+                    },
+                    {
+                        "code": "UTIL",
+                        "name": "Utility"
+                    },
+                    {
+                        "code": "MFAM",
+                        "name": "Multi-Family"
+                    },
+                    {
+                        "code": "OTH",
+                        "name": "Other"
+                    },
+                    {
+                        "code": "CA",
+                        "name": "City Asset"
+                    }
+                ],
+                "description": "Address Types",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "ADDTYPE",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "length": 50,
+            "name": "ADDRESSTYPE",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "FULLADDRESS1",
+            "domain": null,
+            "length": 35,
+            "name": "FULLADDRESS1",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "FULLADDRESS2",
+            "domain": null,
+            "length": 35,
+            "name": "FULLADDRESS2",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "HOUSENUM",
+            "domain": null,
+            "length": 40,
+            "name": "HOUSENUM",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "HOUSENUMSUF",
+            "domain": null,
+            "length": 3,
+            "name": "HOUSENUMSUF",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "PREDIRECTION",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "N",
+                        "name": "N"
+                    },
+                    {
+                        "code": "E",
+                        "name": "E"
+                    },
+                    {
+                        "code": "S",
+                        "name": "S"
+                    },
+                    {
+                        "code": "W",
+                        "name": "W"
+                    },
+                    {
+                        "code": "NE",
+                        "name": "NE"
+                    },
+                    {
+                        "code": "NW",
+                        "name": "NW"
+                    },
+                    {
+                        "code": "SE",
+                        "name": "SE"
+                    },
+                    {
+                        "code": "SW",
+                        "name": "SW"
+                    }
+                ],
+                "description": "Pre-directional for addresses",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "PREDIR",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "length": 2,
+            "name": "PREDIRECTION",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "STREETPRETYPE",
+            "domain": null,
+            "length": 20,
+            "name": "STREETPRETYPE",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "STREETNAME",
+            "domain": null,
+            "length": 50,
+            "name": "STREETNAME",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "STREETTYPE",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "ALY",
+                        "name": "ALY"
+                    },
+                    {
+                        "code": "AVE",
+                        "name": "AVE"
+                    },
+                    {
+                        "code": "BLVD",
+                        "name": "BLVD"
+                    },
+                    {
+                        "code": "BYP",
+                        "name": "BYP"
+                    },
+                    {
+                        "code": "CTR",
+                        "name": "CENTER"
+                    },
+                    {
+                        "code": "CIR",
+                        "name": "CIR"
+                    },
+                    {
+                        "code": "CT",
+                        "name": "CT"
+                    },
+                    {
+                        "code": "DR",
+                        "name": "DR"
+                    },
+                    {
+                        "code": "EXPY",
+                        "name": "EXPRESSWAY"
+                    },
+                    {
+                        "code": "LN",
+                        "name": "LN"
+                    },
+                    {
+                        "code": "PKWY",
+                        "name": "PARKWAY"
+                    },
+                    {
+                        "code": "PL",
+                        "name": "PL"
+                    },
+                    {
+                        "code": "RAMP",
+                        "name": "RAMP"
+                    },
+                    {
+                        "code": "RD",
+                        "name": "RD"
+                    },
+                    {
+                        "code": "RTE",
+                        "name": "RTE"
+                    },
+                    {
+                        "code": "SPUR",
+                        "name": "SPUR"
+                    },
+                    {
+                        "code": "ST",
+                        "name": "ST"
+                    },
+                    {
+                        "code": "WAY",
+                        "name": "WAY"
+                    },
+                    {
+                        "code": "BAY",
+                        "name": "BAY"
+                    }
+                ],
+                "description": "Post type following primary street name",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "STREETTYPE",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "length": 20,
+            "name": "STREETTYPE",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "UNITTYPE",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "APT",
+                        "name": "APARTMENT"
+                    },
+                    {
+                        "code": "BSMT",
+                        "name": "BASEMENT"
+                    },
+                    {
+                        "code": "BLDG",
+                        "name": "BUILDING"
+                    },
+                    {
+                        "code": "DEPT",
+                        "name": "DEPARTMENT"
+                    },
+                    {
+                        "code": "LBBY",
+                        "name": "LOBBY"
+                    },
+                    {
+                        "code": "LOT",
+                        "name": "LOT"
+                    },
+                    {
+                        "code": "RM",
+                        "name": "ROOM"
+                    },
+                    {
+                        "code": "STE",
+                        "name": "SUITE"
+                    },
+                    {
+                        "code": "TRLR",
+                        "name": "TRAILER"
+                    },
+                    {
+                        "code": "UNIT",
+                        "name": "UNIT"
+                    }
+                ],
+                "description": "Structure type",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "UNITTYPE",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "length": 20,
+            "name": "UNITTYPE",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "UNITNUM",
+            "domain": null,
+            "length": 80,
+            "name": "UNITNUM",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "BUILDINGID",
+            "domain": null,
+            "name": "BUILDINGID",
+            "type": "esriFieldTypeSmallInteger"
+        },
+        {
+            "alias": "BUILDINGUNIT",
+            "domain": null,
+            "length": 5,
+            "name": "BUILDINGUNIT",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "CITY",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "GREELEY",
+                        "name": "GREELEY"
+                    },
+                    {
+                        "code": "EVANS",
+                        "name": "EVANS"
+                    },
+                    {
+                        "code": "GARDEN CITY",
+                        "name": "GARDEN CITY"
+                    },
+                    {
+                        "code": "WINDSOR",
+                        "name": "WINDSOR"
+                    },
+                    {
+                        "code": "LA SALLE",
+                        "name": "LA SALLE"
+                    },
+                    {
+                        "code": "WELD",
+                        "name": "WELD"
+                    }
+                ],
+                "description": "City in ALL CAPS",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "CITY",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "length": 25,
+            "name": "CITY",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "STATE",
+            "domain": null,
+            "length": 2,
+            "name": "STATE",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "ZIP",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "80631",
+                        "name": "80631"
+                    },
+                    {
+                        "code": "80639",
+                        "name": "80639"
+                    },
+                    {
+                        "code": "80620",
+                        "name": "80620"
+                    },
+                    {
+                        "code": "80624",
+                        "name": "80624"
+                    },
+                    {
+                        "code": "80615",
+                        "name": "80615"
+                    },
+                    {
+                        "code": "80550",
+                        "name": "80550"
+                    },
+                    {
+                        "code": "80543",
+                        "name": "80543"
+                    },
+                    {
+                        "code": "80634",
+                        "name": "80634"
+                    },
+                    {
+                        "code": "80645",
+                        "name": "80645"
+                    }
+                ],
+                "description": "Zip Code",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "ZIP",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "length": 5,
+            "name": "ZIP",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "ZIP+4",
+            "domain": null,
+            "length": 5,
+            "name": "ZIP4",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "NATION",
+            "domain": null,
+            "length": 30,
+            "name": "NATION",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "LANDMARKNAME",
+            "domain": null,
+            "length": 50,
+            "name": "LANDMARKNAME",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "DATEUPDATE",
+            "domain": null,
+            "length": 8,
+            "name": "DATEUPDATE",
+            "type": "esriFieldTypeDate"
+        },
+        {
+            "alias": "LASTEDITOR",
+            "domain": null,
+            "length": 50,
+            "name": "LASTEDITOR",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Shape",
+            "domain": null,
+            "name": "Shape",
+            "type": "esriFieldTypeGeometry"
+        },
+        {
+            "alias": "GlobalID",
+            "domain": null,
+            "length": 38,
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID"
+        },
+        {
+            "alias": "TRAKID",
+            "domain": null,
+            "length": 20,
+            "name": "TRAKID",
+            "type": "esriFieldTypeString"
+        }
+    ],
+    "geometryField": {
+        "alias": "Shape",
+        "name": "Shape",
+        "type": "esriFieldTypeGeometry"
+    },
+    "geometryType": "esriGeometryPoint",
+    "hasAttachments": false,
+    "hasLabels": true,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "id": 0,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "R77_SDE_ROWID_UK"
+        },
+        {
+            "description": "",
+            "fields": "GlobalID",
+            "isAscending": true,
+            "isUnique": false,
+            "name": "UUID_77"
+        },
+        {
+            "description": "",
+            "fields": "GlobalID,OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "UUID_OID_77"
+        },
+        {
+            "description": "",
+            "fields": "Shape",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "a65_ix1"
+        }
+    ],
+    "isDataVersioned": true,
+    "maxRecordCount": 1000,
+    "maxScale": 0,
+    "minScale": 24000,
+    "name": "Greeley Addresses",
+    "ownershipBasedAccessControlForFeatures": {
+        "allowOthersToQuery": true
+    },
+    "parentLayer": null,
+    "relationships": [],
+    "serviceItemId": "a75434de63d7487f840dabd8bf882293",
+    "sourceSpatialReference": {
+        "latestWkid": 2876,
+        "wkid": 2876
+    },
+    "subLayers": [],
+    "subtypeField": null,
+    "subtypeFieldName": null,
+    "subtypes": [],
+    "supportedQueryFormats": "JSON, geoJSON",
+    "supportsAdvancedQueries": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsDatumTransformation": true,
+    "supportsStatistics": true,
+    "type": "Feature Layer",
+    "typeIdField": null,
+    "useStandardizedQueries": true
+}

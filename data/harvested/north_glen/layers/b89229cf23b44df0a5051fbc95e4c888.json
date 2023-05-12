@@ -1,0 +1,638 @@
+{
+    "advancedEditingCapabilities": {
+        "supportedSqlFormatsInCalculate": [
+            "standard"
+        ]
+    },
+    "advancedQueryCapabilities": {
+        "supportsCountDistinct": true,
+        "supportsDistinct": true,
+        "supportsHavingClause": true,
+        "supportsLod": false,
+        "supportsOrderBy": true,
+        "supportsPagination": true,
+        "supportsPercentileStatistics": true,
+        "supportsQueryWithDatumTransformation": true,
+        "supportsQueryWithDistance": true,
+        "supportsQueryWithLodSR": false,
+        "supportsQueryWithResultType": true,
+        "supportsReturningGeometryCentroid": false,
+        "supportsReturningQueryExtent": true,
+        "supportsSqlExpression": true,
+        "supportsStatistics": true,
+        "supportsTrueCurve": true
+    },
+    "allowGeometryUpdates": false,
+    "allowTrueCurvesUpdates": false,
+    "archivingInfo": {
+        "startArchivingMoment": -1,
+        "supportsQueryWithHistoricMoment": false
+    },
+    "canScaleSymbols": false,
+    "capabilities": "Query,Extract",
+    "cimVersion": "2.7.0",
+    "copyrightText": "",
+    "currentVersion": 10.9,
+    "dateFieldsTimeReference": {
+        "respectsDaylightSaving": true,
+        "timeZone": "Mountain Standard Time"
+    },
+    "datesInUnknownTimezone": false,
+    "defaultVisibility": true,
+    "description": "",
+    "displayField": "NAME",
+    "drawingInfo": {
+        "labelingInfo": null,
+        "renderer": {
+            "symbol": {
+                "color": [
+                    255,
+                    170,
+                    0,
+                    255
+                ],
+                "style": "esriSLSSolid",
+                "type": "esriSLS",
+                "width": 1.5
+            },
+            "type": "simple"
+        },
+        "scaleSymbols": true,
+        "transparency": 0
+    },
+    "editFieldsInfo": {
+        "creationDateField": "created_date",
+        "creatorField": "created_user",
+        "dateFieldsTimeReference": {
+            "respectsDaylightSaving": false,
+            "timeZone": "UTC"
+        },
+        "editDateField": "last_edited_date",
+        "editorField": "last_edited_user"
+    },
+    "extent": {
+        "spatialReference": {
+            "falseM": -100000,
+            "falseX": -118265500,
+            "falseY": -95180100,
+            "falseZ": 0,
+            "latestWkid": 2876,
+            "mTolerance": 2,
+            "mUnits": 10000,
+            "wkid": 2876,
+            "xyTolerance": 3.2000000029802345e-05,
+            "xyUnits": 37138342.128391795,
+            "zTolerance": 2,
+            "zUnits": 1
+        },
+        "xmax": 3147250.487005472,
+        "xmin": 3100715.468855217,
+        "ymax": 1283787.9750534,
+        "ymin": 1241915.0843898952
+    },
+    "fields": [
+        {
+            "alias": "OBJECTID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "modelName": "OBJECTID",
+            "name": "OBJECTID",
+            "nullable": false,
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "Name",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 255,
+            "modelName": "NAME",
+            "name": "NAME",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Width",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "modelName": "WIDTH",
+            "name": "WIDTH",
+            "nullable": true,
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Width Category",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 10,
+            "modelName": "WidthCategory",
+            "name": "WidthCategory",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Surface Type",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "OTHER",
+                        "name": "OTHER"
+                    },
+                    {
+                        "code": "ASPHALT",
+                        "name": "ASPHALT"
+                    },
+                    {
+                        "code": "CRUSHER FINES",
+                        "name": "CRUSHER FINES"
+                    },
+                    {
+                        "code": "CONCRETE",
+                        "name": "CONCRETE"
+                    },
+                    {
+                        "code": "CONC CF COMBO",
+                        "name": "CONCRETE CRUSHER FINE COMBO"
+                    },
+                    {
+                        "code": "MAINTENANCE ONLY",
+                        "name": "MAINTENANCE ONLY"
+                    },
+                    {
+                        "code": "NATURAL",
+                        "name": "NATURAL"
+                    }
+                ],
+                "description": "The type of trail surface",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "TrailSurfaceType",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "length": 20,
+            "modelName": "SURFTYPE",
+            "name": "SURFTYPE",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Owned By",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": -1,
+                        "name": "Private"
+                    },
+                    {
+                        "code": -2,
+                        "name": "Other"
+                    },
+                    {
+                        "code": 1,
+                        "name": "Erie"
+                    },
+                    {
+                        "code": 2,
+                        "name": "HOA"
+                    },
+                    {
+                        "code": 3,
+                        "name": "United Power"
+                    },
+                    {
+                        "code": 4,
+                        "name": "Xcel"
+                    },
+                    {
+                        "code": 5,
+                        "name": "Lafayette"
+                    },
+                    {
+                        "code": 6,
+                        "name": "Left Hand Water"
+                    }
+                ],
+                "description": "The owner of the asset",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "AssetOwner",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "modelName": "OWNEDBY",
+            "name": "OWNEDBY",
+            "nullable": true,
+            "type": "esriFieldTypeSmallInteger"
+        },
+        {
+            "alias": "Maintained By",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": -1,
+                        "name": "Private"
+                    },
+                    {
+                        "code": -2,
+                        "name": "Other"
+                    },
+                    {
+                        "code": 1,
+                        "name": "Erie"
+                    },
+                    {
+                        "code": 2,
+                        "name": "HOA"
+                    },
+                    {
+                        "code": 3,
+                        "name": "United Power"
+                    },
+                    {
+                        "code": 4,
+                        "name": "Xcel"
+                    },
+                    {
+                        "code": 5,
+                        "name": "Lafayette"
+                    },
+                    {
+                        "code": 6,
+                        "name": "Left Hand Water"
+                    }
+                ],
+                "description": "The manager of the asset",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "AssetManager",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "modelName": "MAINTBY",
+            "name": "MAINTBY",
+            "nullable": true,
+            "type": "esriFieldTypeSmallInteger"
+        },
+        {
+            "alias": "TRAIL_TYPE_ER",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "SPINE",
+                        "name": "SPINE TRAIL"
+                    },
+                    {
+                        "code": "LOCAL",
+                        "name": "LOCAL TRAIL"
+                    },
+                    {
+                        "code": "SINGLETRACK",
+                        "name": "SINGLETRACK"
+                    },
+                    {
+                        "code": "MAINTENANCE ONLY",
+                        "name": "MAINTENANCE ONLY"
+                    },
+                    {
+                        "code": "PRIMITIVE",
+                        "name": "PRIMITIVE TRAIL"
+                    },
+                    {
+                        "code": "SIDEWALK",
+                        "name": "SIDEWALK"
+                    },
+                    {
+                        "code": "BIKE LANE",
+                        "name": "BIKE LANE"
+                    },
+                    {
+                        "code": "GOLF COURSE - PRIVATE",
+                        "name": "GOLF COURSE - PRIVATE"
+                    }
+                ],
+                "description": "Trail Type",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "TrailType",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "length": 50,
+            "modelName": "TRAIL_TYPE_ER",
+            "name": "TRAIL_TYPE_ER",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "LENGTH_ER",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "modelName": "LENGTH_ER",
+            "name": "LENGTH_ER",
+            "nullable": true,
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "FACILITYID_ER",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 50,
+            "modelName": "FACILITYID_ER",
+            "name": "FACILITYID_ER",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Trail Status Erie",
+            "defaultValue": "EXISTING",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "EXISTING",
+                        "name": "EXISTING"
+                    },
+                    {
+                        "code": "PROPOSED",
+                        "name": "PROPOSED"
+                    },
+                    {
+                        "code": "CONSTR",
+                        "name": "UNDER CONSTRUCTION"
+                    },
+                    {
+                        "code": "CLOSED",
+                        "name": "CLOSED"
+                    },
+                    {
+                        "code": "DETOUR",
+                        "name": "DETOUR"
+                    }
+                ],
+                "description": "Trail Status",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "TrailStatus",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "length": 10,
+            "modelName": "TRAILSTATUS_ER",
+            "name": "TRAILSTATUS_ER",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "SnowRouteName",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "Priority 1",
+                        "name": "Priority 1"
+                    },
+                    {
+                        "code": "Orange",
+                        "name": "Orange"
+                    },
+                    {
+                        "code": "Blue",
+                        "name": "Blue"
+                    },
+                    {
+                        "code": "Green",
+                        "name": "Green"
+                    },
+                    {
+                        "code": "Yellow A",
+                        "name": "Yellow A"
+                    },
+                    {
+                        "code": "Purple A",
+                        "name": "Purple A"
+                    },
+                    {
+                        "code": "Yellow B",
+                        "name": "Yellow B"
+                    },
+                    {
+                        "code": "Purple B",
+                        "name": "Purple B"
+                    }
+                ],
+                "description": "Snow Route Names for Trail Snow Removal",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "SnowRouteNames",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "length": 50,
+            "modelName": "SnowRouteName",
+            "name": "SnowRouteName",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Length",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "modelName": "SHAPE.STLength()",
+            "name": "Shape__Length",
+            "nullable": false,
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "OS_Zones",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "N",
+                        "name": "N"
+                    },
+                    {
+                        "code": "S",
+                        "name": "S"
+                    },
+                    {
+                        "code": "E",
+                        "name": "E"
+                    },
+                    {
+                        "code": "W",
+                        "name": "W"
+                    }
+                ],
+                "description": "Mowing Zones for Parks",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "OS_ZONES",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "length": 3,
+            "modelName": "OS_Zones",
+            "name": "OS_Zones",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "GlobalID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "length": 38,
+            "modelName": "GlobalID",
+            "name": "GlobalID",
+            "nullable": false,
+            "type": "esriFieldTypeGlobalID"
+        }
+    ],
+    "geometryField": {
+        "alias": "SHAPE",
+        "defaultValue": null,
+        "domain": null,
+        "editable": false,
+        "modelName": "SHAPE",
+        "name": "SHAPE",
+        "nullable": true,
+        "type": "esriFieldTypeGeometry"
+    },
+    "geometryProperties": {
+        "shapeLengthFieldName": "Shape__Length",
+        "units": "esriFeet"
+    },
+    "geometryType": "esriGeometryPolyline",
+    "globalIdField": "GlobalID",
+    "hasAttachments": false,
+    "hasGeometryProperties": true,
+    "hasM": false,
+    "hasMetadata": true,
+    "hasZ": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "id": 0,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "R244_pk"
+        },
+        {
+            "description": "",
+            "fields": "FACILITYID_ER",
+            "isAscending": true,
+            "isUnique": false,
+            "name": "GDB_543_FACILITY"
+        },
+        {
+            "description": "",
+            "fields": "SHAPE",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "S229_idx"
+        }
+    ],
+    "isCoGoEnabled": false,
+    "isDataArchived": false,
+    "isDataBranchVersioned": false,
+    "isDataReplicaTracked": false,
+    "isDataVersioned": true,
+    "maxRecordCount": 10000,
+    "maxRecordCountFactor": 1,
+    "maxScale": 0,
+    "minScale": 0,
+    "name": "Trails",
+    "objectIdField": "OBJECTID",
+    "onlyAllowTrueCurveUpdatesByTrueCurveClients": false,
+    "ownershipBasedAccessControlForFeatures": null,
+    "parentLayer": null,
+    "preferredTimeReference": null,
+    "relationships": [],
+    "serviceItemId": "59d45e099c734736946dcaf771d49a21",
+    "sourceSpatialReference": {
+        "falseM": 0,
+        "falseX": -118265500,
+        "falseY": -95180100,
+        "falseZ": 0,
+        "latestWkid": 2876,
+        "mTolerance": 0.001,
+        "mUnits": 1,
+        "wkid": 2876,
+        "xyTolerance": 0.003280833333333333,
+        "xyUnits": 3048.0060960121928,
+        "zTolerance": 0.001,
+        "zUnits": 1
+    },
+    "standardMaxRecordCount": 8000,
+    "standardMaxRecordCountNoGeometry": 32000,
+    "subtypeField": "",
+    "supportedQueryFormats": "JSON, geoJSON, PBF",
+    "supportsASyncCalculate": true,
+    "supportsAdvancedQueries": true,
+    "supportsApplyEditsWithGlobalIds": false,
+    "supportsCalculate": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsDatumTransformation": true,
+    "supportsExceedsLimitStatistics": true,
+    "supportsQuantizationEditMode": true,
+    "supportsRollbackOnFailureParameter": false,
+    "supportsStatistics": true,
+    "supportsValidateSQL": true,
+    "syncCanReturnChanges": true,
+    "templates": [
+        {
+            "description": "",
+            "drawingTool": "esriFeatureEditToolLine",
+            "name": "Hard Surface (Concrete or Asphalt)",
+            "prototype": {
+                "attributes": {
+                    "SURFTYPE": "CONCRETE",
+                    "trailstatus": "EXISTING",
+                    "trailtype": "LOCAL"
+                }
+            }
+        },
+        {
+            "description": "",
+            "drawingTool": "esriFeatureEditToolLine",
+            "name": "Soft Surface (Crusher Fines)",
+            "prototype": {
+                "attributes": {
+                    "SURFTYPE": "CRUSHER FINES",
+                    "trailstatus": "EXISTING",
+                    "trailtype": "OTHER"
+                }
+            }
+        },
+        {
+            "description": "",
+            "drawingTool": "esriFeatureEditToolLine",
+            "name": "Singletrack",
+            "prototype": {
+                "attributes": {
+                    "SURFTYPE": "OTHER",
+                    "trailstatus": "EXISTING",
+                    "trailtype": "SINGLETRACK"
+                }
+            }
+        }
+    ],
+    "tileMaxRecordCount": 4000,
+    "type": "Feature Layer",
+    "typeIdField": "",
+    "types": [],
+    "useStandardizedQueries": true
+}

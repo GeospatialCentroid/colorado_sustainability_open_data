@@ -1,0 +1,1086 @@
+{
+    "advancedEditingCapabilities": {
+        "supportedSqlFormatsInCalculate": [
+            "standard"
+        ]
+    },
+    "advancedQueryCapabilities": {
+        "supportsCountDistinct": true,
+        "supportsDistinct": true,
+        "supportsHavingClause": true,
+        "supportsLod": false,
+        "supportsOrderBy": true,
+        "supportsPagination": true,
+        "supportsPercentileStatistics": true,
+        "supportsQueryWithDatumTransformation": true,
+        "supportsQueryWithDistance": true,
+        "supportsQueryWithLodSR": false,
+        "supportsQueryWithResultType": true,
+        "supportsReturningGeometryCentroid": false,
+        "supportsReturningQueryExtent": true,
+        "supportsSqlExpression": true,
+        "supportsStatistics": true,
+        "supportsTrueCurve": true
+    },
+    "allowGeometryUpdates": false,
+    "allowTrueCurvesUpdates": false,
+    "archivingInfo": {
+        "startArchivingMoment": -1,
+        "supportsQueryWithHistoricMoment": false
+    },
+    "canScaleSymbols": false,
+    "capabilities": "Query,Extract",
+    "cimVersion": "2.7.0",
+    "copyrightText": "",
+    "currentVersion": 10.9,
+    "dateFieldsTimeReference": {
+        "respectsDaylightSaving": true,
+        "timeZone": "Mountain Standard Time"
+    },
+    "datesInUnknownTimezone": false,
+    "defaultVisibility": true,
+    "description": "",
+    "displayField": "STREETNAME",
+    "drawingInfo": {
+        "labelingInfo": null,
+        "renderer": {
+            "authoringInfo": {
+                "colorRamp": {
+                    "colorRamps": [
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                100,
+                                168,
+                                96,
+                                255
+                            ],
+                            "toColor": [
+                                100,
+                                168,
+                                96,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                197,
+                                91,
+                                227,
+                                255
+                            ],
+                            "toColor": [
+                                197,
+                                91,
+                                227,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                237,
+                                93,
+                                90,
+                                255
+                            ],
+                            "toColor": [
+                                237,
+                                93,
+                                90,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                93,
+                                194,
+                                245,
+                                255
+                            ],
+                            "toColor": [
+                                93,
+                                194,
+                                245,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                250,
+                                221,
+                                90,
+                                255
+                            ],
+                            "toColor": [
+                                250,
+                                221,
+                                90,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                153,
+                                123,
+                                103,
+                                255
+                            ],
+                            "toColor": [
+                                153,
+                                123,
+                                103,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                81,
+                                88,
+                                145,
+                                255
+                            ],
+                            "toColor": [
+                                81,
+                                88,
+                                145,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                150,
+                                59,
+                                92,
+                                255
+                            ],
+                            "toColor": [
+                                150,
+                                59,
+                                92,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                99,
+                                235,
+                                221,
+                                255
+                            ],
+                            "toColor": [
+                                99,
+                                235,
+                                221,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                156,
+                                247,
+                                106,
+                                255
+                            ],
+                            "toColor": [
+                                156,
+                                247,
+                                106,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                74,
+                                130,
+                                126,
+                                255
+                            ],
+                            "toColor": [
+                                74,
+                                130,
+                                126,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                75,
+                                89,
+                                214,
+                                255
+                            ],
+                            "toColor": [
+                                75,
+                                89,
+                                214,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                250,
+                                97,
+                                166,
+                                255
+                            ],
+                            "toColor": [
+                                250,
+                                97,
+                                166,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        }
+                    ],
+                    "type": "multipart"
+                }
+            },
+            "field1": "SNOW_ROUTE",
+            "fieldDelimiter": ",",
+            "type": "uniqueValue",
+            "uniqueValueInfos": [
+                {
+                    "label": "CDOT",
+                    "symbol": {
+                        "color": [
+                            255,
+                            0,
+                            0,
+                            255
+                        ],
+                        "style": "esriSLSSolid",
+                        "type": "esriSLS",
+                        "width": 1.7
+                    },
+                    "value": "CDOT"
+                },
+                {
+                    "label": "Primary - Erie",
+                    "symbol": {
+                        "color": [
+                            197,
+                            0,
+                            255,
+                            255
+                        ],
+                        "style": "esriSLSSolid",
+                        "type": "esriSLS",
+                        "width": 2
+                    },
+                    "value": "PRIMARY"
+                },
+                {
+                    "label": "Secondary - Erie",
+                    "symbol": {
+                        "color": [
+                            85,
+                            255,
+                            0,
+                            255
+                        ],
+                        "style": "esriSLSSolid",
+                        "type": "esriSLS",
+                        "width": 2
+                    },
+                    "value": "SECONDARY"
+                },
+                {
+                    "label": "Tertiary - Erie",
+                    "symbol": {
+                        "color": [
+                            0,
+                            169,
+                            230,
+                            255
+                        ],
+                        "style": "esriSLSSolid",
+                        "type": "esriSLS",
+                        "width": 2
+                    },
+                    "value": "TERTIARY"
+                },
+                {
+                    "label": "Private ",
+                    "symbol": {
+                        "color": [
+                            255,
+                            170,
+                            0,
+                            255
+                        ],
+                        "style": "esriSLSSolid",
+                        "type": "esriSLS",
+                        "width": 2
+                    },
+                    "value": "PRIVATE"
+                },
+                {
+                    "label": "Other",
+                    "symbol": {
+                        "color": [
+                            130,
+                            130,
+                            130,
+                            255
+                        ],
+                        "style": "esriSLSSolid",
+                        "type": "esriSLS",
+                        "width": 0.8
+                    },
+                    "value": "OTHER"
+                },
+                {
+                    "label": "Preliminary",
+                    "symbol": {
+                        "color": [
+                            189,
+                            189,
+                            197,
+                            255
+                        ],
+                        "style": "esriSLSDash",
+                        "type": "esriSLS",
+                        "width": 1
+                    },
+                    "value": "PRELIMINARY"
+                }
+            ]
+        },
+        "scaleSymbols": true,
+        "transparency": 0
+    },
+    "editFieldsInfo": null,
+    "extent": {
+        "spatialReference": {
+            "falseM": -100000,
+            "falseX": -118265500,
+            "falseY": -95180100,
+            "falseZ": 0,
+            "latestWkid": 2876,
+            "mTolerance": 2,
+            "mUnits": 10000,
+            "wkid": 2876,
+            "xyTolerance": 3.2000000029802345e-05,
+            "xyUnits": 37138342.128391795,
+            "zTolerance": 2,
+            "zUnits": 1
+        },
+        "xmax": 3163129.966401309,
+        "xmin": 3019161.2743523866,
+        "ymax": 1358380.3081519008,
+        "ymin": 1227784.1651452333
+    },
+    "fields": [
+        {
+            "alias": "OBJECTID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "modelName": "OBJECTID",
+            "name": "OBJECTID",
+            "nullable": false,
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "PREFIX",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 2,
+            "modelName": "PREFIX",
+            "name": "PREFIX",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "STREETNAME",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 20,
+            "modelName": "STREETNAME",
+            "name": "STREETNAME",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "STREETTYPE",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 4,
+            "modelName": "STREETTYPE",
+            "name": "STREETTYPE",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "SUFFIX",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 2,
+            "modelName": "SUFFIX",
+            "name": "SUFFIX",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "CITY",
+            "defaultValue": "ERIE",
+            "domain": null,
+            "editable": true,
+            "length": 254,
+            "modelName": "CITY",
+            "name": "CITY",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "ZIP",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 254,
+            "modelName": "ZIP",
+            "name": "ZIP",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "ROUTE",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 11,
+            "modelName": "ROUTE",
+            "name": "ROUTE",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "COUNTY",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 254,
+            "modelName": "COUNTY",
+            "name": "COUNTY",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "street",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 30,
+            "modelName": "street",
+            "name": "street",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "fromleft",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "modelName": "fromleft",
+            "name": "fromleft",
+            "nullable": true,
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "toleft",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "modelName": "toleft",
+            "name": "toleft",
+            "nullable": true,
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "fromright",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "modelName": "fromright",
+            "name": "fromright",
+            "nullable": true,
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "toright",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "modelName": "toright",
+            "name": "toright",
+            "nullable": true,
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "Lanes",
+            "defaultValue": 2,
+            "domain": null,
+            "editable": true,
+            "modelName": "Lanes",
+            "name": "Lanes",
+            "nullable": true,
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "Erie Functional Classification",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 75,
+            "modelName": "ERIEFUNCLASS",
+            "name": "ERIEFUNCLASS",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Length (Miles)",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "modelName": "SEG_LENGTH",
+            "name": "SEG_LENGTH",
+            "nullable": true,
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "From Feature",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 50,
+            "modelName": "FROM_DESCR",
+            "name": "FROM_DESCR",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "To Feature",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 50,
+            "modelName": "TO_DESCR",
+            "name": "TO_DESCR",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Priority",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "Primary",
+                        "name": "Primary"
+                    },
+                    {
+                        "code": "Secondary",
+                        "name": "Secondary"
+                    },
+                    {
+                        "code": "Tertiary",
+                        "name": "Tertiary"
+                    },
+                    {
+                        "code": "Quaternary",
+                        "name": "Quaternary"
+                    }
+                ],
+                "description": "Prioirity of Maintenance",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "RoadPriority",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "length": 50,
+            "modelName": "PRIORITY",
+            "name": "PRIORITY",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Maintenance Option",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 50,
+            "modelName": "MAINTOPTION",
+            "name": "MAINTOPTION",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Linear Feet",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "modelName": "Shape.STLength()",
+            "name": "Shape__Length",
+            "nullable": false,
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "SNOW_ROUTE",
+            "defaultValue": "PRELIMINARY",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "PRIMARY",
+                        "name": "Primary - Erie"
+                    },
+                    {
+                        "code": "SECONDARY",
+                        "name": "Secondary - Erie"
+                    },
+                    {
+                        "code": "TERTIARY",
+                        "name": "Tertiary - Erie"
+                    },
+                    {
+                        "code": "PRIVATE",
+                        "name": "Private"
+                    },
+                    {
+                        "code": "OTHER",
+                        "name": "Other"
+                    },
+                    {
+                        "code": "PRELIMINARY",
+                        "name": "Preliminary"
+                    },
+                    {
+                        "code": "CDOT",
+                        "name": "CDOT"
+                    }
+                ],
+                "description": "Snow Route",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "SnowRoute",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "length": 254,
+            "modelName": "SNOW_ROUTE",
+            "name": "SNOW_ROUTE",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "GlobalID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "length": 38,
+            "modelName": "GlobalID",
+            "name": "GlobalID",
+            "nullable": false,
+            "type": "esriFieldTypeGlobalID"
+        }
+    ],
+    "geometryField": {
+        "alias": "Shape",
+        "defaultValue": null,
+        "domain": null,
+        "editable": false,
+        "modelName": "Shape",
+        "name": "Shape",
+        "nullable": true,
+        "type": "esriFieldTypeGeometry"
+    },
+    "geometryProperties": {
+        "shapeLengthFieldName": "Shape__Length",
+        "units": "esriFeet"
+    },
+    "geometryType": "esriGeometryPolyline",
+    "globalIdField": "GlobalID",
+    "hasAttachments": false,
+    "hasGeometryProperties": true,
+    "hasM": false,
+    "hasMetadata": true,
+    "hasZ": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "id": 4,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "R263_pk"
+        },
+        {
+            "description": "",
+            "fields": "Shape",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "S248_idx"
+        }
+    ],
+    "isCoGoEnabled": false,
+    "isDataArchived": false,
+    "isDataBranchVersioned": false,
+    "isDataReplicaTracked": false,
+    "isDataVersioned": true,
+    "maxRecordCount": 10000,
+    "maxRecordCountFactor": 1,
+    "maxScale": 0,
+    "minScale": 0,
+    "name": "Centerlines",
+    "objectIdField": "OBJECTID",
+    "onlyAllowTrueCurveUpdatesByTrueCurveClients": false,
+    "ownershipBasedAccessControlForFeatures": null,
+    "parentLayer": null,
+    "preferredTimeReference": null,
+    "relationships": [],
+    "serviceItemId": "59d45e099c734736946dcaf771d49a21",
+    "sourceHeightModelInfo": {
+        "heightModel": "gravity_related_height",
+        "heightUnit": "meter",
+        "vertCRS": "NAVD_1988"
+    },
+    "sourceSpatialReference": {
+        "falseM": 0,
+        "falseX": -118265500,
+        "falseY": -95180100,
+        "falseZ": 0,
+        "latestVcsWkid": 5703,
+        "latestWkid": 2876,
+        "mTolerance": 0.001,
+        "mUnits": 1,
+        "vcsWkid": 5703,
+        "wkid": 2876,
+        "xyTolerance": 0.003280833333333333,
+        "xyUnits": 3048.0060960121928,
+        "zTolerance": 0.001,
+        "zUnits": 1
+    },
+    "standardMaxRecordCount": 8000,
+    "standardMaxRecordCountNoGeometry": 32000,
+    "subtypeField": "",
+    "supportedQueryFormats": "JSON, geoJSON, PBF",
+    "supportsASyncCalculate": true,
+    "supportsAdvancedQueries": true,
+    "supportsApplyEditsWithGlobalIds": false,
+    "supportsCalculate": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsDatumTransformation": true,
+    "supportsExceedsLimitStatistics": true,
+    "supportsQuantizationEditMode": true,
+    "supportsRollbackOnFailureParameter": false,
+    "supportsStatistics": true,
+    "supportsValidateSQL": true,
+    "syncCanReturnChanges": true,
+    "templates": [],
+    "tileMaxRecordCount": 4000,
+    "type": "Feature Layer",
+    "typeIdField": "SNOW_ROUTE",
+    "types": [
+        {
+            "domains": {
+                "CrackYear": {
+                    "type": "inherited"
+                },
+                "MaintYear": {
+                    "type": "inherited"
+                },
+                "PRIORITY": {
+                    "type": "inherited"
+                },
+                "SNOW_ROUTE": {
+                    "type": "inherited"
+                },
+                "StripeYear": {
+                    "type": "inherited"
+                }
+            },
+            "id": "CDOT",
+            "name": "CDOT",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolLine",
+                    "name": "CDOT",
+                    "prototype": {
+                        "attributes": {
+                            "SNOW_ROUTE": "CDOT"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "CrackYear": {
+                    "type": "inherited"
+                },
+                "MaintYear": {
+                    "type": "inherited"
+                },
+                "PRIORITY": {
+                    "type": "inherited"
+                },
+                "SNOW_ROUTE": {
+                    "type": "inherited"
+                },
+                "StripeYear": {
+                    "type": "inherited"
+                }
+            },
+            "id": "PRIMARY",
+            "name": "Primary - Erie",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolLine",
+                    "name": "PRIMARY",
+                    "prototype": {
+                        "attributes": {
+                            "SNOW_ROUTE": "PRIMARY"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "CrackYear": {
+                    "type": "inherited"
+                },
+                "MaintYear": {
+                    "type": "inherited"
+                },
+                "PRIORITY": {
+                    "type": "inherited"
+                },
+                "SNOW_ROUTE": {
+                    "type": "inherited"
+                },
+                "StripeYear": {
+                    "type": "inherited"
+                }
+            },
+            "id": "SECONDARY",
+            "name": "Secondary - Erie",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolLine",
+                    "name": "SECONDARY",
+                    "prototype": {
+                        "attributes": {
+                            "SNOW_ROUTE": "SECONDARY"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "CrackYear": {
+                    "type": "inherited"
+                },
+                "MaintYear": {
+                    "type": "inherited"
+                },
+                "PRIORITY": {
+                    "type": "inherited"
+                },
+                "SNOW_ROUTE": {
+                    "type": "inherited"
+                },
+                "StripeYear": {
+                    "type": "inherited"
+                }
+            },
+            "id": "TERTIARY",
+            "name": "Tertiary - Erie",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolLine",
+                    "name": "TERTIARY",
+                    "prototype": {
+                        "attributes": {
+                            "SNOW_ROUTE": "TERTIARY"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "CrackYear": {
+                    "type": "inherited"
+                },
+                "MaintYear": {
+                    "type": "inherited"
+                },
+                "PRIORITY": {
+                    "type": "inherited"
+                },
+                "SNOW_ROUTE": {
+                    "type": "inherited"
+                },
+                "StripeYear": {
+                    "type": "inherited"
+                }
+            },
+            "id": "PRIVATE",
+            "name": "Private ",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolLine",
+                    "name": "PRIVATE",
+                    "prototype": {
+                        "attributes": {
+                            "SNOW_ROUTE": "PRIVATE"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "CrackYear": {
+                    "type": "inherited"
+                },
+                "MaintYear": {
+                    "type": "inherited"
+                },
+                "PRIORITY": {
+                    "type": "inherited"
+                },
+                "SNOW_ROUTE": {
+                    "type": "inherited"
+                },
+                "StripeYear": {
+                    "type": "inherited"
+                }
+            },
+            "id": "OTHER",
+            "name": "Other",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolLine",
+                    "name": "OTHER",
+                    "prototype": {
+                        "attributes": {
+                            "CITY": "ERIE",
+                            "COUNTY": null,
+                            "ERIEFUNCLASS": null,
+                            "FROM_DESCR": null,
+                            "Lanes": 2,
+                            "MAINTOPTION": null,
+                            "PREFIX": null,
+                            "PRIORITY": null,
+                            "ROUTE": null,
+                            "SEG_LENGTH": null,
+                            "SNOW_ROUTE": "OTHER",
+                            "STREETNAME": null,
+                            "STREETTYPE": null,
+                            "SUFFIX": null,
+                            "TO_DESCR": null,
+                            "ZIP": null,
+                            "fromleft": null,
+                            "fromright": null,
+                            "street": null,
+                            "toleft": null,
+                            "toright": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "CrackYear": {
+                    "type": "inherited"
+                },
+                "MaintYear": {
+                    "type": "inherited"
+                },
+                "PRIORITY": {
+                    "type": "inherited"
+                },
+                "SNOW_ROUTE": {
+                    "type": "inherited"
+                },
+                "StripeYear": {
+                    "type": "inherited"
+                }
+            },
+            "id": "PRELIMINARY",
+            "name": "Preliminary",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolLine",
+                    "name": "PRELIMINARY",
+                    "prototype": {
+                        "attributes": {
+                            "CITY": "ERIE",
+                            "COUNTY": null,
+                            "ERIEFUNCLASS": null,
+                            "FROM_DESCR": null,
+                            "Lanes": 2,
+                            "MAINTOPTION": null,
+                            "PREFIX": null,
+                            "PRIORITY": null,
+                            "ROUTE": null,
+                            "SEG_LENGTH": null,
+                            "SNOW_ROUTE": "PRELIMINARY",
+                            "STREETNAME": null,
+                            "STREETTYPE": null,
+                            "SUFFIX": null,
+                            "TO_DESCR": null,
+                            "ZIP": null,
+                            "fromleft": null,
+                            "fromright": null,
+                            "street": null,
+                            "toleft": null,
+                            "toright": null
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "useStandardizedQueries": true
+}

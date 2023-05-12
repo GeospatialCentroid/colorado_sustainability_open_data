@@ -1,0 +1,440 @@
+{
+    "advancedQueryCapabilities": {
+        "supportsCountDistinct": true,
+        "supportsDistinct": true,
+        "supportsHavingClause": true,
+        "supportsOrderBy": true,
+        "supportsPagination": true,
+        "supportsQueryWithDistance": true,
+        "supportsReturningQueryExtent": true,
+        "supportsSqlExpression": true,
+        "supportsStatistics": true,
+        "supportsTrueCurve": true,
+        "useStandardizedQueries": true
+    },
+    "canModifyLayer": false,
+    "canScaleSymbols": false,
+    "capabilities": "Map,Query,Data",
+    "copyrightText": "",
+    "currentVersion": 10.9,
+    "dateFieldsTimeReference": null,
+    "defaultSubtypeCode": null,
+    "defaultVisibility": false,
+    "description": "",
+    "displayField": "TYPE",
+    "drawingInfo": {
+        "labelingInfo": null,
+        "renderer": {
+            "defaultLabel": null,
+            "defaultSymbol": null,
+            "field1": "Name",
+            "field2": null,
+            "field3": null,
+            "fieldDelimiter": ",",
+            "type": "uniqueValue",
+            "uniqueValueInfos": [
+                {
+                    "description": "",
+                    "label": "Community Facility",
+                    "symbol": {
+                        "angle": 0,
+                        "contentType": "image/png",
+                        "height": 15,
+                        "imageData": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAdFJREFUOI2t1E1IlGEQwPH/rmuDm3Z49/QeJMFATDQplgoMJMENLCjokvmBYBqS9AGC5sE6WrDQKRIvJl07GJ2XOgTSKYTCDqKCPuDhQSXXJrf04Ne+tm67b85xhvkxz/AwIY44QllqARGp1yvaSCUOxRRh+cEHFtxFd8IYM5Uz6DjOeXvXDmiLllPBaYIE94obJM2kucoYXxnlKTCfHYzRbh/aXmKcyzh3IWHquMBFotRQ5jxxHltrJzOCUisN2q991FN1+CZ2ooACerlsQ/Y5PbTsTpoOHtMOHcoJS48u6phlmGfc8oLN3OE2Z/PCticNcJOoO+5WG2Om9sEoMSIczxsEqKXcXDdtvKRvH3Qp9YUBFAKVnIL0JwslvkGAYk54wU1S/wWmtvv3QFmTVUX9YX+AFZY9oC7pF5JECfsAZ/mN4Y0HZIFBEtygiUi+niTku8b1nReMsyQV8lrn9AEnCeSsfSKpP7Uf2PSCgHbrI0apooFGynLAPvNLvklc7+nEburv49BJjHFeMU0rlyjKuFMLJLDOujNgO+1IeinzPWylm/cM85YXlHCGMBGCCCmSsiqLuqEfWeO+7bLrB1sPP7BNzADXDqb/9bWyXWxfsQUboI1K362QfgAAAABJRU5ErkJggg==",
+                        "type": "esriPMS",
+                        "url": "0bdab17c5349b51fb7b918d00c620825",
+                        "width": 15,
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "value": "Erie Community Center"
+                },
+                {
+                    "description": "",
+                    "label": "Community Facility",
+                    "symbol": {
+                        "angle": 0,
+                        "contentType": "image/png",
+                        "height": 15,
+                        "imageData": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAdFJREFUOI2t1E1IlGEQwPH/rmuDm3Z49/QeJMFATDQplgoMJMENLCjokvmBYBqS9AGC5sE6WrDQKRIvJl07GJ2XOgTSKYTCDqKCPuDhQSXXJrf04Ne+tm67b85xhvkxz/AwIY44QllqARGp1yvaSCUOxRRh+cEHFtxFd8IYM5Uz6DjOeXvXDmiLllPBaYIE94obJM2kucoYXxnlKTCfHYzRbh/aXmKcyzh3IWHquMBFotRQ5jxxHltrJzOCUisN2q991FN1+CZ2ooACerlsQ/Y5PbTsTpoOHtMOHcoJS48u6phlmGfc8oLN3OE2Z/PCticNcJOoO+5WG2Om9sEoMSIczxsEqKXcXDdtvKRvH3Qp9YUBFAKVnIL0JwslvkGAYk54wU1S/wWmtvv3QFmTVUX9YX+AFZY9oC7pF5JECfsAZ/mN4Y0HZIFBEtygiUi+niTku8b1nReMsyQV8lrn9AEnCeSsfSKpP7Uf2PSCgHbrI0apooFGynLAPvNLvklc7+nEburv49BJjHFeMU0rlyjKuFMLJLDOujNgO+1IeinzPWylm/cM85YXlHCGMBGCCCmSsiqLuqEfWeO+7bLrB1sPP7BNzADXDqb/9bWyXWxfsQUboI1K362QfgAAAABJRU5ErkJggg==",
+                        "type": "esriPMS",
+                        "url": "0bdab17c5349b51fb7b918d00c620825",
+                        "width": 15,
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "value": "Erie Community Library"
+                },
+                {
+                    "description": "",
+                    "label": "Community Facility",
+                    "symbol": {
+                        "angle": 0,
+                        "contentType": "image/png",
+                        "height": 15,
+                        "imageData": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAdFJREFUOI2t1E1IlGEQwPH/rmuDm3Z49/QeJMFATDQplgoMJMENLCjokvmBYBqS9AGC5sE6WrDQKRIvJl07GJ2XOgTSKYTCDqKCPuDhQSXXJrf04Ne+tm67b85xhvkxz/AwIY44QllqARGp1yvaSCUOxRRh+cEHFtxFd8IYM5Uz6DjOeXvXDmiLllPBaYIE94obJM2kucoYXxnlKTCfHYzRbh/aXmKcyzh3IWHquMBFotRQ5jxxHltrJzOCUisN2q991FN1+CZ2ooACerlsQ/Y5PbTsTpoOHtMOHcoJS48u6phlmGfc8oLN3OE2Z/PCticNcJOoO+5WG2Om9sEoMSIczxsEqKXcXDdtvKRvH3Qp9YUBFAKVnIL0JwslvkGAYk54wU1S/wWmtvv3QFmTVUX9YX+AFZY9oC7pF5JECfsAZ/mN4Y0HZIFBEtygiUi+niTku8b1nReMsyQV8lrn9AEnCeSsfSKpP7Uf2PSCgHbrI0apooFGynLAPvNLvklc7+nEburv49BJjHFeMU0rlyjKuFMLJLDOujNgO+1IeinzPWylm/cM85YXlHCGMBGCCCmSsiqLuqEfWeO+7bLrB1sPP7BNzADXDqb/9bWyXWxfsQUboI1K362QfgAAAABJRU5ErkJggg==",
+                        "type": "esriPMS",
+                        "url": "0bdab17c5349b51fb7b918d00c620825",
+                        "width": 15,
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "value": "Leon Wurl Service Center"
+                },
+                {
+                    "description": "",
+                    "label": "Community Facility",
+                    "symbol": {
+                        "angle": 0,
+                        "contentType": "image/png",
+                        "height": 15,
+                        "imageData": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAdFJREFUOI2t1E1IlGEQwPH/rmuDm3Z49/QeJMFATDQplgoMJMENLCjokvmBYBqS9AGC5sE6WrDQKRIvJl07GJ2XOgTSKYTCDqKCPuDhQSXXJrf04Ne+tm67b85xhvkxz/AwIY44QllqARGp1yvaSCUOxRRh+cEHFtxFd8IYM5Uz6DjOeXvXDmiLllPBaYIE94obJM2kucoYXxnlKTCfHYzRbh/aXmKcyzh3IWHquMBFotRQ5jxxHltrJzOCUisN2q991FN1+CZ2ooACerlsQ/Y5PbTsTpoOHtMOHcoJS48u6phlmGfc8oLN3OE2Z/PCticNcJOoO+5WG2Om9sEoMSIczxsEqKXcXDdtvKRvH3Qp9YUBFAKVnIL0JwslvkGAYk54wU1S/wWmtvv3QFmTVUX9YX+AFZY9oC7pF5JECfsAZ/mN4Y0HZIFBEtygiUi+niTku8b1nReMsyQV8lrn9AEnCeSsfSKpP7Uf2PSCgHbrI0apooFGynLAPvNLvklc7+nEburv49BJjHFeMU0rlyjKuFMLJLDOujNgO+1IeinzPWylm/cM85YXlHCGMBGCCCmSsiqLuqEfWeO+7bLrB1sPP7BNzADXDqb/9bWyXWxfsQUboI1K362QfgAAAABJRU5ErkJggg==",
+                        "type": "esriPMS",
+                        "url": "0bdab17c5349b51fb7b918d00c620825",
+                        "width": 15,
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "value": "Mount Pleasent Cemertery"
+                },
+                {
+                    "description": "",
+                    "label": "Community Facility",
+                    "symbol": {
+                        "angle": 0,
+                        "contentType": "image/png",
+                        "height": 15,
+                        "imageData": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAdFJREFUOI2t1E1IlGEQwPH/rmuDm3Z49/QeJMFATDQplgoMJMENLCjokvmBYBqS9AGC5sE6WrDQKRIvJl07GJ2XOgTSKYTCDqKCPuDhQSXXJrf04Ne+tm67b85xhvkxz/AwIY44QllqARGp1yvaSCUOxRRh+cEHFtxFd8IYM5Uz6DjOeXvXDmiLllPBaYIE94obJM2kucoYXxnlKTCfHYzRbh/aXmKcyzh3IWHquMBFotRQ5jxxHltrJzOCUisN2q991FN1+CZ2ooACerlsQ/Y5PbTsTpoOHtMOHcoJS48u6phlmGfc8oLN3OE2Z/PCticNcJOoO+5WG2Om9sEoMSIczxsEqKXcXDdtvKRvH3Qp9YUBFAKVnIL0JwslvkGAYk54wU1S/wWmtvv3QFmTVUX9YX+AFZY9oC7pF5JECfsAZ/mN4Y0HZIFBEtygiUi+niTku8b1nReMsyQV8lrn9AEnCeSsfSKpP7Uf2PSCgHbrI0apooFGynLAPvNLvklc7+nEburv49BJjHFeMU0rlyjKuFMLJLDOujNgO+1IeinzPWylm/cM85YXlHCGMBGCCCmSsiqLuqEfWeO+7bLrB1sPP7BNzADXDqb/9bWyXWxfsQUboI1K362QfgAAAABJRU5ErkJggg==",
+                        "type": "esriPMS",
+                        "url": "0bdab17c5349b51fb7b918d00c620825",
+                        "width": 15,
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "value": "Town Hall"
+                },
+                {
+                    "description": "",
+                    "label": "Schools; SVVSD School #28",
+                    "symbol": {
+                        "angle": 0,
+                        "contentType": "image/png",
+                        "height": 14,
+                        "imageData": "iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAVhJREFUOI2t1L1qlEEUBuBnksCgQdEFi7X25w4ULLS00UIUhVyATRq7VVKpjQtaeQFWaiPYqEFsBFvBShHTBAwsiHx2kSMxY5Hdzw+zG/bHF6aYGeaZc4qZBf8xC3ttFo7I+ZiIQ1qtb6rqU+LnRFjhAjo4I2IOVBVsbvMitdt3Uq/3cU+ssK/wCNdGXL4/cVWvd7nQSTwYihXm8TxxflQbjczjftnB7w6rrGM8qJnbJed3KeJtjRVauDkhBElEF6eblV3CgSkwOFU4nlgbVHY2TSn1c84AS7Rnsxzlb5u/ZsSixgrrM7a5XmOJVSxPCW3hTY3htZy/iDgxqVR4OkfVrGyrRNzAy53p2KkSK4NJ/QISq4VbuDcmtCnnKyni6y6sD3YLG3iIwyOZnD9bXFxKVfWhubzrC0o8LrzCdVzESRzEd7zHMxFPUsTvf88O/c8SP9Dtj7HzB0ArXlS+uvmYAAAAAElFTkSuQmCC",
+                        "type": "esriPMS",
+                        "url": "8c36c0148aacb6478ec7a6791824be16",
+                        "width": 14,
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "value": "Meadowlark School"
+                },
+                {
+                    "description": "",
+                    "label": "Schools; SVVSD School #28",
+                    "symbol": {
+                        "angle": 0,
+                        "contentType": "image/png",
+                        "height": 14,
+                        "imageData": "iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAVhJREFUOI2t1L1qlEEUBuBnksCgQdEFi7X25w4ULLS00UIUhVyATRq7VVKpjQtaeQFWaiPYqEFsBFvBShHTBAwsiHx2kSMxY5Hdzw+zG/bHF6aYGeaZc4qZBf8xC3ttFo7I+ZiIQ1qtb6rqU+LnRFjhAjo4I2IOVBVsbvMitdt3Uq/3cU+ssK/wCNdGXL4/cVWvd7nQSTwYihXm8TxxflQbjczjftnB7w6rrGM8qJnbJed3KeJtjRVauDkhBElEF6eblV3CgSkwOFU4nlgbVHY2TSn1c84AS7Rnsxzlb5u/ZsSixgrrM7a5XmOJVSxPCW3hTY3htZy/iDgxqVR4OkfVrGyrRNzAy53p2KkSK4NJ/QISq4VbuDcmtCnnKyni6y6sD3YLG3iIwyOZnD9bXFxKVfWhubzrC0o8LrzCdVzESRzEd7zHMxFPUsTvf88O/c8SP9Dtj7HzB0ArXlS+uvmYAAAAAElFTkSuQmCC",
+                        "type": "esriPMS",
+                        "url": "8c36c0148aacb6478ec7a6791824be16",
+                        "width": 14,
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "value": "Soaring Heights PK-8"
+                },
+                {
+                    "description": "",
+                    "label": "Schools; SVVSD School #28",
+                    "symbol": {
+                        "angle": 0,
+                        "contentType": "image/png",
+                        "height": 14,
+                        "imageData": "iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAVhJREFUOI2t1L1qlEEUBuBnksCgQdEFi7X25w4ULLS00UIUhVyATRq7VVKpjQtaeQFWaiPYqEFsBFvBShHTBAwsiHx2kSMxY5Hdzw+zG/bHF6aYGeaZc4qZBf8xC3ttFo7I+ZiIQ1qtb6rqU+LnRFjhAjo4I2IOVBVsbvMitdt3Uq/3cU+ssK/wCNdGXL4/cVWvd7nQSTwYihXm8TxxflQbjczjftnB7w6rrGM8qJnbJed3KeJtjRVauDkhBElEF6eblV3CgSkwOFU4nlgbVHY2TSn1c84AS7Rnsxzlb5u/ZsSixgrrM7a5XmOJVSxPCW3hTY3htZy/iDgxqVR4OkfVrGyrRNzAy53p2KkSK4NJ/QISq4VbuDcmtCnnKyni6y6sD3YLG3iIwyOZnD9bXFxKVfWhubzrC0o8LrzCdVzESRzEd7zHMxFPUsTvf88O/c8SP9Dtj7HzB0ArXlS+uvmYAAAAAElFTkSuQmCC",
+                        "type": "esriPMS",
+                        "url": "8c36c0148aacb6478ec7a6791824be16",
+                        "width": 14,
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "value": "Aspen Ridge Prep School"
+                },
+                {
+                    "description": "",
+                    "label": "Schools; SVVSD School #28",
+                    "symbol": {
+                        "angle": 0,
+                        "contentType": "image/png",
+                        "height": 14,
+                        "imageData": "iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAVhJREFUOI2t1L1qlEEUBuBnksCgQdEFi7X25w4ULLS00UIUhVyATRq7VVKpjQtaeQFWaiPYqEFsBFvBShHTBAwsiHx2kSMxY5Hdzw+zG/bHF6aYGeaZc4qZBf8xC3ttFo7I+ZiIQ1qtb6rqU+LnRFjhAjo4I2IOVBVsbvMitdt3Uq/3cU+ssK/wCNdGXL4/cVWvd7nQSTwYihXm8TxxflQbjczjftnB7w6rrGM8qJnbJed3KeJtjRVauDkhBElEF6eblV3CgSkwOFU4nlgbVHY2TSn1c84AS7Rnsxzlb5u/ZsSixgrrM7a5XmOJVSxPCW3hTY3htZy/iDgxqVR4OkfVrGyrRNzAy53p2KkSK4NJ/QISq4VbuDcmtCnnKyni6y6sD3YLG3iIwyOZnD9bXFxKVfWhubzrC0o8LrzCdVzESRzEd7zHMxFPUsTvf88O/c8SP9Dtj7HzB0ArXlS+uvmYAAAAAElFTkSuQmCC",
+                        "type": "esriPMS",
+                        "url": "8c36c0148aacb6478ec7a6791824be16",
+                        "width": 14,
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "value": "Black Rock Elementary"
+                },
+                {
+                    "description": "",
+                    "label": "Schools; SVVSD School #28",
+                    "symbol": {
+                        "angle": 0,
+                        "contentType": "image/png",
+                        "height": 14,
+                        "imageData": "iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAVhJREFUOI2t1L1qlEEUBuBnksCgQdEFi7X25w4ULLS00UIUhVyATRq7VVKpjQtaeQFWaiPYqEFsBFvBShHTBAwsiHx2kSMxY5Hdzw+zG/bHF6aYGeaZc4qZBf8xC3ttFo7I+ZiIQ1qtb6rqU+LnRFjhAjo4I2IOVBVsbvMitdt3Uq/3cU+ssK/wCNdGXL4/cVWvd7nQSTwYihXm8TxxflQbjczjftnB7w6rrGM8qJnbJed3KeJtjRVauDkhBElEF6eblV3CgSkwOFU4nlgbVHY2TSn1c84AS7Rnsxzlb5u/ZsSixgrrM7a5XmOJVSxPCW3hTY3htZy/iDgxqVR4OkfVrGyrRNzAy53p2KkSK4NJ/QISq4VbuDcmtCnnKyni6y6sD3YLG3iIwyOZnD9bXFxKVfWhubzrC0o8LrzCdVzESRzEd7zHMxFPUsTvf88O/c8SP9Dtj7HzB0ArXlS+uvmYAAAAAElFTkSuQmCC",
+                        "type": "esriPMS",
+                        "url": "8c36c0148aacb6478ec7a6791824be16",
+                        "width": 14,
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "value": "Erie High School"
+                },
+                {
+                    "description": "",
+                    "label": "Schools; SVVSD School #28",
+                    "symbol": {
+                        "angle": 0,
+                        "contentType": "image/png",
+                        "height": 14,
+                        "imageData": "iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAVhJREFUOI2t1L1qlEEUBuBnksCgQdEFi7X25w4ULLS00UIUhVyATRq7VVKpjQtaeQFWaiPYqEFsBFvBShHTBAwsiHx2kSMxY5Hdzw+zG/bHF6aYGeaZc4qZBf8xC3ttFo7I+ZiIQ1qtb6rqU+LnRFjhAjo4I2IOVBVsbvMitdt3Uq/3cU+ssK/wCNdGXL4/cVWvd7nQSTwYihXm8TxxflQbjczjftnB7w6rrGM8qJnbJed3KeJtjRVauDkhBElEF6eblV3CgSkwOFU4nlgbVHY2TSn1c84AS7Rnsxzlb5u/ZsSixgrrM7a5XmOJVSxPCW3hTY3htZy/iDgxqVR4OkfVrGyrRNzAy53p2KkSK4NJ/QISq4VbuDcmtCnnKyni6y6sD3YLG3iIwyOZnD9bXFxKVfWhubzrC0o8LrzCdVzESRzEd7zHMxFPUsTvf88O/c8SP9Dtj7HzB0ArXlS+uvmYAAAAAElFTkSuQmCC",
+                        "type": "esriPMS",
+                        "url": "8c36c0148aacb6478ec7a6791824be16",
+                        "width": 14,
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "value": "Erie Middle School"
+                },
+                {
+                    "description": "",
+                    "label": "Schools; SVVSD School #28",
+                    "symbol": {
+                        "angle": 0,
+                        "contentType": "image/png",
+                        "height": 14,
+                        "imageData": "iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAVhJREFUOI2t1L1qlEEUBuBnksCgQdEFi7X25w4ULLS00UIUhVyATRq7VVKpjQtaeQFWaiPYqEFsBFvBShHTBAwsiHx2kSMxY5Hdzw+zG/bHF6aYGeaZc4qZBf8xC3ttFo7I+ZiIQ1qtb6rqU+LnRFjhAjo4I2IOVBVsbvMitdt3Uq/3cU+ssK/wCNdGXL4/cVWvd7nQSTwYihXm8TxxflQbjczjftnB7w6rrGM8qJnbJed3KeJtjRVauDkhBElEF6eblV3CgSkwOFU4nlgbVHY2TSn1c84AS7Rnsxzlb5u/ZsSixgrrM7a5XmOJVSxPCW3hTY3htZy/iDgxqVR4OkfVrGyrRNzAy53p2KkSK4NJ/QISq4VbuDcmtCnnKyni6y6sD3YLG3iIwyOZnD9bXFxKVfWhubzrC0o8LrzCdVzESRzEd7zHMxFPUsTvf88O/c8SP9Dtj7HzB0ArXlS+uvmYAAAAAElFTkSuQmCC",
+                        "type": "esriPMS",
+                        "url": "8c36c0148aacb6478ec7a6791824be16",
+                        "width": 14,
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "value": "Red Hawk Elementary"
+                },
+                {
+                    "description": "",
+                    "label": "Schools; SVVSD School #28",
+                    "symbol": {
+                        "angle": 0,
+                        "contentType": "image/png",
+                        "height": 14,
+                        "imageData": "iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAVhJREFUOI2t1L1qlEEUBuBnksCgQdEFi7X25w4ULLS00UIUhVyATRq7VVKpjQtaeQFWaiPYqEFsBFvBShHTBAwsiHx2kSMxY5Hdzw+zG/bHF6aYGeaZc4qZBf8xC3ttFo7I+ZiIQ1qtb6rqU+LnRFjhAjo4I2IOVBVsbvMitdt3Uq/3cU+ssK/wCNdGXL4/cVWvd7nQSTwYihXm8TxxflQbjczjftnB7w6rrGM8qJnbJed3KeJtjRVauDkhBElEF6eblV3CgSkwOFU4nlgbVHY2TSn1c84AS7Rnsxzlb5u/ZsSixgrrM7a5XmOJVSxPCW3hTY3htZy/iDgxqVR4OkfVrGyrRNzAy53p2KkSK4NJ/QISq4VbuDcmtCnnKyni6y6sD3YLG3iIwyOZnD9bXFxKVfWhubzrC0o8LrzCdVzESRzEd7zHMxFPUsTvf88O/c8SP9Dtj7HzB0ArXlS+uvmYAAAAAElFTkSuQmCC",
+                        "type": "esriPMS",
+                        "url": "8c36c0148aacb6478ec7a6791824be16",
+                        "width": 14,
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "value": "Vista Ridge Academy"
+                },
+                {
+                    "description": "",
+                    "label": "Schools; SVVSD School #28",
+                    "symbol": {
+                        "angle": 0,
+                        "contentType": "image/png",
+                        "height": 14,
+                        "imageData": "iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAVhJREFUOI2t1L1qlEEUBuBnksCgQdEFi7X25w4ULLS00UIUhVyATRq7VVKpjQtaeQFWaiPYqEFsBFvBShHTBAwsiHx2kSMxY5Hdzw+zG/bHF6aYGeaZc4qZBf8xC3ttFo7I+ZiIQ1qtb6rqU+LnRFjhAjo4I2IOVBVsbvMitdt3Uq/3cU+ssK/wCNdGXL4/cVWvd7nQSTwYihXm8TxxflQbjczjftnB7w6rrGM8qJnbJed3KeJtjRVauDkhBElEF6eblV3CgSkwOFU4nlgbVHY2TSn1c84AS7Rnsxzlb5u/ZsSixgrrM7a5XmOJVSxPCW3hTY3htZy/iDgxqVR4OkfVrGyrRNzAy53p2KkSK4NJ/QISq4VbuDcmtCnnKyni6y6sD3YLG3iIwyOZnD9bXFxKVfWhubzrC0o8LrzCdVzESRzEd7zHMxFPUsTvf88O/c8SP9Dtj7HzB0ArXlS+uvmYAAAAAElFTkSuQmCC",
+                        "type": "esriPMS",
+                        "url": "8c36c0148aacb6478ec7a6791824be16",
+                        "width": 14,
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "value": "Erie Elementary School"
+                },
+                {
+                    "description": "",
+                    "label": "Schools; SVVSD School #28",
+                    "symbol": {
+                        "angle": 0,
+                        "contentType": "image/png",
+                        "height": 14,
+                        "imageData": "iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAVhJREFUOI2t1L1qlEEUBuBnksCgQdEFi7X25w4ULLS00UIUhVyATRq7VVKpjQtaeQFWaiPYqEFsBFvBShHTBAwsiHx2kSMxY5Hdzw+zG/bHF6aYGeaZc4qZBf8xC3ttFo7I+ZiIQ1qtb6rqU+LnRFjhAjo4I2IOVBVsbvMitdt3Uq/3cU+ssK/wCNdGXL4/cVWvd7nQSTwYihXm8TxxflQbjczjftnB7w6rrGM8qJnbJed3KeJtjRVauDkhBElEF6eblV3CgSkwOFU4nlgbVHY2TSn1c84AS7Rnsxzlb5u/ZsSixgrrM7a5XmOJVSxPCW3hTY3htZy/iDgxqVR4OkfVrGyrRNzAy53p2KkSK4NJ/QISq4VbuDcmtCnnKyni6y6sD3YLG3iIwyOZnD9bXFxKVfWhubzrC0o8LrzCdVzESRzEd7zHMxFPUsTvf88O/c8SP9Dtj7HzB0ArXlS+uvmYAAAAAElFTkSuQmCC",
+                        "type": "esriPMS",
+                        "url": "8c36c0148aacb6478ec7a6791824be16",
+                        "width": 14,
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "value": "SVVSD School #28"
+                },
+                {
+                    "description": "",
+                    "label": "Airport",
+                    "symbol": {
+                        "angle": 0,
+                        "contentType": "image/png",
+                        "height": 15,
+                        "imageData": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAVxJREFUOI3F1L9LVlEYwPGPoB7CQbnQ8Da09gc0NSsIOkVtNQTRoltDkBGCf4E4NNSgU7REDTVU0BARReLgXusVkkPQEI+or8O9lb289/b6IvSFw/nBOd9znvMczqhTZvRXI6U0ExEXMTKEZ7/T6bwuy3L7tzAiruFGy6Ju22ZlWf7EHyHGWmSfMIevmGyYM8axkP/BDjK+twidRDgw/02431MPLTzEIyzV/VmsqRJ0YuHnoigWcs6bx8a+YB6XsYrzgwgz7uFhzvmwYbNneJVSuh8RtzHeJPyBC9jFGVWIV1QP+jo+YCul9DQi3kXE3ZTSi4h43yQ8wHQtmcNEPf6yrs/hUkQs4hueR8THtpCn8KQhzF7O4lZdGoX9KIuiWMk5wx1sqK6jL4MIV3LOJa7iDR7j5iDCbsOcZTxQJWZPlbh+dHuFb+v+UP9hSmk7Iv4SrtdlKCJC7wlPhSPymGdwmdfwQgAAAABJRU5ErkJggg==",
+                        "type": "esriPMS",
+                        "url": "648de31bf68d22932a24d2e3f2415307",
+                        "width": 15,
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "value": "Erie Airport"
+                },
+                {
+                    "description": "",
+                    "label": "Fire Station",
+                    "symbol": {
+                        "angle": 0,
+                        "contentType": "image/png",
+                        "height": 16,
+                        "imageData": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAWCAYAAAArdgcFAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA5BJREFUOI21lF9IVHkUxz931nHGQci/ozuQqUh/RtkiB/JhXd2Rq4QTwdq/nXwYKFp6aNsechd7SJQIpM0Ew8Aegl5sXyQaG+nqUEhDtQ0Wm5E6gehskG5j0dRMovPbhx9uzo4zFMseOPwu53f5nHPP99yTxv9oaakuhaaZCYVaMZttZGXliLGxL5VAADZsCFJY+BsmU5eiquHPggtN0xGJ9NHT4+L6dR03bsCrVyjPn8OlS9DZmUV9fQVPnhwT1671K/v3//hJcOHxFPDhwwjV1eUMDUF7O2RnQ1kZ2O1w5Ag8eAB9faDX53P06DHR3V2H1VqpqGo0KVxoWjo+3x9UVeXT1QWnToHFEp89OxuKiiAWA00DpxPKyqwsLw8Btckrn50d5PTpfFwuWVlaCkl0OmhokInu3AGns0a43Z2Kw9GSABceTwUWy9ccPgwXLqQGr7YtW2BmBq5ehfHxn4Smta+I/JEQi/2M0Whk925YXJS+lhmNkJERH1NV8Hqht1dPXV0r0Bpf+bNnDcrgIHR0gM8H69dDMAhCyL7PzcHyMthsEh6NykQrLbLZYGAATKZvEtqi3LuXQzgMBgNEIvD+vTyFkGc0CktL0n0+yM2FTZs+Vl9VBX4/5OXlJsCprlYIBmWvMzNhYQFMJnn35g2kp0t/9Ah6emDzZggEIC8Pjh+H4mIYH4fFxYJEuN3+Fq93HU+fws6dMrZjB+zZA5cvw8REfJ89Hmhrg8lJOZIuF1y8CAcP6hPhCwshQqF1vHgBJ07IWE0N9PbCmTNw9248fNs2GB2FXbtgagru34emJrBY/kqAi4mJGaWtrQS/H86fl8FQCF6+lNPQ1BQPj8WkkBUVcOCAHN9z52B4eCBR0MLCDsrLa+jvl1XpdJCTI3/3tUyng+Zm+Tw/D+/eQSAQJi3t10S4wzEibt70YjDYGRmR1X6KxWLQ0gJXrkBxsaY0N/+ZAAdAr/8ek+l33O4iZmelSDpdcnAkAt3dsH07lJTMU1Cwb/V1HFxR1TkxOPgdr1+PcuhQBjMzsHevnOfV6yAahVu34PZtOHkSHj+eQlG+VVR1KSkcQGls9AtNKxZW67BSW2tlevoLzp6FcBgqK6UO09NSPKdT4Pe7MRr3/Xvdrglf+QLgK+F2qxgMP1BaWs/Dh5mUlsLWrW/ZuDFEefkkZvMvSmPjWLKupVx9isOhAdo/AY8n1eufB/+v9jdBoj8iR0KQtwAAAABJRU5ErkJggg==",
+                        "type": "esriPMS",
+                        "url": "b209f8e07c9a31ce79dfcc14a9f0cc63",
+                        "width": 17,
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "value": "MVFPD Station #6"
+                },
+                {
+                    "description": "",
+                    "label": "Police Station",
+                    "symbol": {
+                        "angle": 0,
+                        "contentType": "image/png",
+                        "height": 16,
+                        "imageData": "iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA4pJREFUOI21lV9oU1ccxz8nN0mblkVa0jpqaJS11LoYh/WhNSnrZBdrm0IpgyGK0IAPsio+uD9MoTjYS3X0ZaBQcBTZw/Bh80+tyXUlK2qKqAX70Kqk+IdC/+hDmzYmNyF3D0eN18ZuMPaFy7nn3+d87+/8zrlW/idZ1+rUNKNyZYVjZWU0ORxU2GyUGgaLS0vMLS4SLSmhX1XF8r8Ga5phSacZqKzki7o6nA8ewPQ06Do4nbh9Pj4uL2fX1BQ9Q0PGL+3t4rt/BA8PG+uzWa43N+O9dAmiUWhogKYmsNshkYBbt+DZMwgEqAwE+PbaNaNRUWhVVZEqCNY0w57LMbJ1K1v6++HgQaiqMi9cVgbV1ZDLgabBhQuwbx+fhsNcBwIFwbrOrzt2sGVgAI4fl5N1HRYWzOBUSrrfvRsmJ+H8eejqwn/5stHX0SG+MYGHhw2vx0NwcBCOHgWrFQwD5ubg5cs8OJuVUItF1uvr4elTePQI3G66Nc34QVXF8htwJsP3QlBcXw+lpbJtZka6vnMH4nE4cQJGRiS8thaKi+WjqnD6NBw5gisc5mug9w3Y5eKT0VHYvz/vbt06GBwEvx/q6qCtTbavrMgQbNwo6xYLbNokQ+Z00mIKhcPBh7oOJSV58NgYdHaC280qnTkjnVtfERobYXwcNmxgvQmsKHwgRH7i7Kx0u2fPaijA48cQiUBrq3TsdMLSErjdOE3gXI6kELIRoK8PQiEIh+X7u4pG4eJFGevaWshk5KYCyyawrrMgBM5MBmw2SCbB5ZLpVUgul9yDTEbW43EZ50SCFybw/DwTHg8fTU6CzycPxrZthaEAXq8su7tlGYvBoUMQiRAzgYGfq6vpuHEDxeuFw4ehtxdu385D3lYoBF1d8hS+ygbicZbtdn4ygYNB8efVq8ZfNTXsikSgpUXeERUV4HCsBtfUQHm5zPOzZ6GnB8bG+L2tTcy86xibjb12O3efP8cdjcp0s77nYj15EtJpOHVKhiMWY8puJ/S63zRNVcX80JDRWVXFH7qO+9w52LkTNm82L5BKwego3L8PBw7AxAQPFYXPVVVkC4IB2tvFXU0zGnSd3/x+mp88Qbl5U36yxSJLq1UeCI+H9L17hIuK+PLtK7Mg+LVz4LMrVwxVCL7avh1fUREVikKpYZBIJpmdnmbCZuPHYFCMF2Ks+WsKBoUGaGuNeZ/WBP8X/Q1KcTOB7bxOXAAAAABJRU5ErkJggg==",
+                        "type": "esriPMS",
+                        "url": "27e961e3bea1c8288acefeda9fbfd8cb",
+                        "width": 16,
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "value": "Police Station"
+                }
+            ]
+        },
+        "transparency": 0
+    },
+    "extent": {
+        "spatialReference": {
+            "latestWkid": 2876,
+            "wkid": 2876
+        },
+        "xmax": 3137000.17763716,
+        "xmin": 3116912.0306064487,
+        "ymax": 1262248.938409105,
+        "ymin": 1244553.8386286348
+    },
+    "fields": [
+        {
+            "alias": "OBJECTID",
+            "domain": null,
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "TYPE",
+            "domain": null,
+            "length": 50,
+            "name": "TYPE",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Name",
+            "domain": null,
+            "length": 50,
+            "name": "Name",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Address",
+            "domain": null,
+            "length": 150,
+            "name": "Address",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Phone Number",
+            "domain": null,
+            "length": 50,
+            "name": "Phone",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Website",
+            "domain": null,
+            "length": 200,
+            "name": "Website",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Shape",
+            "domain": null,
+            "name": "Shape",
+            "type": "esriFieldTypeGeometry"
+        }
+    ],
+    "geometryField": {
+        "alias": "Shape",
+        "name": "Shape",
+        "type": "esriFieldTypeGeometry"
+    },
+    "geometryType": "esriGeometryPoint",
+    "hasAttachments": false,
+    "hasLabels": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "id": 0,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "R719_pk"
+        },
+        {
+            "description": "",
+            "fields": "Shape",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "S487_idx"
+        }
+    ],
+    "isDataVersioned": true,
+    "maxRecordCount": 1000,
+    "maxScale": 0,
+    "minScale": 0,
+    "name": "Facilities",
+    "ownershipBasedAccessControlForFeatures": {
+        "allowOthersToQuery": true
+    },
+    "parentLayer": null,
+    "relationships": [],
+    "serviceItemId": "1e303540c7df4568aceaf5b317138c7f",
+    "sourceSpatialReference": {
+        "latestWkid": 2876,
+        "wkid": 2876
+    },
+    "subLayers": [],
+    "subtypeField": null,
+    "subtypeFieldName": null,
+    "subtypes": [],
+    "supportedQueryFormats": "JSON, geoJSON",
+    "supportsAdvancedQueries": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsDatumTransformation": true,
+    "supportsStatistics": true,
+    "type": "Feature Layer",
+    "typeIdField": null,
+    "useStandardizedQueries": true
+}

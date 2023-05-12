@@ -1,0 +1,231 @@
+{
+    "advancedEditingCapabilities": {
+        "supportedApplyEditsUploadIDFormats": "JSON",
+        "supportedSqlFormatsInCalculate": [
+            "standard"
+        ],
+        "supportsApplyEditsbyUploadID": true,
+        "supportsAsyncApplyEdits": true,
+        "supportsReturnEditResults": true
+    },
+    "advancedQueryAnalyticCapabilities": {
+        "supportsAsync": true,
+        "supportsLinearRegression": true,
+        "supportsPercentileAnalytic": true
+    },
+    "advancedQueryCapabilities": {
+        "supportedLodTypes": [
+            "geohash"
+        ],
+        "supportedOperationsWithCacheHint": [
+            "query",
+            "queryTopFilter",
+            "queryAnalytics",
+            "queryAttachments",
+            "queryRelated"
+        ],
+        "supportedSpatialAggregationStatistics": [
+            "EnvelopeAggregate",
+            "CentroidAggregate",
+            "ConvexHullAggregate"
+        ],
+        "supportsAdvancedQueryRelated": true,
+        "supportsCountDistinct": true,
+        "supportsDefaultSR": true,
+        "supportsDistinct": true,
+        "supportsFullTextSearch": true,
+        "supportsHavingClause": true,
+        "supportsLod": true,
+        "supportsMaxRecordCountFactor": true,
+        "supportsOrderBy": true,
+        "supportsOutFieldSQLExpression": true,
+        "supportsPagination": true,
+        "supportsPaginationOnAggregatedQueries": true,
+        "supportsPercentileStatistics": true,
+        "supportsQueryAnalytic": true,
+        "supportsQueryAttachmentsCountOnly": true,
+        "supportsQueryRelatedPagination": true,
+        "supportsQueryWithCacheHint": true,
+        "supportsQueryWithDatumTransformation": true,
+        "supportsQueryWithDistance": true,
+        "supportsQueryWithLodSR": false,
+        "supportsQueryWithResultType": true,
+        "supportsReturningGeometryCentroid": false,
+        "supportsReturningQueryExtent": false,
+        "supportsSpatialAggregationStatistics": true,
+        "supportsSqlExpression": true,
+        "supportsStatistics": true,
+        "supportsTopFeaturesQuery": true
+    },
+    "allowGeometryUpdates": true,
+    "cacheMaxAge": 30,
+    "capabilities": "Query",
+    "copyrightText": "",
+    "currentVersion": 11,
+    "dateFieldsTimeReference": {
+        "respectsDaylightSaving": false,
+        "timeZone": "UTC"
+    },
+    "defaultVisibility": true,
+    "description": "",
+    "displayField": "NAME",
+    "editingInfo": {
+        "dataLastEditDate": 1683777159066,
+        "lastEditDate": 1683777159066,
+        "schemaLastEditDate": 1683777159066
+    },
+    "fields": [
+        {
+            "alias": "OBJECTID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "name": "OBJECTID",
+            "nullable": false,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "AUTHID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 22,
+            "name": "AUTHID",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "TAXDISTRICT",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 9,
+            "name": "TAXDISTRICT",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "MILLLEVY",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "MILLLEVY",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "CREDITLEVY",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "CREDITLEVY",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "GROUPID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 12,
+            "name": "GROUPID",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "NAME",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 102,
+            "name": "NAME",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        }
+    ],
+    "globalIdField": "",
+    "hasAttachments": false,
+    "hasContingentValuesDefinition": false,
+    "hasM": false,
+    "hasMetadata": true,
+    "hasStaticData": false,
+    "hasZ": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeNone",
+    "id": 0,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "PK__TAX_AUTH__F4B70D85B069219D"
+        }
+    ],
+    "infoInEstimates": [
+        "count"
+    ],
+    "isDataVersioned": false,
+    "maxRecordCount": 2000,
+    "maxRecordCountFactor": 1,
+    "name": "Tax_Auth",
+    "objectIdField": "OBJECTID",
+    "preferredTimeReference": null,
+    "relationships": [],
+    "serviceItemId": "23d65043e3244cabb19cc0fdfd9dd1fe",
+    "standardMaxRecordCount": 32000,
+    "supportedAppendFormats": "sqlite,geoPackage,shapefile,filegdb,featureCollection,geojson,csv,excel",
+    "supportedContingentValuesFormats": "JSON, PBF",
+    "supportedExportFormats": "csv,shapefile,sqlite,geoPackage,filegdb,featureCollection,geojson,excel",
+    "supportedQueryFormats": "JSON, geoJSON, PBF",
+    "supportedSyncDataOptions": 4,
+    "supportsASyncCalculate": true,
+    "supportsAdvancedQueries": true,
+    "supportsAppend": true,
+    "supportsApplyEditsWithGlobalIds": false,
+    "supportsAttachmentsByUploadId": true,
+    "supportsAttachmentsResizing": true,
+    "supportsCalculate": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsExceedsLimitStatistics": true,
+    "supportsFieldDescriptionProperty": true,
+    "supportsLayerOverrides": true,
+    "supportsQuantizationEditMode": true,
+    "supportsRollbackOnFailureParameter": true,
+    "supportsStatistics": true,
+    "supportsTilesAndBasicQueriesMode": true,
+    "supportsTruncate": true,
+    "supportsValidateSql": true,
+    "templates": [
+        {
+            "description": "",
+            "drawingTool": "esriFeatureEditToolNone",
+            "name": "Tax_Auth",
+            "prototype": {
+                "attributes": {
+                    "AUTHID": null,
+                    "CREDITLEVY": null,
+                    "GROUPID": null,
+                    "MILLLEVY": null,
+                    "NAME": null,
+                    "TAXDISTRICT": null
+                }
+            }
+        }
+    ],
+    "tileMaxRecordCount": 8000,
+    "type": "Table",
+    "typeIdField": "",
+    "types": [],
+    "uniqueIdField": {
+        "isSystemMaintained": true,
+        "name": "OBJECTID"
+    },
+    "useStandardizedQueries": true
+}

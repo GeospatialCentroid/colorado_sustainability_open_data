@@ -1,0 +1,313 @@
+{
+    "advancedQueryCapabilities": {
+        "supportsCountDistinct": true,
+        "supportsDistinct": true,
+        "supportsHavingClause": true,
+        "supportsOrderBy": true,
+        "supportsPagination": true,
+        "supportsQueryWithDistance": true,
+        "supportsReturningQueryExtent": true,
+        "supportsSqlExpression": true,
+        "supportsStatistics": true,
+        "supportsTrueCurve": true,
+        "useStandardizedQueries": true
+    },
+    "canModifyLayer": true,
+    "canScaleSymbols": false,
+    "capabilities": "Map,Query,Data",
+    "copyrightText": "",
+    "currentVersion": 10.91,
+    "dateFieldsTimeReference": null,
+    "defaultSubtypeCode": null,
+    "defaultVisibility": true,
+    "description": "City of Greeley Voting Ward boundaries.",
+    "displayField": "FNAME1_1",
+    "drawingInfo": {
+        "labelingInfo": null,
+        "renderer": {
+            "defaultLabel": null,
+            "defaultSymbol": null,
+            "field1": "WARD",
+            "field2": null,
+            "field3": null,
+            "fieldDelimiter": ",",
+            "type": "uniqueValue",
+            "uniqueValueInfos": [
+                {
+                    "description": "",
+                    "label": "I",
+                    "symbol": {
+                        "color": [
+                            255,
+                            255,
+                            190,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "I"
+                },
+                {
+                    "description": "",
+                    "label": "II",
+                    "symbol": {
+                        "color": [
+                            180,
+                            215,
+                            158,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "II"
+                },
+                {
+                    "description": "",
+                    "label": "III",
+                    "symbol": {
+                        "color": [
+                            190,
+                            232,
+                            255,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "III"
+                },
+                {
+                    "description": "",
+                    "label": "IV",
+                    "symbol": {
+                        "color": [
+                            255,
+                            190,
+                            190,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "IV"
+                }
+            ]
+        },
+        "transparency": 50
+    },
+    "extent": {
+        "spatialReference": {
+            "latestWkid": 2876,
+            "wkid": 2876
+        },
+        "xmax": 3245140.248242095,
+        "xmin": 3165034.7444164306,
+        "ymax": 1418916.5236908495,
+        "ymin": 1381055.7342552096
+    },
+    "fields": [
+        {
+            "alias": "OBJECTID_1",
+            "domain": null,
+            "name": "OBJECTID_1",
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "FNAME1_1",
+            "domain": null,
+            "length": 10,
+            "name": "FNAME1_1",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "SQMILE_1",
+            "domain": null,
+            "name": "SQMILE_1",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "ACRES_1",
+            "domain": null,
+            "name": "ACRES_1",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "WARD",
+            "domain": null,
+            "length": 3,
+            "name": "WARD",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Shape",
+            "domain": null,
+            "name": "Shape",
+            "type": "esriFieldTypeGeometry"
+        },
+        {
+            "alias": "Council",
+            "domain": null,
+            "length": 50,
+            "name": "Council",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "ImageLink",
+            "domain": null,
+            "length": 50,
+            "name": "ImageLink",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "GIS_ACRES",
+            "domain": null,
+            "name": "GIS_ACRES",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "TRAKID",
+            "domain": null,
+            "length": 20,
+            "name": "TRAKID",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "term",
+            "domain": null,
+            "length": 50,
+            "name": "term",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "number",
+            "domain": null,
+            "length": 50,
+            "name": "number",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "email",
+            "domain": null,
+            "length": 50,
+            "name": "email",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Shape.area",
+            "domain": null,
+            "name": "Shape.area",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Shape.len",
+            "domain": null,
+            "name": "Shape.len",
+            "type": "esriFieldTypeDouble"
+        }
+    ],
+    "geometryField": {
+        "alias": "Shape",
+        "name": "Shape",
+        "type": "esriFieldTypeGeometry"
+    },
+    "geometryProperties": {
+        "shapeAreaFieldName": "Shape.area",
+        "shapeLengthFieldName": "Shape.len",
+        "units": "esriFeet"
+    },
+    "geometryType": "esriGeometryPolygon",
+    "hasAttachments": false,
+    "hasGeometryProperties": true,
+    "hasLabels": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "id": 1,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID_1",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "R53_SDE_ROWID_UK"
+        },
+        {
+            "description": "",
+            "fields": "Shape",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "a48_ix1"
+        }
+    ],
+    "isDataVersioned": true,
+    "maxRecordCount": 1000,
+    "maxScale": 0,
+    "minScale": 0,
+    "name": "GreeleyBaseData.DBO.VotingWards",
+    "ownershipBasedAccessControlForFeatures": {
+        "allowOthersToQuery": true
+    },
+    "parentLayer": null,
+    "relationships": [],
+    "serviceItemId": "c4d448d2f87a4feba5ea16a3b1635d2d",
+    "sourceSpatialReference": {
+        "latestWkid": 2876,
+        "wkid": 2876
+    },
+    "subLayers": [],
+    "subtypeField": null,
+    "subtypeFieldName": null,
+    "subtypes": [],
+    "supportedQueryFormats": "JSON, geoJSON",
+    "supportsAdvancedQueries": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsDatumTransformation": true,
+    "supportsStatistics": true,
+    "type": "Feature Layer",
+    "typeIdField": null,
+    "useStandardizedQueries": true
+}

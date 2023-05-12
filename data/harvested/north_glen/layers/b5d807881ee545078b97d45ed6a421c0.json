@@ -1,0 +1,608 @@
+{
+    "advancedEditingCapabilities": {
+        "supportedSqlFormatsInCalculate": [
+            "standard"
+        ]
+    },
+    "advancedQueryCapabilities": {
+        "supportsCountDistinct": true,
+        "supportsDistinct": true,
+        "supportsHavingClause": true,
+        "supportsLod": false,
+        "supportsOrderBy": true,
+        "supportsPagination": true,
+        "supportsPercentileStatistics": true,
+        "supportsQueryWithDatumTransformation": true,
+        "supportsQueryWithDistance": true,
+        "supportsQueryWithLodSR": false,
+        "supportsQueryWithResultType": true,
+        "supportsReturningGeometryCentroid": true,
+        "supportsReturningQueryExtent": true,
+        "supportsSqlExpression": true,
+        "supportsStatistics": true,
+        "supportsTrueCurve": true
+    },
+    "allowGeometryUpdates": false,
+    "allowTrueCurvesUpdates": false,
+    "archivingInfo": {
+        "startArchivingMoment": -1,
+        "supportsQueryWithHistoricMoment": false
+    },
+    "canScaleSymbols": false,
+    "capabilities": "Query,Extract",
+    "cimVersion": "2.7.0",
+    "copyrightText": "",
+    "currentVersion": 10.9,
+    "dateFieldsTimeReference": {
+        "respectsDaylightSaving": true,
+        "timeZone": "Mountain Standard Time"
+    },
+    "datesInUnknownTimezone": false,
+    "defaultVisibility": true,
+    "description": "",
+    "displayField": "ParcelID",
+    "drawingInfo": {
+        "labelingInfo": null,
+        "renderer": {
+            "symbol": {
+                "color": [
+                    252,
+                    179,
+                    230,
+                    255
+                ],
+                "outline": {
+                    "color": [
+                        110,
+                        110,
+                        110,
+                        255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 0.7
+                },
+                "style": "esriSFSSolid",
+                "type": "esriSFS"
+            },
+            "type": "simple"
+        },
+        "scaleSymbols": true,
+        "transparency": 0
+    },
+    "editFieldsInfo": null,
+    "extent": {
+        "spatialReference": {
+            "falseM": -100000,
+            "falseX": -118265500,
+            "falseY": -95180100,
+            "falseZ": 0,
+            "latestWkid": 2876,
+            "mTolerance": 2,
+            "mUnits": 10000,
+            "wkid": 2876,
+            "xyTolerance": 3.2000000029802345e-05,
+            "xyUnits": 37138342.128391795,
+            "zTolerance": 2,
+            "zUnits": 1
+        },
+        "xmax": 3145345.9527569413,
+        "xmin": -118265499.99999578,
+        "ymax": 1280426.8089300394,
+        "ymin": -95180099.99998587
+    },
+    "fields": [
+        {
+            "alias": "OBJECTID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "modelName": "OBJECTID",
+            "name": "OBJECTID",
+            "nullable": false,
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "PARCEL",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 18,
+            "modelName": "PARCEL",
+            "name": "ParcelID",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Location",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 25,
+            "modelName": "LOCATION",
+            "name": "LOCATION",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Zoning Class",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "A",
+                        "name": "A"
+                    },
+                    {
+                        "code": "AG",
+                        "name": "AG"
+                    },
+                    {
+                        "code": "AG-OS",
+                        "name": "AG-OS"
+                    },
+                    {
+                        "code": "ANNEX",
+                        "name": "ANNEX"
+                    },
+                    {
+                        "code": "AP",
+                        "name": "AP"
+                    },
+                    {
+                        "code": "B",
+                        "name": "B"
+                    },
+                    {
+                        "code": "CC",
+                        "name": "CC"
+                    },
+                    {
+                        "code": "DT",
+                        "name": "DT"
+                    },
+                    {
+                        "code": "E",
+                        "name": "E"
+                    },
+                    {
+                        "code": "ER",
+                        "name": "ER"
+                    },
+                    {
+                        "code": "HR",
+                        "name": "HR"
+                    },
+                    {
+                        "code": "I-1",
+                        "name": "I-1"
+                    },
+                    {
+                        "code": "LI",
+                        "name": "LI"
+                    },
+                    {
+                        "code": "LR",
+                        "name": "LR"
+                    },
+                    {
+                        "code": "MR",
+                        "name": "MR"
+                    },
+                    {
+                        "code": "NMU",
+                        "name": "NMU"
+                    },
+                    {
+                        "code": "OTR",
+                        "name": "OTR"
+                    },
+                    {
+                        "code": "PD",
+                        "name": "PD"
+                    },
+                    {
+                        "code": "PLI",
+                        "name": "PLI"
+                    },
+                    {
+                        "code": "RP-1",
+                        "name": "RP-1"
+                    },
+                    {
+                        "code": "RP-2",
+                        "name": "RP-2"
+                    },
+                    {
+                        "code": "RP-3",
+                        "name": "RP-3"
+                    },
+                    {
+                        "code": "RR",
+                        "name": "RR"
+                    },
+                    {
+                        "code": "SR",
+                        "name": "SR"
+                    },
+                    {
+                        "code": "XER",
+                        "name": "XER"
+                    },
+                    {
+                        "code": "XLA",
+                        "name": "XLA"
+                    },
+                    {
+                        "code": "AGH",
+                        "name": "AGH"
+                    }
+                ],
+                "description": "Zoning Classes",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "ZoneClass",
+                "splitPolicy": "esriSPTDuplicate",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "length": 15,
+            "modelName": "PROP_ZONE",
+            "name": "PROP_ZONE",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Zoning Description",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "AG",
+                        "name": "Agriculture"
+                    },
+                    {
+                        "code": "AG-OS",
+                        "name": "Agriculture/Open Space"
+                    },
+                    {
+                        "code": "AP",
+                        "name": "Airport"
+                    },
+                    {
+                        "code": "B",
+                        "name": "Business"
+                    },
+                    {
+                        "code": "CC",
+                        "name": "Community Commercial"
+                    },
+                    {
+                        "code": "DT",
+                        "name": "Downtown District"
+                    },
+                    {
+                        "code": "E",
+                        "name": "?"
+                    },
+                    {
+                        "code": "ER",
+                        "name": "Estate Residential"
+                    },
+                    {
+                        "code": "HR",
+                        "name": "High Density Residential"
+                    },
+                    {
+                        "code": "I-1",
+                        "name": "?"
+                    },
+                    {
+                        "code": "LI",
+                        "name": "Light Industrial"
+                    },
+                    {
+                        "code": "LR",
+                        "name": "Low Density Residential"
+                    },
+                    {
+                        "code": "MR",
+                        "name": "Medium Density Residential"
+                    },
+                    {
+                        "code": "NMU",
+                        "name": "Neighborhood Mixed-Use"
+                    },
+                    {
+                        "code": "OTR",
+                        "name": "Old Town Residential"
+                    },
+                    {
+                        "code": "PD",
+                        "name": "Planned Development"
+                    },
+                    {
+                        "code": "PLI",
+                        "name": "Public Lands & Institutions"
+                    },
+                    {
+                        "code": "RP-1",
+                        "name": "Rural Preservation 1"
+                    },
+                    {
+                        "code": "RP-2",
+                        "name": "Rural Preservation 2"
+                    },
+                    {
+                        "code": "RP-3",
+                        "name": "Rural Preservation 3"
+                    },
+                    {
+                        "code": "RR",
+                        "name": "Rural Residential"
+                    },
+                    {
+                        "code": "SR",
+                        "name": "Suburban Residential"
+                    },
+                    {
+                        "code": "XER",
+                        "name": "?"
+                    },
+                    {
+                        "code": "XLA",
+                        "name": "?"
+                    },
+                    {
+                        "code": "RC",
+                        "name": "Regional Commercial"
+                    },
+                    {
+                        "code": "A",
+                        "name": "Agriculture"
+                    },
+                    {
+                        "code": "AGH",
+                        "name": "Agricultural Holding"
+                    }
+                ],
+                "description": "Zoning Descriptions",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "ZoneDesc",
+                "splitPolicy": "esriSPTDuplicate",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "length": 50,
+            "modelName": "ZONEDESCRIPTION",
+            "name": "ZONEDESCRIPTION",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "GlobalID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "length": 38,
+            "modelName": "GlobalID",
+            "name": "GlobalID",
+            "nullable": false,
+            "type": "esriFieldTypeGlobalID"
+        },
+        {
+            "alias": "Recording Number",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 50,
+            "modelName": "Recording",
+            "name": "Recording",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "PUD",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "No",
+                        "name": "No"
+                    },
+                    {
+                        "code": "Yes",
+                        "name": "Yes"
+                    },
+                    {
+                        "code": "Unk",
+                        "name": "Unknown"
+                    },
+                    {
+                        "code": "Res",
+                        "name": "Restricted"
+                    }
+                ],
+                "description": "Yes No text domain",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "YesNo",
+                "splitPolicy": "esriSPTDuplicate",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "length": 3,
+            "modelName": "PUD",
+            "name": "PUD",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Ordinance Number",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 50,
+            "modelName": "Ordinance",
+            "name": "Ordinance",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Shape.STArea()",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "modelName": "Shape.STArea()",
+            "name": "Shape__Area",
+            "nullable": false,
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Shape.STLength()",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "modelName": "Shape.STLength()",
+            "name": "Shape__Length",
+            "nullable": false,
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Recorded Document Link",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 300,
+            "modelName": "DOCLINK",
+            "name": "DOCLINK",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "FACILITYID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 20,
+            "modelName": "FACILITYID",
+            "name": "FACILITYID",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        }
+    ],
+    "geometryField": {
+        "alias": "Shape",
+        "defaultValue": null,
+        "domain": null,
+        "editable": false,
+        "modelName": "Shape",
+        "name": "Shape",
+        "nullable": true,
+        "type": "esriFieldTypeGeometry"
+    },
+    "geometryProperties": {
+        "shapeAreaFieldName": "Shape__Area",
+        "shapeLengthFieldName": "Shape__Length",
+        "units": "esriFeet"
+    },
+    "geometryType": "esriGeometryPolygon",
+    "globalIdField": "GlobalID",
+    "hasAttachments": false,
+    "hasGeometryProperties": true,
+    "hasM": false,
+    "hasMetadata": true,
+    "hasZ": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "id": 8,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "R131_pk"
+        },
+        {
+            "description": "",
+            "fields": "GlobalID",
+            "isAscending": true,
+            "isUnique": false,
+            "name": "UUID_131"
+        },
+        {
+            "description": "",
+            "fields": "GlobalID,OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "UUID_OID_131"
+        },
+        {
+            "description": "",
+            "fields": "Shape",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "S126_idx"
+        }
+    ],
+    "isCoGoEnabled": false,
+    "isDataArchived": false,
+    "isDataBranchVersioned": false,
+    "isDataReplicaTracked": false,
+    "isDataVersioned": true,
+    "maxRecordCount": 10000,
+    "maxRecordCountFactor": 1,
+    "maxScale": 0,
+    "minScale": 0,
+    "name": "Zoning",
+    "objectIdField": "OBJECTID",
+    "onlyAllowTrueCurveUpdatesByTrueCurveClients": false,
+    "ownershipBasedAccessControlForFeatures": null,
+    "parentLayer": null,
+    "preferredTimeReference": null,
+    "relationships": [],
+    "serviceItemId": "59d45e099c734736946dcaf771d49a21",
+    "sourceSpatialReference": {
+        "falseM": 0,
+        "falseX": -118265499.99999578,
+        "falseY": -95180099.99998587,
+        "falseZ": 0,
+        "latestWkid": 2876,
+        "mTolerance": 2,
+        "mUnits": 1,
+        "wkid": 2876,
+        "xyTolerance": 3.2000000029802345e-05,
+        "xyUnits": 249999.99976716924,
+        "zTolerance": 2,
+        "zUnits": 1
+    },
+    "standardMaxRecordCount": 4000,
+    "standardMaxRecordCountNoGeometry": 32000,
+    "subtypeField": "",
+    "supportedQueryFormats": "JSON, geoJSON, PBF",
+    "supportsASyncCalculate": true,
+    "supportsAdvancedQueries": true,
+    "supportsApplyEditsWithGlobalIds": false,
+    "supportsCalculate": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsDatumTransformation": true,
+    "supportsExceedsLimitStatistics": true,
+    "supportsQuantizationEditMode": true,
+    "supportsRollbackOnFailureParameter": false,
+    "supportsStatistics": true,
+    "supportsValidateSQL": true,
+    "syncCanReturnChanges": true,
+    "templates": [
+        {
+            "description": "",
+            "drawingTool": "esriFeatureEditToolPolygon",
+            "name": "Zoning",
+            "prototype": {
+                "attributes": {}
+            }
+        }
+    ],
+    "tileMaxRecordCount": 4000,
+    "type": "Feature Layer",
+    "typeIdField": "",
+    "types": [],
+    "useStandardizedQueries": true
+}

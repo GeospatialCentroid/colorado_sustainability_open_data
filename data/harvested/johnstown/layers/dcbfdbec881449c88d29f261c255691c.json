@@ -1,0 +1,1330 @@
+{
+    "advancedEditingCapabilities": {
+        "supportedApplyEditsUploadIDFormats": "JSON",
+        "supportedSqlFormatsInCalculate": [
+            "standard"
+        ],
+        "supportsApplyEditsbyUploadID": true,
+        "supportsAsyncApplyEdits": true,
+        "supportsReturnEditResults": true
+    },
+    "advancedQueryAnalyticCapabilities": {
+        "supportsAsync": true,
+        "supportsLinearRegression": true,
+        "supportsPercentileAnalytic": true
+    },
+    "advancedQueryCapabilities": {
+        "supportedLodTypes": [
+            "geohash"
+        ],
+        "supportedOperationsWithCacheHint": [
+            "query",
+            "queryTopFilter",
+            "queryAnalytics",
+            "queryAttachments",
+            "queryRelated"
+        ],
+        "supportedSpatialAggregationStatistics": [
+            "EnvelopeAggregate",
+            "CentroidAggregate",
+            "ConvexHullAggregate"
+        ],
+        "supportsAdvancedQueryRelated": true,
+        "supportsCountDistinct": true,
+        "supportsDefaultSR": true,
+        "supportsDisjointSpatialRel": true,
+        "supportsDistinct": true,
+        "supportsFullTextSearch": true,
+        "supportsHavingClause": true,
+        "supportsLod": true,
+        "supportsMaxRecordCountFactor": true,
+        "supportsOrderBy": true,
+        "supportsOutFieldSQLExpression": true,
+        "supportsPagination": true,
+        "supportsPaginationOnAggregatedQueries": true,
+        "supportsPercentileStatistics": true,
+        "supportsQueryAnalytic": true,
+        "supportsQueryAttachmentsCountOnly": true,
+        "supportsQueryRelatedPagination": true,
+        "supportsQueryWithCacheHint": true,
+        "supportsQueryWithDatumTransformation": true,
+        "supportsQueryWithDistance": true,
+        "supportsQueryWithLodSR": false,
+        "supportsQueryWithResultType": true,
+        "supportsReturningGeometryCentroid": true,
+        "supportsReturningGeometryProperties": true,
+        "supportsReturningQueryExtent": true,
+        "supportsSpatialAggregationStatistics": true,
+        "supportsSqlExpression": true,
+        "supportsStatistics": true,
+        "supportsTopFeaturesQuery": true
+    },
+    "allowGeometryUpdates": true,
+    "cacheMaxAge": 30,
+    "capabilities": "Query",
+    "copyrightText": "",
+    "currentVersion": 11,
+    "dateFieldsTimeReference": {
+        "respectsDaylightSaving": false,
+        "timeZone": "UTC"
+    },
+    "defaultVisibility": true,
+    "description": "",
+    "displayField": "DISTRICT_NAME",
+    "drawingInfo": {
+        "labelingInfo": [
+            {
+                "allowOverrun": true,
+                "deconflictionStrategy": "dynamic",
+                "labelExpressionInfo": {
+                    "expression": "$feature.JTZone + \" \\\\ \" + $feature.District\n\nif (($feature.District == Null) || ($feature.District == \"<Null>\")) {\n    return $feature.JTZone\n}\nelse {\n    return $feature.JTZone + \"\\n\" + $feature.District\n}",
+                    "title": "LabelPUDs.lxp_CarriageReturnWithNoBackslash"
+                },
+                "labelPlacement": "esriServerPolygonPlacementAlwaysHorizontal",
+                "maxScale": 0,
+                "minScale": 0,
+                "multiPart": "labelLargest",
+                "name": "Class 1",
+                "priority": -1,
+                "removeDuplicates": "none",
+                "repeatLabel": false,
+                "stackAlignment": "dynamic",
+                "stackLabel": true,
+                "stackRowLength": 24,
+                "symbol": {
+                    "angle": 0,
+                    "backgroundColor": null,
+                    "borderLineColor": null,
+                    "borderLineSize": null,
+                    "color": [
+                        0,
+                        0,
+                        0,
+                        255
+                    ],
+                    "font": {
+                        "decoration": "none",
+                        "family": "Tahoma",
+                        "size": 12,
+                        "style": "normal",
+                        "weight": "normal"
+                    },
+                    "haloColor": null,
+                    "haloSize": null,
+                    "horizontalAlignment": "left",
+                    "kerning": true,
+                    "rightToLeft": false,
+                    "type": "esriTS",
+                    "verticalAlignment": "bottom",
+                    "xoffset": 0,
+                    "yoffset": 0
+                },
+                "useCodedValues": true
+            }
+        ],
+        "renderer": {
+            "authoringInfo": {
+                "colorRamp": {
+                    "colorRamps": [
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                179,
+                                210,
+                                252,
+                                255
+                            ],
+                            "toColor": [
+                                179,
+                                210,
+                                252,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                250,
+                                252,
+                                179,
+                                255
+                            ],
+                            "toColor": [
+                                250,
+                                252,
+                                179,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                252,
+                                179,
+                                182,
+                                255
+                            ],
+                            "toColor": [
+                                252,
+                                179,
+                                182,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                184,
+                                252,
+                                226,
+                                255
+                            ],
+                            "toColor": [
+                                184,
+                                252,
+                                226,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                252,
+                                182,
+                                249,
+                                255
+                            ],
+                            "toColor": [
+                                252,
+                                182,
+                                249,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                252,
+                                238,
+                                212,
+                                255
+                            ],
+                            "toColor": [
+                                252,
+                                238,
+                                212,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                183,
+                                252,
+                                182,
+                                255
+                            ],
+                            "toColor": [
+                                183,
+                                252,
+                                182,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                252,
+                                212,
+                                248,
+                                255
+                            ],
+                            "toColor": [
+                                252,
+                                212,
+                                248,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                215,
+                                242,
+                                252,
+                                255
+                            ],
+                            "toColor": [
+                                215,
+                                242,
+                                252,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                195,
+                                182,
+                                252,
+                                255
+                            ],
+                            "toColor": [
+                                195,
+                                182,
+                                252,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                227,
+                                252,
+                                210,
+                                255
+                            ],
+                            "toColor": [
+                                227,
+                                252,
+                                210,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                252,
+                                211,
+                                207,
+                                255
+                            ],
+                            "toColor": [
+                                252,
+                                211,
+                                207,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                212,
+                                210,
+                                252,
+                                255
+                            ],
+                            "toColor": [
+                                212,
+                                210,
+                                252,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                252,
+                                184,
+                                210,
+                                255
+                            ],
+                            "toColor": [
+                                252,
+                                184,
+                                210,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                179,
+                                239,
+                                252,
+                                255
+                            ],
+                            "toColor": [
+                                179,
+                                239,
+                                252,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        }
+                    ],
+                    "type": "multipart"
+                }
+            },
+            "field1": "DISTRICT_NAME",
+            "fieldDelimiter": ",",
+            "type": "uniqueValue",
+            "uniqueValueInfos": [
+                {
+                    "label": "CB - Central Business",
+                    "symbol": {
+                        "color": [
+                            205,
+                            137,
+                            102,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.7
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "Central Business"
+                },
+                {
+                    "label": "Gateway",
+                    "symbol": {
+                        "color": [
+                            255,
+                            115,
+                            223,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.7
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "GATEWAY"
+                },
+                {
+                    "label": "HA, Holding Agriculture",
+                    "symbol": {
+                        "color": [
+                            255,
+                            255,
+                            0,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.7
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "Holding Agriculture"
+                },
+                {
+                    "label": "I, Industrial",
+                    "symbol": {
+                        "color": [
+                            194,
+                            158,
+                            215,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.7
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "Industrial"
+                },
+                {
+                    "label": "O, Open Space",
+                    "symbol": {
+                        "color": [
+                            137,
+                            205,
+                            102,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.7
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "Open Space"
+                },
+                {
+                    "label": "PUD, No Underlying Zone",
+                    "symbol": {
+                        "color": [
+                            156,
+                            156,
+                            156,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.7
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "PUD"
+                },
+                {
+                    "label": "PUD-B, Business PUDs",
+                    "symbol": {
+                        "color": [
+                            215,
+                            194,
+                            158,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.7
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "PUD-B"
+                },
+                {
+                    "label": "PUD, Gateway",
+                    "symbol": {
+                        "color": [
+                            255,
+                            190,
+                            232,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.7
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "PUD-Gateway"
+                },
+                {
+                    "label": "PUD-I, Indutrial",
+                    "symbol": {
+                        "color": [
+                            243,
+                            252,
+                            184,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.7
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "PUD-I"
+                },
+                {
+                    "label": "PUD-JC, Johnson's Corner",
+                    "symbol": {
+                        "color": [
+                            252,
+                            189,
+                            179,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.7
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "PUD-JC"
+                },
+                {
+                    "label": "PUD-M, Mobile Homes",
+                    "symbol": {
+                        "color": [
+                            252,
+                            225,
+                            215,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.7
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "PUD-M"
+                },
+                {
+                    "label": "PUD-MU, Mixed Use",
+                    "symbol": {
+                        "color": [
+                            156,
+                            156,
+                            156,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.7
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "PUD-MU"
+                },
+                {
+                    "label": "PUD-R, Residential",
+                    "symbol": {
+                        "color": [
+                            245,
+                            245,
+                            122,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.7
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "PUD-R"
+                },
+                {
+                    "label": "Single Family 1 Residential",
+                    "symbol": {
+                        "color": [
+                            255,
+                            255,
+                            190,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.7
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "Single Family 1"
+                },
+                {
+                    "label": "Single Family 2 Residential",
+                    "symbol": {
+                        "color": [
+                            230,
+                            230,
+                            0,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.7
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "Single Family 2"
+                }
+            ]
+        },
+        "scaleSymbols": true,
+        "transparency": 0
+    },
+    "editFieldsInfo": {
+        "creationDateField": "created_date",
+        "creatorField": "created_user",
+        "editDateField": "last_edited_date",
+        "editorField": "last_edited_user"
+    },
+    "editingInfo": {
+        "dataLastEditDate": 1661351698869,
+        "lastEditDate": 1661351698869,
+        "schemaLastEditDate": 1661351698869
+    },
+    "extent": {
+        "spatialReference": {
+            "latestWkid": 2876,
+            "wkid": 2876
+        },
+        "xmax": 3173630.138217122,
+        "xmin": 3138593.123116359,
+        "ymax": 1396924.692441985,
+        "ymin": 1344866.5365371406
+    },
+    "fields": [
+        {
+            "alias": "OBJECTID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "name": "OBJECTID",
+            "nullable": false,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "Zone Description",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 50,
+            "name": "DISTRICT_NAME",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Zone Code",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 50,
+            "name": "JTZone",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "created_user",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "length": 255,
+            "name": "created_user",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "created_date",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "length": 8,
+            "name": "created_date",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDate"
+        },
+        {
+            "alias": "last_edited_user",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "length": 255,
+            "name": "last_edited_user",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "last_edited_date",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "length": 8,
+            "name": "last_edited_date",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDate"
+        },
+        {
+            "alias": "GlobalID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "length": 38,
+            "name": "GlobalID",
+            "nullable": false,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeGlobalID"
+        },
+        {
+            "alias": "District",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 50,
+            "name": "District",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Zoning_Docs",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 250,
+            "name": "Zoning_Docs",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Zoning_Group",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 250,
+            "name": "Zoning_Group",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Link",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 200,
+            "name": "Link",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Shape__Area",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "name": "Shape__Area",
+            "nullable": true,
+            "sqlType": "sqlTypeDouble",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Shape__Length",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "name": "Shape__Length",
+            "nullable": true,
+            "sqlType": "sqlTypeDouble",
+            "type": "esriFieldTypeDouble"
+        }
+    ],
+    "geometryProperties": {
+        "shapeAreaFieldName": "Shape__Area",
+        "shapeLengthFieldName": "Shape__Length",
+        "units": "esriFeet"
+    },
+    "geometryType": "esriGeometryPolygon",
+    "globalIdField": "GlobalID",
+    "hasAttachments": false,
+    "hasContingentValuesDefinition": false,
+    "hasGeometryProperties": true,
+    "hasM": false,
+    "hasMetadata": true,
+    "hasStaticData": false,
+    "hasZ": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "id": 0,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "PK__ZONINGDI__F4B70D851FC6D402"
+        },
+        {
+            "description": "",
+            "fields": "SHAPE",
+            "isAscending": true,
+            "isUnique": false,
+            "name": "user_74477.ZONINGDISTRICTS_ZONE_DISTRICTS_Shape_sidx"
+        },
+        {
+            "description": "",
+            "fields": "GlobalID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "FDO_GlobalID"
+        },
+        {
+            "description": "",
+            "fields": "Shape__Area",
+            "isAscending": true,
+            "isUnique": false,
+            "name": "Shape__Area_Index"
+        },
+        {
+            "description": "",
+            "fields": "Shape__Length",
+            "isAscending": true,
+            "isUnique": false,
+            "name": "Shape__Length_Index"
+        },
+        {
+            "description": "created_date Field index",
+            "fields": "created_date",
+            "isAscending": true,
+            "isUnique": false,
+            "name": "created_dateIndex"
+        },
+        {
+            "description": "created_user Field index",
+            "fields": "created_user",
+            "isAscending": false,
+            "isUnique": false,
+            "name": "created_userIndex"
+        },
+        {
+            "description": "last_edited_date Field index",
+            "fields": "last_edited_date",
+            "isAscending": true,
+            "isUnique": false,
+            "name": "last_edited_dateIndex"
+        },
+        {
+            "description": "last_edited_user Field index",
+            "fields": "last_edited_user",
+            "isAscending": false,
+            "isUnique": false,
+            "name": "last_edited_userIndex"
+        }
+    ],
+    "infoInEstimates": [
+        "extent",
+        "count"
+    ],
+    "isDataVersioned": false,
+    "maxRecordCount": 2000,
+    "maxRecordCountFactor": 1,
+    "maxScale": 0,
+    "minScale": 0,
+    "name": "ZONE DISTRICTS",
+    "objectIdField": "OBJECTID",
+    "preferredTimeReference": null,
+    "relationships": [],
+    "serviceItemId": "dcbfdbec881449c88d29f261c255691c",
+    "standardMaxRecordCount": 4000,
+    "standardMaxRecordCountNoGeometry": 32000,
+    "supportedAppendFormats": "sqlite,geoPackage,shapefile,filegdb,featureCollection,geojson,csv,excel",
+    "supportedContingentValuesFormats": "JSON, PBF",
+    "supportedExportFormats": "csv,shapefile,sqlite,geoPackage,filegdb,featureCollection,geojson,excel",
+    "supportedQueryFormats": "JSON, geoJSON, PBF",
+    "supportedSpatialRelationships": [
+        "esriSpatialRelIntersects",
+        "esriSpatialRelContains",
+        "esriSpatialRelCrosses",
+        "esriSpatialRelEnvelopeIntersects",
+        "esriSpatialRelIndexIntersects",
+        "esriSpatialRelOverlaps",
+        "esriSpatialRelTouches",
+        "esriSpatialRelWithin",
+        "esriSpatialRelDisjoint",
+        "esriSpatialRelRelation"
+    ],
+    "supportedSyncDataOptions": 4,
+    "supportsASyncCalculate": true,
+    "supportsAdvancedQueries": true,
+    "supportsAppend": true,
+    "supportsApplyEditsWithGlobalIds": true,
+    "supportsAttachmentsByUploadId": true,
+    "supportsAttachmentsResizing": true,
+    "supportsCalculate": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsExceedsLimitStatistics": true,
+    "supportsFieldDescriptionProperty": true,
+    "supportsLayerOverrides": true,
+    "supportsMultiScaleGeometry": true,
+    "supportsQuantizationEditMode": true,
+    "supportsReturningQueryGeometry": true,
+    "supportsRollbackOnFailureParameter": true,
+    "supportsStatistics": true,
+    "supportsTilesAndBasicQueriesMode": true,
+    "supportsTruncate": true,
+    "supportsValidateSql": true,
+    "templates": [],
+    "tileMaxRecordCount": 4000,
+    "type": "Feature Layer",
+    "typeIdField": "DISTRICT_NAME",
+    "types": [
+        {
+            "domains": {},
+            "id": "Central Business",
+            "name": "CB - Central Business",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "CB - Central Business",
+                    "prototype": {
+                        "attributes": {
+                            "DISTRICT_NAME": "Central Business"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "GATEWAY",
+            "name": "Gateway",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Gateway",
+                    "prototype": {
+                        "attributes": {
+                            "DISTRICT_NAME": "GATEWAY"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "Holding Agriculture",
+            "name": "HA, Holding Agriculture",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "HA, Holding Agriculture",
+                    "prototype": {
+                        "attributes": {
+                            "DISTRICT_NAME": "Holding Agriculture"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "Industrial",
+            "name": "I, Industrial",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "I, Industrial",
+                    "prototype": {
+                        "attributes": {
+                            "DISTRICT_NAME": "Industrial"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "Open Space",
+            "name": "O, Open Space",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "O, Open Space",
+                    "prototype": {
+                        "attributes": {
+                            "DISTRICT_NAME": "Open Space"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "PUD",
+            "name": "PUD, No Underlying Zone",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "PUD, No Underlying Zone",
+                    "prototype": {
+                        "attributes": {
+                            "DISTRICT_NAME": "PUD"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "PUD-B",
+            "name": "PUD-B, Business PUDs",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "PUD-B, Business PUDs",
+                    "prototype": {
+                        "attributes": {
+                            "DISTRICT_NAME": "PUD-B"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "PUD-Gateway",
+            "name": "PUD, Gateway",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "PUD, Gateway",
+                    "prototype": {
+                        "attributes": {
+                            "DISTRICT_NAME": "PUD-Gateway"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "PUD-I",
+            "name": "PUD-I, Indutrial",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "PUD-I, Indutrial",
+                    "prototype": {
+                        "attributes": {
+                            "DISTRICT_NAME": "PUD-I"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "PUD-JC",
+            "name": "PUD-JC, Johnson's Corner",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "PUD-JC, Johnson's Corner",
+                    "prototype": {
+                        "attributes": {
+                            "DISTRICT_NAME": "PUD-JC"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "PUD-M",
+            "name": "PUD-M, Mobile Homes",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "PUD-M, Mobile Homes",
+                    "prototype": {
+                        "attributes": {
+                            "DISTRICT_NAME": "PUD-M"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "PUD-MU",
+            "name": "PUD-MU, Mixed Use",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "PUD-MU, Mixed Use",
+                    "prototype": {
+                        "attributes": {
+                            "DISTRICT_NAME": "PUD-MU"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "PUD-R",
+            "name": "PUD-R, Residential",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "PUD-R, Residential",
+                    "prototype": {
+                        "attributes": {
+                            "DISTRICT_NAME": "PUD-R"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "Single Family 1",
+            "name": "Single Family 1 Residential",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Single Family 1 Residential",
+                    "prototype": {
+                        "attributes": {
+                            "DISTRICT_NAME": "Single Family 1"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "Single Family 2",
+            "name": "Single Family 2 Residential",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Single Family 2 Residential",
+                    "prototype": {
+                        "attributes": {
+                            "DISTRICT_NAME": "Single Family 2"
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "uniqueIdField": {
+        "isSystemMaintained": true,
+        "name": "OBJECTID"
+    },
+    "useStandardizedQueries": true
+}

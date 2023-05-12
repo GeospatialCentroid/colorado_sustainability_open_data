@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Northern Colorado Open Data Catalog</title>
+
+    <!-- from https://jqueryui.com/download/ -->
+    <link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.css">
+
+
+    <script src="plugins/jquery-ui/external/jquery/jquery.js"></script>
+    <script src="plugins/jquery-ui/jquery-ui.js"></script>
+
+    <script src="plugins/jquery.csv.js"></script>
+
+    <!--bootstrap-->
+    <script src="plugins/bootstrap.min.js"></script>
+    <script src="plugins/bootstrap.bundle.min.js"></script>
+     <link rel="stylesheet" href="plugins/bootstrap.min.css">
+
+    <!-- from http://davidstutz.github.io/bootstrap-multiselect/ -->
+    <script src="plugins/bootstrap-multiselect.min.js"></script>
+    <link rel="stylesheet" href="plugins/bootstrap-multiselect.min.css">
+
+     <script src="plugins/fontawesome.min.js"></script>
+     <link rel="stylesheet" href="plugins/fontawesome.min.css">
+    <link rel="stylesheet" href="plugins/all.min.css" />
+
+
+    <script src="js/index.js"></script>
+     <script src="js/utils.js"></script>
+     <script src="js/filter.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+
+
+
+<body>
+    <div id="git_but"><a class="btn btn-default" href="https://github.com/kevinworthington/northern_colorado_open_data_catalog" target="git" data-toggle="tooltip" title="Go to Git Repo" data-original-title="Go to git Repo"><i class="fab fa-github"></i></a></div>
+
+
+    <div id="header" class="container">
+        <div class="progress">
+          <div id="loader" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+            <span id="current-progress"></span>
+          </div>
+        </div>
+
+
+
+        <h1>Northern Colorado Open Data Catalog</h1>
+        <div class="ui-widget">
+
+          <div class="input-group">
+            <input id="search" class="form-control" type="search" class="form-control" placeholder="Search...">
+            <button id="search_clear" type="button" title="Clear search" data-original-title="Clear search"  class="btn bg-transparent">
+              <i class="fa fa-times"></i>
+            </button>
+            </div>
+
+        </div>
+        <nav aria-label="Page navigation">
+          <ul class="pagination justify-content-center">
+            <li id="prev" class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">Previous</a>
+            </li>
+
+            <li class="page-item disabled"><a class="page-link" href="#"> <span id="result_length"></span></a></li>
+
+            <li id="next" class="page-item disabled" >
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+
+         <div id="filter_header">
+            <span class="h6">Filters (<a href="#" onclick="filter_manager.reset(); return false">reset</a>)</span>
+                <section class="section-preview" id="filter_box"></section>
+         </div>
+
+           </div>
+
+    <div class="container row w-100">
+        <span id="filter_control"><a href="#" onclick="filter_manager.toggle_filters(this); return false">Hide Filters</a></span>
+        <div id="filter_control_spacer" class="col-3"></div>
+        <div class="col-sm"><a href="#" onclick="filter_manager.toggle_details(this); return false">Hide Details</a></div>
+    </div>
+
+
+   <div class="wrapper container">
+
+           <div class="row w-100">
+
+               <div id="filter_area"  class="col-3">
+                    <div id="filters" class="ui-widget" ></div>
+                </div>
+
+
+                    <div id="details" class="col-sm">
+                             <div class="overlay">
+
+                             </div>
+                           <span class="h6 "> Details</span>
+                            <div id="details_view" ></div>
+                    </div>
+
+                    <div id="content" class="col-sm">
+                        <div class="overlay"  style="text-align: center;">
+                            <div id="iframe_spinner" class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+                              <span class="sr-only">Loading...</span>
+                            </div>
+                        </div>
+                        <div id="new_window_but"><a class="btn btn-default" onclick="filter_manager.new_window();" data-toggle="tooltip" title="Open in New Window" data-original-title="Open in New Window"><i class="fa fa-clone" aria-hidden="true"></i></a></div>
+
+                        <iframe id="frame" src="" width="100%" height="100%" align="left" style="float:left;" frameborder="0">
+                        </iframe>
+                    </div>
+
+            </div>
+     </div>
+
+
+</body>
+</html>

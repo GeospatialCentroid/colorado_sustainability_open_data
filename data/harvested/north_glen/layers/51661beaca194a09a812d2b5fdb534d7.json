@@ -1,0 +1,198 @@
+{
+    "advancedQueryCapabilities": {
+        "supportsCountDistinct": true,
+        "supportsDistinct": true,
+        "supportsHavingClause": true,
+        "supportsLod": false,
+        "supportsOrderBy": true,
+        "supportsPagination": true,
+        "supportsPercentileStatistics": true,
+        "supportsQueryWithDatumTransformation": true,
+        "supportsQueryWithDistance": true,
+        "supportsQueryWithLodSR": false,
+        "supportsReturningQueryExtent": true,
+        "supportsSqlExpression": true,
+        "supportsSqlFormat": false,
+        "supportsStatistics": true,
+        "supportsTimeRelation": true,
+        "supportsTrueCurve": true,
+        "useStandardizedQueries": true
+    },
+    "archivingInfo": {
+        "startArchivingMoment": -1,
+        "supportsQueryWithHistoricMoment": false
+    },
+    "canModifyLayer": false,
+    "canScaleSymbols": false,
+    "capabilities": "Query,Map,Data",
+    "cimVersion": "2.7.0",
+    "copyrightText": "",
+    "currentVersion": 10.9,
+    "dateFieldsTimeReference": null,
+    "datesInUnknownTimezone": false,
+    "defaultSubtypeCode": null,
+    "defaultVisibility": true,
+    "description": "",
+    "displayField": "RefName",
+    "drawingInfo": {
+        "labelingInfo": null,
+        "renderer": {
+            "symbol": {
+                "color": [
+                    78,
+                    46,
+                    130,
+                    255
+                ],
+                "style": "esriSLSSolid",
+                "type": "esriSLS",
+                "width": 1
+            },
+            "type": "simple"
+        },
+        "scaleSymbols": true,
+        "transparency": 0
+    },
+    "extent": {
+        "spatialReference": {
+            "falseM": -100000,
+            "falseX": -118265500,
+            "falseY": -95180100,
+            "falseZ": 0,
+            "latestWkid": 2876,
+            "mTolerance": 2,
+            "mUnits": 10000,
+            "wkid": 2876,
+            "xyTolerance": 3.2000000029802345e-05,
+            "xyUnits": 37138342.128391795,
+            "zTolerance": 2,
+            "zUnits": 1
+        },
+        "xmax": 3145827.5941819698,
+        "xmin": 3102861.734575808,
+        "ymax": 1281015.268328473,
+        "ymin": 1242343.4273652285
+    },
+    "fields": [
+        {
+            "alias": "OBJECTID",
+            "domain": null,
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "RefName",
+            "domain": null,
+            "length": 254,
+            "name": "RefName",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Shape",
+            "domain": null,
+            "name": "Shape",
+            "type": "esriFieldTypeGeometry"
+        },
+        {
+            "alias": "GlobalID",
+            "domain": null,
+            "length": 38,
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID"
+        },
+        {
+            "alias": "Shape.STLength()",
+            "domain": null,
+            "name": "Shape.STLength()",
+            "type": "esriFieldTypeDouble"
+        }
+    ],
+    "geometryField": {
+        "alias": "Shape",
+        "name": "Shape",
+        "type": "esriFieldTypeGeometry"
+    },
+    "geometryProperties": {
+        "shapeLengthFieldName": "Shape.STLength()",
+        "units": "esriFeet"
+    },
+    "geometryType": "esriGeometryPolyline",
+    "hasAttachments": false,
+    "hasGeometryProperties": true,
+    "hasLabels": false,
+    "hasMetadata": true,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "id": 14,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "R407_pk"
+        },
+        {
+            "description": "",
+            "fields": "GlobalID",
+            "isAscending": true,
+            "isUnique": false,
+            "name": "UUID_407"
+        },
+        {
+            "description": "",
+            "fields": "GlobalID,OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "UUID_OID_407"
+        },
+        {
+            "description": "",
+            "fields": "Shape",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "S294_idx"
+        }
+    ],
+    "isDataArchived": false,
+    "isDataVersioned": true,
+    "maxRecordCount": 10000,
+    "maxScale": 0,
+    "minScale": 0,
+    "name": "Erie Address Grid",
+    "ownershipBasedAccessControlForFeatures": {
+        "allowOthersToQuery": true
+    },
+    "parentLayer": null,
+    "preferredTimeReference": null,
+    "referenceScale": 0.0,
+    "relationships": [],
+    "serviceItemId": "e2ec77b01ead43b6949a4b43b250b7ca",
+    "sourceSpatialReference": {
+        "falseM": 0,
+        "falseX": -118265500,
+        "falseY": -95180100,
+        "falseZ": 0,
+        "latestWkid": 2876,
+        "mTolerance": 0.001,
+        "mUnits": 1,
+        "wkid": 2876,
+        "xyTolerance": 0.003280833333333333,
+        "xyUnits": 3048.0060960121928,
+        "zTolerance": 0.001,
+        "zUnits": 1
+    },
+    "subLayers": [],
+    "subtypeField": null,
+    "subtypeFieldName": null,
+    "subtypes": [],
+    "supportedQueryFormats": "JSON, geoJSON, PBF",
+    "supportsAdvancedQueries": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsDatumTransformation": true,
+    "supportsDynamicLegends": true,
+    "supportsExceedsLimitStatistics": true,
+    "supportsStatistics": true,
+    "type": "Feature Layer",
+    "typeIdField": null,
+    "useStandardizedQueries": true
+}

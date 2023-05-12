@@ -1,0 +1,90 @@
+{
+    "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
+    "@type": "dcat:Catalog",
+    "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
+    "dataset": [
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "jillfischerestes",
+                "hasEmail": "mailto:info@invisiongis.com"
+            },
+            "description": "{{description}}",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://gisdata-estespark.hub.arcgis.com/maps/EstesPark::town-of-estes-park-control-network",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=a256461a48eb49c197f9d05407775720",
+            "issued": "2020-07-23T00:47:02.000Z",
+            "keyword": [
+                "Estes Park"
+            ],
+            "landingPage": "https://gisdata-estespark.hub.arcgis.com/maps/EstesPark::town-of-estes-park-control-network",
+            "license": "",
+            "modified": "2022-03-22T19:03:10.000Z",
+            "publisher": {
+                "name": "The Town of Estes Park"
+            },
+            "spatial": "-105.6808,40.2862,-105.3492,40.4282",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Town of Estes Park Control Network"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "jillfischerestes",
+                "hasEmail": "mailto:info@invisiongis.com"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://gisdata-estespark.hub.arcgis.com/apps/EstesPark::estes-park-control-network",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://estespark.maps.arcgis.com/apps/instant/attachmentviewer/index.html?appid=800a4ff2a51c4ab4a0c4d7f29f1a812f",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=800a4ff2a51c4ab4a0c4d7f29f1a812f",
+            "issued": "2020-07-23T00:17:54.000Z",
+            "keyword": [
+                "Estes Park",
+                "Survey",
+                "Surveying",
+                "Control",
+                "Control Points",
+                "Control Network"
+            ],
+            "landingPage": "https://gisdata-estespark.hub.arcgis.com/apps/EstesPark::estes-park-control-network",
+            "license": "",
+            "modified": "2022-03-22T19:03:35.000Z",
+            "publisher": {
+                "name": "The Town of Estes Park"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Estes Park Control Network"
+        }
+    ],
+    "describedBy": "https://project-open-data.cio.gov/v1.1/schema/catalog.json"
+}

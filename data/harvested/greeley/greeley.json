@@ -1,0 +1,1091 @@
+{
+    "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
+    "@type": "dcat:Catalog",
+    "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
+    "dataset": [
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "esri_en"
+            },
+            "description": "<font color='red'>Important Note:</font> This item is in <a href='https://goto.arcgis.com/lifecycle/content' rel='nofollow ugc' target='_blank'>mature support.</a> There are <a href='https://goto.arcgisonline.com/blogs/vector-basemap-migration' rel='nofollow ugc' target='_blank'>new versions of basemaps</a> available for your use.  Esri recommends updating your maps and apps to use the appropriate new version.<br /> <p>This map is designed to focus attention on your thematic content by providing a neutral background with minimal colors, labels, and features.  The map is intended to support the ArcGIS Online basemap gallery.  For more details on the map, please visit the <a href='http://www.arcgis.com/home/item.html?id=ed712cb1db3e4bae9e85329040fb9a49' rel='nofollow ugc'>World Light Gray Base</a> and <a href='http://www.arcgis.com/home/item.html?id=87fcdf91a0f14e4a9fda40a763c6f2b8' rel='nofollow ugc'>World Light Gray Reference</a> map service descriptions.</p>",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/8b3b470883a744aeb60e5fff0a319ce7",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=8b3b470883a744aeb60e5fff0a319ce7",
+            "issued": "2012-02-18T18:09:37.000Z",
+            "keyword": [
+                "basemap"
+            ],
+            "landingPage": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/8b3b470883a744aeb60e5fff0a319ce7",
+            "license": "This work is licensed under the Esri Master License Agreement.<br /><a href='https://links.esri.com/agol_mla' rel='nofollow ugc' target='_blank'><b>View Terms of Use</b></a>View Terms of UseView Terms of UseView Terms of Use",
+            "modified": "2021-09-21T22:04:08.000Z",
+            "publisher": {
+                "name": "esri_en"
+            },
+            "spatial": "-180.0000,-90.0000,180.0000,90.0000",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Light Gray Canvas"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "esri_en"
+            },
+            "description": "<font color='red'>Important Note:</font> This item is in <a href='https://goto.arcgis.com/lifecycle/content' rel='nofollow ugc' target='_blank'>mature support.</a> There are <a href='https://goto.arcgisonline.com/blogs/vector-basemap-migration' rel='nofollow ugc' target='_blank'>new versions of basemaps</a> available for your use.  Esri recommends updating your maps and apps to use the appropriate new version.<br /> <p>This map features highway-level data for the world and street-level data for North America, Europe, and other parts of the world.  The map is intended to support the ArcGIS Online basemap gallery.  For more details on the map, please visit the <a href='http://www.arcgis.com/home/item.html?id=3b93337983e9436f8db950e38a8629af' rel='nofollow ugc'>World Street Map</a> service description.</p>",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/d8855ee4d3d74413babfb0f41203b168",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=d8855ee4d3d74413babfb0f41203b168",
+            "issued": "2012-02-18T18:08:49.000Z",
+            "keyword": [
+                "basemap"
+            ],
+            "landingPage": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/d8855ee4d3d74413babfb0f41203b168",
+            "license": "This work is licensed under the Esri Master License Agreement.<br /><a href='https://links.esri.com/agol_mla' rel='nofollow ugc' target='_blank'><b>View Terms of Use</b></a>View Terms of UseView Terms of UseView Terms of Use",
+            "modified": "2021-09-21T22:04:09.000Z",
+            "publisher": {
+                "name": "esri_en"
+            },
+            "spatial": "-180.0000,-90.0000,180.0000,90.0000",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Streets"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "esri_en"
+            },
+            "description": "<font color='red'>Important Note:</font> This item is in <a href='https://goto.arcgis.com/lifecycle/content' rel='nofollow ugc' target='_blank'>mature support.</a> There are <a href='https://goto.arcgisonline.com/blogs/vector-basemap-migration' rel='nofollow ugc' target='_blank'>new versions of basemaps</a> available for your use.  Esri recommends updating your maps and apps to use the appropriate new version.<br /> <p>This map is designed to be used as a basemap by marine GIS professionals and as a reference map by anyone interested in ocean data.  The map is intended to support the ArcGIS Online basemap gallery.  For more details on the map, please visit the <a href='http://www.arcgis.com/home/item.html?id=1e126e7520f9466c9ca28b8f28b5e500' rel='nofollow ugc'>World Ocean Base</a> map service description.</p>",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/48b8cec7ebf04b5fbdcaf70d09daff21",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=48b8cec7ebf04b5fbdcaf70d09daff21",
+            "issued": "2012-02-18T18:07:05.000Z",
+            "keyword": [
+                "basemap"
+            ],
+            "landingPage": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/48b8cec7ebf04b5fbdcaf70d09daff21",
+            "license": "This work is licensed under the Esri Master License Agreement.<br /><a href='https://links.esri.com/agol_mla' rel='nofollow ugc' target='_blank'><b>View Terms of Use</b></a>View Terms of UseView Terms of UseView Terms of Use",
+            "modified": "2021-09-21T22:04:09.000Z",
+            "publisher": {
+                "name": "esri_en"
+            },
+            "spatial": "-180.0000,-90.0000,180.0000,90.0000",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Oceans"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "esri_en"
+            },
+            "description": "<font color='red'>Important Note:</font> This item is in <a href='https://goto.arcgis.com/lifecycle/content' rel='nofollow ugc' target='_blank'>mature support.</a> There are <a href='https://goto.arcgisonline.com/blogs/vector-basemap-migration' rel='nofollow ugc' target='_blank'>new versions of basemaps</a> available for your use.  Esri recommends updating your maps and apps to use the appropriate new version.<br /> <p>This topographic map is designed to be used as a basemap and a reference map.  The map has been compiled by Esri and the ArcGIS user community from a variety of best available sources.  The map is intended to support the ArcGIS Online basemap gallery.  For more details on the map, please visit the <a href='http://goto.arcgisonline.com/maps/World_Topo_Map' rel='nofollow ugc'>World Topographic Map</a> service description.</p>",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/6e03e8c26aad4b9c92a87c1063ddb0e3",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=6e03e8c26aad4b9c92a87c1063ddb0e3",
+            "issued": "2012-02-18T18:07:19.000Z",
+            "keyword": [
+                "basemap"
+            ],
+            "landingPage": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/6e03e8c26aad4b9c92a87c1063ddb0e3",
+            "license": "This work is licensed under the Esri Master License Agreement.<br /><a href='https://links.esri.com/agol_mla' rel='nofollow ugc' target='_blank'><b>View Terms of Use</b></a>View Terms of UseView Terms of UseView Terms of Use",
+            "modified": "2021-09-21T22:04:09.000Z",
+            "publisher": {
+                "name": "esri_en"
+            },
+            "spatial": "-180.0000,-90.0000,180.0000,90.0000",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Topographic"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Arcuser",
+                "hasEmail": "mailto:gis@greeleygov.com"
+            },
+            "description": "<span style='color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14.4px; background-color: rgb(255, 255, 255);'>Greeley school district attendance areas.</span>",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::high-school-attendance-areas",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://gis.greeleygov.com/arcgis_svr/rest/services/Data_Services/SchoolHigh/MapServer/0",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::high-school-attendance-areas.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::high-school-attendance-areas.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::high-school-attendance-areas.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::high-school-attendance-areas.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=f5db3383c06d4aaa9228a652cd9e51c5&sublayer=0",
+            "issued": "2018-02-26T22:12:38.000Z",
+            "keyword": [
+                "education",
+                "open"
+            ],
+            "landingPage": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::high-school-attendance-areas",
+            "license": "http://creativecommons.org/licenses/by/4.0",
+            "modified": "2021-05-25T01:17:09.000Z",
+            "publisher": {
+                "name": "City of Greeley, Colorado"
+            },
+            "spatial": "-104.8235,40.2658,-104.5093,40.4704",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "High School Attendance Areas"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Arcuser",
+                "hasEmail": "mailto:gis@greeleygov.com"
+            },
+            "description": "<span style='color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14.4px; background-color: rgb(255, 255, 255);'>Greeley school district attendance areas.</span>",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::elementary-school-attendance-areas",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://gis.greeleygov.com/arcgis_svr/rest/services/Data_Services/SchoolElementary/MapServer/0",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::elementary-school-attendance-areas.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::elementary-school-attendance-areas.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::elementary-school-attendance-areas.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::elementary-school-attendance-areas.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=89f14c120c894920a21dc672e6430675&sublayer=0",
+            "issued": "2018-02-26T22:18:18.000Z",
+            "keyword": [
+                "education",
+                "open"
+            ],
+            "landingPage": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::elementary-school-attendance-areas",
+            "license": "http://creativecommons.org/licenses/by/4.0",
+            "modified": "2023-04-06T09:55:30.786Z",
+            "publisher": {
+                "name": "City of Greeley, Colorado"
+            },
+            "spatial": "-104.8227,40.3489,-104.5645,40.4708",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Elementary School Attendance Areas"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Arcuser",
+                "hasEmail": "mailto:gis@greeleygov.com"
+            },
+            "description": "<span style='color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14.4px; background-color: rgb(255, 255, 255);'>Greeley school district attendance areas.</span>",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::middle-school-attendance-areas",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://gis.greeleygov.com/arcgis_svr/rest/services/Data_Services/SchoolMiddle/MapServer/0",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::middle-school-attendance-areas.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::middle-school-attendance-areas.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::middle-school-attendance-areas.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::middle-school-attendance-areas.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=5aa4d203395d4e709ea91d78aa6d942f&sublayer=0",
+            "issued": "2018-02-26T22:16:20.000Z",
+            "keyword": [
+                "education",
+                "open"
+            ],
+            "landingPage": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::middle-school-attendance-areas",
+            "license": "http://creativecommons.org/licenses/by/4.0",
+            "modified": "2023-04-06T09:55:33.800Z",
+            "publisher": {
+                "name": "City of Greeley, Colorado"
+            },
+            "spatial": "-104.8231,40.3489,-104.5645,40.4708",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Middle School Attendance Areas"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Arcuser",
+                "hasEmail": "mailto:gis@greeleygov.com"
+            },
+            "description": "City of Greeley Park areas.",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::city-parks",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://gis.greeleygov.com/arcgis_svr/rest/services/Data_Services/Parks_And_Recreation/MapServer/20",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::city-parks.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::city-parks.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::city-parks.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::city-parks.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=2b3c3064ee63406bb196d35b69c22009&sublayer=20",
+            "issued": "2018-02-26T23:01:39.000Z",
+            "keyword": [
+                "health",
+                "community",
+                "open",
+                "GreeleyHealth",
+                "GreeleyCommunity"
+            ],
+            "landingPage": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::city-parks",
+            "license": "http://creativecommons.org/licenses/by/4.0",
+            "modified": "2021-05-20T22:46:58.000Z",
+            "publisher": {
+                "name": "City of Greeley, Colorado"
+            },
+            "spatial": "-104.8558,40.3857,-104.6526,40.4435",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "City Parks"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Arcuser",
+                "hasEmail": "mailto:gis@greeleygov.com"
+            },
+            "description": "Long range expected growth area for the City of Greeley.  Updated via master plans.",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::community-development-long-range-expected-growth-area",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://gis.greeleygov.com/arcgis_svr/rest/services/Data_Services/ComDev_LREG/MapServer/0",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::community-development-long-range-expected-growth-area.csv",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::community-development-long-range-expected-growth-area.geojson",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::community-development-long-range-expected-growth-area.zip",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::community-development-long-range-expected-growth-area.kml",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=c3dc21a2e0a740f29cf39c6efb4cedd8&sublayer=0",
+            "issued": "2015-07-28T17:58:22.000Z",
+            "keyword": [
+                "Greeley",
+                "growth",
+                "long",
+                "range",
+                "boundaries",
+                "business",
+                "community",
+                "open"
+            ],
+            "landingPage": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::community-development-long-range-expected-growth-area",
+            "license": "http://creativecommons.org/licenses/by/4.0",
+            "modified": "2021-05-20T22:47:58.000Z",
+            "publisher": {
+                "name": "City of Greeley, Colorado"
+            },
+            "spatial": "-104.9077,40.3778,-104.5992,40.4806",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Community Development Long-Range Expected Growth Area"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Arcuser",
+                "hasEmail": "mailto:gis@greeleygov.com"
+            },
+            "description": "City of Greeley zoning boundary areas and information on classification.",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::development-concept-master-plan",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://gis.greeleygov.com/arcgis_svr/rest/services/Data_Services/ZoningID/MapServer/1",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::development-concept-master-plan.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::development-concept-master-plan.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::development-concept-master-plan.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::development-concept-master-plan.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=8d5d3c1d788e4dc4b4acc9e11e710f58&sublayer=1",
+            "issued": "2014-08-25T17:50:26.000Z",
+            "keyword": [
+                "Greeley",
+                "Zoning",
+                "ID",
+                "Planning",
+                "GIS",
+                "open",
+                "community",
+                "boundaries"
+            ],
+            "landingPage": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::development-concept-master-plan",
+            "license": "http://creativecommons.org/licenses/by/4.0",
+            "modified": "2021-05-20T22:44:40.000Z",
+            "publisher": {
+                "name": "City of Greeley, Colorado"
+            },
+            "spatial": "-104.8981,40.3880,-104.6698,40.4732",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Development Concept Master Plan"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Arcuser",
+                "hasEmail": "mailto:gis@greeleygov.com"
+            },
+            "description": "Address points for all locations within the City of Greeley.",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::greeley-addresses",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://gis.greeleygov.com/arcgis_svr/rest/services/Data_Services/GreeleyAddresses/MapServer/0",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::greeley-addresses.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::greeley-addresses.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::greeley-addresses.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::greeley-addresses.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=7632c71fd2da40b4bcc28506d528a643&sublayer=0",
+            "issued": "2014-09-15T20:20:56.000Z",
+            "keyword": [
+                "addresses",
+                "points",
+                "community",
+                "housing",
+                "open"
+            ],
+            "landingPage": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::greeley-addresses",
+            "license": "Creative Commons",
+            "modified": "2021-05-25T01:14:57.000Z",
+            "publisher": {
+                "name": "City of Greeley, Colorado"
+            },
+            "spatial": "-104.9168,40.3301,-104.6100,40.4808",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Greeley Addresses"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "esri_en"
+            },
+            "description": "<font color='red'>Important Note:</font> This item is in <a href='https://goto.arcgis.com/lifecycle/content' rel='nofollow ugc' target='_blank'>mature support.</a> There are <a href='https://goto.arcgisonline.com/blogs/vector-basemap-migration' rel='nofollow ugc' target='_blank'>new versions of basemaps</a> available for your use.  Esri recommends updating your maps and apps to use the appropriate new version.<br /> <p>This web map references the live tiled map service from the OpenStreetMap project. OpenStreetMap (OSM) is an open collaborative project to create a free editable map of the world.  Volunteers gather location data using GPS, local knowledge, and other free sources of information such as free satellite imagery, and upload it.\u00a0The resulting free map can be viewed and downloaded from the OpenStreetMap server: <a href='http://www.OpenStreetMap.org' rel='nofollow ugc' target='_tab'>http://www.OpenStreetMap.org</a>. See that website for additional information about OpenStreetMap.\u00a0It is made available as a basemap for GIS work in Esri products under a <a href='http://creativecommons.org/licenses/by-sa/2.0/' rel='nofollow ugc' target='_blank'>Creative Commons Attribution-ShareAlike license</a>.</p>",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/5d2bfa736f8448b3a1708e1f6be23eed",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=5d2bfa736f8448b3a1708e1f6be23eed",
+            "issued": "2012-02-18T18:09:16.000Z",
+            "keyword": [
+                "basemap",
+                "world",
+                "Open Street Map",
+                "OSM",
+                "OpenStreetMap",
+                "international",
+                "road",
+                "roads",
+                "street",
+                "streets",
+                "wiki",
+                "world"
+            ],
+            "landingPage": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/5d2bfa736f8448b3a1708e1f6be23eed",
+            "license": "<br />",
+            "modified": "2021-09-21T22:04:09.000Z",
+            "publisher": {
+                "name": "esri_en"
+            },
+            "spatial": "-180.0000,-90.0000,180.0000,90.0000",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "OpenStreetMap"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Arcuser",
+                "hasEmail": "mailto:gis@greeleygov.com"
+            },
+            "description": "City of Greeley street centerline data that includes names and classifications",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::street-centerlines",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://gis.greeleygov.com/arcgis_svr/rest/services/Data_Services/StreetCenterlines/MapServer/0",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::street-centerlines.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::street-centerlines.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::street-centerlines.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::street-centerlines.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=8783eda6ef8849108b73fb797cc58dd5&sublayer=0",
+            "issued": "2014-12-15T16:13:22.000Z",
+            "keyword": [
+                "Greeley",
+                "Street",
+                "Centerlines",
+                "Roads",
+                "open",
+                "transportation",
+                "community"
+            ],
+            "landingPage": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::street-centerlines",
+            "license": "http://creativecommons.org/licenses/by/4.0",
+            "modified": "2021-05-25T01:20:15.000Z",
+            "publisher": {
+                "name": "City of Greeley, Colorado"
+            },
+            "spatial": "-105.0136,40.2859,-104.5257,40.5521",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Street Centerlines"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Arcuser",
+                "hasEmail": "mailto:gis@greeleygov.com"
+            },
+            "description": "City of Greeley zoning boundary areas and information on classification.",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::zoning-1200",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://gis.greeleygov.com/arcgis_svr/rest/services/Data_Services/ZoningID/MapServer/0",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::zoning-1200.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::zoning-1200.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::zoning-1200.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::zoning-1200.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=8d5d3c1d788e4dc4b4acc9e11e710f58&sublayer=0",
+            "issued": "2014-08-25T17:50:26.000Z",
+            "keyword": [
+                "Greeley",
+                "Zoning",
+                "ID",
+                "Planning",
+                "GIS",
+                "open",
+                "community",
+                "boundaries"
+            ],
+            "landingPage": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::zoning-1200",
+            "license": "http://creativecommons.org/licenses/by/4.0",
+            "modified": "2023-04-04T02:23:13.890Z",
+            "publisher": {
+                "name": "City of Greeley, Colorado"
+            },
+            "spatial": "-104.9077,40.3779,-104.6188,40.4800",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Zoning 1200"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "danfortl_Greeley",
+                "hasEmail": "mailto:gis@greeleygov.com"
+            },
+            "description": "<DIV STYLE=\"text-align:Left;\"><P STYLE=\"font-size:16ptmargin:7 0 7 0;\"><SPAN><SPAN>Geographic Extent: Flooded Area of Interest in Colorado, covering approximately 4,616 square miles. Dataset Description: The Colorado Flood LiDAR project called for the Planning, Acquisition, processing and derivative products of LIDAR data to be collected at a nominal pulse spacing (NPS) of 0.7 meter. Project specifications are based on the U.S. Geological Survey National Geospatial Program Base LIDAR Specification, Version 1. The data was developed based on a horizontal projection/datum of UTM Zone 13 North, NAD83, meters and vertical datum of NAVD1988 (GEOID12A), meters. LiDAR data was delivered in RAW flight line swath format, processed to create Classified LAS 1.2 Files formatted to individual 1500m x 1500m tiles, and corresponding 0.75 meter gridded Hydro Flattened Raster DEM Files tiled to the same 1500m x 1500m schema, tiled Intensity Images, and Hydro-Flattening Breaklines in ESRI Shapefile format. Another dataset that includes contours will be developed from the UTM 13 dataset on a State Plane Coordinate System. Ground Conditions: LiDAR was collected in Fall 2013, while no snow was on the ground and rivers were at or below normal levels. In order to post process the LiDAR data to meet task order specifications, Photo Science established a total of 229 control points that were used to calibrate the LIDAR to known ground locations established throughout the Colorado Flood project area.</SPAN></SPAN></P><P STYLE=\"font-size:16ptmargin:7 0 7 0;\"><SPAN><SPAN /></SPAN></P><P STYLE=\"font-size:16ptmargin:7 0 7 0;\"><SPAN><SPAN>USGS-NGP Base Lidar Specification v1.0&lt;/ldrspec&gt;&lt;ldrsens&gt;Leica ALS 70&lt;/ldrsens&gt;&lt;ldrmaxnr&gt;4&lt;/ldrmaxnr&gt;&lt;ldrnps&gt;0.53&lt;/ldrnps&gt;&lt;ldrdens&gt;2.28&lt;/ldrdens&gt;&lt;ldrfltht&gt;1828&lt;/ldrfltht&gt;&lt;ldrfltsp&gt;150&lt;/ldrfltsp&gt;&lt;ldrscana&gt;17.5&lt;/ldrscana&gt;&lt;ldrscanr&gt;412&lt;/ldrscanr&gt;&lt;ldrpulsr&gt;303.4&lt;/ldrpulsr&gt;&lt;ldrpulsd&gt;4&lt;/ldrpulsd&gt;&lt;ldrpulsw&gt;0.42&lt;/ldrpulsw&gt;&lt;ldrwavel&gt;1064&lt;/ldrwavel&gt;&lt;ldrmpia&gt;1&lt;/ldrmpia&gt;&lt;ldrbmdiv&gt;0.22&lt;/ldrbmdiv&gt;&lt;ldrswatw&gt;1117.75&lt;/ldrswatw&gt;&lt;ldrswato&gt;11.98%&lt;/ldrswato&gt;&lt;ldrcrs&gt;NAD_1983_UTM_Zone_13N_Meters&lt;/ldrcrs&gt;&lt;ldrgeoid&gt;National Geodetic Survey (NGS) Geoid03&lt;/ldrgeoid&gt;&lt;/ldrinfo&gt;</SPAN></SPAN><A href=\"#\"><SPAN><SPAN>&lt;ldrinfofr&gt;</SPAN></SPAN></A><SPAN><SPAN>&lt;ldrspec&gt;USGS-NGP Base Lidar Specification v1.0&lt;/ldrspec&gt;&lt;ldrsens&gt;Leica ALS 70&lt;/ldrsens&gt;&lt;ldrmaxnr&gt;4&lt;/ldrmaxnr&gt;&lt;ldrnps&gt;0.88&lt;/ldrnps&gt;&lt;ldrdens&gt;0.84&lt;/ldrdens&gt;&lt;ldrfltht&gt;2133&lt;/ldrfltht&gt;&lt;ldrfltsp&gt;150&lt;/ldrfltsp&gt;&lt;ldrscana&gt;17&lt;/ldrscana&gt;&lt;ldrscanr&gt;25.1&lt;/ldrscanr&gt;&lt;ldrpulsr&gt;130.8&lt;/ldrpulsr&gt;&lt;ldrpulsd&gt;4&lt;/ldrpulsd&gt;&lt;ldrpulsw&gt;0.48&lt;/ldrpulsw&gt;&lt;ldrwavel&gt;1064&lt;/ldrwavel&gt;&lt;ldrmpia&gt;0&lt;/ldrmpia&gt;&lt;ldrbmdiv&gt;0.22&lt;/ldrbmdiv&gt;&lt;ldrswatw&gt;1304.25&lt;/ldrswatw&gt;&lt;ldrswato&gt;11.14%&lt;/ldrswato&gt;&lt;ldrcrs&gt;NAD_1983_UTM_Zone_13N_Meters&lt;/ldrcrs&gt;&lt;ldrgeoid&gt;National Geodetic Survey (NGS) Geoid03&lt;/ldrgeoid&gt;&lt;/ldrinfofr&gt;</SPAN></SPAN><A href=\"#\"><SPAN><SPAN>&lt;ldrinfostr&gt;</SPAN></SPAN></A><SPAN><SPAN>&lt;ldrspec&gt;USGS-NGP Base Lidar Specification v1.0&lt;/ldrspec&gt;&lt;ldrsens&gt;Leica ALS 70&lt;/ldrsens&gt;&lt;ldrmaxnr&gt;4&lt;/ldrmaxnr&gt;&lt;ldrnps&gt;0.50&lt;/ldrnps&gt;&lt;ldrdens&gt;2.62&lt;/ldrdens&gt;&lt;ldrfltht&gt;1676&lt;/ldrfltht&gt;&lt;ldrfltsp&gt;150&lt;/ldrfltsp&gt;&lt;ldrscana&gt;17.5&lt;/ldrscana&gt;&lt;ldrscanr&gt;44.2&lt;/ldrscanr&gt;&lt;ldrpulsr&gt;330.4&lt;/ldrpulsr&gt;&lt;ldrpulsd&gt;4&lt;/ldrpulsd&gt;&lt;ldrpulsw&gt;0.38&lt;/ldrpulsw&gt;&lt;ldrwavel&gt;1064&lt;/ldrwavel&gt;&lt;ldrmpia&gt;1&lt;/ldrmpia&gt;&lt;ldrbmdiv&gt;0.22&lt;/ldrbmdiv&gt;&lt;ldrswatw&gt;1056.88&lt;/ldrswatw&gt;&lt;ldrswato&gt;12.19%&lt;/ldrswato&gt;&lt;ldrcrs&gt;NAD_1983_UTM_Zone_13N_Meters&lt;/ldrcrs&gt;&lt;ldrgeoid&gt;National Geodetic Survey (NGS) Geoid03&lt;/ldrgeoid&gt;</SPAN></SPAN></P><P STYLE=\"font-size:16ptmargin:7 0 7 0;\"><SPAN><SPAN /></SPAN></P><P STYLE=\"font-size:16ptmargin:7 0 7 0;\"><SPAN>Classified LAS files were tested by Photo Science for both vertical and horizontal accuracy. All data is seamless from one tile to the next, no gaps or no data areas.  Datasets contain complete coverage of tiles. No points have been removed or excluded. A visual qualitative assessment was performed to ensure data completeness. There are no void areas or missing data. The raw point cloud is of good quality and data passes Fundamental Vertical Accuracy specifications.  The specifications require that only Fundamental Vertical Accuracy (FVA) be computed for raw lidar point cloud swath files. The vertical accuracy was tested with ## independent survey located in open terrain. These check points were not used in the calibration or post processing of the lidar point cloud data. The survey checkpoints were distributed throughout the project area. Specifications for this project require the following FVA: For High Priority Mountain reaches and Damage Ares: 18.13 cm or better AccuracyZ at 95 percent confidence level. For the High Relief Mountain Area: 36.3 cm or better AccuracyZ at 95 percent confidence level. For DRCOG: 18.3 cm or better AccuracyZ at 95 percent confidence level. 0.0 centimeters AccuracyZ at 95 percent Confidence Interval The FVA was tested using 52 independent survey located in open terrain. The survey checkpoints were distributed throughout the project area. The ## independent check points were surveyed using GPS techniques. See survey report for additional survey methodologies. Elevations from the unclassified lidar surface were measured for the x,y location of each check point. Elevations interpolated from the lidar surface were then compared to the elevation values of the surveyed control. The RMSE was computed to be 0.000m. AccuracyZ has been tested to meet the specified Fundamental Vertical Accuracies at 95 Percent confidence level using RMSE(z) x 1.9600 as defined by the National Standards for Spatial Data Accuracy (NSSDA); assessed and reported using National Digital Elevation Program (NDEP)/ASRPS Guidelines.</SPAN></P><P STYLE=\"font-size:16ptmargin:7 0 7 0;\"><SPAN><SPAN /></SPAN></P><P STYLE=\"font-size:16ptmargin:7 0 7 0;\"><SPAN><SPAN>Lidar Pre-Processing: Airborne GPS and IMU data were merged to develop a Single Best Estimate (SBET) of the lidar system trajectory for each lift. Lidar ranging data were initially calibrated using previous best parameters for this instrument and aircraft. Relative calibration was evaluated using advanced plane-matching analysis and parameter corrections derived. This was repeated iteratively until residual errors between overlapping swaths, across all project lifts, was reduced to acceptable levels. Data were then block adjusted to match surveyed calibration control. Raw data FVA were checked using independently surveyed checkpoints. Swath overage points were identified and tagged within each swath file. The results of the final calibration, FVA and horizontal accuracy assessments, and the \"raw\" swaths were forwarded to the client to obtain a Notice To Proceed on classification and derivative product generation.</SPAN></SPAN></P><P STYLE=\"font-size:16ptmargin:7 0 7 0;\"><SPAN><SPAN /></SPAN></P><P STYLE=\"font-size:16ptmargin:7 0 7 0;\"><SPAN><SPAN>Lidar Post-Processing: The calibrated and controlled lidar swaths were processed using automatic point classification routines in proprietary software. These routines operate against the entire collection (all swaths, all lifts), eliminating character differences between files. Data were then distributed as virtual tiles to experienced lidar analysts for localized automatic classification, manual editing, and peer-based QC checks. Supervisory QC monitoring of work in progress and completed editing ensured consistency of classification character and adherence to project requirements across the entire project area. All classification tags are stored in the original swath files. After completion of classification and final QC approval, the FVA, SVAs, and CVA for the project are calculated. Sample areas for each land cover type present in the project area were extracted and forwarded to the client, along with the results of the accuracy tests. Upon acceptance, the complete classified lidar swath files were delivered to the client.</SPAN></SPAN></P><P STYLE=\"font-size:16ptmargin:7 0 7 0;\"><SPAN><SPAN /></SPAN></P><P STYLE=\"font-size:16ptmargin:7 0 7 0;\"><SPAN>Classified LAS Processing: The bare earth surface is then manually reviewed to ensure correct classification on the Class 2 (Ground) points. After the bare-earth surface is finalized, it is then used to generate all hydro-breaklines through heads-up digitization. All ground (ASPRS Class 2) LiDAR data inside of the Lake Pond and Double Line Drain hydro flattening breaklines were then classified to water (ASPRS Class 9) using TerraScan macro functionality. A buffer of 0.5 meter was also used around each hydro flattened feature to classify these ground (ASPRS Class 2) points to Ignored ground (ASPRS Class 10). All Lake Pond Island and Double Line Drain Island features were checked to ensure that the ground (ASPRS Class 2) points were reclassified to the correct classification after the automated classification was completed. All overlap data was processed through automated functionality provided by TerraScan to classify the overlapping flight line data to approved classes by USGS. The overlap data was classified to Class 17 (Overlap Default) and Class 18 (Overlap Ground). These classes were created through automated processes only and were not verified for classification accuracy. Due to software limitations within TerraScan, these classes were used to trip the withheld bit within various software packages. These processes were reviewed and accepted by USGS through numerous conference calls and pilot study areas. All data was manually reviewed and any remaining artifacts removed using functionality provided by TerraScan and TerraModeler. Global Mapper was used as a final check of the bare earth dataset. GeoCue was then used to create the deliverable industry-standard LAS files for the All Point Cloud Data. Photo Science proprietary software was used to perform final statistical analysis of the classes in the LAS files, on a per tile level to verify final classification metrics and full LAS header information.</SPAN></P><P STYLE=\"font-size:16ptmargin:7 0 7 0;\"><SPAN>Hydro Flattening Breakline Processing: Class 2 LiDAR was used to create a bare earth surface model. The surface model was then used to heads-up digitize 2D breaklines of inland streams and rivers with a 30 meter nominal width and Inland Ponds and Lakes of 8,000 sq. meters or greater surface area. Elevation values were assigned to all Inland Ponds and Lakes, Inland Pond and Lake Islands, Inland Stream and River Islands, using TerraModeler functionality. Elevation values were assigned to all Inland streams and rivers using Photo Science proprietary software. All ground (ASPRS Class 2) LiDAR data inside of the collected inland breaklines were then classified to water (ASPRS Class 9) using TerraScan macro functionality. A buffer of 0.5 meter was also used around each hydro flattened feature. These points were moved from ground (ASPRS Class 2) to Ignored Ground (ASPRS Class 10). The breakline files were then translated to ESRI Shapefile format using ESRI conversion tools.Hydro Flattened Raster DEM Process: Class 2 LiDAR in conjunction with the hydro breaklines were used to create a 0.75 meter Raster DEM. Using automated scripting routines within ArcMap, an ERDAS Imagine IMG file was created for each tile. Each surface is reviewed using Global Mapper to check for any surface anomalies or incorrect elevations found within the surface.</SPAN></P><P STYLE=\"font-size:16ptmargin:7 0 7 0;\"><SPAN><SPAN>Contour Generation Process: Using automated scripting routines within ArcMap, a terrain surface was created using the ground (ASPRS Class 2) LiDAR data as well as the hydro-flattening breaklines. This surface was then used to generate the final 1 foot and 2 foot contour dataset in ESRI GeoDatabase format. The contours were initial created in the State Plane Coordinate System, US Feet.</SPAN></SPAN></P><P STYLE=\"font-size:16ptmargin:7 0 7 0;\"><SPAN><SPAN>Intensity Image Generation Process: GeoCue software was used to create the deliverable Intensity Images. All overlap classes (ASPRS class 17/18/25) were ignored during this process. This helps to ensure a more aesthetically pleasing image. The GeoCue software was then used to verify full project coverage as well. TIF/TWF files were then provided as the deliverable for this dataset requirement.</SPAN></SPAN></P><P STYLE=\"font-size:16ptmargin:7 0 7 0;\"><SPAN /></P><P STYLE=\"font-size:16ptmargin:7 0 7 0;\"><SPAN><SPAN /></SPAN></P><P STYLE=\"font-size:16ptmargin:7 0 7 0;\"><SPAN /></P><P STYLE=\"font-size:16ptmargin:7 0 7 0;\"><SPAN><SPAN /></SPAN></P><P STYLE=\"font-size:16ptmargin:7 0 7 0;\"><SPAN><SPAN /></SPAN></P><DIV><P><SPAN /></P></DIV></DIV>",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::greeleycontours-1ft-1",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://services.arcgis.com/pfd9xSB0fCRnWvDl/arcgis/rest/services/GreeleyContours_1ft/FeatureServer/0",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::greeleycontours-1ft-1.csv?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::greeleycontours-1ft-1.geojson?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::greeleycontours-1ft-1.zip?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::greeleycontours-1ft-1.kml?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=043d220023754c5394f855a9b2b3840b&sublayer=0",
+            "issued": "2022-02-22T20:25:32.000Z",
+            "keyword": [
+                "1 foot",
+                "Contours",
+                "LIDAR"
+            ],
+            "landingPage": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::greeleycontours-1ft-1",
+            "license": "",
+            "modified": "2022-02-22T22:05:48.190Z",
+            "publisher": {
+                "name": "City of Greeley, Colorado"
+            },
+            "spatial": "-104.9151,40.3630,-104.5913,40.4892",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "GreeleyContours 1ft"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Arcuser",
+                "hasEmail": "mailto:gis@greeleygov.com"
+            },
+            "description": "City of Greeley Voting Ward areas",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::voting-wards",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://gis.greeleygov.com/arcgis_svr/rest/services/Data_Services/VotingInfo/MapServer/1",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::voting-wards.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::voting-wards.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::voting-wards.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::voting-wards.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=850b97852c474d409de32ed33a7e7bd3&sublayer=1",
+            "issued": "2014-09-15T21:02:49.000Z",
+            "keyword": [
+                "Greeley",
+                "Council",
+                "Wards",
+                "Voting",
+                "Boundary",
+                "Colorado",
+                "open",
+                "community",
+                "boundaries"
+            ],
+            "landingPage": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::voting-wards",
+            "license": "Creative Commons",
+            "modified": "2022-01-28T22:39:11.720Z",
+            "publisher": {
+                "name": "City of Greeley, Colorado"
+            },
+            "spatial": "-104.9076,40.3779,-104.6188,40.4800",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Voting Wards"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Arcuser",
+                "hasEmail": "mailto:gis@greeleygov.com"
+            },
+            "description": "City of Greeley zoning boundary areas and information on classification.",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::greeley-zoning",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://gis.greeleygov.com/arcgis_svr/rest/services/Data_Services/ZoningID/MapServer",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=8d5d3c1d788e4dc4b4acc9e11e710f58",
+            "issued": "2014-08-25T17:50:26.000Z",
+            "keyword": [
+                "Greeley",
+                "Zoning",
+                "ID",
+                "Planning",
+                "GIS",
+                "open",
+                "community",
+                "boundaries"
+            ],
+            "landingPage": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/maps/Greeley::greeley-zoning",
+            "license": "http://creativecommons.org/licenses/by/4.0",
+            "modified": "2021-05-20T22:44:40.000Z",
+            "publisher": {
+                "name": "City of Greeley, Colorado"
+            },
+            "spatial": "-104.9077,40.3779,-104.6188,40.4800",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Greeley Zoning"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "danfortl_Greeley",
+                "hasEmail": "mailto:gis@greeleygov.com"
+            },
+            "description": "{{description}}",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::greeleycontours-1ft",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=9f7cda729f31499da2ec0d2dc1ca2554",
+            "issued": "2022-02-22T20:25:30.000Z",
+            "keyword": [
+                "Contours"
+            ],
+            "landingPage": "https://greeleygis2017-02-01t212304815z-greeley.opendata.arcgis.com/datasets/Greeley::greeleycontours-1ft",
+            "license": "",
+            "modified": "2022-02-22T20:25:31.000Z",
+            "publisher": {
+                "name": "City of Greeley, Colorado"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "GreeleyContours 1ft"
+        }
+    ],
+    "describedBy": "https://project-open-data.cio.gov/v1.1/schema/catalog.json"
+}

@@ -1,0 +1,188 @@
+{
+    "advancedQueryCapabilities": {
+        "supportsCountDistinct": true,
+        "supportsDistinct": true,
+        "supportsHavingClause": true,
+        "supportsOrderBy": true,
+        "supportsPagination": true,
+        "supportsQueryWithDistance": true,
+        "supportsReturningQueryExtent": true,
+        "supportsSqlExpression": true,
+        "supportsStatistics": true,
+        "supportsTrueCurve": true,
+        "useStandardizedQueries": true
+    },
+    "canModifyLayer": true,
+    "canScaleSymbols": false,
+    "capabilities": "Map,Query,Data",
+    "copyrightText": "",
+    "currentVersion": 10.91,
+    "dateFieldsTimeReference": null,
+    "defaultSubtypeCode": null,
+    "defaultVisibility": true,
+    "description": "",
+    "displayField": "SCHL_DIST2",
+    "drawingInfo": {
+        "labelingInfo": null,
+        "renderer": {
+            "description": "",
+            "label": "",
+            "symbol": {
+                "color": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "outline": {
+                    "color": [
+                        0,
+                        0,
+                        0,
+                        255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 0.4
+                },
+                "style": "esriSFSSolid",
+                "type": "esriSFS"
+            },
+            "type": "simple"
+        },
+        "transparency": 0
+    },
+    "extent": {
+        "spatialReference": {
+            "latestWkid": 2876,
+            "wkid": 2876
+        },
+        "xmax": 3275633.557596132,
+        "xmin": 3188771.9783736467,
+        "ymax": 1415743.7060733438,
+        "ymin": 1340390.983935818
+    },
+    "fields": [
+        {
+            "alias": "OBJECTID",
+            "domain": null,
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "AREA",
+            "domain": null,
+            "name": "RegionalBaseData.DBO.SchoolDistrict6Attendance_High.AREA",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "PERIMETER",
+            "domain": null,
+            "name": "PERIMETER",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "HIGHSCHLS_",
+            "domain": null,
+            "name": "HIGHSCHLS_",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "HIGHSCHLS_ID",
+            "domain": null,
+            "name": "HIGHSCHLS_ID",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "SCHL_DIST2",
+            "domain": null,
+            "length": 50,
+            "name": "SCHL_DIST2",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Shape",
+            "domain": null,
+            "name": "Shape",
+            "type": "esriFieldTypeGeometry"
+        },
+        {
+            "alias": "CODE",
+            "domain": null,
+            "length": 10,
+            "name": "CODE",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Shape.area",
+            "domain": null,
+            "name": "Shape.area",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Shape.len",
+            "domain": null,
+            "name": "Shape.len",
+            "type": "esriFieldTypeDouble"
+        }
+    ],
+    "geometryField": {
+        "alias": "Shape",
+        "name": "Shape",
+        "type": "esriFieldTypeGeometry"
+    },
+    "geometryProperties": {
+        "shapeAreaFieldName": "Shape.area",
+        "shapeLengthFieldName": "Shape.len",
+        "units": "esriFeet"
+    },
+    "geometryType": "esriGeometryPolygon",
+    "hasAttachments": false,
+    "hasGeometryProperties": true,
+    "hasLabels": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "id": 0,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "R61_SDE_ROWID_UK"
+        },
+        {
+            "description": "",
+            "fields": "Shape",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "a55_ix1"
+        }
+    ],
+    "isDataVersioned": true,
+    "maxRecordCount": 1000,
+    "maxScale": 0,
+    "minScale": 0,
+    "name": "RegionalBaseData.DBO.SchoolDistrict6Attendance_High",
+    "ownershipBasedAccessControlForFeatures": {
+        "allowOthersToQuery": true
+    },
+    "parentLayer": null,
+    "relationships": [],
+    "serviceItemId": "446f62e00fa141b79ff176bd467a2eb4",
+    "sourceSpatialReference": {
+        "latestWkid": 2876,
+        "wkid": 2876
+    },
+    "subLayers": [],
+    "subtypeField": null,
+    "subtypeFieldName": null,
+    "subtypes": [],
+    "supportedQueryFormats": "JSON, geoJSON",
+    "supportsAdvancedQueries": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsDatumTransformation": true,
+    "supportsStatistics": true,
+    "type": "Feature Layer",
+    "typeIdField": null,
+    "useStandardizedQueries": true
+}

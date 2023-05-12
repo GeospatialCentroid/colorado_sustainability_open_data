@@ -1,0 +1,352 @@
+{
+    "advancedEditingCapabilities": {
+        "supportedSqlFormatsInCalculate": [
+            "standard"
+        ]
+    },
+    "advancedQueryCapabilities": {
+        "supportsCountDistinct": true,
+        "supportsDistinct": true,
+        "supportsHavingClause": true,
+        "supportsLod": false,
+        "supportsOrderBy": true,
+        "supportsPagination": true,
+        "supportsPercentileStatistics": true,
+        "supportsQueryWithDatumTransformation": true,
+        "supportsQueryWithDistance": true,
+        "supportsQueryWithLodSR": false,
+        "supportsQueryWithResultType": true,
+        "supportsReturningGeometryCentroid": true,
+        "supportsReturningQueryExtent": true,
+        "supportsSqlExpression": true,
+        "supportsStatistics": true,
+        "supportsTrueCurve": true
+    },
+    "allowGeometryUpdates": false,
+    "allowTrueCurvesUpdates": false,
+    "archivingInfo": {
+        "startArchivingMoment": -1,
+        "supportsQueryWithHistoricMoment": false
+    },
+    "canScaleSymbols": false,
+    "capabilities": "Query,Extract",
+    "cimVersion": "2.7.0",
+    "copyrightText": "",
+    "currentVersion": 10.9,
+    "dateFieldsTimeReference": {
+        "respectsDaylightSaving": true,
+        "timeZone": "Mountain Standard Time"
+    },
+    "datesInUnknownTimezone": false,
+    "defaultVisibility": true,
+    "description": "",
+    "displayField": "SUBDIVISIO",
+    "drawingInfo": {
+        "labelingInfo": null,
+        "renderer": {
+            "symbol": {
+                "color": [
+                    233,
+                    255,
+                    190,
+                    255
+                ],
+                "outline": {
+                    "color": [
+                        110,
+                        110,
+                        110,
+                        255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 0.4
+                },
+                "style": "esriSFSSolid",
+                "type": "esriSFS"
+            },
+            "type": "simple"
+        },
+        "scaleSymbols": true,
+        "transparency": 65
+    },
+    "editFieldsInfo": null,
+    "extent": {
+        "spatialReference": {
+            "falseM": -100000,
+            "falseX": -118265500,
+            "falseY": -95180100,
+            "falseZ": 0,
+            "latestWkid": 2876,
+            "mTolerance": 2,
+            "mUnits": 10000,
+            "wkid": 2876,
+            "xyTolerance": 3.2000000029802345e-05,
+            "xyUnits": 37138342.128391795,
+            "zTolerance": 2,
+            "zUnits": 1
+        },
+        "xmax": 3140286.049492225,
+        "xmin": 3111292.6291332245,
+        "ymax": 1275140.7210211158,
+        "ymin": 1243306.7328674644
+    },
+    "fields": [
+        {
+            "alias": "FILING",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 75,
+            "modelName": "FILING",
+            "name": "FILING",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "OBJECTID_1",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "modelName": "OBJECTID_1",
+            "name": "OBJECTID_1",
+            "nullable": false,
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "SUBDIVISIO",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 75,
+            "modelName": "SUBDIVISIO",
+            "name": "SUBDIVISIO",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Shape_STAr",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "modelName": "Shape_STAr",
+            "name": "Shape_STAr",
+            "nullable": true,
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Shape_STLe",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "modelName": "Shape_STLe",
+            "name": "Shape_STLe",
+            "nullable": true,
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Comp_by",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 50,
+            "modelName": "Comp_by",
+            "name": "Comp_by",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "comp_date",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 8,
+            "modelName": "comp_date",
+            "name": "comp_date",
+            "nullable": true,
+            "type": "esriFieldTypeDate"
+        },
+        {
+            "alias": "contract",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 50,
+            "modelName": "contract",
+            "name": "contract",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "I_H_Meters",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 3,
+            "modelName": "I_H_Meters",
+            "name": "I_H_Meters",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Shape.STArea()",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "modelName": "Shape.STArea()",
+            "name": "Shape__Area",
+            "nullable": false,
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Shape.STLength()",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "modelName": "Shape.STLength()",
+            "name": "Shape__Length",
+            "nullable": false,
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "ProjectType",
+            "defaultValue": "Subdivision",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "Project",
+                        "name": "Project"
+                    },
+                    {
+                        "code": "Subdivision",
+                        "name": "Subdivision"
+                    }
+                ],
+                "description": "Desribes the type of project in the subdivision layer",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "SubProjectType",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "length": 20,
+            "modelName": "ProjectType",
+            "name": "ProjectType",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "FACILITYID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 20,
+            "modelName": "FACILITYID",
+            "name": "FACILITYID",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        }
+    ],
+    "geometryField": {
+        "alias": "Shape",
+        "defaultValue": null,
+        "domain": null,
+        "editable": false,
+        "modelName": "Shape",
+        "name": "Shape",
+        "nullable": true,
+        "type": "esriFieldTypeGeometry"
+    },
+    "geometryProperties": {
+        "shapeAreaFieldName": "Shape__Area",
+        "shapeLengthFieldName": "Shape__Length",
+        "units": "esriFeet"
+    },
+    "geometryType": "esriGeometryPolygon",
+    "globalIdField": "",
+    "hasAttachments": false,
+    "hasGeometryProperties": true,
+    "hasM": false,
+    "hasMetadata": true,
+    "hasZ": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "id": 5,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID_1",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "R606_pk"
+        },
+        {
+            "description": "",
+            "fields": "Shape",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "S432_idx"
+        }
+    ],
+    "isCoGoEnabled": false,
+    "isDataArchived": false,
+    "isDataBranchVersioned": false,
+    "isDataReplicaTracked": false,
+    "isDataVersioned": true,
+    "maxRecordCount": 10000,
+    "maxRecordCountFactor": 1,
+    "maxScale": 0,
+    "minScale": 0,
+    "name": "Subdivisions",
+    "objectIdField": "OBJECTID_1",
+    "onlyAllowTrueCurveUpdatesByTrueCurveClients": false,
+    "ownershipBasedAccessControlForFeatures": null,
+    "parentLayer": null,
+    "preferredTimeReference": null,
+    "relationships": [],
+    "serviceItemId": "59d45e099c734736946dcaf771d49a21",
+    "sourceSpatialReference": {
+        "falseM": 0,
+        "falseX": -118265499.99999578,
+        "falseY": -95180099.99998587,
+        "falseZ": 0,
+        "latestWkid": 2876,
+        "mTolerance": 2,
+        "mUnits": 1,
+        "wkid": 2876,
+        "xyTolerance": 3.2000000029802345e-05,
+        "xyUnits": 249999.99976716924,
+        "zTolerance": 2,
+        "zUnits": 1
+    },
+    "standardMaxRecordCount": 4000,
+    "standardMaxRecordCountNoGeometry": 32000,
+    "subtypeField": "",
+    "supportedQueryFormats": "JSON, geoJSON, PBF",
+    "supportsASyncCalculate": true,
+    "supportsAdvancedQueries": true,
+    "supportsApplyEditsWithGlobalIds": false,
+    "supportsCalculate": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsDatumTransformation": true,
+    "supportsExceedsLimitStatistics": true,
+    "supportsQuantizationEditMode": true,
+    "supportsRollbackOnFailureParameter": false,
+    "supportsStatistics": true,
+    "supportsValidateSQL": true,
+    "syncCanReturnChanges": false,
+    "templates": [
+        {
+            "description": "",
+            "drawingTool": "esriFeatureEditToolPolygon",
+            "name": "Subdivisions",
+            "prototype": {
+                "attributes": {}
+            }
+        }
+    ],
+    "tileMaxRecordCount": 4000,
+    "type": "Feature Layer",
+    "typeIdField": "",
+    "types": [],
+    "useStandardizedQueries": true
+}

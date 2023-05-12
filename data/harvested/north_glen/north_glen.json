@@ -1,0 +1,2929 @@
+{
+    "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
+    "@type": "dcat:Catalog",
+    "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
+    "dataset": [
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "<div><p style='margin-bottom: 0.0001pt; text-align: center; line-height: normal;'><span style='font-family: Verdana, sans-serif; background-color: rgb(255, 255, 255);'><font size='3'><b><font color='#6495ed'>Street Snow Removal Priorities</font></b><font color='#9da316'> \u00a0</font></font></span><a href='https://www.erieco.gov/546/Snow-Removal-Procedures' target='_blank' rel='nofollow ugc noopener noreferrer'><span style='font-size: 10pt; font-family: Verdana, sans-serif;'><i><font color='#6495ed'>Click here for Snow Removal Procedures</font></i></span></a></p><p style='margin-left: 24pt; line-height: 13.5pt; text-indent: -0.25in;'><span style='font-size: 10pt; font-family: Verdana, sans-serif;'>1.<span style='font-stretch: normal; font-size: 7pt; line-height: normal;'>\u00a0\u00a0\u00a0\u00a0</span></span><span style='font-size: 10pt; font-family: Verdana, sans-serif;'>Primary Routes: Major arterials and school access are the critical routes providing access into and out of Erie. Snow removal efforts will be concentrated on the primary routes throughout the snowstorm</span></p><p style='margin-left: 24pt; line-height: 13.5pt; text-indent: -0.25in;'><span style='font-size: 10pt; font-family: Verdana, sans-serif;'>2.<span style='font-stretch: normal; font-size: 7pt; line-height: normal;'>\u00a0\u00a0\u00a0\u00a0</span></span><span style='font-size: 10pt; font-family: Verdana, sans-serif;'>Secondary Routes: Minor arterials and collector streets connecting the neighborhoods to the primary routes. These routes are plowed only after all primary routes have been done.</span></p><p style='margin-bottom: 0.0001pt; line-height: normal;'></p><p style='margin-left: 24pt; line-height: 13.5pt; text-indent: -0.25in;'><span style='font-size: 10pt; font-family: Verdana, sans-serif;'>3.<span style='font-stretch: normal; font-size: 7pt; line-height: normal;'>\u00a0\u00a0\u00a0\u00a0</span></span><span style='font-size: 10pt; font-family: Verdana, sans-serif;'>Tertiary Routes:\u00a0</span><span style='font-family: Calibri, sans-serif; font-size: 11pt;'>At the direction of the Public Works Director and only\nin instances when snowstorms leave large accumulations that are expected to\nremain for several days, Residential Streets are plowed down the center of the\nstreet (one pass).</span></p></div><div><div style='box-sizing: border-box; margin: -1em; color: rgb(134, 133, 133); font-family: Arial; font-size: 16px; line-height: 24px; background-color: rgba(255, 255, 255, 0.772549);'></div></div>",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/apps/3e543d401f3b408eb4fe8b95cba0ed18",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://erieco.maps.arcgis.com/apps/Viewer/index.html?appid=3e543d401f3b408eb4fe8b95cba0ed18",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=3e543d401f3b408eb4fe8b95cba0ed18",
+            "issued": "2015-09-01T03:02:20.000Z",
+            "keyword": [
+                "Public Works",
+                "Interactive",
+                "Erie"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/apps/3e543d401f3b408eb4fe8b95cba0ed18",
+            "license": "This map is provided for general informational purposes only. The Town of Erie does not warrant its accuracy, completeness, or suitability for any purpose, and should not be relied upon without proper field verification. Use of this material is at the sole risk and liability of the user.",
+            "modified": "2023-02-21T21:58:01.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Erie Snow Routes"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "<div style='margin: 1em 0px; padding: 0.5em 0px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); font-family: Verdana, Helvetica, sans-serif; font-size: 12px; line-height: normal; background-color: rgb(255, 255, 255);'><p style='padding: 0px; font-size: 1em; line-height: 1.5em;'><span style='overflow: auto;'><span style='font-family: '>This map is intended to serve as a guide for future land use patterns within the Town of Erie's Planning Area Boundary and is advisory in nature. Land Use patterns depicted on the map are generalized, recognizing that development proposals may contain a mixture of land uses and density levels which achieve the intent of the\u00a0</span><a href='https://www.erieco.gov/DocumentCenter/View/369' target='_blank' rel='nofollow ugc noopener noreferrer'>Town of Erie Comprehensive Plan</a><span style='font-family: '>. Adopted Date: Dec. 21, 2005. \u00a0</span></span></p><p style='padding: 0px; font-size: 1em; line-height: 1.5em;'><span style='overflow: auto;'><span style='font-family: '>The Comprehensive Plan contains guidelines for the refinement of the generalized areas depicted on the map. These guidelines should be referred to by applicants prior to the preparation of a development submittal and by Town staff, elected, and appointed officials as part of the development review process.</span></span></p></div>",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/apps/db8f62478dd7440392bac07aa69924a6",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://erieco.maps.arcgis.com/apps/Viewer/index.html?appid=db8f62478dd7440392bac07aa69924a6",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=db8f62478dd7440392bac07aa69924a6",
+            "issued": "2015-05-13T21:34:10.000Z",
+            "keyword": [
+                "Land Use",
+                "Interactive",
+                "Erie"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/apps/db8f62478dd7440392bac07aa69924a6",
+            "license": "This map is provided for general informational purposes only. The Town of Erie does not warrant its accuracy, completeness, or suitability for any purpose, and should not be relied upon without proper field verification. Use of this material is at the sole risk and liability of the user.",
+            "modified": "2023-02-21T21:47:48.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Zoning Districts App"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "Erie Services",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_1",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/ErieGovServices/MapServer/1",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_1.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_1.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_1.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_1.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=9bdb06b15a5d4114ac315ca83bcd4a9c&sublayer=1",
+            "issued": "2015-08-19T19:41:06.000Z",
+            "keyword": [
+                "Erie",
+                "services"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_1",
+            "license": "This map is provided for general informational purposes only. The Town of Erie does not warrant its accuracy, completeness, or suitability for any purpose, and should not be relied upon without proper field verification. Use of this material is at the sole risk and liability of the user.",
+            "modified": "2019-11-14T16:41:13.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.6986,39.1294,-103.5654,41.0017",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Phone, Internet & Cable"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "Erie Services",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_6",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/ErieGovServices/MapServer/6",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_6.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_6.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_6.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_6.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=9bdb06b15a5d4114ac315ca83bcd4a9c&sublayer=6",
+            "issued": "2015-08-19T19:41:06.000Z",
+            "keyword": [
+                "Erie",
+                "services"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_6",
+            "license": "This map is provided for general informational purposes only. The Town of Erie does not warrant its accuracy, completeness, or suitability for any purpose, and should not be relied upon without proper field verification. Use of this material is at the sole risk and liability of the user.",
+            "modified": "2019-11-14T16:41:13.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.6986,39.1294,-103.5654,41.0017",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Neighborhood Officer (Erie PD)"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "<p style=''><span style='font-size:12.0pt; font-family:&quot;Verdana&quot;,sans-serif; color:black;'>This map is intended to serve as a guide for future land use\npatterns within the Town of Erie's Planning Area Boundary and is advisory in\nnature. Land Use patterns depicted on the map are generalized, recognizing that\ndevelopment proposals may contain a mixture of land uses and density levels\nwhich achieve the intent of the Town of Erie Comprehensive Plan. Adopted Date:\nDec. 21, 2005. \u00a0</span></p>\n\n<p style=''><span style='font-size:12.0pt; font-family:&quot;Verdana&quot;,sans-serif; color:black;'>The Comprehensive Plan contains guidelines for the refinement of\nthe generalized areas depicted on the map. These guidelines should be referred\nto by applicants prior to the preparation of a development submittal and by\nTown staff, elected, and appointed officials as part of the development review\nprocess.</span></p>",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/documents/56933193bc3d4fa8b0a6bba7ffc8c642",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=56933193bc3d4fa8b0a6bba7ffc8c642",
+            "issued": "2020-02-24T18:49:29.000Z",
+            "keyword": [
+                "Comp Plan",
+                "Town of Erie",
+                "Planning Department"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/documents/56933193bc3d4fa8b0a6bba7ffc8c642",
+            "license": "  <p style='margin-bottom:0in;margin-bottom:.0001pt;line-height: normal'><span style='font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif; mso-fareast-font-family:&quot;Times New Roman&quot;'>This map is provided for general informational purposes only. The Town of Erie does not warrant its accuracy, completeness, or suitability for any purpose, and should not be relied upon without proper field verification. Use of this material is at the sole risk and liability of the user.</span></p>",
+            "modified": "2020-02-24T23:40:30.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Comprehensive Plan"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "Erie Services",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_8",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/ErieGovServices/MapServer/8",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_8.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_8.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_8.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_8.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=9bdb06b15a5d4114ac315ca83bcd4a9c&sublayer=8",
+            "issued": "2015-08-19T19:41:06.000Z",
+            "keyword": [
+                "Erie",
+                "services"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_8",
+            "license": "This map is provided for general informational purposes only. The Town of Erie does not warrant its accuracy, completeness, or suitability for any purpose, and should not be relied upon without proper field verification. Use of this material is at the sole risk and liability of the user.",
+            "modified": "2019-11-14T16:41:13.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.6986,39.1294,-103.5654,41.0017",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Animal Control"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "Erie Services",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_0",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/ErieGovServices/MapServer/0",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_0.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_0.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_0.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_0.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=9bdb06b15a5d4114ac315ca83bcd4a9c&sublayer=0",
+            "issued": "2015-08-19T19:41:06.000Z",
+            "keyword": [
+                "Erie",
+                "services"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_0",
+            "license": "This map is provided for general informational purposes only. The Town of Erie does not warrant its accuracy, completeness, or suitability for any purpose, and should not be relied upon without proper field verification. Use of this material is at the sole risk and liability of the user.",
+            "modified": "2019-11-14T16:41:13.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.6986,39.1294,-103.5654,41.0017",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Gas Utilities"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "Erie Services",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_3",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/ErieGovServices/MapServer/3",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_3.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_3.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_3.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_3.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=9bdb06b15a5d4114ac315ca83bcd4a9c&sublayer=3",
+            "issued": "2015-08-19T19:41:06.000Z",
+            "keyword": [
+                "Erie",
+                "services"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_3",
+            "license": "This map is provided for general informational purposes only. The Town of Erie does not warrant its accuracy, completeness, or suitability for any purpose, and should not be relied upon without proper field verification. Use of this material is at the sole risk and liability of the user.",
+            "modified": "2019-11-14T16:41:13.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.6986,39.1294,-103.5654,41.0017",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Water/Wastewater"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "Erie Services",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_5",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/ErieGovServices/MapServer/5",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_5.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_5.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_5.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_5.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=9bdb06b15a5d4114ac315ca83bcd4a9c&sublayer=5",
+            "issued": "2015-08-19T19:41:06.000Z",
+            "keyword": [
+                "Erie",
+                "services"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_5",
+            "license": "This map is provided for general informational purposes only. The Town of Erie does not warrant its accuracy, completeness, or suitability for any purpose, and should not be relied upon without proper field verification. Use of this material is at the sole risk and liability of the user.",
+            "modified": "2019-11-14T16:41:13.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.6986,39.1294,-103.5654,41.0017",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "School Districts"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "Erie Services",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_9",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/ErieGovServices/MapServer/9",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_9.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_9.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_9.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_9.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=9bdb06b15a5d4114ac315ca83bcd4a9c&sublayer=9",
+            "issued": "2015-08-19T19:41:06.000Z",
+            "keyword": [
+                "Erie",
+                "services"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_9",
+            "license": "This map is provided for general informational purposes only. The Town of Erie does not warrant its accuracy, completeness, or suitability for any purpose, and should not be relied upon without proper field verification. Use of this material is at the sole risk and liability of the user.",
+            "modified": "2019-11-14T16:41:13.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.6986,39.1294,-103.5654,41.0017",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "County Services"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "Erie Services",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_2",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/ErieGovServices/MapServer/2",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_2.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_2.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_2.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_2.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=9bdb06b15a5d4114ac315ca83bcd4a9c&sublayer=2",
+            "issued": "2015-08-19T19:41:06.000Z",
+            "keyword": [
+                "Erie",
+                "services"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_2",
+            "license": "This map is provided for general informational purposes only. The Town of Erie does not warrant its accuracy, completeness, or suitability for any purpose, and should not be relied upon without proper field verification. Use of this material is at the sole risk and liability of the user.",
+            "modified": "2019-11-14T16:41:13.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.6986,39.1294,-103.5654,41.0017",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Power Utilities"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "Erie Services",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_4",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/ErieGovServices/MapServer/4",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_4.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_4.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_4.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_4.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=9bdb06b15a5d4114ac315ca83bcd4a9c&sublayer=4",
+            "issued": "2015-08-19T19:41:06.000Z",
+            "keyword": [
+                "Erie",
+                "services"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_4",
+            "license": "This map is provided for general informational purposes only. The Town of Erie does not warrant its accuracy, completeness, or suitability for any purpose, and should not be relied upon without proper field verification. Use of this material is at the sole risk and liability of the user.",
+            "modified": "2019-11-14T16:41:13.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.6986,39.1294,-103.5654,41.0017",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Recycling "
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "Erie Services",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_7",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/ErieGovServices/MapServer/7",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_7.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_7.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_7.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/9bdb06b15a5d4114ac315ca83bcd4a9c_7.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=9bdb06b15a5d4114ac315ca83bcd4a9c&sublayer=7",
+            "issued": "2015-08-19T19:41:06.000Z",
+            "keyword": [
+                "Erie",
+                "services"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c_7",
+            "license": "This map is provided for general informational purposes only. The Town of Erie does not warrant its accuracy, completeness, or suitability for any purpose, and should not be relied upon without proper field verification. Use of this material is at the sole risk and liability of the user.",
+            "modified": "2019-11-14T16:41:13.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.6986,39.1294,-103.5654,41.0017",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Code Enforcement"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "Quarter Corner Monuments 2020",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/2947fecd11254747bbe43c0f9e1c2259_12",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/OpenData/FeatureServer/12",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/2947fecd11254747bbe43c0f9e1c2259_12.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/2947fecd11254747bbe43c0f9e1c2259_12.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/2947fecd11254747bbe43c0f9e1c2259_12.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/2947fecd11254747bbe43c0f9e1c2259_12.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=2947fecd11254747bbe43c0f9e1c2259&sublayer=12",
+            "issued": "2020-05-15T01:01:45.000Z",
+            "keyword": [
+                "Land",
+                "Land Use",
+                "Surveyed Monuments"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/2947fecd11254747bbe43c0f9e1c2259_12",
+            "license": "",
+            "modified": "2021-02-17T15:48:49.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1134,39.9945,-104.9776,40.1124",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Quarter Corner Monuments 2020"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "Land Use Boulder",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/57d17d7c74a04e22843d3455106f2c82_9",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/OpenData/FeatureServer/9",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/57d17d7c74a04e22843d3455106f2c82_9.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/57d17d7c74a04e22843d3455106f2c82_9.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/57d17d7c74a04e22843d3455106f2c82_9.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/57d17d7c74a04e22843d3455106f2c82_9.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=57d17d7c74a04e22843d3455106f2c82&sublayer=9",
+            "issued": "2020-05-14T22:14:56.000Z",
+            "keyword": [
+                "land use",
+                "boundary",
+                "Land Use",
+                "Land"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/57d17d7c74a04e22843d3455106f2c82_9",
+            "license": "",
+            "modified": "2020-05-14T22:14:57.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1129,40.0005,-104.9805,40.1100",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Land Use Districts"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "<div><div><span style='background-color:rgba(255, 255, 255, 0.772549);'><font color='#808080'><font><span style='font-size:16px;'>Open\n space consists of protected lands of significant value that are \nconserved in their natural state, restored or improved with appropriate \nnative landscaping to retain a natural or natural-appearing condition, \nor conserved in quality agriculture.</span></font><br /></font></span></div><div><span style='background-color:rgba(255, 255, 255, 0.772549);'><font color='#808080'><span style='font-size:16px;'><br /></span></font></span></div><font color='#808080'><span style='font-family:Arial; font-size:16px; background-color:rgba(255, 255, 255, 0.772549);'>The benefits of open space include:\u00a0<span style='color:rgb(128, 128, 128);'>\u00a0</span></span><br /></font><ul><li><font color='#808080'>Separating or buffering communities to allow them to keep their individual identities</font></li><li><font color='#808080'>Enhancing community gateways</font></li><li><font color='#808080'>Conserving natural features and protecting lands of high ecological, scenic or cultural value</font></li><li><font color='#808080'>Providing visual separation between built areas</font></li><li><font color='#808080'>Providing places for types of outdoor recreation appropriate to the natural setting</font></li><li><font color='#808080'>Limiting development on lands that would adversely affect the community in some way</font></li><li><font color='#808080'>Providing places for local agriculture to continue</font></li><li><font color='#808080'>Preserving long distance views</font></li><li><font color='#808080'>Maintaining Erie\u2019s rural character and creating corridors for the safe and enjoyable movement of people and animals.</font></li></ul></div>",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/c848de5b32974535aa65b9312a6791f3_2",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/OpenData/FeatureServer/2",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/c848de5b32974535aa65b9312a6791f3_2.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/c848de5b32974535aa65b9312a6791f3_2.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/c848de5b32974535aa65b9312a6791f3_2.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/c848de5b32974535aa65b9312a6791f3_2.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=c848de5b32974535aa65b9312a6791f3&sublayer=2",
+            "issued": "2020-05-14T21:27:39.000Z",
+            "keyword": [
+                "parks"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/c848de5b32974535aa65b9312a6791f3_2",
+            "license": "",
+            "modified": "2023-04-04T20:50:29.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1320,39.9797,-104.9845,40.1344",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Green Spaces"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "Quarter Section Lines 2020",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/dfba8735cdb64a4b89c52c8ff1074fc0_13",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/OpenData/FeatureServer/13",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/dfba8735cdb64a4b89c52c8ff1074fc0_13.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/dfba8735cdb64a4b89c52c8ff1074fc0_13.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/dfba8735cdb64a4b89c52c8ff1074fc0_13.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/dfba8735cdb64a4b89c52c8ff1074fc0_13.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=dfba8735cdb64a4b89c52c8ff1074fc0&sublayer=13",
+            "issued": "2020-05-15T01:03:30.000Z",
+            "keyword": [
+                "Land",
+                "Land Use"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/dfba8735cdb64a4b89c52c8ff1074fc0_13",
+            "license": "",
+            "modified": "2020-05-15T01:10:03.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1130,40.0004,-104.9795,40.1102",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Quarter Section Lines 2020"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "Erie Services",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/ErieGovServices/MapServer",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=9bdb06b15a5d4114ac315ca83bcd4a9c",
+            "issued": "2015-08-19T19:41:06.000Z",
+            "keyword": [
+                "Erie",
+                "services"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/9bdb06b15a5d4114ac315ca83bcd4a9c",
+            "license": "This map is provided for general informational purposes only. The Town of Erie does not warrant its accuracy, completeness, or suitability for any purpose, and should not be relied upon without proper field verification. Use of this material is at the sole risk and liability of the user.",
+            "modified": "2019-11-14T16:41:13.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.6986,39.1294,-103.5654,41.0017",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "ErieGovServices"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "Parcels have aggregated from Weld, Boulder and Broomfield Counties.",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/2549e5a1d5ee449688a7034a75b40f75_10",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/OpenData/FeatureServer/10",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/2549e5a1d5ee449688a7034a75b40f75_10.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/2549e5a1d5ee449688a7034a75b40f75_10.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/2549e5a1d5ee449688a7034a75b40f75_10.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/2549e5a1d5ee449688a7034a75b40f75_10.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=2549e5a1d5ee449688a7034a75b40f75&sublayer=10",
+            "issued": "2020-05-14T22:19:55.000Z",
+            "keyword": [
+                "boundary",
+                "land",
+                "Town of"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/2549e5a1d5ee449688a7034a75b40f75_10",
+            "license": "",
+            "modified": "2023-04-04T17:52:27.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1811,39.9654,-104.9232,40.1463",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Parcels"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "{{description}}",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/dbefb35a827543cdb4ce610d756b59a5",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=dbefb35a827543cdb4ce610d756b59a5",
+            "issued": "2020-03-11T19:51:37.000Z",
+            "keyword": [
+                "Parks and Recreation",
+                "Interactive",
+                "Erie"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/dbefb35a827543cdb4ce610d756b59a5",
+            "license": "This map is provided for general informational purposes only. The Town of Erie does not warrant its accuracy, completeness, or suitability for any purpose, and should not be relied upon without proper field verification. Use of this material is at the sole risk and liability of the user.",
+            "modified": "2021-05-05T16:48:37.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1060,40.0120,-104.9793,40.0682",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Parks and Trails"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "Zoning Parcels",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/b5d807881ee545078b97d45ed6a421c0_8",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/OpenData/FeatureServer/8",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/b5d807881ee545078b97d45ed6a421c0_8.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/b5d807881ee545078b97d45ed6a421c0_8.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/b5d807881ee545078b97d45ed6a421c0_8.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/b5d807881ee545078b97d45ed6a421c0_8.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=b5d807881ee545078b97d45ed6a421c0&sublayer=8",
+            "issued": "2020-05-14T22:10:28.000Z",
+            "keyword": [
+                "boundary",
+                "land use",
+                "land"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/b5d807881ee545078b97d45ed6a421c0_8",
+            "license": "",
+            "modified": "2023-05-11T01:28:39.270Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-175.1450,-77.8229,-104.9804,40.1020",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Zoning"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "Town of Erie Facilites",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/465feaa1b1ad463fb71405c3f15531df_0",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/Facilites/MapServer/0",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/465feaa1b1ad463fb71405c3f15531df_0.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/465feaa1b1ad463fb71405c3f15531df_0.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/465feaa1b1ad463fb71405c3f15531df_0.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/465feaa1b1ad463fb71405c3f15531df_0.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=465feaa1b1ad463fb71405c3f15531df&sublayer=0",
+            "issued": "2018-02-21T21:24:24.000Z",
+            "keyword": [
+                "Town of Erie Facilites"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/465feaa1b1ad463fb71405c3f15531df_0",
+            "license": "",
+            "modified": "2019-11-14T16:41:13.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.0827,40.0039,-105.0106,40.0522",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Facilites"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/2c2b45206a43406fa76cc24a7bd25f60_15",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/OpenData/FeatureServer/15",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/2c2b45206a43406fa76cc24a7bd25f60_15.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/2c2b45206a43406fa76cc24a7bd25f60_15.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/2c2b45206a43406fa76cc24a7bd25f60_15.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/2c2b45206a43406fa76cc24a7bd25f60_15.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=2c2b45206a43406fa76cc24a7bd25f60&sublayer=15",
+            "issued": "2021-02-18T17:11:23.000Z",
+            "keyword": [
+                "boundary",
+                "land",
+                "Land"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/2c2b45206a43406fa76cc24a7bd25f60_15",
+            "license": "",
+            "modified": "2023-04-04T21:03:39.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1048,40.0008,-105.0078,40.1022",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Municipal Watershed Parcels"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/2b4888994261425d8364cbc7ea40ba5b_16",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/OpenData/MapServer/16",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/2b4888994261425d8364cbc7ea40ba5b_16.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/2b4888994261425d8364cbc7ea40ba5b_16.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/2b4888994261425d8364cbc7ea40ba5b_16.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/2b4888994261425d8364cbc7ea40ba5b_16.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=2b4888994261425d8364cbc7ea40ba5b&sublayer=16",
+            "issued": "2021-04-05T20:45:25.000Z",
+            "keyword": [
+                "tax",
+                "annexation",
+                "boundary"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/2b4888994261425d8364cbc7ea40ba5b_16",
+            "license": "",
+            "modified": "2023-04-04T21:02:41.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1048,40.0004,-104.9780,40.1020",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Erie Annexation Tax Districts"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/c45270bac3e94387b4ba8a554d1771d0_1",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/OpenData/FeatureServer/1",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/c45270bac3e94387b4ba8a554d1771d0_1.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/c45270bac3e94387b4ba8a554d1771d0_1.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/c45270bac3e94387b4ba8a554d1771d0_1.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/c45270bac3e94387b4ba8a554d1771d0_1.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=c45270bac3e94387b4ba8a554d1771d0&sublayer=1",
+            "issued": "2020-05-14T21:20:54.000Z",
+            "keyword": [
+                "Parks",
+                "parks",
+                "Erie"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/c45270bac3e94387b4ba8a554d1771d0_1",
+            "license": "",
+            "modified": "2023-04-04T20:55:51.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1320,39.9797,-104.9845,40.1344",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Parks and Recreation Areas"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "This map describes zoning districts for the Town of Erie, CO. Current as of 02/21/2023.",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/documents/7a33d316f91e46c7988fb3611e040c78",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=7a33d316f91e46c7988fb3611e040c78",
+            "issued": "2020-09-10T16:21:52.000Z",
+            "keyword": [
+                "Town of Erie",
+                "Zoning",
+                "Planning and Development",
+                "Planning"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/documents/7a33d316f91e46c7988fb3611e040c78",
+            "license": "",
+            "modified": "2023-02-21T22:55:37.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Zoning"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "This map is provided for general informational purposes only. The Town \nof Erie does not warrant its accuracy, completeness, or suitability for \nany purpose, and should not be relied upon without proper field \nverification. Use of this material is at the sole risk and liability of \nthe user.",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/apps/4901bd76eb244b9d9c75c9ae70dea804",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://erieco.maps.arcgis.com/apps/webappviewer/index.html?id=4901bd76eb244b9d9c75c9ae70dea804",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=4901bd76eb244b9d9c75c9ae70dea804",
+            "issued": "2018-04-03T17:37:51.000Z",
+            "keyword": [
+                "Erie utility service providers",
+                "General",
+                "Interactive",
+                "Erie"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/apps/4901bd76eb244b9d9c75c9ae70dea804",
+            "license": "",
+            "modified": "2023-02-21T21:58:49.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "MyServices"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/278905186eea429d8eb9fffdb8293cf7_17",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/OpenData/FeatureServer/17",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/278905186eea429d8eb9fffdb8293cf7_17.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/278905186eea429d8eb9fffdb8293cf7_17.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/278905186eea429d8eb9fffdb8293cf7_17.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/278905186eea429d8eb9fffdb8293cf7_17.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=278905186eea429d8eb9fffdb8293cf7&sublayer=17",
+            "issued": "2022-10-21T22:25:44.000Z",
+            "keyword": [
+                "Contours",
+                "Elevation",
+                "Town of Erie",
+                "Open Data"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/278905186eea429d8eb9fffdb8293cf7_17",
+            "license": "",
+            "modified": "2022-10-21T22:25:45.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1180,39.9982,-104.9501,40.1138",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Contours 1ft (2020)"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/51661beaca194a09a812d2b5fdb534d7_14",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/OpenData/MapServer/14",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/51661beaca194a09a812d2b5fdb534d7_14.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/51661beaca194a09a812d2b5fdb534d7_14.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/51661beaca194a09a812d2b5fdb534d7_14.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/51661beaca194a09a812d2b5fdb534d7_14.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=51661beaca194a09a812d2b5fdb534d7&sublayer=14",
+            "issued": "2020-10-15T20:24:22.000Z",
+            "keyword": [
+                "Town of Erie Open Data",
+                "Boundaries",
+                "Boundary",
+                "boundary"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/51661beaca194a09a812d2b5fdb534d7_14",
+            "license": "",
+            "modified": "2020-10-15T20:27:46.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1328,39.9980,-104.9787,40.1036",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Erie Addressing Grid"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/39beafaec2da47608ff983851a92d6c3_11",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/OpenData/FeatureServer/11",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/39beafaec2da47608ff983851a92d6c3_11.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/39beafaec2da47608ff983851a92d6c3_11.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/39beafaec2da47608ff983851a92d6c3_11.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/39beafaec2da47608ff983851a92d6c3_11.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=39beafaec2da47608ff983851a92d6c3&sublayer=11",
+            "issued": "2020-08-03T18:07:54.000Z",
+            "keyword": [
+                "Town of Erie",
+                "Development"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/39beafaec2da47608ff983851a92d6c3_11",
+            "license": "",
+            "modified": "2020-08-03T18:07:55.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1463,39.9875,-104.9415,40.1029",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Residential Development Activity"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/b89229cf23b44df0a5051fbc95e4c888_0",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/OpenData/FeatureServer/0",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/b89229cf23b44df0a5051fbc95e4c888_0.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/b89229cf23b44df0a5051fbc95e4c888_0.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/b89229cf23b44df0a5051fbc95e4c888_0.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/b89229cf23b44df0a5051fbc95e4c888_0.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=b89229cf23b44df0a5051fbc95e4c888&sublayer=0",
+            "issued": "2020-05-14T20:16:52.000Z",
+            "keyword": [
+                "Parks",
+                "parks",
+                "Parks and Recreation",
+                "Open Data",
+                "parks and recreation"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/b89229cf23b44df0a5051fbc95e4c888_0",
+            "license": "",
+            "modified": "2023-04-04T21:06:33.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1405,39.9969,-104.9735,40.1112",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Trails"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/be246641b65e43eda629a8ad735926c4_18",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/OpenData/FeatureServer/18",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/be246641b65e43eda629a8ad735926c4_18.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/be246641b65e43eda629a8ad735926c4_18.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/be246641b65e43eda629a8ad735926c4_18.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/be246641b65e43eda629a8ad735926c4_18.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=be246641b65e43eda629a8ad735926c4&sublayer=18",
+            "issued": "2023-02-16T18:44:04.000Z",
+            "keyword": [
+                "Schools",
+                "Town of Erie",
+                "Open Data"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/be246641b65e43eda629a8ad735926c4_18",
+            "license": "",
+            "modified": "2023-04-04T20:59:58.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.0963,39.9986,-105.0009,40.0953",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Schools"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/01120bce66ca45dda83a06b09f4d8076_6",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/OpenData/FeatureServer/6",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/01120bce66ca45dda83a06b09f4d8076_6.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/01120bce66ca45dda83a06b09f4d8076_6.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/01120bce66ca45dda83a06b09f4d8076_6.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/01120bce66ca45dda83a06b09f4d8076_6.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=01120bce66ca45dda83a06b09f4d8076&sublayer=6",
+            "issued": "2020-05-14T21:48:03.000Z",
+            "keyword": [
+                "boundary",
+                "land",
+                "TOE"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/01120bce66ca45dda83a06b09f4d8076_6",
+            "license": "",
+            "modified": "2023-04-04T20:58:05.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1048,40.0004,-104.9780,40.1020",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Town Boundary"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/91ddd820c31646fd92ed5523bb162aa6_0",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/Hydrant/MapServer/0",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/91ddd820c31646fd92ed5523bb162aa6_0.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/91ddd820c31646fd92ed5523bb162aa6_0.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/91ddd820c31646fd92ed5523bb162aa6_0.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/91ddd820c31646fd92ed5523bb162aa6_0.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=91ddd820c31646fd92ed5523bb162aa6&sublayer=0",
+            "issued": "2021-06-22T16:16:41.000Z",
+            "keyword": [
+                "Town of Erie",
+                "Hydrants",
+                "Fire"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/91ddd820c31646fd92ed5523bb162aa6_0",
+            "license": "",
+            "modified": "2023-04-04T20:54:51.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1022,40.0010,-104.9837,40.0987",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Erie Hydrants"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "{{description}}",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/apps/1c63b738af3640ad867a03b888d4fcf4",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://erieco.maps.arcgis.com/apps/webappviewer/index.html?id=1c63b738af3640ad867a03b888d4fcf4",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=1c63b738af3640ad867a03b888d4fcf4",
+            "issued": "2020-03-11T19:53:25.000Z",
+            "keyword": [
+                "Parks and Recreation",
+                "Interactive",
+                "Erie"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/apps/1c63b738af3640ad867a03b888d4fcf4",
+            "license": "",
+            "modified": "2023-02-21T21:55:08.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Parks and Trails"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "{{description}}",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/apps/7c48a2fa3831474a859038ba0fc4c67a",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://erieco.maps.arcgis.com/apps/View/index.html?appid=7c48a2fa3831474a859038ba0fc4c67a",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=7c48a2fa3831474a859038ba0fc4c67a",
+            "issued": "2021-04-05T21:48:43.000Z",
+            "keyword": [
+                "Tax",
+                "annexation",
+                "Boundary"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/apps/7c48a2fa3831474a859038ba0fc4c67a",
+            "license": "",
+            "modified": "2023-02-21T21:37:18.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Erie Sales and Use Tax Lookup"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "{{description}}",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/documents/c0ee681788654b798effe26f1fab875c",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=c0ee681788654b798effe26f1fab875c",
+            "issued": "2022-02-24T23:03:17.000Z",
+            "keyword": [
+                "Town of Erie",
+                "Trails",
+                "Public Site PDFs",
+                "Town of Erie Trails",
+                "Parks and Recreation"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/documents/c0ee681788654b798effe26f1fab875c",
+            "license": "",
+            "modified": "2023-01-26T22:41:42.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Town of Erie Recreation Trail Map"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "{{description}}",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/documents/e1532cb1424a4f66b4cd06c0493a50b7",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=e1532cb1424a4f66b4cd06c0493a50b7",
+            "issued": "2022-06-23T19:44:05.000Z",
+            "keyword": [
+                "Economic Development",
+                "Town of Erie",
+                "Residential"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/documents/e1532cb1424a4f66b4cd06c0493a50b7",
+            "license": "",
+            "modified": "2022-06-23T19:48:43.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Residential Development Activity"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/3993d50cf54f435e948882c3fffd8c14_3",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/OpenData/FeatureServer/3",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/3993d50cf54f435e948882c3fffd8c14_3.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/3993d50cf54f435e948882c3fffd8c14_3.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/3993d50cf54f435e948882c3fffd8c14_3.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/3993d50cf54f435e948882c3fffd8c14_3.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=3993d50cf54f435e948882c3fffd8c14&sublayer=3",
+            "issued": "2020-05-14T21:32:29.000Z",
+            "keyword": [
+                "boundary",
+                "Boundary"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/3993d50cf54f435e948882c3fffd8c14_3",
+            "license": "",
+            "modified": "2023-04-04T21:05:43.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1073,40.0009,-104.9838,40.0997",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Address Pts"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/a6ed5334a01d45019b08b6a46041f792_4",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/OpenData/FeatureServer/4",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/a6ed5334a01d45019b08b6a46041f792_4.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/a6ed5334a01d45019b08b6a46041f792_4.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/a6ed5334a01d45019b08b6a46041f792_4.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/a6ed5334a01d45019b08b6a46041f792_4.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=a6ed5334a01d45019b08b6a46041f792&sublayer=4",
+            "issued": "2020-05-14T21:37:17.000Z",
+            "keyword": [
+                "streets"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/a6ed5334a01d45019b08b6a46041f792_4",
+            "license": "",
+            "modified": "2023-04-04T21:05:15.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.4316,39.9586,-104.9150,40.3157",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Street Centerlines"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/3fe43035174246a6b8b9959a7bbeba0d_5",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/OpenData/FeatureServer/5",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/3fe43035174246a6b8b9959a7bbeba0d_5.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/3fe43035174246a6b8b9959a7bbeba0d_5.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/3fe43035174246a6b8b9959a7bbeba0d_5.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/3fe43035174246a6b8b9959a7bbeba0d_5.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=3fe43035174246a6b8b9959a7bbeba0d&sublayer=5",
+            "issued": "2020-05-14T21:44:13.000Z",
+            "keyword": [
+                "Boundary",
+                "boundary"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/3fe43035174246a6b8b9959a7bbeba0d_5",
+            "license": "",
+            "modified": "2023-04-26T01:59:28.937Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1027,40.0006,-104.9986,40.0876",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Subdivisions"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "{{description}}",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/apps/23e681c0686e45c097db5a7fd608ea3f",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://erieco.maps.arcgis.com/apps/webappviewer/index.html?id=23e681c0686e45c097db5a7fd608ea3f",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=23e681c0686e45c097db5a7fd608ea3f",
+            "issued": "2021-08-25T19:53:55.000Z",
+            "keyword": [
+                "Land Use",
+                "Erie"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/apps/23e681c0686e45c097db5a7fd608ea3f",
+            "license": "",
+            "modified": "2022-02-18T17:21:00.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Comprehensive Plan App"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "{{description}}",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/08e38b3a35ab4f028b6d454ec08e7641",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=08e38b3a35ab4f028b6d454ec08e7641",
+            "issued": "2021-08-25T19:49:17.000Z",
+            "keyword": [
+                "Land Use",
+                "Erie"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/08e38b3a35ab4f028b6d454ec08e7641",
+            "license": "",
+            "modified": "2021-09-07T18:12:23.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.2262,39.9664,-104.8218,40.1272",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Comprehensive Plan Map"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/0388de4c7d114e62875754cd2672f28d_7",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eags.erieco.gov/arcgis/rest/services/OpenData/FeatureServer/7",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/0388de4c7d114e62875754cd2672f28d_7.csv?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/0388de4c7d114e62875754cd2672f28d_7.geojson?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "GeoJSON",
+                    "mediaType": "application/vnd.geo+json",
+                    "title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/0388de4c7d114e62875754cd2672f28d_7.zip?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "ZIP",
+                    "mediaType": "application/zip",
+                    "title": "Shapefile"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/datasets/0388de4c7d114e62875754cd2672f28d_7.kml?outSR=%7B%22latestWkid%22%3A2876%2C%22wkid%22%3A2876%7D",
+                    "format": "KML",
+                    "mediaType": "application/vnd.google-earth.kml+xml",
+                    "title": "KML"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=0388de4c7d114e62875754cd2672f28d&sublayer=7",
+            "issued": "2020-05-14T21:54:42.000Z",
+            "keyword": [
+                "boundary",
+                "Land Use"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/0388de4c7d114e62875754cd2672f28d_7",
+            "license": "",
+            "modified": "2021-01-26T15:09:11.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1129,40.0004,-104.9796,40.1103",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Planning Area"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "{{description}}",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/documents/671dc2592de846df9d181c88438ca939",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=671dc2592de846df9d181c88438ca939",
+            "issued": "2020-02-24T21:40:13.000Z",
+            "keyword": [
+                "Streets",
+                "Town of Erie"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/documents/671dc2592de846df9d181c88438ca939",
+            "license": "",
+            "modified": "2020-03-05T15:57:08.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Town of Erie Street Guide"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "{{description}}",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/documents/4459c13c42f7479cbe4ab9f720807061",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=4459c13c42f7479cbe4ab9f720807061",
+            "issued": "2022-02-24T23:13:00.000Z",
+            "keyword": [
+                "Town of Erie",
+                "PROST",
+                "OSTAB",
+                "Trails",
+                "Proposed Trails",
+                "Public Site PDFs"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/documents/4459c13c42f7479cbe4ab9f720807061",
+            "license": "",
+            "modified": "2023-01-26T23:05:29.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Town of Erie Trail Map with Proposed Trails"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "{{description}}",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/apps/2f2f822f322b48eca7ea9c778d300a03",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://erieco.maps.arcgis.com/apps/webappviewer/index.html?id=2f2f822f322b48eca7ea9c778d300a03",
+                    "format": "ArcGIS GeoServices REST API",
+                    "mediaType": "application/json",
+                    "title": "ArcGIS GeoService"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=2f2f822f322b48eca7ea9c778d300a03",
+            "issued": "2020-01-16T07:39:56.000Z",
+            "keyword": [
+                "Town of Erie"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/apps/2f2f822f322b48eca7ea9c778d300a03",
+            "license": "",
+            "modified": "2023-02-21T21:54:11.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "{{extent:computeSpatialProperty}}",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Development Activity"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "{{description}}",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/189d81265fd74bf0a33e784af84b0b47",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=189d81265fd74bf0a33e784af84b0b47",
+            "issued": "2022-02-17T21:19:00.000Z",
+            "keyword": [
+                "Utilities",
+                "Erie"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/189d81265fd74bf0a33e784af84b0b47",
+            "license": "",
+            "modified": "2022-10-17T17:57:48.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1749,39.9802,-104.9213,40.0912",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "MyServices"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/b50e4d4227cb4a36b580a53ad9e4e6a1",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=b50e4d4227cb4a36b580a53ad9e4e6a1",
+            "issued": "2022-02-15T23:17:38.000Z",
+            "keyword": [
+                "Erie utility service providers"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/b50e4d4227cb4a36b580a53ad9e4e6a1",
+            "license": "",
+            "modified": "2022-02-17T18:24:01.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1061,39.9888,-104.9888,40.0770",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "XXXMyServices"
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "TOEGIS"
+            },
+            "description": "{{description}}",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/e0a9f5addf8442ebb55bdccb5731fe4d",
+                    "format": "Web Page",
+                    "mediaType": "text/html",
+                    "title": "ArcGIS Hub Dataset"
+                }
+            ],
+            "identifier": "https://www.arcgis.com/home/item.html?id=e0a9f5addf8442ebb55bdccb5731fe4d",
+            "issued": "2020-01-16T07:37:19.000Z",
+            "keyword": [
+                "Town of Erie"
+            ],
+            "landingPage": "https://town-of-erie-co-new-site-erieco.hub.arcgis.com/maps/e0a9f5addf8442ebb55bdccb5731fe4d",
+            "license": "",
+            "modified": "2021-06-22T15:03:33.000Z",
+            "publisher": {
+                "name": "TOEGIS"
+            },
+            "spatial": "-105.1830,39.9897,-104.9295,40.1007",
+            "theme": [
+                "geospatial"
+            ],
+            "title": "Development Activity"
+        }
+    ],
+    "describedBy": "https://project-open-data.cio.gov/v1.1/schema/catalog.json"
+}

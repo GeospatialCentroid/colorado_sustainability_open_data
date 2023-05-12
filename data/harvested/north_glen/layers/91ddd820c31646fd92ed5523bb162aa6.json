@@ -1,0 +1,1036 @@
+{
+    "advancedQueryCapabilities": {
+        "supportsCountDistinct": true,
+        "supportsDistinct": true,
+        "supportsHavingClause": true,
+        "supportsOrderBy": true,
+        "supportsPagination": true,
+        "supportsQueryWithDistance": true,
+        "supportsReturningQueryExtent": true,
+        "supportsSqlExpression": true,
+        "supportsStatistics": true,
+        "supportsTrueCurve": true,
+        "useStandardizedQueries": true
+    },
+    "canModifyLayer": false,
+    "canScaleSymbols": false,
+    "capabilities": "Map,Query,Data",
+    "copyrightText": "",
+    "currentVersion": 10.9,
+    "dateFieldsTimeReference": null,
+    "defaultSubtypeCode": null,
+    "defaultVisibility": true,
+    "description": "",
+    "displayField": "erie.GIS.wHydrant.FACILITYID",
+    "drawingInfo": {
+        "labelingInfo": null,
+        "renderer": {
+            "description": "",
+            "label": "",
+            "symbol": {
+                "angle": 0,
+                "color": [
+                    0,
+                    0,
+                    0,
+                    255
+                ],
+                "outline": {
+                    "color": [
+                        0,
+                        0,
+                        0,
+                        255
+                    ],
+                    "width": 1
+                },
+                "size": 4,
+                "style": "esriSMSCircle",
+                "type": "esriSMS",
+                "xoffset": 0,
+                "yoffset": 0
+            },
+            "type": "simple"
+        },
+        "transparency": 0
+    },
+    "extent": {
+        "spatialReference": {
+            "latestVcsWkid": 5703,
+            "latestWkid": 2876,
+            "vcsWkid": 5703,
+            "wkid": 2876
+        },
+        "xmax": 3144425.79438871,
+        "xmin": 3111441.241038859,
+        "ymax": 1279219.57801617,
+        "ymin": 1243456.83858947
+    },
+    "fields": [
+        {
+            "alias": "OBJECTID",
+            "domain": null,
+            "name": "erie.GIS.wHydrant.OBJECTID",
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "Facility Identifier",
+            "domain": null,
+            "length": 20,
+            "name": "erie.GIS.wHydrant.FACILITYID",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Install Date",
+            "domain": null,
+            "length": 8,
+            "name": "erie.GIS.wHydrant.INSTALLDATE",
+            "type": "esriFieldTypeDate"
+        },
+        {
+            "alias": "Location Description",
+            "domain": null,
+            "length": 200,
+            "name": "erie.GIS.wHydrant.LOCDESC",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Rotation",
+            "domain": null,
+            "name": "erie.GIS.wHydrant.ROTATION",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Manufacturer",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "OTH",
+                        "name": "Other"
+                    },
+                    {
+                        "code": "UNK",
+                        "name": "Unknown"
+                    },
+                    {
+                        "code": "CLOW",
+                        "name": "CLOW"
+                    },
+                    {
+                        "code": "DRESSER",
+                        "name": "DRESSER"
+                    },
+                    {
+                        "code": "KENNEDY",
+                        "name": "KENNEDY"
+                    },
+                    {
+                        "code": "MUELLER",
+                        "name": "MUELLER"
+                    },
+                    {
+                        "code": "WATEROUS-PACER",
+                        "name": "WATEROUS-PACER"
+                    }
+                ],
+                "description": "List of Hydrant Manufacturers",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "wHydrantManufacturer",
+                "splitPolicy": "esriSPTDuplicate",
+                "type": "codedValue"
+            },
+            "length": 30,
+            "name": "erie.GIS.wHydrant.MANUFACTURER",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Operable",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": 0,
+                        "name": "False"
+                    },
+                    {
+                        "code": 1,
+                        "name": "True"
+                    }
+                ],
+                "description": "A 0/1 boolean domain",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "BooleanDomain",
+                "splitPolicy": "esriSPTDuplicate",
+                "type": "codedValue"
+            },
+            "name": "erie.GIS.wHydrant.OPERABLE",
+            "type": "esriFieldTypeSmallInteger"
+        },
+        {
+            "alias": "Enabled",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": 0,
+                        "name": "False"
+                    },
+                    {
+                        "code": 1,
+                        "name": "True"
+                    }
+                ],
+                "description": "Geometric Network Enabled domain",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "EnabledDomain",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "name": "erie.GIS.wHydrant.ENABLED",
+            "type": "esriFieldTypeSmallInteger"
+        },
+        {
+            "alias": "Active Flag",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": 0,
+                        "name": "False"
+                    },
+                    {
+                        "code": 1,
+                        "name": "True"
+                    }
+                ],
+                "description": "A 0/1 boolean domain",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "BooleanDomain",
+                "splitPolicy": "esriSPTDuplicate",
+                "type": "codedValue"
+            },
+            "name": "erie.GIS.wHydrant.ACTIVEFLAG",
+            "type": "esriFieldTypeSmallInteger"
+        },
+        {
+            "alias": "Owned By",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": -1,
+                        "name": "Private"
+                    },
+                    {
+                        "code": -2,
+                        "name": "Other"
+                    },
+                    {
+                        "code": 1,
+                        "name": "Erie"
+                    },
+                    {
+                        "code": 2,
+                        "name": "HOA"
+                    },
+                    {
+                        "code": 3,
+                        "name": "United Power"
+                    },
+                    {
+                        "code": 4,
+                        "name": "Xcel"
+                    },
+                    {
+                        "code": 5,
+                        "name": "Lafayette"
+                    },
+                    {
+                        "code": 6,
+                        "name": "Left Hand Water"
+                    }
+                ],
+                "description": "The owner of the asset",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "AssetOwner",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "name": "erie.GIS.wHydrant.OWNEDBY",
+            "type": "esriFieldTypeSmallInteger"
+        },
+        {
+            "alias": "Managed By",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": -1,
+                        "name": "Private"
+                    },
+                    {
+                        "code": -2,
+                        "name": "Other"
+                    },
+                    {
+                        "code": 1,
+                        "name": "Erie"
+                    },
+                    {
+                        "code": 2,
+                        "name": "HOA"
+                    },
+                    {
+                        "code": 3,
+                        "name": "United Power"
+                    },
+                    {
+                        "code": 4,
+                        "name": "Xcel"
+                    },
+                    {
+                        "code": 5,
+                        "name": "Lafayette"
+                    },
+                    {
+                        "code": 6,
+                        "name": "Left Hand Water"
+                    }
+                ],
+                "description": "The manager of the asset",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "AssetManager",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "name": "erie.GIS.wHydrant.MAINTBY",
+            "type": "esriFieldTypeSmallInteger"
+        },
+        {
+            "alias": "Last Update Date",
+            "domain": null,
+            "length": 8,
+            "name": "erie.GIS.wHydrant.LASTUPDATE",
+            "type": "esriFieldTypeDate"
+        },
+        {
+            "alias": "Last Editor",
+            "domain": null,
+            "length": 50,
+            "name": "erie.GIS.wHydrant.LASTEDITOR",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "UDF_ORDER",
+            "domain": null,
+            "length": 20,
+            "name": "erie.GIS.wHydrant.UDF_ORDER",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "PSI",
+            "domain": null,
+            "name": "erie.GIS.wHydrant.PSI",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "erie.GIS.wHydrant.Subdivision",
+            "domain": null,
+            "length": 50,
+            "name": "erie.GIS.wHydrant.Subdivision",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "SOURCE",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "ELECTRONIC ASBUILT",
+                        "name": "ELECTRONIC ASBUILT"
+                    },
+                    {
+                        "code": "MASTER PLAN",
+                        "name": "MASTER PLAN"
+                    },
+                    {
+                        "code": "CONSTRUCTION DESIGN",
+                        "name": "CONSTRUCTION DESIGN"
+                    },
+                    {
+                        "code": "CONSTRUCTION ASBUILT",
+                        "name": "CONSTRUCTION ASBUILT"
+                    },
+                    {
+                        "code": "SURVEY DATA",
+                        "name": "SURVEY DATA"
+                    },
+                    {
+                        "code": "GPS",
+                        "name": "GPS"
+                    },
+                    {
+                        "code": "UNKNOWN",
+                        "name": "UNKNOWN"
+                    },
+                    {
+                        "code": "PLANIMETRIC",
+                        "name": "PLANIMETRIC"
+                    },
+                    {
+                        "code": "RECORD DRAWING",
+                        "name": "RECORD DRAWING"
+                    }
+                ],
+                "description": "The source of the map data",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "Source",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "length": 100,
+            "name": "erie.GIS.wHydrant.SOURCE",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Project Name",
+            "domain": null,
+            "length": 300,
+            "name": "erie.GIS.wHydrant.PROJECT",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "SHAPE",
+            "domain": null,
+            "name": "erie.GIS.wHydrant.SHAPE",
+            "type": "esriFieldTypeGeometry"
+        },
+        {
+            "alias": "erie.GIS.wHydrant.GlobalID",
+            "domain": null,
+            "length": 38,
+            "name": "erie.GIS.wHydrant.GlobalID",
+            "type": "esriFieldTypeGlobalID"
+        },
+        {
+            "alias": "erie.GIS.wHydrant.DOCLINK",
+            "domain": null,
+            "length": 400,
+            "name": "erie.GIS.wHydrant.DOCLINK",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "erie.GIS.HydrantInspectionFID.OBJECTID",
+            "domain": null,
+            "name": "erie.GIS.HydrantInspectionFID.OBJECTID",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "Locate and operate branch valve?",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "No",
+                        "name": "No"
+                    },
+                    {
+                        "code": "Yes",
+                        "name": "Yes"
+                    },
+                    {
+                        "code": "Unk",
+                        "name": "Unknown"
+                    },
+                    {
+                        "code": "Res",
+                        "name": "Restricted"
+                    }
+                ],
+                "description": "Yes No text domain",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "YesNo",
+                "splitPolicy": "esriSPTDuplicate",
+                "type": "codedValue"
+            },
+            "length": 50,
+            "name": "erie.GIS.HydrantInspectionFID.BranchValve",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "If needed, remove oil filter screw and fill with new hydrant oil?",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "No",
+                        "name": "No"
+                    },
+                    {
+                        "code": "Yes",
+                        "name": "Yes"
+                    },
+                    {
+                        "code": "Unk",
+                        "name": "Unknown"
+                    },
+                    {
+                        "code": "Res",
+                        "name": "Restricted"
+                    }
+                ],
+                "description": "Yes No text domain",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "YesNo",
+                "splitPolicy": "esriSPTDuplicate",
+                "type": "codedValue"
+            },
+            "length": 50,
+            "name": "erie.GIS.HydrantInspectionFID.Oil",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Check and wire brush all caps. Fully Tighten?",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "No",
+                        "name": "No"
+                    },
+                    {
+                        "code": "Yes",
+                        "name": "Yes"
+                    },
+                    {
+                        "code": "Unk",
+                        "name": "Unknown"
+                    },
+                    {
+                        "code": "Res",
+                        "name": "Restricted"
+                    }
+                ],
+                "description": "Yes No text domain",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "YesNo",
+                "splitPolicy": "esriSPTDuplicate",
+                "type": "codedValue"
+            },
+            "length": 50,
+            "name": "erie.GIS.HydrantInspectionFID.Caps",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Open hydrant slowly and fully. Fully Tighten?",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "No",
+                        "name": "No"
+                    },
+                    {
+                        "code": "Yes",
+                        "name": "Yes"
+                    },
+                    {
+                        "code": "Unk",
+                        "name": "Unknown"
+                    },
+                    {
+                        "code": "Res",
+                        "name": "Restricted"
+                    }
+                ],
+                "description": "Yes No text domain",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "YesNo",
+                "splitPolicy": "esriSPTDuplicate",
+                "type": "codedValue"
+            },
+            "length": 50,
+            "name": "erie.GIS.HydrantInspectionFID.OpenHydrant",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Check for leaks?",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "No",
+                        "name": "No"
+                    },
+                    {
+                        "code": "Yes",
+                        "name": "Yes"
+                    },
+                    {
+                        "code": "Unk",
+                        "name": "Unknown"
+                    },
+                    {
+                        "code": "Res",
+                        "name": "Restricted"
+                    }
+                ],
+                "description": "Yes No text domain",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "YesNo",
+                "splitPolicy": "esriSPTDuplicate",
+                "type": "codedValue"
+            },
+            "length": 50,
+            "name": "erie.GIS.HydrantInspectionFID.Leaks",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Close hydrant slowly. Listen for weeper noise when almost closed?",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "No",
+                        "name": "No"
+                    },
+                    {
+                        "code": "Yes",
+                        "name": "Yes"
+                    },
+                    {
+                        "code": "Unk",
+                        "name": "Unknown"
+                    },
+                    {
+                        "code": "Res",
+                        "name": "Restricted"
+                    }
+                ],
+                "description": "Yes No text domain",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "YesNo",
+                "splitPolicy": "esriSPTDuplicate",
+                "type": "codedValue"
+            },
+            "length": 50,
+            "name": "erie.GIS.HydrantInspectionFID.WeeperNoise",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Locate Box?",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "No",
+                        "name": "No"
+                    },
+                    {
+                        "code": "Yes",
+                        "name": "Yes"
+                    },
+                    {
+                        "code": "Unk",
+                        "name": "Unknown"
+                    },
+                    {
+                        "code": "Res",
+                        "name": "Restricted"
+                    }
+                ],
+                "description": "Yes No text domain",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "YesNo",
+                "splitPolicy": "esriSPTDuplicate",
+                "type": "codedValue"
+            },
+            "length": 50,
+            "name": "erie.GIS.HydrantInspectionFID.LocateBox",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Does Hydrant need paint?",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "No",
+                        "name": "No"
+                    },
+                    {
+                        "code": "Yes",
+                        "name": "Yes"
+                    },
+                    {
+                        "code": "Unk",
+                        "name": "Unknown"
+                    },
+                    {
+                        "code": "Res",
+                        "name": "Restricted"
+                    }
+                ],
+                "description": "Yes No text domain",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "YesNo",
+                "splitPolicy": "esriSPTDuplicate",
+                "type": "codedValue"
+            },
+            "length": 50,
+            "name": "erie.GIS.HydrantInspectionFID.Paint",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Comments",
+            "domain": null,
+            "length": 500,
+            "name": "erie.GIS.HydrantInspectionFID.Comments",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Inspection Date",
+            "domain": null,
+            "length": 8,
+            "name": "erie.GIS.HydrantInspectionFID.Date",
+            "type": "esriFieldTypeDate"
+        },
+        {
+            "alias": "Needs Repaired?",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "No",
+                        "name": "No"
+                    },
+                    {
+                        "code": "Yes",
+                        "name": "Yes"
+                    },
+                    {
+                        "code": "Unk",
+                        "name": "Unknown"
+                    },
+                    {
+                        "code": "Res",
+                        "name": "Restricted"
+                    }
+                ],
+                "description": "Yes No text domain",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "YesNo",
+                "splitPolicy": "esriSPTDuplicate",
+                "type": "codedValue"
+            },
+            "length": 50,
+            "name": "erie.GIS.HydrantInspectionFID.Repair",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "RelationID",
+            "domain": null,
+            "length": 38,
+            "name": "erie.GIS.HydrantInspectionFID.RelationID",
+            "type": "esriFieldTypeGUID"
+        },
+        {
+            "alias": "Inspector",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "All",
+                        "name": "All"
+                    },
+                    {
+                        "code": "Anthony Medina",
+                        "name": "Anthony Medina"
+                    },
+                    {
+                        "code": "Carlos Anaya",
+                        "name": "Carlos Anaya"
+                    },
+                    {
+                        "code": "Joaquin Coronado",
+                        "name": "Joaquin Coronado"
+                    },
+                    {
+                        "code": "Paul Cochran",
+                        "name": "Paul Cochran"
+                    },
+                    {
+                        "code": "Preston Rodriguez",
+                        "name": "Preston Rodriguez"
+                    },
+                    {
+                        "code": "Robert Halbert",
+                        "name": "Robert Halbert"
+                    },
+                    {
+                        "code": "Sarah Stoudt",
+                        "name": "Sarah Stoudt"
+                    },
+                    {
+                        "code": "Scott Brown",
+                        "name": "Scott Brown"
+                    },
+                    {
+                        "code": "Scott Sutak",
+                        "name": "Scott Sutak"
+                    }
+                ],
+                "description": "Inspectors for Utility Inspections",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "UtilityInspectors",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "length": 50,
+            "name": "erie.GIS.HydrantInspectionFID.Inspector",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Repaired Date",
+            "domain": null,
+            "length": 8,
+            "name": "erie.GIS.HydrantInspectionFID.RepairDate",
+            "type": "esriFieldTypeDate"
+        },
+        {
+            "alias": "Repair Notes",
+            "domain": null,
+            "length": 300,
+            "name": "erie.GIS.HydrantInspectionFID.RepairNotes",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Monthly Static PSI",
+            "domain": null,
+            "length": 4,
+            "name": "erie.GIS.HydrantInspectionFID.MonthlyPSI",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "erie.GIS.HydrantInspectionFID.FacilityID",
+            "domain": null,
+            "length": 20,
+            "name": "erie.GIS.HydrantInspectionFID.FacilityID",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "erie.GIS.HydrantInspectionFID.GlobalID",
+            "domain": null,
+            "length": 38,
+            "name": "erie.GIS.HydrantInspectionFID.GlobalID",
+            "type": "esriFieldTypeGUID"
+        },
+        {
+            "alias": "erie.GIS.HydrantInspectionFID.Inspector1",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "All",
+                        "name": "All"
+                    },
+                    {
+                        "code": "Anthony Medina",
+                        "name": "Anthony Medina"
+                    },
+                    {
+                        "code": "Carlos Anaya",
+                        "name": "Carlos Anaya"
+                    },
+                    {
+                        "code": "Joaquin Coronado",
+                        "name": "Joaquin Coronado"
+                    },
+                    {
+                        "code": "Paul Cochran",
+                        "name": "Paul Cochran"
+                    },
+                    {
+                        "code": "Preston Rodriguez",
+                        "name": "Preston Rodriguez"
+                    },
+                    {
+                        "code": "Robert Halbert",
+                        "name": "Robert Halbert"
+                    },
+                    {
+                        "code": "Sarah Stoudt",
+                        "name": "Sarah Stoudt"
+                    },
+                    {
+                        "code": "Scott Brown",
+                        "name": "Scott Brown"
+                    },
+                    {
+                        "code": "Scott Sutak",
+                        "name": "Scott Sutak"
+                    }
+                ],
+                "description": "Inspectors for Utility Inspections",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "UtilityInspectors",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "length": 50,
+            "name": "erie.GIS.HydrantInspectionFID.Inspector1",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "erie.GIS.HydrantInspectionFID.Inspector2",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "All",
+                        "name": "All"
+                    },
+                    {
+                        "code": "Anthony Medina",
+                        "name": "Anthony Medina"
+                    },
+                    {
+                        "code": "Carlos Anaya",
+                        "name": "Carlos Anaya"
+                    },
+                    {
+                        "code": "Joaquin Coronado",
+                        "name": "Joaquin Coronado"
+                    },
+                    {
+                        "code": "Paul Cochran",
+                        "name": "Paul Cochran"
+                    },
+                    {
+                        "code": "Preston Rodriguez",
+                        "name": "Preston Rodriguez"
+                    },
+                    {
+                        "code": "Robert Halbert",
+                        "name": "Robert Halbert"
+                    },
+                    {
+                        "code": "Sarah Stoudt",
+                        "name": "Sarah Stoudt"
+                    },
+                    {
+                        "code": "Scott Brown",
+                        "name": "Scott Brown"
+                    },
+                    {
+                        "code": "Scott Sutak",
+                        "name": "Scott Sutak"
+                    }
+                ],
+                "description": "Inspectors for Utility Inspections",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "UtilityInspectors",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "length": 50,
+            "name": "erie.GIS.HydrantInspectionFID.Inspector2",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "erie.GIS.HydrantInspectionFID.Inspector3",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "All",
+                        "name": "All"
+                    },
+                    {
+                        "code": "Anthony Medina",
+                        "name": "Anthony Medina"
+                    },
+                    {
+                        "code": "Carlos Anaya",
+                        "name": "Carlos Anaya"
+                    },
+                    {
+                        "code": "Joaquin Coronado",
+                        "name": "Joaquin Coronado"
+                    },
+                    {
+                        "code": "Paul Cochran",
+                        "name": "Paul Cochran"
+                    },
+                    {
+                        "code": "Preston Rodriguez",
+                        "name": "Preston Rodriguez"
+                    },
+                    {
+                        "code": "Robert Halbert",
+                        "name": "Robert Halbert"
+                    },
+                    {
+                        "code": "Sarah Stoudt",
+                        "name": "Sarah Stoudt"
+                    },
+                    {
+                        "code": "Scott Brown",
+                        "name": "Scott Brown"
+                    },
+                    {
+                        "code": "Scott Sutak",
+                        "name": "Scott Sutak"
+                    }
+                ],
+                "description": "Inspectors for Utility Inspections",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "UtilityInspectors",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "length": 50,
+            "name": "erie.GIS.HydrantInspectionFID.Inspector3",
+            "type": "esriFieldTypeString"
+        }
+    ],
+    "geometryField": {
+        "alias": "SHAPE",
+        "name": "erie.GIS.wHydrant.SHAPE",
+        "type": "esriFieldTypeGeometry"
+    },
+    "geometryType": "esriGeometryPoint",
+    "hasAttachments": false,
+    "hasLabels": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "id": 0,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "SHAPE",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "S426_idx"
+        }
+    ],
+    "isDataVersioned": true,
+    "maxRecordCount": 1000,
+    "maxScale": 0,
+    "minScale": 0,
+    "name": "Hydrant Reference",
+    "ownershipBasedAccessControlForFeatures": {
+        "allowOthersToQuery": true
+    },
+    "parentLayer": null,
+    "relationships": [
+        {
+            "cardinality": "esriRelCardinalityOneToMany",
+            "composite": true,
+            "id": 0,
+            "keyField": "FACILITYID",
+            "name": "HydrantInspectionFID",
+            "relatedTableId": 1,
+            "role": "esriRelRoleOrigin"
+        }
+    ],
+    "serviceItemId": "e7cd561e4ea24f2888999cdb7c410412",
+    "sourceSpatialReference": {
+        "latestVcsWkid": 5703,
+        "latestWkid": 2876,
+        "vcsWkid": 5703,
+        "wkid": 2876
+    },
+    "subLayers": [],
+    "subtypeField": null,
+    "subtypeFieldName": null,
+    "subtypes": [],
+    "supportedQueryFormats": "JSON, geoJSON",
+    "supportsAdvancedQueries": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsDatumTransformation": true,
+    "supportsStatistics": true,
+    "type": "Feature Layer",
+    "typeIdField": null,
+    "useStandardizedQueries": true
+}

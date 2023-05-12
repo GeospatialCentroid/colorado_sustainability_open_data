@@ -1,0 +1,2529 @@
+{
+    "advancedEditingCapabilities": {
+        "supportedApplyEditsUploadIDFormats": "JSON",
+        "supportedSqlFormatsInCalculate": [
+            "standard"
+        ],
+        "supportsApplyEditsbyUploadID": true,
+        "supportsAsyncApplyEdits": true,
+        "supportsReturnEditResults": true
+    },
+    "advancedQueryAnalyticCapabilities": {
+        "supportsAsync": true,
+        "supportsLinearRegression": true,
+        "supportsPercentileAnalytic": true
+    },
+    "advancedQueryCapabilities": {
+        "supportedLodTypes": [
+            "geohash"
+        ],
+        "supportedOperationsWithCacheHint": [
+            "query",
+            "queryTopFilter",
+            "queryAnalytics",
+            "queryAttachments",
+            "queryRelated"
+        ],
+        "supportedSpatialAggregationStatistics": [
+            "EnvelopeAggregate",
+            "CentroidAggregate",
+            "ConvexHullAggregate"
+        ],
+        "supportsAdvancedQueryRelated": true,
+        "supportsCountDistinct": true,
+        "supportsDefaultSR": true,
+        "supportsDisjointSpatialRel": true,
+        "supportsDistinct": true,
+        "supportsFullTextSearch": true,
+        "supportsHavingClause": true,
+        "supportsLod": true,
+        "supportsMaxRecordCountFactor": true,
+        "supportsOrderBy": true,
+        "supportsOutFieldSQLExpression": true,
+        "supportsPagination": true,
+        "supportsPaginationOnAggregatedQueries": true,
+        "supportsPercentileStatistics": true,
+        "supportsQueryAnalytic": true,
+        "supportsQueryAttachmentsCountOnly": true,
+        "supportsQueryRelatedPagination": true,
+        "supportsQueryWithCacheHint": true,
+        "supportsQueryWithDatumTransformation": true,
+        "supportsQueryWithDistance": true,
+        "supportsQueryWithLodSR": false,
+        "supportsQueryWithResultType": true,
+        "supportsReturningGeometryCentroid": true,
+        "supportsReturningGeometryProperties": true,
+        "supportsReturningQueryExtent": true,
+        "supportsSpatialAggregationStatistics": true,
+        "supportsSqlExpression": true,
+        "supportsStatistics": true,
+        "supportsTopFeaturesQuery": true
+    },
+    "allowGeometryUpdates": true,
+    "cacheMaxAge": 30,
+    "capabilities": "Query",
+    "copyrightText": "",
+    "currentVersion": 11,
+    "dateFieldsTimeReference": {
+        "respectsDaylightSaving": false,
+        "timeZone": "UTC"
+    },
+    "defaultVisibility": false,
+    "description": "",
+    "displayField": "TOWNNAME",
+    "drawingInfo": {
+        "labelingInfo": [
+            {
+                "allowOverrun": true,
+                "deconflictionStrategy": "static",
+                "labelExpression": "[TOWNNAME]",
+                "labelPlacement": "esriServerPolygonPlacementAlwaysHorizontal",
+                "maxScale": 0,
+                "minScale": 0,
+                "multiPart": "labelPerPart",
+                "name": "Default",
+                "priority": 8,
+                "removeDuplicates": "all",
+                "removeDuplicatesDistance": 0,
+                "repeatLabel": false,
+                "stackAlignment": "dynamic",
+                "stackLabel": true,
+                "stackRowLength": 24,
+                "symbol": {
+                    "angle": 0,
+                    "backgroundColor": null,
+                    "borderLineColor": null,
+                    "borderLineSize": null,
+                    "color": [
+                        255,
+                        255,
+                        255,
+                        255
+                    ],
+                    "font": {
+                        "decoration": "none",
+                        "family": "Arial",
+                        "size": 7,
+                        "style": "normal",
+                        "weight": "bold"
+                    },
+                    "haloColor": [
+                        0,
+                        0,
+                        0,
+                        255
+                    ],
+                    "haloSize": 1,
+                    "horizontalAlignment": "left",
+                    "kerning": true,
+                    "rightToLeft": false,
+                    "type": "esriTS",
+                    "verticalAlignment": "bottom",
+                    "xoffset": 0,
+                    "yoffset": 0
+                },
+                "useCodedValues": true
+            }
+        ],
+        "renderer": {
+            "authoringInfo": {
+                "colorRamp": {
+                    "colorRamps": [
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                107,
+                                210,
+                                250,
+                                255
+                            ],
+                            "toColor": [
+                                107,
+                                210,
+                                250,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                40,
+                                107,
+                                166,
+                                255
+                            ],
+                            "toColor": [
+                                40,
+                                107,
+                                166,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                135,
+                                164,
+                                171,
+                                255
+                            ],
+                            "toColor": [
+                                135,
+                                164,
+                                171,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                37,
+                                143,
+                                179,
+                                255
+                            ],
+                            "toColor": [
+                                37,
+                                143,
+                                179,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                78,
+                                167,
+                                245,
+                                255
+                            ],
+                            "toColor": [
+                                78,
+                                167,
+                                245,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                200,
+                                232,
+                                250,
+                                255
+                            ],
+                            "toColor": [
+                                200,
+                                232,
+                                250,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                139,
+                                179,
+                                217,
+                                255
+                            ],
+                            "toColor": [
+                                139,
+                                179,
+                                217,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                99,
+                                136,
+                                171,
+                                255
+                            ],
+                            "toColor": [
+                                99,
+                                136,
+                                171,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                138,
+                                206,
+                                222,
+                                255
+                            ],
+                            "toColor": [
+                                138,
+                                206,
+                                222,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                91,
+                                175,
+                                227,
+                                255
+                            ],
+                            "toColor": [
+                                91,
+                                175,
+                                227,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                86,
+                                166,
+                                184,
+                                255
+                            ],
+                            "toColor": [
+                                86,
+                                166,
+                                184,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                48,
+                                143,
+                                201,
+                                255
+                            ],
+                            "toColor": [
+                                48,
+                                143,
+                                201,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                60,
+                                218,
+                                250,
+                                255
+                            ],
+                            "toColor": [
+                                60,
+                                218,
+                                250,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                173,
+                                197,
+                                219,
+                                255
+                            ],
+                            "toColor": [
+                                173,
+                                197,
+                                219,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                84,
+                                184,
+                                214,
+                                255
+                            ],
+                            "toColor": [
+                                84,
+                                184,
+                                214,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                49,
+                                141,
+                                222,
+                                255
+                            ],
+                            "toColor": [
+                                49,
+                                141,
+                                222,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                145,
+                                203,
+                                237,
+                                255
+                            ],
+                            "toColor": [
+                                145,
+                                203,
+                                237,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                134,
+                                194,
+                                247,
+                                255
+                            ],
+                            "toColor": [
+                                134,
+                                194,
+                                247,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                70,
+                                122,
+                                171,
+                                255
+                            ],
+                            "toColor": [
+                                70,
+                                122,
+                                171,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                109,
+                                160,
+                                201,
+                                255
+                            ],
+                            "toColor": [
+                                109,
+                                160,
+                                201,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                126,
+                                181,
+                                207,
+                                255
+                            ],
+                            "toColor": [
+                                126,
+                                181,
+                                207,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                115,
+                                223,
+                                245,
+                                255
+                            ],
+                            "toColor": [
+                                115,
+                                223,
+                                245,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                114,
+                                154,
+                                176,
+                                255
+                            ],
+                            "toColor": [
+                                114,
+                                154,
+                                176,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                169,
+                                206,
+                                217,
+                                255
+                            ],
+                            "toColor": [
+                                169,
+                                206,
+                                217,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                51,
+                                201,
+                                242,
+                                255
+                            ],
+                            "toColor": [
+                                51,
+                                201,
+                                242,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                170,
+                                227,
+                                242,
+                                255
+                            ],
+                            "toColor": [
+                                170,
+                                227,
+                                242,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                178,
+                                214,
+                                247,
+                                255
+                            ],
+                            "toColor": [
+                                178,
+                                214,
+                                247,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                46,
+                                173,
+                                219,
+                                255
+                            ],
+                            "toColor": [
+                                46,
+                                173,
+                                219,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                50,
+                                178,
+                                237,
+                                255
+                            ],
+                            "toColor": [
+                                50,
+                                178,
+                                237,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                76,
+                                160,
+                                199,
+                                255
+                            ],
+                            "toColor": [
+                                76,
+                                160,
+                                199,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                41,
+                                127,
+                                196,
+                                255
+                            ],
+                            "toColor": [
+                                41,
+                                127,
+                                196,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                93,
+                                202,
+                                227,
+                                255
+                            ],
+                            "toColor": [
+                                93,
+                                202,
+                                227,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                40,
+                                157,
+                                184,
+                                255
+                            ],
+                            "toColor": [
+                                40,
+                                157,
+                                184,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        }
+                    ],
+                    "type": "multipart"
+                }
+            },
+            "field1": "TOWNNAME",
+            "fieldDelimiter": ",",
+            "type": "uniqueValue",
+            "uniqueValueInfos": [
+                {
+                    "label": "AULT",
+                    "symbol": {
+                        "color": [
+                            171,
+                            245,
+                            190,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "AULT"
+                },
+                {
+                    "label": "BERTHOUD",
+                    "symbol": {
+                        "color": [
+                            51,
+                            232,
+                            90,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "BERTHOUD"
+                },
+                {
+                    "label": "BRIGHTON",
+                    "symbol": {
+                        "color": [
+                            45,
+                            166,
+                            103,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "BRIGHTON"
+                },
+                {
+                    "label": "BROOMFIELD",
+                    "symbol": {
+                        "color": [
+                            95,
+                            245,
+                            148,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "BROOMFIELD"
+                },
+                {
+                    "label": "DACONO",
+                    "symbol": {
+                        "color": [
+                            106,
+                            166,
+                            129,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "DACONO"
+                },
+                {
+                    "label": "EATON",
+                    "symbol": {
+                        "color": [
+                            48,
+                            179,
+                            79,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "EATON"
+                },
+                {
+                    "label": "ERIE",
+                    "symbol": {
+                        "color": [
+                            163,
+                            209,
+                            185,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "ERIE"
+                },
+                {
+                    "label": "EVANS",
+                    "symbol": {
+                        "color": [
+                            108,
+                            212,
+                            141,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "EVANS"
+                },
+                {
+                    "label": "FIRESTONE",
+                    "symbol": {
+                        "color": [
+                            76,
+                            230,
+                            112,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "FIRESTONE"
+                },
+                {
+                    "label": "FORT LUPTON",
+                    "symbol": {
+                        "color": [
+                            88,
+                            173,
+                            118,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "FORT LUPTON"
+                },
+                {
+                    "label": "FREDERICK",
+                    "symbol": {
+                        "color": [
+                            58,
+                            199,
+                            121,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "FREDERICK"
+                },
+                {
+                    "label": "GARDEN CITY",
+                    "symbol": {
+                        "color": [
+                            124,
+                            214,
+                            165,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "GARDEN CITY"
+                },
+                {
+                    "label": "GILCREST",
+                    "symbol": {
+                        "color": [
+                            191,
+                            245,
+                            215,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "GILCREST"
+                },
+                {
+                    "label": "GREELEY",
+                    "symbol": {
+                        "color": [
+                            114,
+                            247,
+                            176,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "GREELEY"
+                },
+                {
+                    "label": "GROVER",
+                    "symbol": {
+                        "color": [
+                            92,
+                            214,
+                            114,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "GROVER"
+                },
+                {
+                    "label": "HUDSON",
+                    "symbol": {
+                        "color": [
+                            69,
+                            176,
+                            92,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "HUDSON"
+                },
+                {
+                    "label": "JOHNSTOWN",
+                    "symbol": {
+                        "color": [
+                            137,
+                            171,
+                            144,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "JOHNSTOWN"
+                },
+                {
+                    "label": "KEENESBURG",
+                    "symbol": {
+                        "color": [
+                            141,
+                            240,
+                            169,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "KEENESBURG"
+                },
+                {
+                    "label": "KERSEY",
+                    "symbol": {
+                        "color": [
+                            62,
+                            247,
+                            139,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "KERSEY"
+                },
+                {
+                    "label": "LA SALLE",
+                    "symbol": {
+                        "color": [
+                            132,
+                            250,
+                            158,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "LA SALLE"
+                },
+                {
+                    "label": "LOCHBUIE",
+                    "symbol": {
+                        "color": [
+                            132,
+                            191,
+                            150,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "LOCHBUIE"
+                },
+                {
+                    "label": "LONGMONT",
+                    "symbol": {
+                        "color": [
+                            46,
+                            201,
+                            103,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "LONGMONT"
+                },
+                {
+                    "label": "MEAD",
+                    "symbol": {
+                        "color": [
+                            77,
+                            201,
+                            139,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "MEAD"
+                },
+                {
+                    "label": "MILLIKEN",
+                    "symbol": {
+                        "color": [
+                            72,
+                            168,
+                            101,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "MILLIKEN"
+                },
+                {
+                    "label": "NEW RAYMER",
+                    "symbol": {
+                        "color": [
+                            102,
+                            189,
+                            118,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "NEW RAYMER"
+                },
+                {
+                    "label": "NORTHGLENN",
+                    "symbol": {
+                        "color": [
+                            114,
+                            186,
+                            134,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "NORTHGLENN"
+                },
+                {
+                    "label": "NUNN",
+                    "symbol": {
+                        "color": [
+                            73,
+                            235,
+                            154,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "NUNN"
+                },
+                {
+                    "label": "PIERCE",
+                    "symbol": {
+                        "color": [
+                            162,
+                            222,
+                            181,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "PIERCE"
+                },
+                {
+                    "label": "PLATTEVILLE",
+                    "symbol": {
+                        "color": [
+                            146,
+                            212,
+                            158,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "PLATTEVILLE"
+                },
+                {
+                    "label": "SEVERANCE",
+                    "symbol": {
+                        "color": [
+                            42,
+                            199,
+                            76,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "SEVERANCE"
+                },
+                {
+                    "label": "THORNTON",
+                    "symbol": {
+                        "color": [
+                            96,
+                            219,
+                            137,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "THORNTON"
+                },
+                {
+                    "label": "TIMNATH",
+                    "symbol": {
+                        "color": [
+                            141,
+                            204,
+                            172,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "TIMNATH"
+                },
+                {
+                    "label": "WINDSOR",
+                    "symbol": {
+                        "color": [
+                            70,
+                            219,
+                            125,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.1
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "WINDSOR"
+                }
+            ]
+        },
+        "scaleSymbols": true,
+        "transparency": 65
+    },
+    "editingInfo": {
+        "dataLastEditDate": 1683712003930,
+        "lastEditDate": 1683712003930,
+        "schemaLastEditDate": 1683712003930
+    },
+    "extent": {
+        "spatialReference": {
+            "latestWkid": 3857,
+            "wkid": 102100
+        },
+        "xmax": -11557599.094700648,
+        "xmin": -11694914.45306782,
+        "ymax": 4995333.877643992,
+        "ymin": 4864379.793667628
+    },
+    "fields": [
+        {
+            "alias": "OBJECTID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "name": "OBJECTID",
+            "nullable": false,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "TOWNNAME",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 40,
+            "name": "TOWNNAME",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Town",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 25,
+            "name": "Town",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "SUM_AREA",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "SUM_AREA",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "SUM_PERIMETER",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "SUM_PERIMETER",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "SUM_Count",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "SUM_Count",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Sqmiles",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "Sqmiles",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Acres",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "name": "Acres",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "As_of_date",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 8,
+            "name": "As_of_date",
+            "nullable": true,
+            "sqlType": "sqlTypeOther",
+            "type": "esriFieldTypeDate"
+        },
+        {
+            "alias": "Shape__Area",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "name": "Shape__Area",
+            "nullable": true,
+            "sqlType": "sqlTypeDouble",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Shape__Length",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "name": "Shape__Length",
+            "nullable": true,
+            "sqlType": "sqlTypeDouble",
+            "type": "esriFieldTypeDouble"
+        }
+    ],
+    "geometryProperties": {
+        "shapeAreaFieldName": "Shape__Area",
+        "shapeLengthFieldName": "Shape__Length",
+        "units": "esriMeters"
+    },
+    "geometryType": "esriGeometryPolygon",
+    "globalIdField": "",
+    "hasAttachments": false,
+    "hasContingentValuesDefinition": false,
+    "hasGeometryProperties": true,
+    "hasM": false,
+    "hasMetadata": true,
+    "hasStaticData": false,
+    "hasZ": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeNone",
+    "id": 0,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "PK__CITY_LIM__F4B70D8551F66F5F"
+        },
+        {
+            "description": "",
+            "fields": "Shape",
+            "isAscending": true,
+            "isUnique": false,
+            "name": "user_2158.CITY_LIMITS_OPEN_DATA_CITY_LIMITS_OPEN_DATA_Shape_sidx"
+        },
+        {
+            "description": "",
+            "fields": "Shape__Area",
+            "isAscending": true,
+            "isUnique": false,
+            "name": "Shape__Area_Index"
+        },
+        {
+            "description": "",
+            "fields": "Shape__Length",
+            "isAscending": true,
+            "isUnique": false,
+            "name": "Shape__Length_Index"
+        }
+    ],
+    "infoInEstimates": [
+        "extent",
+        "count"
+    ],
+    "isDataVersioned": false,
+    "maxRecordCount": 2000,
+    "maxRecordCountFactor": 1,
+    "maxScale": 0,
+    "minScale": 0,
+    "name": "City_Limits_open_data",
+    "objectIdField": "OBJECTID",
+    "preferredTimeReference": null,
+    "relationships": [],
+    "serviceItemId": "173b42762f28407d9c39a3b7d7f8eee8",
+    "standardMaxRecordCount": 4000,
+    "standardMaxRecordCountNoGeometry": 32000,
+    "supportedAppendFormats": "sqlite,geoPackage,shapefile,filegdb,featureCollection,geojson,csv,excel",
+    "supportedContingentValuesFormats": "JSON, PBF",
+    "supportedExportFormats": "csv,shapefile,sqlite,geoPackage,filegdb,featureCollection,geojson,excel",
+    "supportedQueryFormats": "JSON, geoJSON, PBF",
+    "supportedSpatialRelationships": [
+        "esriSpatialRelIntersects",
+        "esriSpatialRelContains",
+        "esriSpatialRelCrosses",
+        "esriSpatialRelEnvelopeIntersects",
+        "esriSpatialRelIndexIntersects",
+        "esriSpatialRelOverlaps",
+        "esriSpatialRelTouches",
+        "esriSpatialRelWithin",
+        "esriSpatialRelDisjoint",
+        "esriSpatialRelRelation"
+    ],
+    "supportedSyncDataOptions": 4,
+    "supportsASyncCalculate": true,
+    "supportsAdvancedQueries": true,
+    "supportsAppend": true,
+    "supportsApplyEditsWithGlobalIds": false,
+    "supportsAttachmentsByUploadId": true,
+    "supportsAttachmentsResizing": true,
+    "supportsCalculate": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsExceedsLimitStatistics": true,
+    "supportsFieldDescriptionProperty": true,
+    "supportsLayerOverrides": true,
+    "supportsMultiScaleGeometry": true,
+    "supportsQuantizationEditMode": true,
+    "supportsReturningQueryGeometry": true,
+    "supportsRollbackOnFailureParameter": true,
+    "supportsStatistics": true,
+    "supportsTilesAndBasicQueriesMode": true,
+    "supportsTruncate": true,
+    "supportsValidateSql": true,
+    "templates": [],
+    "tileMaxRecordCount": 4000,
+    "type": "Feature Layer",
+    "typeIdField": "TOWNNAME",
+    "types": [
+        {
+            "domains": {},
+            "id": "AULT",
+            "name": "AULT",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "AULT",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "AULT",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "BERTHOUD",
+            "name": "BERTHOUD",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "BERTHOUD",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "BERTHOUD",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "BRIGHTON",
+            "name": "BRIGHTON",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "BRIGHTON",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "BRIGHTON",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "BROOMFIELD",
+            "name": "BROOMFIELD",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "BROOMFIELD",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "BROOMFIELD",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "DACONO",
+            "name": "DACONO",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "DACONO",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "DACONO",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "EATON",
+            "name": "EATON",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "EATON",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "EATON",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "ERIE",
+            "name": "ERIE",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "ERIE",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "ERIE",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "EVANS",
+            "name": "EVANS",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "EVANS",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "EVANS",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "FIRESTONE",
+            "name": "FIRESTONE",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "FIRESTONE",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "FIRESTONE",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "FORT LUPTON",
+            "name": "FORT LUPTON",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "FORT LUPTON",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "FORT LUPTON",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "FREDERICK",
+            "name": "FREDERICK",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "FREDERICK",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "FREDERICK",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "GARDEN CITY",
+            "name": "GARDEN CITY",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "GARDEN CITY",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "GARDEN CITY",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "GILCREST",
+            "name": "GILCREST",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "GILCREST",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "GILCREST",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "GREELEY",
+            "name": "GREELEY",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "GREELEY",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "GREELEY",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "GROVER",
+            "name": "GROVER",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "GROVER",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "GROVER",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "HUDSON",
+            "name": "HUDSON",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "HUDSON",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "HUDSON",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "JOHNSTOWN",
+            "name": "JOHNSTOWN",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "JOHNSTOWN",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "JOHNSTOWN",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "KEENESBURG",
+            "name": "KEENESBURG",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "KEENESBURG",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "KEENESBURG",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "KERSEY",
+            "name": "KERSEY",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "KERSEY",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "KERSEY",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "LA SALLE",
+            "name": "LA SALLE",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "LA SALLE",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "LA SALLE",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "LOCHBUIE",
+            "name": "LOCHBUIE",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "LOCHBUIE",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "LOCHBUIE",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "LONGMONT",
+            "name": "LONGMONT",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "LONGMONT",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "LONGMONT",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "MEAD",
+            "name": "MEAD",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "MEAD",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "MEAD",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "MILLIKEN",
+            "name": "MILLIKEN",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "MILLIKEN",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "MILLIKEN",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "NEW RAYMER",
+            "name": "NEW RAYMER",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "NEW RAYMER",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "NEW RAYMER",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "NORTHGLENN",
+            "name": "NORTHGLENN",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "NORTHGLENN",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "NORTHGLENN",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "NUNN",
+            "name": "NUNN",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "NUNN",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "NUNN",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "PIERCE",
+            "name": "PIERCE",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "PIERCE",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "PIERCE",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "PLATTEVILLE",
+            "name": "PLATTEVILLE",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "PLATTEVILLE",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "PLATTEVILLE",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "SEVERANCE",
+            "name": "SEVERANCE",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "SEVERANCE",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "SEVERANCE",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "THORNTON",
+            "name": "THORNTON",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "THORNTON",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "THORNTON",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "TIMNATH",
+            "name": "TIMNATH",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "TIMNATH",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "TIMNATH",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {},
+            "id": "WINDSOR",
+            "name": "WINDSOR",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "WINDSOR",
+                    "prototype": {
+                        "attributes": {
+                            "Acres": null,
+                            "As_of_date": null,
+                            "SUM_AREA": null,
+                            "SUM_Count": null,
+                            "SUM_PERIMETER": null,
+                            "Sqmiles": null,
+                            "TOWNNAME": "WINDSOR",
+                            "Town": null
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "uniqueIdField": {
+        "isSystemMaintained": true,
+        "name": "OBJECTID"
+    },
+    "useStandardizedQueries": true
+}

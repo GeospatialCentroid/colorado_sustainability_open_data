@@ -1,0 +1,748 @@
+{
+    "advancedQueryCapabilities": {
+        "supportsCountDistinct": true,
+        "supportsDistinct": true,
+        "supportsHavingClause": true,
+        "supportsOrderBy": true,
+        "supportsPagination": true,
+        "supportsQueryWithDistance": true,
+        "supportsReturningQueryExtent": true,
+        "supportsSqlExpression": true,
+        "supportsStatistics": true,
+        "supportsTrueCurve": true,
+        "useStandardizedQueries": true
+    },
+    "canModifyLayer": true,
+    "canScaleSymbols": false,
+    "capabilities": "Map,Query,Data",
+    "copyrightText": "City of Greeley",
+    "currentVersion": 10.91,
+    "dateFieldsTimeReference": null,
+    "defaultSubtypeCode": null,
+    "defaultVisibility": true,
+    "description": "City of Greeley, CO Park Polygons",
+    "displayField": "Name",
+    "drawingInfo": {
+        "labelingInfo": null,
+        "renderer": {
+            "description": "",
+            "label": "Parks",
+            "symbol": {
+                "color": [
+                    76,
+                    230,
+                    0,
+                    255
+                ],
+                "outline": {
+                    "color": [
+                        110,
+                        110,
+                        110,
+                        255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 0.4
+                },
+                "style": "esriSFSSolid",
+                "type": "esriSFS"
+            },
+            "type": "simple"
+        },
+        "transparency": 0
+    },
+    "extent": {
+        "spatialReference": {
+            "latestVcsWkid": 6360,
+            "latestWkid": 2876,
+            "vcsWkid": 105703,
+            "wkid": 2876
+        },
+        "xmax": 3235850.1851338297,
+        "xmin": 3179439.674923569,
+        "ymax": 1405542.8129080683,
+        "ymin": 1384000.873708576
+    },
+    "fields": [
+        {
+            "alias": "OBJECTID",
+            "domain": null,
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "FACILITYID",
+            "domain": null,
+            "length": 50,
+            "name": "FACILITYID",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "ParkName",
+            "domain": null,
+            "length": 50,
+            "name": "ParkName",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Name",
+            "domain": null,
+            "length": 50,
+            "name": "Name",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Type",
+            "domain": null,
+            "length": 50,
+            "name": "Type",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Class",
+            "domain": null,
+            "length": 24,
+            "name": "Class",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "FullAddr",
+            "domain": null,
+            "length": 255,
+            "name": "FullAddr",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "CrossAvenue",
+            "domain": null,
+            "length": 50,
+            "name": "CrossAvenue",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "CrossStreet",
+            "domain": null,
+            "length": 50,
+            "name": "CrossStreet",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Website",
+            "domain": null,
+            "length": 255,
+            "name": "Website",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "FacPhone",
+            "domain": null,
+            "length": 50,
+            "name": "FacPhone",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Contact",
+            "domain": null,
+            "length": 50,
+            "name": "Contact",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "OpenDays",
+            "domain": null,
+            "length": 255,
+            "name": "OpenDays",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "OpenHours",
+            "domain": null,
+            "length": 255,
+            "name": "OpenHours",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "PublicAccess",
+            "domain": null,
+            "length": 10,
+            "name": "PublicAccess",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Restroom",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "Flush",
+                        "name": "Flush"
+                    },
+                    {
+                        "code": "Portable",
+                        "name": "Portable"
+                    },
+                    {
+                        "code": "No",
+                        "name": "No"
+                    },
+                    {
+                        "code": "Yes",
+                        "name": "Yes"
+                    }
+                ],
+                "description": "CPRD Restroom types",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "CPRDRestroom",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "length": 10,
+            "name": "Restroom",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "NameSign",
+            "domain": null,
+            "length": 25,
+            "name": "NameSign",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "RulesSign",
+            "domain": null,
+            "length": 25,
+            "name": "RulesSign",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "TotSwings",
+            "domain": null,
+            "length": 20,
+            "name": "TotSwings",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Playground_2_5",
+            "domain": null,
+            "length": 50,
+            "name": "Playground_2_5",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Playground_5_12",
+            "domain": null,
+            "length": 50,
+            "name": "Playground_5_12",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "PicnicShell",
+            "domain": null,
+            "length": 50,
+            "name": "PicnicShell",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Reservation",
+            "domain": null,
+            "length": 254,
+            "name": "Reservation",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Bench",
+            "domain": null,
+            "length": 25,
+            "name": "Bench",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "TrashRec",
+            "domain": null,
+            "length": 25,
+            "name": "TrashRec",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "WaterFntn",
+            "domain": null,
+            "length": 25,
+            "name": "WaterFntn",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "PicnicTables",
+            "domain": null,
+            "length": 3,
+            "name": "PicnicTables",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "BBQ",
+            "domain": null,
+            "length": 3,
+            "name": "BBQ",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "SplashPark",
+            "domain": null,
+            "length": 3,
+            "name": "SplashPark",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Pool",
+            "domain": null,
+            "length": 20,
+            "name": "Pool",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Swimming",
+            "domain": null,
+            "length": 50,
+            "name": "Swimming",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Art",
+            "domain": null,
+            "length": 50,
+            "name": "Art",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "BirdWatch",
+            "domain": null,
+            "length": 50,
+            "name": "BirdWatch",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "WalkPath",
+            "domain": null,
+            "name": "WalkPath",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "LoopedPath",
+            "domain": null,
+            "length": 50,
+            "name": "LoopedPath",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "MtbCycle",
+            "domain": null,
+            "length": 50,
+            "name": "MtbCycle",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "SkatePark",
+            "domain": null,
+            "length": 3,
+            "name": "SkatePark",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "InlineSkating",
+            "domain": null,
+            "length": 3,
+            "name": "InlineSkating",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Golf",
+            "domain": null,
+            "length": 50,
+            "name": "Golf",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "MiniGolf",
+            "domain": null,
+            "length": 10,
+            "name": "MiniGolf",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "DiscGolf",
+            "domain": null,
+            "length": 3,
+            "name": "DiscGolf",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Softball",
+            "domain": null,
+            "name": "Softball",
+            "type": "esriFieldTypeSmallInteger"
+        },
+        {
+            "alias": "Softball_Status",
+            "domain": null,
+            "length": 10,
+            "name": "Softball_Status",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "SoftballLights",
+            "domain": null,
+            "length": 3,
+            "name": "SoftballLights",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Baseball",
+            "domain": null,
+            "name": "Baseball",
+            "type": "esriFieldTypeSmallInteger"
+        },
+        {
+            "alias": "Baseball_Status",
+            "domain": null,
+            "length": 10,
+            "name": "Baseball_Status",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "BaseballLights",
+            "domain": null,
+            "length": 3,
+            "name": "BaseballLights",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "FootballSoccer",
+            "domain": null,
+            "name": "FootballSoccer",
+            "type": "esriFieldTypeSmallInteger"
+        },
+        {
+            "alias": "FootSoc_Status",
+            "domain": null,
+            "length": 10,
+            "name": "FootSoc_Status",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "FootballSoccerLights",
+            "domain": null,
+            "length": 3,
+            "name": "FootballSoccerLights",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Tennis",
+            "domain": null,
+            "name": "Tennis",
+            "type": "esriFieldTypeSmallInteger"
+        },
+        {
+            "alias": "Tennis_Status",
+            "domain": null,
+            "length": 10,
+            "name": "Tennis_Status",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "TennisLights",
+            "domain": null,
+            "length": 3,
+            "name": "TennisLights",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Basketball",
+            "domain": null,
+            "name": "Basketball",
+            "type": "esriFieldTypeSmallInteger"
+        },
+        {
+            "alias": "Baseketball_Status",
+            "domain": null,
+            "length": 10,
+            "name": "Basketball_Status",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "BasketballLights",
+            "domain": null,
+            "length": 3,
+            "name": "BasketballLights",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Volleyball",
+            "domain": null,
+            "name": "Volleyball",
+            "type": "esriFieldTypeSmallInteger"
+        },
+        {
+            "alias": "Volleyball_Status",
+            "domain": null,
+            "length": 10,
+            "name": "Volleyball_Status",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Lake",
+            "domain": null,
+            "length": 3,
+            "name": "Lake",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Fishing",
+            "domain": null,
+            "length": 3,
+            "name": "Fishing",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Boating",
+            "domain": null,
+            "length": 50,
+            "name": "Boating",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "HorseshoePits",
+            "domain": null,
+            "length": 3,
+            "name": "HorseshoePits",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Hunting",
+            "domain": null,
+            "length": 50,
+            "name": "Hunting",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Camping",
+            "domain": null,
+            "length": 50,
+            "name": "Camping",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Electric",
+            "domain": null,
+            "length": 50,
+            "name": "Electric",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "NumParking",
+            "domain": null,
+            "length": 50,
+            "name": "NumParking",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Pic_url_1",
+            "domain": null,
+            "length": 254,
+            "name": "Pic_url_1",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Pic_url_2",
+            "domain": null,
+            "length": 254,
+            "name": "Pic_url_2",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "GIS_ACRES",
+            "domain": null,
+            "name": "GIS_ACRES",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "GIS_SQFT",
+            "domain": null,
+            "name": "GIS_SQFT",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Shape",
+            "domain": null,
+            "name": "Shape",
+            "type": "esriFieldTypeGeometry"
+        },
+        {
+            "alias": "BikeStations",
+            "domain": null,
+            "length": 3,
+            "name": "BikeStations",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Kiosks",
+            "domain": null,
+            "length": 3,
+            "name": "Kiosks",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "UtilityPads",
+            "domain": null,
+            "length": 3,
+            "name": "UtilityPads",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "InterpSigns",
+            "domain": null,
+            "length": 3,
+            "name": "InterpSigns",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "FishDocks",
+            "domain": null,
+            "length": 3,
+            "name": "FishDocks",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "DogPotStations",
+            "domain": null,
+            "length": 3,
+            "name": "DogPotStations",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "DataPortal",
+            "domain": null,
+            "length": 10,
+            "name": "DataPortal",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "DataPortalComments",
+            "domain": null,
+            "length": 254,
+            "name": "DataPortalComments",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "WebActivityUse",
+            "domain": null,
+            "length": 254,
+            "name": "WebActivityUse",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "created_user",
+            "domain": null,
+            "length": 255,
+            "name": "created_user",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "created_date",
+            "domain": null,
+            "length": 8,
+            "name": "created_date",
+            "type": "esriFieldTypeDate"
+        },
+        {
+            "alias": "last_edited_user",
+            "domain": null,
+            "length": 255,
+            "name": "last_edited_user",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "last_edited_date",
+            "domain": null,
+            "length": 8,
+            "name": "last_edited_date",
+            "type": "esriFieldTypeDate"
+        },
+        {
+            "alias": "Rental_Capacity",
+            "domain": null,
+            "length": 50,
+            "name": "Rental_Capacity",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Shape.area",
+            "domain": null,
+            "name": "Shape.area",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Shape.len",
+            "domain": null,
+            "name": "Shape.len",
+            "type": "esriFieldTypeDouble"
+        }
+    ],
+    "geometryField": {
+        "alias": "Shape",
+        "name": "Shape",
+        "type": "esriFieldTypeGeometry"
+    },
+    "geometryProperties": {
+        "shapeAreaFieldName": "Shape.area",
+        "shapeLengthFieldName": "Shape.len",
+        "units": "esriFeet"
+    },
+    "geometryType": "esriGeometryPolygon",
+    "hasAttachments": true,
+    "hasGeometryProperties": true,
+    "hasLabels": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "id": 20,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "R262_SDE_ROWID_UK"
+        },
+        {
+            "description": "",
+            "fields": "Shape",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "a196_ix1"
+        }
+    ],
+    "isDataVersioned": true,
+    "maxRecordCount": 1000,
+    "maxScale": 0,
+    "minScale": 0,
+    "name": "Parks",
+    "ownershipBasedAccessControlForFeatures": {
+        "allowOthersToQuery": true
+    },
+    "parentLayer": null,
+    "relationships": [],
+    "serviceItemId": "50ebeb6d2e8d4b3a9e36c84420892153",
+    "sourceSpatialReference": {
+        "latestWkid": 2876,
+        "wkid": 2876
+    },
+    "subLayers": [],
+    "subtypeField": null,
+    "subtypeFieldName": null,
+    "subtypes": [],
+    "supportedQueryFormats": "JSON, geoJSON",
+    "supportsAdvancedQueries": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsDatumTransformation": true,
+    "supportsStatistics": true,
+    "type": "Feature Layer",
+    "typeIdField": null,
+    "useStandardizedQueries": true
+}

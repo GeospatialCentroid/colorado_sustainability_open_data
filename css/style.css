@@ -1,0 +1,144 @@
+    body {
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #333;
+        background-color: #fff;
+    }
+    .container {
+     margin-right: 0;
+     margin-left: 0;
+     max-width: 100%;
+     }
+
+     .checkbox-list-container .checkbox-list > li > a {
+        display: block;
+        padding: 3px 0;
+    }
+
+    .checkbox-list-container .checkbox-list > .multiselect-option.active,
+    .checkbox-list-container .checkbox-list > .multiselect-option.active:hover,
+    .checkbox-list-container .checkbox-list > .multiselect-option.active:focus {
+        color: #333;
+    }
+
+    .checkbox-list-container .checkbox-list > .multiselect-option.disabled,
+    .checkbox-list-container .checkbox-list > .multiselect-option.disabled:hover,
+    .checkbox-list-container .checkbox-list > .multiselect-option.disabled:focus {
+        color: #777;
+    }
+
+    .checkbox-list-container .checkbox-list > .multiselect-option.disabled:hover,
+    .checkbox-list-container .checkbox-list > .multiselect-option.disabled:focus {
+        text-decoration: none;
+        cursor: unset;
+        background-color: transparent;
+        background-image: none;
+        filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    }
+
+    .checkbox-list-container .multiselect-container.checkbox-list {
+        position: static;
+    }
+    .multiselect-container {
+        display:block;
+        position:static;
+        max-height: 100px;
+        overflow: auto;
+        float: none;
+    }
+    .form-label{
+        display: block;
+        padding-top: 10px;
+        font-weight: 800;
+    }
+    #search{
+
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        width:65%;
+        display:inline;
+         outline: 0 !important;
+        border-color: initial;
+        box-shadow: none;
+    }
+
+    #filter_header{
+        /*display:none;*/
+    }
+    .chip {
+      display: inline-block;
+      padding: 0 25px;
+      height: 50px;
+      font-size: 16px;
+      line-height: 50px;
+      border-radius: 25px;
+      background-color: #f1f1f1;
+    }
+    .progress {
+      margin: 10px;
+      width: 100%;
+    }
+#new_window_but{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    z-index:5;
+}
+#git_but{
+    top: 0px;
+    right: 0px;
+    position: absolute;
+}
+.wrapper {
+
+    width: 100%;
+    position: relative;
+}
+#details {
+   width: 250px;
+   min-width:250px;
+   flex: 0 0 250px;
+}
+#content {
+    width: 100%;
+    min-width:500px;
+
+}
+
+
+#filter_area{
+  width: 250px;
+  box-shadow: 5px 0 5px -2px #888;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: width 0.5s;
+
+}
+#filters{
+    padding-left:5px;
+    padding-right:5px;
+}
+.overlay {
+  position: absolute;
+
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+
+  background-color: #fff;
+  z-index: 6;
+}
+
+.ui-slider .ui-slider-handle {
+   width: auto;
+   height: auto;
+   padding-left:2px;
+   padding-right:2px;
+
+}
+#search_clear{
+margin-left: -40px;
+z-index: 100;
+}

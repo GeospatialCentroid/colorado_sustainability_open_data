@@ -1,0 +1,1389 @@
+{
+    "advancedQueryCapabilities": {
+        "supportsCountDistinct": true,
+        "supportsDistinct": true,
+        "supportsHavingClause": true,
+        "supportsOrderBy": true,
+        "supportsPagination": true,
+        "supportsQueryWithDistance": true,
+        "supportsReturningQueryExtent": true,
+        "supportsSqlExpression": true,
+        "supportsStatistics": true,
+        "supportsTrueCurve": true,
+        "useStandardizedQueries": true
+    },
+    "canModifyLayer": true,
+    "canScaleSymbols": false,
+    "capabilities": "Map,Query,Data",
+    "copyrightText": "",
+    "currentVersion": 10.91,
+    "dateFieldsTimeReference": null,
+    "defaultSubtypeCode": null,
+    "defaultVisibility": true,
+    "description": "",
+    "displayField": "STNAME",
+    "drawingInfo": {
+        "labelingInfo": [
+            {
+                "labelExpression": "[HWYNUMBER]",
+                "labelPlacement": "esriServerLinePlacementAboveAlong",
+                "maxScale": 0,
+                "minScale": 0,
+                "symbol": {
+                    "angle": 0,
+                    "backgroundColor": null,
+                    "borderLineColor": null,
+                    "borderLineSize": null,
+                    "color": [
+                        0,
+                        0,
+                        0,
+                        255
+                    ],
+                    "font": {
+                        "decoration": "none",
+                        "family": "Arial",
+                        "size": 8,
+                        "style": "normal",
+                        "weight": "bold"
+                    },
+                    "haloColor": null,
+                    "haloSize": null,
+                    "horizontalAlignment": "left",
+                    "kerning": true,
+                    "rightToLeft": false,
+                    "type": "esriTS",
+                    "verticalAlignment": "baseline",
+                    "xoffset": 0,
+                    "yoffset": 0
+                },
+                "useCodedValues": true,
+                "where": "CLASSIFICATION  = 'Expressway' AND HWYNUMBER NOT IN ('0', '2004', '8012')"
+            },
+            {
+                "labelExpression": "[STNAME]",
+                "labelPlacement": "esriServerLinePlacementAboveAlong",
+                "maxScale": 0,
+                "minScale": 0,
+                "symbol": {
+                    "angle": 0,
+                    "backgroundColor": null,
+                    "borderLineColor": null,
+                    "borderLineSize": null,
+                    "color": [
+                        0,
+                        0,
+                        0,
+                        255
+                    ],
+                    "font": {
+                        "decoration": "none",
+                        "family": "Arial",
+                        "size": 9,
+                        "style": "normal",
+                        "weight": "bold"
+                    },
+                    "haloColor": [
+                        255,
+                        255,
+                        255,
+                        253
+                    ],
+                    "haloSize": 1,
+                    "horizontalAlignment": "left",
+                    "kerning": true,
+                    "rightToLeft": false,
+                    "type": "esriTS",
+                    "verticalAlignment": "baseline",
+                    "xoffset": 0,
+                    "yoffset": 0
+                },
+                "useCodedValues": true,
+                "where": "CLASSIFICATION  IN ('MajorArterial' , 'MinorArterial'  ) AND STNAME NOT IN ('Ramp')"
+            },
+            {
+                "labelExpression": "[STNAME]",
+                "labelPlacement": "esriServerLinePlacementAboveAlong",
+                "maxScale": 0,
+                "minScale": 0,
+                "symbol": {
+                    "angle": 0,
+                    "backgroundColor": null,
+                    "borderLineColor": null,
+                    "borderLineSize": null,
+                    "color": [
+                        0,
+                        0,
+                        0,
+                        255
+                    ],
+                    "font": {
+                        "decoration": "none",
+                        "family": "Arial",
+                        "size": 7,
+                        "style": "normal",
+                        "weight": "normal"
+                    },
+                    "haloColor": [
+                        225,
+                        225,
+                        225,
+                        255
+                    ],
+                    "haloSize": 1,
+                    "horizontalAlignment": "left",
+                    "kerning": true,
+                    "rightToLeft": false,
+                    "type": "esriTS",
+                    "verticalAlignment": "baseline",
+                    "xoffset": 0,
+                    "yoffset": 0
+                },
+                "useCodedValues": true,
+                "where": "CLASSIFICATION  IN ('MajorCollector' , 'MinorCollector' , 'Local'  ) AND STNAME NOT IN ( 'unnamed', 'connecting road', 'connecting rd', 'alley', 'private', 'ramp', 'unknown', 'driveway')"
+            }
+        ],
+        "renderer": {
+            "defaultLabel": null,
+            "defaultSymbol": null,
+            "field1": "CLASSIFICATION",
+            "field2": null,
+            "field3": null,
+            "fieldDelimiter": ",",
+            "type": "uniqueValue",
+            "uniqueValueInfos": [
+                {
+                    "description": "",
+                    "label": "Expressway",
+                    "symbol": {
+                        "color": [
+                            104,
+                            104,
+                            104,
+                            255
+                        ],
+                        "style": "esriSLSSolid",
+                        "type": "esriSLS",
+                        "width": 1.5
+                    },
+                    "value": "Expressway"
+                },
+                {
+                    "description": "",
+                    "label": "Arterials",
+                    "symbol": {
+                        "color": [
+                            156,
+                            156,
+                            156,
+                            255
+                        ],
+                        "style": "esriSLSSolid",
+                        "type": "esriSLS",
+                        "width": 1.2
+                    },
+                    "value": "MajorArterial"
+                },
+                {
+                    "description": "",
+                    "label": "Arterials",
+                    "symbol": {
+                        "color": [
+                            156,
+                            156,
+                            156,
+                            255
+                        ],
+                        "style": "esriSLSSolid",
+                        "type": "esriSLS",
+                        "width": 1.2
+                    },
+                    "value": "MinorArterial"
+                },
+                {
+                    "description": "",
+                    "label": "Local, Collectors",
+                    "symbol": {
+                        "color": [
+                            204,
+                            204,
+                            204,
+                            255
+                        ],
+                        "style": "esriSLSSolid",
+                        "type": "esriSLS",
+                        "width": 0.2
+                    },
+                    "value": "MajorCollector"
+                },
+                {
+                    "description": "",
+                    "label": "Local, Collectors",
+                    "symbol": {
+                        "color": [
+                            204,
+                            204,
+                            204,
+                            255
+                        ],
+                        "style": "esriSLSSolid",
+                        "type": "esriSLS",
+                        "width": 0.2
+                    },
+                    "value": "MinorCollector"
+                },
+                {
+                    "description": "",
+                    "label": "Local, Collectors",
+                    "symbol": {
+                        "color": [
+                            204,
+                            204,
+                            204,
+                            255
+                        ],
+                        "style": "esriSLSSolid",
+                        "type": "esriSLS",
+                        "width": 0.2
+                    },
+                    "value": "Local"
+                },
+                {
+                    "description": "",
+                    "label": "Unknown",
+                    "symbol": {
+                        "color": [
+                            223,
+                            213,
+                            211,
+                            255
+                        ],
+                        "style": "esriSLSSolid",
+                        "type": "esriSLS",
+                        "width": 0.2
+                    },
+                    "value": "Unknown"
+                }
+            ]
+        },
+        "transparency": 0
+    },
+    "extent": {
+        "spatialReference": {
+            "latestWkid": 2876,
+            "wkid": 2876
+        },
+        "xmax": 3270739.84910357,
+        "xmin": 3135697.5198680907,
+        "ymax": 1445475.7268123329,
+        "ymin": 1347369.6423150152
+    },
+    "fields": [
+        {
+            "alias": "OBJECTID",
+            "domain": null,
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "STNAME",
+            "domain": null,
+            "length": 50,
+            "name": "STNAME",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "RIGHTTOADDRESS",
+            "domain": null,
+            "length": 50,
+            "name": "RIGHTTOADDRESS",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "RIGHTFROMADDRESS",
+            "domain": null,
+            "length": 50,
+            "name": "RIGHTFROMADDRESS",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "LEFTTOADDRESS",
+            "domain": null,
+            "length": 50,
+            "name": "LEFTTOADDRESS",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "LEFTFROMADDRESS",
+            "domain": null,
+            "length": 50,
+            "name": "LEFTFROMADDRESS",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "PREDIRECTION",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "N",
+                        "name": "North"
+                    },
+                    {
+                        "code": "W",
+                        "name": "West"
+                    },
+                    {
+                        "code": "E",
+                        "name": "East"
+                    },
+                    {
+                        "code": "S",
+                        "name": "South"
+                    },
+                    {
+                        "code": "NE",
+                        "name": "Northeast"
+                    },
+                    {
+                        "code": "SE",
+                        "name": "Southeast"
+                    },
+                    {
+                        "code": "SW",
+                        "name": "Southwest"
+                    },
+                    {
+                        "code": "NW",
+                        "name": "Northwest"
+                    },
+                    {
+                        "code": "NA",
+                        "name": "Not Applicable"
+                    },
+                    {
+                        "code": "UN",
+                        "name": "Unknown"
+                    }
+                ],
+                "description": "Name Prefix Direction",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "domPre_Dir",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "length": 2,
+            "name": "PREDIRECTION",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "STREETPRETYPE",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "HWY",
+                        "name": "Highway"
+                    },
+                    {
+                        "code": "CR",
+                        "name": "County Road"
+                    },
+                    {
+                        "code": "NA",
+                        "name": "Not Applicable"
+                    },
+                    {
+                        "code": "UN",
+                        "name": "Unknown"
+                    },
+                    {
+                        "code": "STATE HWY",
+                        "name": "State Highway"
+                    },
+                    {
+                        "code": "STATE RTE",
+                        "name": "State Route"
+                    }
+                ],
+                "description": "Name Prefix Type",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "domPre_Type_1",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "length": 20,
+            "name": "STREETPRETYPE",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "STREETNAME",
+            "domain": null,
+            "length": 50,
+            "name": "STREETNAME",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "STREETTYPE",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "AVE",
+                        "name": "AVE"
+                    },
+                    {
+                        "code": "ALY",
+                        "name": "ALY"
+                    },
+                    {
+                        "code": "BLVD",
+                        "name": "BLVD"
+                    },
+                    {
+                        "code": "CIR",
+                        "name": "CIR"
+                    },
+                    {
+                        "code": "CR",
+                        "name": "CR"
+                    },
+                    {
+                        "code": "CT",
+                        "name": "CT"
+                    },
+                    {
+                        "code": "DR",
+                        "name": "DR"
+                    },
+                    {
+                        "code": "HWY",
+                        "name": "HWY"
+                    },
+                    {
+                        "code": "LN",
+                        "name": "LN"
+                    },
+                    {
+                        "code": "PKWY",
+                        "name": "PARKWAY"
+                    },
+                    {
+                        "code": "PL",
+                        "name": "PL"
+                    },
+                    {
+                        "code": "RD",
+                        "name": "RD"
+                    },
+                    {
+                        "code": "ST",
+                        "name": "ST"
+                    },
+                    {
+                        "code": "RTE",
+                        "name": "RTE"
+                    },
+                    {
+                        "code": "SPUR",
+                        "name": "SPUR"
+                    },
+                    {
+                        "code": "EXPY",
+                        "name": "EXPRESSWAY"
+                    },
+                    {
+                        "code": "UN",
+                        "name": "UNKNOWN"
+                    },
+                    {
+                        "code": "NA",
+                        "name": "NOT APPLICABLE"
+                    },
+                    {
+                        "code": "OT",
+                        "name": "OTHER"
+                    },
+                    {
+                        "code": "WAY",
+                        "name": "WAY"
+                    },
+                    {
+                        "code": "TRL",
+                        "name": "TRL"
+                    }
+                ],
+                "description": "Name Suffix Type",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "domSuf_Type_2",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "length": 20,
+            "name": "STREETTYPE",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "CITY",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "GRE",
+                        "name": "Greeley"
+                    },
+                    {
+                        "code": "NA",
+                        "name": "Not Applicable"
+                    },
+                    {
+                        "code": "WIN",
+                        "name": "Windsor"
+                    },
+                    {
+                        "code": "GC",
+                        "name": "Garden City"
+                    },
+                    {
+                        "code": "EVA",
+                        "name": "Evans"
+                    },
+                    {
+                        "code": "UN",
+                        "name": "Unknown"
+                    },
+                    {
+                        "code": "WE",
+                        "name": "Weld"
+                    },
+                    {
+                        "code": "LS",
+                        "name": "La Salle"
+                    }
+                ],
+                "description": "City Name",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "domCity",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "length": 3,
+            "name": "CITY",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "ZIPLEFT",
+            "domain": null,
+            "length": 5,
+            "name": "ZIPLEFT",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "ZIPRIGHT",
+            "domain": null,
+            "length": 5,
+            "name": "ZIPRIGHT",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "HWYNUMBER",
+            "domain": null,
+            "length": 5,
+            "name": "HWYNUMBER",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "ALTHWYNUMBER",
+            "domain": null,
+            "length": 5,
+            "name": "ALTHWYNUMBER",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "ALTPREDIRECTION",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "N",
+                        "name": "North"
+                    },
+                    {
+                        "code": "W",
+                        "name": "West"
+                    },
+                    {
+                        "code": "E",
+                        "name": "East"
+                    },
+                    {
+                        "code": "S",
+                        "name": "South"
+                    },
+                    {
+                        "code": "NE",
+                        "name": "Northeast"
+                    },
+                    {
+                        "code": "SE",
+                        "name": "Southeast"
+                    },
+                    {
+                        "code": "SW",
+                        "name": "Southwest"
+                    },
+                    {
+                        "code": "NW",
+                        "name": "Northwest"
+                    },
+                    {
+                        "code": "NA",
+                        "name": "Not Applicable"
+                    },
+                    {
+                        "code": "UN",
+                        "name": "Unknown"
+                    }
+                ],
+                "description": "Name Prefix Direction",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "domPre_Dir",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "length": 2,
+            "name": "ALTPREDIRECTION",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "ALTPRETYPE",
+            "domain": null,
+            "length": 4,
+            "name": "ALTPRETYPE",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "ALTSTREETNAME",
+            "domain": null,
+            "length": 50,
+            "name": "ALTSTREETNAME",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "ALTSTREETTYPE",
+            "domain": null,
+            "length": 4,
+            "name": "ALTSTREETTYPE",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "ONEWAY",
+            "domain": null,
+            "length": 2,
+            "name": "ONEWAY",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "CLASSIFICATION",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "Local",
+                        "name": "Local"
+                    },
+                    {
+                        "code": "MajorArterial",
+                        "name": "Major Arterial"
+                    },
+                    {
+                        "code": "MinorArterial",
+                        "name": "Minor Arterial"
+                    },
+                    {
+                        "code": "MajorCollector",
+                        "name": "Major Collector"
+                    },
+                    {
+                        "code": "MinorCollector",
+                        "name": "Minor Collector"
+                    },
+                    {
+                        "code": "Expressway",
+                        "name": "Expressway"
+                    },
+                    {
+                        "code": "Unknown",
+                        "name": "Unknown"
+                    }
+                ],
+                "description": "Street Classification",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "domClass",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "length": 50,
+            "name": "CLASSIFICATION",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "SPEED",
+            "domain": null,
+            "length": 7,
+            "name": "SPEED",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "STATUS",
+            "domain": null,
+            "length": 10,
+            "name": "STATUS",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Shape",
+            "domain": null,
+            "name": "Shape",
+            "type": "esriFieldTypeGeometry"
+        },
+        {
+            "alias": "MAINTAINS",
+            "domain": null,
+            "length": 50,
+            "name": "MAINTAINS",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "TRAKID",
+            "domain": null,
+            "length": 20,
+            "name": "TRAKID",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Snow_Priority",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": 1,
+                        "name": "Primary"
+                    },
+                    {
+                        "code": 2,
+                        "name": "Secondary"
+                    },
+                    {
+                        "code": 3,
+                        "name": "Conditional"
+                    }
+                ],
+                "description": "SnowRoutes_Priority",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "SnowRoutes_Priority",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "name": "Snow_Priority",
+            "type": "esriFieldTypeSmallInteger"
+        },
+        {
+            "alias": "Snow_MaintainedBy",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": 1,
+                        "name": "Streets"
+                    },
+                    {
+                        "code": 2,
+                        "name": "Parks"
+                    },
+                    {
+                        "code": 3,
+                        "name": "Facilities"
+                    },
+                    {
+                        "code": 4,
+                        "name": "Traffic"
+                    },
+                    {
+                        "code": 5,
+                        "name": "Water"
+                    },
+                    {
+                        "code": 6,
+                        "name": "NonPot"
+                    },
+                    {
+                        "code": 7,
+                        "name": "Natural Areas"
+                    },
+                    {
+                        "code": 8,
+                        "name": "Contractor"
+                    },
+                    {
+                        "code": 9,
+                        "name": "Unknown - Needs Investigation"
+                    },
+                    {
+                        "code": 10,
+                        "name": "Water / Sewer"
+                    },
+                    {
+                        "code": 11,
+                        "name": "Golf"
+                    },
+                    {
+                        "code": 12,
+                        "name": "Culture"
+                    },
+                    {
+                        "code": 13,
+                        "name": "Island Grove"
+                    }
+                ],
+                "description": "cs",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "SnowRoutes_Maintained",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "name": "Snow_MaintainedBy",
+            "type": "esriFieldTypeSmallInteger"
+        },
+        {
+            "alias": "Snow_EquipType",
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": 1,
+                        "name": "Parks Broom 1"
+                    },
+                    {
+                        "code": 2,
+                        "name": "Parks Broom 2"
+                    },
+                    {
+                        "code": 3,
+                        "name": "Parks Broom 3"
+                    },
+                    {
+                        "code": 4,
+                        "name": "Parks Broom 4"
+                    },
+                    {
+                        "code": 5,
+                        "name": "Parks Broom 5"
+                    },
+                    {
+                        "code": 6,
+                        "name": "Parks Broom 6"
+                    },
+                    {
+                        "code": 7,
+                        "name": "Parks Broom 7"
+                    },
+                    {
+                        "code": 8,
+                        "name": "Parks Broom 8"
+                    },
+                    {
+                        "code": 9,
+                        "name": "Parks Broom 9"
+                    },
+                    {
+                        "code": 10,
+                        "name": "Parks Broom 10"
+                    },
+                    {
+                        "code": 11,
+                        "name": "Parks Broom 11"
+                    },
+                    {
+                        "code": 12,
+                        "name": "Parks Broom 12"
+                    },
+                    {
+                        "code": 13,
+                        "name": "Parks Broom 13"
+                    },
+                    {
+                        "code": 14,
+                        "name": "Parks Broom 14"
+                    },
+                    {
+                        "code": 15,
+                        "name": "Parks Broom 15"
+                    },
+                    {
+                        "code": 16,
+                        "name": "Parks Plow Truck 1"
+                    },
+                    {
+                        "code": 17,
+                        "name": "Parks Plow Truck 2"
+                    },
+                    {
+                        "code": 18,
+                        "name": "Parks Plow Truck 3"
+                    },
+                    {
+                        "code": 19,
+                        "name": "Parks Plow Truck 4"
+                    },
+                    {
+                        "code": 20,
+                        "name": "Parks Plow Truck 5"
+                    },
+                    {
+                        "code": 21,
+                        "name": "Parks Plow Truck 6"
+                    },
+                    {
+                        "code": 22,
+                        "name": "Parks Plow Truck 7"
+                    },
+                    {
+                        "code": 23,
+                        "name": "Parks Plow Truck 8"
+                    },
+                    {
+                        "code": 24,
+                        "name": "Parks Plow Truck 9"
+                    },
+                    {
+                        "code": 25,
+                        "name": "Parks Plow Truck 10"
+                    },
+                    {
+                        "code": 26,
+                        "name": "Parks Plow Truck 11"
+                    },
+                    {
+                        "code": 27,
+                        "name": "Parks Plow Truck 12"
+                    },
+                    {
+                        "code": 28,
+                        "name": "Parks Plow Truck 13"
+                    },
+                    {
+                        "code": 29,
+                        "name": "Parks Plow Truck 14"
+                    },
+                    {
+                        "code": 30,
+                        "name": "Parks Plow Truck 15"
+                    },
+                    {
+                        "code": 31,
+                        "name": "Parks UTV 1"
+                    },
+                    {
+                        "code": 32,
+                        "name": "Parks UTV 2"
+                    },
+                    {
+                        "code": 33,
+                        "name": "Parks UTV 3"
+                    },
+                    {
+                        "code": 34,
+                        "name": "Parks UTV 4"
+                    },
+                    {
+                        "code": 35,
+                        "name": "Parks UTV 5"
+                    },
+                    {
+                        "code": 36,
+                        "name": "Parks UTV 6"
+                    },
+                    {
+                        "code": 37,
+                        "name": "Parks UTV 7"
+                    },
+                    {
+                        "code": 38,
+                        "name": "Parks UTV 8"
+                    },
+                    {
+                        "code": 39,
+                        "name": "Parks UTV 9"
+                    },
+                    {
+                        "code": 40,
+                        "name": "Parks UTV 10"
+                    },
+                    {
+                        "code": 41,
+                        "name": "Parks Hand Shovel/Blower 1"
+                    },
+                    {
+                        "code": 42,
+                        "name": "Parks Hand Shovel/Blower 2"
+                    },
+                    {
+                        "code": 43,
+                        "name": "Parks Hand Shovel/Blower 3"
+                    },
+                    {
+                        "code": 44,
+                        "name": "Parks Hand Shovel/Blower 4"
+                    },
+                    {
+                        "code": 45,
+                        "name": "Parks Hand Shovel/Blower 5"
+                    },
+                    {
+                        "code": 46,
+                        "name": "IG Broom 1"
+                    },
+                    {
+                        "code": 47,
+                        "name": "IG Loader 1"
+                    },
+                    {
+                        "code": 48,
+                        "name": "IG Tractor Scraper 1"
+                    },
+                    {
+                        "code": 49,
+                        "name": "Culture Plow Truck"
+                    },
+                    {
+                        "code": 50,
+                        "name": "Facilities Truck Plow 1"
+                    },
+                    {
+                        "code": 51,
+                        "name": "Facilities Truck Plow 2"
+                    },
+                    {
+                        "code": 52,
+                        "name": "Facilities Truck Plow 3"
+                    },
+                    {
+                        "code": 53,
+                        "name": "Facilities Truck Plow 4"
+                    },
+                    {
+                        "code": 54,
+                        "name": "Facilities Truck Plow 5"
+                    },
+                    {
+                        "code": 55,
+                        "name": "Facilities Hand Shovel/ Blower 1"
+                    },
+                    {
+                        "code": 56,
+                        "name": "Facilities Hand Shovel/ Blower 2"
+                    },
+                    {
+                        "code": 57,
+                        "name": "Facilities Hand Shovel/ Blower 3"
+                    },
+                    {
+                        "code": 58,
+                        "name": "Facilities Hand Shovel/ Blower 4"
+                    },
+                    {
+                        "code": 59,
+                        "name": "Facilities Hand Shovel/ Blower 5"
+                    },
+                    {
+                        "code": 60,
+                        "name": "Streets Broom Tractor 1"
+                    },
+                    {
+                        "code": 61,
+                        "name": "Streets Broom Tractor 2"
+                    },
+                    {
+                        "code": 62,
+                        "name": "Streets Broom Tractor 3"
+                    },
+                    {
+                        "code": 63,
+                        "name": "Streets Broom Tractor 4"
+                    },
+                    {
+                        "code": 64,
+                        "name": "Streets Hand Shovel 1"
+                    },
+                    {
+                        "code": 65,
+                        "name": "Streets Hand Shovel 2"
+                    },
+                    {
+                        "code": 66,
+                        "name": "Streets Hand Shovel 3"
+                    },
+                    {
+                        "code": 67,
+                        "name": "Streets Hand Shovel 4"
+                    },
+                    {
+                        "code": 68,
+                        "name": "Streets Plow 1"
+                    },
+                    {
+                        "code": 69,
+                        "name": "Streets Plow 2"
+                    },
+                    {
+                        "code": 70,
+                        "name": "Streets Plow 3"
+                    },
+                    {
+                        "code": 71,
+                        "name": "Streets Plow 4"
+                    },
+                    {
+                        "code": 72,
+                        "name": "Streets Plow 5"
+                    },
+                    {
+                        "code": 73,
+                        "name": "Streets Plow 6"
+                    },
+                    {
+                        "code": 74,
+                        "name": "Streets Plow 7"
+                    },
+                    {
+                        "code": 75,
+                        "name": "Streets Plow 8"
+                    },
+                    {
+                        "code": 76,
+                        "name": "Streets Plow 9"
+                    },
+                    {
+                        "code": 77,
+                        "name": "Streets Plow 10"
+                    },
+                    {
+                        "code": 78,
+                        "name": "Streets Plow 11"
+                    },
+                    {
+                        "code": 79,
+                        "name": "Streets Plow 12"
+                    },
+                    {
+                        "code": 80,
+                        "name": "Streets Plow 13"
+                    },
+                    {
+                        "code": 81,
+                        "name": "Streets Plow 14"
+                    },
+                    {
+                        "code": 82,
+                        "name": "Streets Plow 15"
+                    },
+                    {
+                        "code": 83,
+                        "name": "Streets Plow 16"
+                    },
+                    {
+                        "code": 84,
+                        "name": "Streets Plow 17"
+                    },
+                    {
+                        "code": 85,
+                        "name": "Streets Plow 18"
+                    },
+                    {
+                        "code": 86,
+                        "name": "NAT Pickup V-Plow 1"
+                    },
+                    {
+                        "code": 87,
+                        "name": "NAT Pickup V-Plow 2"
+                    },
+                    {
+                        "code": 88,
+                        "name": "NAT UTV 1"
+                    },
+                    {
+                        "code": 89,
+                        "name": "NAT UTV 2"
+                    },
+                    {
+                        "code": 90,
+                        "name": "NAT ATV Plow 1"
+                    },
+                    {
+                        "code": 91,
+                        "name": "NAT ATV Plow 2"
+                    },
+                    {
+                        "code": 92,
+                        "name": "NAT Tractor Loader 1"
+                    },
+                    {
+                        "code": 93,
+                        "name": "NAT Tractor Loader 2"
+                    },
+                    {
+                        "code": 94,
+                        "name": "NAT Hand Crew 1"
+                    },
+                    {
+                        "code": 95,
+                        "name": "NAT Hand Crew 2"
+                    },
+                    {
+                        "code": 96,
+                        "name": "NAT Hand Crew 3"
+                    },
+                    {
+                        "code": 97,
+                        "name": "W&S Plow 1"
+                    },
+                    {
+                        "code": 98,
+                        "name": "W&S Plow 2"
+                    },
+                    {
+                        "code": 99,
+                        "name": "W&S Plow 3"
+                    },
+                    {
+                        "code": 100,
+                        "name": "W&S Plow 4"
+                    },
+                    {
+                        "code": 101,
+                        "name": "W&S Plow 5"
+                    },
+                    {
+                        "code": 102,
+                        "name": "W&S Broom 1"
+                    },
+                    {
+                        "code": 103,
+                        "name": "W&S Broom 2"
+                    },
+                    {
+                        "code": 104,
+                        "name": "W&S Broom 3"
+                    },
+                    {
+                        "code": 105,
+                        "name": "W&S Broom 4"
+                    },
+                    {
+                        "code": 106,
+                        "name": "W&S Broom 5"
+                    },
+                    {
+                        "code": 107,
+                        "name": "W&S Tractor 1"
+                    },
+                    {
+                        "code": 108,
+                        "name": "W&S Tractor 2"
+                    },
+                    {
+                        "code": 109,
+                        "name": "W&S Tractor 3"
+                    },
+                    {
+                        "code": 110,
+                        "name": "W&S Tractor 4"
+                    },
+                    {
+                        "code": 111,
+                        "name": "W&S Tractor 5"
+                    },
+                    {
+                        "code": 112,
+                        "name": "Transit Plow 1"
+                    }
+                ],
+                "description": "ds",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "Snow_RoutesEqp",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "name": "Snow_EquipType",
+            "type": "esriFieldTypeSmallInteger"
+        },
+        {
+            "alias": "Primary District",
+            "domain": null,
+            "name": "PDistrict",
+            "type": "esriFieldTypeSmallInteger"
+        },
+        {
+            "alias": "Secondary District",
+            "domain": null,
+            "name": "SDistrict",
+            "type": "esriFieldTypeSmallInteger"
+        },
+        {
+            "alias": "Shape.len",
+            "domain": null,
+            "name": "Shape.len",
+            "type": "esriFieldTypeDouble"
+        }
+    ],
+    "geometryField": {
+        "alias": "Shape",
+        "name": "Shape",
+        "type": "esriFieldTypeGeometry"
+    },
+    "geometryProperties": {
+        "shapeLengthFieldName": "Shape.len",
+        "units": "esriFeet"
+    },
+    "geometryType": "esriGeometryPolyline",
+    "hasAttachments": false,
+    "hasGeometryProperties": true,
+    "hasLabels": true,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "id": 0,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "R27_SDE_ROWID_UK"
+        },
+        {
+            "description": "",
+            "fields": "Shape",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "a22_ix1"
+        }
+    ],
+    "isDataVersioned": true,
+    "maxRecordCount": 1000,
+    "maxScale": 0,
+    "minScale": 0,
+    "name": "StreetCenterlines",
+    "ownershipBasedAccessControlForFeatures": {
+        "allowOthersToQuery": true
+    },
+    "parentLayer": null,
+    "relationships": [],
+    "serviceItemId": "0f464a3defd24adf8464db7d0adc3753",
+    "sourceSpatialReference": {
+        "latestWkid": 2876,
+        "wkid": 2876
+    },
+    "subLayers": [],
+    "subtypeField": null,
+    "subtypeFieldName": null,
+    "subtypes": [],
+    "supportedQueryFormats": "JSON, geoJSON",
+    "supportsAdvancedQueries": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsDatumTransformation": true,
+    "supportsStatistics": true,
+    "type": "Feature Layer",
+    "typeIdField": null,
+    "useStandardizedQueries": true
+}

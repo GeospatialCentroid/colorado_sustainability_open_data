@@ -1,0 +1,206 @@
+{
+    "advancedQueryCapabilities": {
+        "supportsCountDistinct": true,
+        "supportsDistinct": true,
+        "supportsHavingClause": true,
+        "supportsOrderBy": true,
+        "supportsPagination": true,
+        "supportsQueryWithDistance": true,
+        "supportsReturningQueryExtent": true,
+        "supportsSqlExpression": true,
+        "supportsStatistics": true,
+        "supportsTrueCurve": true,
+        "useStandardizedQueries": true
+    },
+    "canModifyLayer": true,
+    "canScaleSymbols": false,
+    "capabilities": "Map,Query,Data",
+    "copyrightText": "City of Greeley, Planning",
+    "currentVersion": 10.91,
+    "dateFieldsTimeReference": null,
+    "defaultSubtypeCode": null,
+    "defaultVisibility": true,
+    "description": "A development concept master plan is intended to provide for the conceptual planning of future land uses and related densities and intensities, architectural intent, extensions of street systems, as well as other public facilities and utilities on properties and to identify where development of such properties may be complicated by unusual conditions, such as topography, utility service, or land use. A development concept master plan is a binding approval document. ORD 14, 2003ORD 51, 1998",
+    "displayField": "NAME",
+    "drawingInfo": {
+        "labelingInfo": null,
+        "renderer": {
+            "description": "",
+            "label": "",
+            "symbol": {
+                "color": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "outline": {
+                    "color": [
+                        110,
+                        110,
+                        110,
+                        255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 0.4
+                },
+                "style": "esriSFSSolid",
+                "type": "esriSFS"
+            },
+            "type": "simple"
+        },
+        "transparency": 0
+    },
+    "extent": {
+        "spatialReference": {
+            "latestWkid": 2876,
+            "wkid": 2876
+        },
+        "xmax": 3230962.483627841,
+        "xmin": 3167670.9915218353,
+        "ymax": 1416316.481515944,
+        "ymin": 1384760.8679972887
+    },
+    "fields": [
+        {
+            "alias": "OBJECTID",
+            "domain": null,
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "DATEREV",
+            "domain": null,
+            "length": 8,
+            "name": "DATEREV",
+            "type": "esriFieldTypeDate"
+        },
+        {
+            "alias": "NAME",
+            "domain": null,
+            "length": 50,
+            "name": "NAME",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "ConceptName",
+            "domain": null,
+            "length": 50,
+            "name": "ConceptName",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "DocumentLink",
+            "domain": null,
+            "length": 254,
+            "name": "DocumentLink",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Trakid",
+            "domain": null,
+            "length": 20,
+            "name": "Trakid",
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "GlobalID",
+            "domain": null,
+            "length": 38,
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID"
+        },
+        {
+            "alias": "SHAPE",
+            "domain": null,
+            "name": "SHAPE",
+            "type": "esriFieldTypeGeometry"
+        },
+        {
+            "alias": "SHAPE.area",
+            "domain": null,
+            "name": "SHAPE.area",
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "SHAPE.len",
+            "domain": null,
+            "name": "SHAPE.len",
+            "type": "esriFieldTypeDouble"
+        }
+    ],
+    "geometryField": {
+        "alias": "SHAPE",
+        "name": "SHAPE",
+        "type": "esriFieldTypeGeometry"
+    },
+    "geometryProperties": {
+        "shapeAreaFieldName": "SHAPE.area",
+        "shapeLengthFieldName": "SHAPE.len",
+        "units": "esriFeet"
+    },
+    "geometryType": "esriGeometryPolygon",
+    "hasAttachments": false,
+    "hasGeometryProperties": true,
+    "hasLabels": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "id": 1,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "R195_SDE_ROWID_UK"
+        },
+        {
+            "description": "",
+            "fields": "GlobalID",
+            "isAscending": true,
+            "isUnique": false,
+            "name": "UUID_195"
+        },
+        {
+            "description": "",
+            "fields": "GlobalID,OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "UUID_OID_195"
+        },
+        {
+            "description": "",
+            "fields": "SHAPE",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "a182_ix1"
+        }
+    ],
+    "isDataVersioned": true,
+    "maxRecordCount": 1000,
+    "maxScale": 0,
+    "minScale": 0,
+    "name": "Development Concept Master Plan",
+    "ownershipBasedAccessControlForFeatures": {
+        "allowOthersToQuery": true
+    },
+    "parentLayer": null,
+    "relationships": [],
+    "serviceItemId": "93b9e464ea514a259ca98dc2e239cfc8",
+    "sourceSpatialReference": {
+        "latestWkid": 2876,
+        "wkid": 2876
+    },
+    "subLayers": [],
+    "subtypeField": null,
+    "subtypeFieldName": null,
+    "subtypes": [],
+    "supportedQueryFormats": "JSON, geoJSON",
+    "supportsAdvancedQueries": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsDatumTransformation": true,
+    "supportsStatistics": true,
+    "type": "Feature Layer",
+    "typeIdField": null,
+    "useStandardizedQueries": true
+}

@@ -1,0 +1,522 @@
+{
+    "advancedEditingCapabilities": {
+        "supportedSqlFormatsInCalculate": [
+            "standard"
+        ]
+    },
+    "advancedQueryCapabilities": {
+        "supportsCountDistinct": true,
+        "supportsDistinct": true,
+        "supportsHavingClause": true,
+        "supportsLod": false,
+        "supportsOrderBy": true,
+        "supportsPagination": true,
+        "supportsPercentileStatistics": true,
+        "supportsQueryWithDatumTransformation": true,
+        "supportsQueryWithDistance": true,
+        "supportsQueryWithLodSR": false,
+        "supportsQueryWithResultType": true,
+        "supportsReturningGeometryCentroid": true,
+        "supportsReturningQueryExtent": true,
+        "supportsSqlExpression": true,
+        "supportsStatistics": true,
+        "supportsTrueCurve": true
+    },
+    "allowGeometryUpdates": false,
+    "allowTrueCurvesUpdates": false,
+    "archivingInfo": {
+        "startArchivingMoment": -1,
+        "supportsQueryWithHistoricMoment": false
+    },
+    "canScaleSymbols": false,
+    "capabilities": "Query,Extract",
+    "cimVersion": "2.7.0",
+    "copyrightText": "",
+    "currentVersion": 10.9,
+    "dateFieldsTimeReference": {
+        "respectsDaylightSaving": true,
+        "timeZone": "Mountain Standard Time"
+    },
+    "datesInUnknownTimezone": false,
+    "defaultVisibility": true,
+    "description": "",
+    "displayField": "NAME",
+    "drawingInfo": {
+        "labelingInfo": null,
+        "renderer": {
+            "symbol": {
+                "color": [
+                    85,
+                    255,
+                    0,
+                    255
+                ],
+                "outline": {
+                    "color": [
+                        110,
+                        110,
+                        110,
+                        255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 0.4
+                },
+                "style": "esriSFSSolid",
+                "type": "esriSFS"
+            },
+            "type": "simple"
+        },
+        "scaleSymbols": true,
+        "transparency": 0
+    },
+    "editFieldsInfo": {
+        "creationDateField": "created_date",
+        "creatorField": "created_user",
+        "dateFieldsTimeReference": {
+            "respectsDaylightSaving": false,
+            "timeZone": "UTC"
+        },
+        "editDateField": "last_edited_date",
+        "editorField": "last_edited_user"
+    },
+    "extent": {
+        "spatialReference": {
+            "falseM": -100000,
+            "falseX": -118265500,
+            "falseY": -95180100,
+            "falseZ": 0,
+            "latestWkid": 2876,
+            "mTolerance": 2,
+            "mUnits": 10000,
+            "wkid": 2876,
+            "xyTolerance": 3.2000000029802345e-05,
+            "xyUnits": 37138342.128391795,
+            "zTolerance": 2,
+            "zUnits": 1
+        },
+        "xmax": 3144133.381363049,
+        "xmin": 3103122.0001313835,
+        "ymax": 1292211.9998719841,
+        "ymin": 1235652.375130564
+    },
+    "fields": [
+        {
+            "alias": "OBJECTID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "modelName": "OBJECTID",
+            "name": "OBJECTID",
+            "nullable": false,
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "Name",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 255,
+            "modelName": "NAME",
+            "name": "NAME",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Owner",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "Erie",
+                        "name": "Erie"
+                    },
+                    {
+                        "code": "HOA",
+                        "name": "HOA"
+                    },
+                    {
+                        "code": "Private",
+                        "name": "Private"
+                    },
+                    {
+                        "code": "School District",
+                        "name": "School District"
+                    },
+                    {
+                        "code": "Other",
+                        "name": "Other"
+                    },
+                    {
+                        "code": "Under Warranty",
+                        "name": "Under Warranty"
+                    },
+                    {
+                        "code": "Boulder County",
+                        "name": "Boulder County"
+                    },
+                    {
+                        "code": "Weld County",
+                        "name": "Weld County"
+                    },
+                    {
+                        "code": "Metro District",
+                        "name": "Metro District"
+                    },
+                    {
+                        "code": "Developer",
+                        "name": "Developer"
+                    }
+                ],
+                "description": "Owner for Open Space",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "ParksOwner",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "length": 255,
+            "modelName": "OWNER",
+            "name": "OWNER",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Public Access",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "No",
+                        "name": "No"
+                    },
+                    {
+                        "code": "Yes",
+                        "name": "Yes"
+                    },
+                    {
+                        "code": "Unk",
+                        "name": "Unknown"
+                    },
+                    {
+                        "code": "Res",
+                        "name": "Restricted"
+                    }
+                ],
+                "description": "Yes No text domain",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "YesNo",
+                "splitPolicy": "esriSPTDuplicate",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "length": 255,
+            "modelName": "PUBLIC_ACCESS",
+            "name": "PUBLIC_ACCESS",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Acres",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "modelName": "ACRES",
+            "name": "ACRES",
+            "nullable": true,
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "GlobalID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "length": 38,
+            "modelName": "GlobalID",
+            "name": "GlobalID",
+            "nullable": false,
+            "type": "esriFieldTypeGlobalID"
+        },
+        {
+            "alias": "Acquired Date",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 8,
+            "modelName": "AcquiredDate",
+            "name": "AcquiredDate",
+            "nullable": true,
+            "type": "esriFieldTypeDate"
+        },
+        {
+            "alias": "Maintained By",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": 1,
+                        "name": "Erie"
+                    },
+                    {
+                        "code": 2,
+                        "name": "Erie \u2013UDFCD"
+                    },
+                    {
+                        "code": 3,
+                        "name": "HOA"
+                    },
+                    {
+                        "code": 4,
+                        "name": "Metro District"
+                    },
+                    {
+                        "code": 5,
+                        "name": "School District"
+                    },
+                    {
+                        "code": 6,
+                        "name": "UDFCD"
+                    },
+                    {
+                        "code": 7,
+                        "name": "Vector Air"
+                    },
+                    {
+                        "code": 8,
+                        "name": "Other"
+                    },
+                    {
+                        "code": 9,
+                        "name": "HOA / Metro District"
+                    },
+                    {
+                        "code": 10,
+                        "name": "HOA / Erie"
+                    },
+                    {
+                        "code": 11,
+                        "name": "Developer"
+                    }
+                ],
+                "description": "Parks Maintenance Type",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "ParksMaint",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "modelName": "MAINTENANCE1",
+            "name": "MAINTENANCE",
+            "nullable": true,
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "Location Description",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 300,
+            "modelName": "DESCRIPTION",
+            "name": "DESCRIPTION",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Status",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "Proposed",
+                        "name": "Proposed"
+                    },
+                    {
+                        "code": "Preliminary",
+                        "name": "Preliminary"
+                    },
+                    {
+                        "code": "Dedicated",
+                        "name": "Dedicated"
+                    },
+                    {
+                        "code": "Recently Acquired",
+                        "name": "Recently Acquired"
+                    },
+                    {
+                        "code": "Existing",
+                        "name": "Existing"
+                    }
+                ],
+                "description": "Status of Green Space",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "GreenSpaceStatus",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "length": 75,
+            "modelName": "STATUS",
+            "name": "STATUS",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Area",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "modelName": "Shape.STArea()",
+            "name": "Shape__Area",
+            "nullable": false,
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Shape.STLength()",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "modelName": "Shape.STLength()",
+            "name": "Shape__Length",
+            "nullable": false,
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "HOA_ENTITYID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 50,
+            "modelName": "HOA_ENTITYID",
+            "name": "HOA_ENTITYID",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "MD_ENTITYID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 20,
+            "modelName": "MD_ENTITYID",
+            "name": "MD_ENTITYID",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        }
+    ],
+    "geometryField": {
+        "alias": "Shape",
+        "defaultValue": null,
+        "domain": null,
+        "editable": false,
+        "modelName": "Shape",
+        "name": "Shape",
+        "nullable": true,
+        "type": "esriFieldTypeGeometry"
+    },
+    "geometryProperties": {
+        "shapeAreaFieldName": "Shape__Area",
+        "shapeLengthFieldName": "Shape__Length",
+        "units": "esriFeet"
+    },
+    "geometryType": "esriGeometryPolygon",
+    "globalIdField": "GlobalID",
+    "hasAttachments": false,
+    "hasGeometryProperties": true,
+    "hasM": false,
+    "hasMetadata": true,
+    "hasZ": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "id": 1,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "R237_pk"
+        },
+        {
+            "description": "",
+            "fields": "GlobalID",
+            "isAscending": true,
+            "isUnique": false,
+            "name": "UUID_237"
+        },
+        {
+            "description": "",
+            "fields": "GlobalID,OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "UUID_OID_237"
+        },
+        {
+            "description": "",
+            "fields": "Shape",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "S222_idx"
+        }
+    ],
+    "isCoGoEnabled": false,
+    "isDataArchived": false,
+    "isDataBranchVersioned": false,
+    "isDataReplicaTracked": false,
+    "isDataVersioned": true,
+    "maxRecordCount": 10000,
+    "maxRecordCountFactor": 1,
+    "maxScale": 0,
+    "minScale": 0,
+    "name": "Park and Recreation Areas",
+    "objectIdField": "OBJECTID",
+    "onlyAllowTrueCurveUpdatesByTrueCurveClients": false,
+    "ownershipBasedAccessControlForFeatures": null,
+    "parentLayer": null,
+    "preferredTimeReference": null,
+    "relationships": [],
+    "serviceItemId": "59d45e099c734736946dcaf771d49a21",
+    "sourceSpatialReference": {
+        "falseM": 0,
+        "falseX": -118265500,
+        "falseY": -95180100,
+        "falseZ": 0,
+        "latestWkid": 2876,
+        "mTolerance": 0.001,
+        "mUnits": 1,
+        "wkid": 2876,
+        "xyTolerance": 0.003280833333333333,
+        "xyUnits": 3048.0060960121928,
+        "zTolerance": 0.001,
+        "zUnits": 1
+    },
+    "standardMaxRecordCount": 4000,
+    "standardMaxRecordCountNoGeometry": 32000,
+    "subtypeField": "",
+    "supportedQueryFormats": "JSON, geoJSON, PBF",
+    "supportsASyncCalculate": true,
+    "supportsAdvancedQueries": true,
+    "supportsApplyEditsWithGlobalIds": false,
+    "supportsCalculate": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsDatumTransformation": true,
+    "supportsExceedsLimitStatistics": true,
+    "supportsQuantizationEditMode": true,
+    "supportsRollbackOnFailureParameter": false,
+    "supportsStatistics": true,
+    "supportsValidateSQL": true,
+    "syncCanReturnChanges": true,
+    "templates": [
+        {
+            "description": "",
+            "drawingTool": "esriFeatureEditToolPolygon",
+            "name": "Park and Recreation Areas",
+            "prototype": {
+                "attributes": {}
+            }
+        }
+    ],
+    "tileMaxRecordCount": 4000,
+    "type": "Feature Layer",
+    "typeIdField": "",
+    "types": [],
+    "useStandardizedQueries": true
+}

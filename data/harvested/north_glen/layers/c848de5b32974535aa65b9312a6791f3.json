@@ -1,0 +1,2364 @@
+{
+    "advancedEditingCapabilities": {
+        "supportedSqlFormatsInCalculate": [
+            "standard"
+        ]
+    },
+    "advancedQueryCapabilities": {
+        "supportsCountDistinct": true,
+        "supportsDistinct": true,
+        "supportsHavingClause": true,
+        "supportsLod": false,
+        "supportsOrderBy": true,
+        "supportsPagination": true,
+        "supportsPercentileStatistics": true,
+        "supportsQueryWithDatumTransformation": true,
+        "supportsQueryWithDistance": true,
+        "supportsQueryWithLodSR": false,
+        "supportsQueryWithResultType": true,
+        "supportsReturningGeometryCentroid": true,
+        "supportsReturningQueryExtent": true,
+        "supportsSqlExpression": true,
+        "supportsStatistics": true,
+        "supportsTrueCurve": true
+    },
+    "allowGeometryUpdates": false,
+    "allowTrueCurvesUpdates": false,
+    "archivingInfo": {
+        "startArchivingMoment": -1,
+        "supportsQueryWithHistoricMoment": false
+    },
+    "canScaleSymbols": false,
+    "capabilities": "Query,Extract",
+    "cimVersion": "2.7.0",
+    "copyrightText": "",
+    "currentVersion": 10.9,
+    "dateFieldsTimeReference": {
+        "respectsDaylightSaving": true,
+        "timeZone": "Mountain Standard Time"
+    },
+    "datesInUnknownTimezone": false,
+    "defaultVisibility": true,
+    "description": "",
+    "displayField": "NAME",
+    "drawingInfo": {
+        "labelingInfo": null,
+        "renderer": {
+            "authoringInfo": {
+                "colorRamp": {
+                    "colorRamps": [
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                67,
+                                166,
+                                61,
+                                255
+                            ],
+                            "toColor": [
+                                67,
+                                166,
+                                61,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                44,
+                                78,
+                                158,
+                                255
+                            ],
+                            "toColor": [
+                                44,
+                                78,
+                                158,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                191,
+                                40,
+                                43,
+                                255
+                            ],
+                            "toColor": [
+                                191,
+                                40,
+                                43,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                196,
+                                49,
+                                150,
+                                255
+                            ],
+                            "toColor": [
+                                196,
+                                49,
+                                150,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                64,
+                                157,
+                                161,
+                                255
+                            ],
+                            "toColor": [
+                                64,
+                                157,
+                                161,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                201,
+                                161,
+                                75,
+                                255
+                            ],
+                            "toColor": [
+                                201,
+                                161,
+                                75,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                119,
+                                50,
+                                199,
+                                255
+                            ],
+                            "toColor": [
+                                119,
+                                50,
+                                199,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                156,
+                                47,
+                                74,
+                                255
+                            ],
+                            "toColor": [
+                                156,
+                                47,
+                                74,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                189,
+                                199,
+                                54,
+                                255
+                            ],
+                            "toColor": [
+                                189,
+                                199,
+                                54,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                189,
+                                109,
+                                72,
+                                255
+                            ],
+                            "toColor": [
+                                189,
+                                109,
+                                72,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                78,
+                                199,
+                                154,
+                                255
+                            ],
+                            "toColor": [
+                                78,
+                                199,
+                                154,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                75,
+                                137,
+                                191,
+                                255
+                            ],
+                            "toColor": [
+                                75,
+                                137,
+                                191,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                62,
+                                80,
+                                199,
+                                255
+                            ],
+                            "toColor": [
+                                62,
+                                80,
+                                199,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                144,
+                                54,
+                                158,
+                                255
+                            ],
+                            "toColor": [
+                                144,
+                                54,
+                                158,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                130,
+                                161,
+                                58,
+                                255
+                            ],
+                            "toColor": [
+                                130,
+                                161,
+                                58,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                175,
+                                42,
+                                201,
+                                255
+                            ],
+                            "toColor": [
+                                175,
+                                42,
+                                201,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                88,
+                                44,
+                                153,
+                                255
+                            ],
+                            "toColor": [
+                                88,
+                                44,
+                                153,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                153,
+                                43,
+                                107,
+                                255
+                            ],
+                            "toColor": [
+                                153,
+                                43,
+                                107,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                103,
+                                191,
+                                44,
+                                255
+                            ],
+                            "toColor": [
+                                103,
+                                191,
+                                44,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                43,
+                                173,
+                                100,
+                                255
+                            ],
+                            "toColor": [
+                                43,
+                                173,
+                                100,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        },
+                        {
+                            "algorithm": "esriCIELabAlgorithm",
+                            "fromColor": [
+                                196,
+                                73,
+                                69,
+                                255
+                            ],
+                            "toColor": [
+                                196,
+                                73,
+                                69,
+                                255
+                            ],
+                            "type": "algorithmic"
+                        }
+                    ],
+                    "type": "multipart"
+                }
+            },
+            "field1": "PROP_TYPE",
+            "fieldDelimiter": ",",
+            "type": "uniqueValue",
+            "uniqueValueInfos": [
+                {
+                    "label": "Airport",
+                    "symbol": {
+                        "color": [
+                            54,
+                            134,
+                            199,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "1"
+                },
+                {
+                    "label": "Landscape",
+                    "symbol": {
+                        "color": [
+                            161,
+                            80,
+                            64,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "10"
+                },
+                {
+                    "label": "Library",
+                    "symbol": {
+                        "color": [
+                            44,
+                            41,
+                            196,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "11"
+                },
+                {
+                    "label": "Open Space",
+                    "symbol": {
+                        "color": [
+                            44,
+                            151,
+                            163,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "12"
+                },
+                {
+                    "label": "Open Space/Farm",
+                    "symbol": {
+                        "color": [
+                            134,
+                            65,
+                            163,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "13"
+                },
+                {
+                    "label": "Park",
+                    "symbol": {
+                        "color": [
+                            112,
+                            168,
+                            0,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "14"
+                },
+                {
+                    "label": "Private Amenity",
+                    "symbol": {
+                        "color": [
+                            55,
+                            153,
+                            88,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "15"
+                },
+                {
+                    "label": "Right of Way",
+                    "symbol": {
+                        "color": [
+                            47,
+                            91,
+                            173,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "16"
+                },
+                {
+                    "label": "Reservoir",
+                    "symbol": {
+                        "color": [
+                            179,
+                            39,
+                            134,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "17"
+                },
+                {
+                    "label": "School Property",
+                    "symbol": {
+                        "color": [
+                            196,
+                            67,
+                            97,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "18"
+                },
+                {
+                    "label": "Spine Trail",
+                    "symbol": {
+                        "color": [
+                            81,
+                            201,
+                            44,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "19"
+                },
+                {
+                    "label": "Boulder County",
+                    "symbol": {
+                        "color": [
+                            130,
+                            130,
+                            130,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "2"
+                },
+                {
+                    "label": "Pocket Park",
+                    "symbol": {
+                        "color": [
+                            83,
+                            36,
+                            158,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "20"
+                },
+                {
+                    "label": "Undeveloped",
+                    "symbol": {
+                        "color": [
+                            189,
+                            79,
+                            45,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "21"
+                },
+                {
+                    "label": "Cemetery",
+                    "symbol": {
+                        "color": [
+                            199,
+                            48,
+                            48,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "3"
+                },
+                {
+                    "label": "Conservation Easment",
+                    "symbol": {
+                        "color": [
+                            179,
+                            43,
+                            194,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "4"
+                },
+                {
+                    "label": "Detention",
+                    "symbol": {
+                        "color": [
+                            56,
+                            201,
+                            165,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "5"
+                },
+                {
+                    "label": "Facilities",
+                    "symbol": {
+                        "color": [
+                            184,
+                            126,
+                            50,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "6"
+                },
+                {
+                    "label": "Golf Course",
+                    "symbol": {
+                        "color": [
+                            161,
+                            64,
+                            114,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "7"
+                },
+                {
+                    "label": "Golf Club",
+                    "symbol": {
+                        "color": [
+                            51,
+                            61,
+                            166,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "8"
+                },
+                {
+                    "label": "Housing",
+                    "symbol": {
+                        "color": [
+                            39,
+                            179,
+                            74,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                110,
+                                110,
+                                110,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 0.4
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "value": "9"
+                }
+            ]
+        },
+        "scaleSymbols": true,
+        "transparency": 0
+    },
+    "editFieldsInfo": {
+        "creationDateField": "created_date",
+        "creatorField": "created_user",
+        "dateFieldsTimeReference": {
+            "respectsDaylightSaving": false,
+            "timeZone": "UTC"
+        },
+        "editDateField": "last_edited_date",
+        "editorField": "last_edited_user"
+    },
+    "extent": {
+        "spatialReference": {
+            "falseM": -100000,
+            "falseX": -118265500,
+            "falseY": -95180100,
+            "falseZ": 0,
+            "latestWkid": 2876,
+            "mTolerance": 2,
+            "mUnits": 10000,
+            "wkid": 2876,
+            "xyTolerance": 3.2000000029802345e-05,
+            "xyUnits": 37138342.128391795,
+            "zTolerance": 2,
+            "zUnits": 1
+        },
+        "xmax": 3144133.381363049,
+        "xmin": 3103122.0001313835,
+        "ymax": 1292211.9998719841,
+        "ymin": 1235652.375130564
+    },
+    "fields": [
+        {
+            "alias": "OBJECTID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "modelName": "OBJECTID",
+            "name": "OBJECTID",
+            "nullable": false,
+            "type": "esriFieldTypeOID"
+        },
+        {
+            "alias": "Name",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 255,
+            "modelName": "NAME",
+            "name": "NAME",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Owner",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "Erie",
+                        "name": "Erie"
+                    },
+                    {
+                        "code": "HOA",
+                        "name": "HOA"
+                    },
+                    {
+                        "code": "Private",
+                        "name": "Private"
+                    },
+                    {
+                        "code": "School District",
+                        "name": "School District"
+                    },
+                    {
+                        "code": "Other",
+                        "name": "Other"
+                    },
+                    {
+                        "code": "Under Warranty",
+                        "name": "Under Warranty"
+                    },
+                    {
+                        "code": "Boulder County",
+                        "name": "Boulder County"
+                    },
+                    {
+                        "code": "Weld County",
+                        "name": "Weld County"
+                    },
+                    {
+                        "code": "Metro District",
+                        "name": "Metro District"
+                    },
+                    {
+                        "code": "Developer",
+                        "name": "Developer"
+                    }
+                ],
+                "description": "Owner for Open Space",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "ParksOwner",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "length": 255,
+            "modelName": "OWNER",
+            "name": "OWNER",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Maintained By",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": 1,
+                        "name": "Erie"
+                    },
+                    {
+                        "code": 2,
+                        "name": "Erie \u2013UDFCD"
+                    },
+                    {
+                        "code": 3,
+                        "name": "HOA"
+                    },
+                    {
+                        "code": 4,
+                        "name": "Metro District"
+                    },
+                    {
+                        "code": 5,
+                        "name": "School District"
+                    },
+                    {
+                        "code": 6,
+                        "name": "UDFCD"
+                    },
+                    {
+                        "code": 7,
+                        "name": "Vector Air"
+                    },
+                    {
+                        "code": 8,
+                        "name": "Other"
+                    },
+                    {
+                        "code": 9,
+                        "name": "HOA / Metro District"
+                    },
+                    {
+                        "code": 10,
+                        "name": "HOA / Erie"
+                    },
+                    {
+                        "code": 11,
+                        "name": "Developer"
+                    }
+                ],
+                "description": "Parks Maintenance Type",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "ParksMaint",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "modelName": "MAINTENANCE1",
+            "name": "MAINTENANCE",
+            "nullable": true,
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "Public Access",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "No",
+                        "name": "No"
+                    },
+                    {
+                        "code": "Yes",
+                        "name": "Yes"
+                    },
+                    {
+                        "code": "Unk",
+                        "name": "Unknown"
+                    },
+                    {
+                        "code": "Res",
+                        "name": "Restricted"
+                    }
+                ],
+                "description": "Yes No text domain",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "YesNo",
+                "splitPolicy": "esriSPTDuplicate",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "length": 255,
+            "modelName": "PUBLIC_ACCESS",
+            "name": "PUBLIC_ACCESS",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Acquired Date",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 8,
+            "modelName": "AcquiredDate",
+            "name": "AcquiredDate",
+            "nullable": true,
+            "type": "esriFieldTypeDate"
+        },
+        {
+            "alias": "Veg Type",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": 1,
+                        "name": "Agricultural"
+                    },
+                    {
+                        "code": 2,
+                        "name": "Landscape"
+                    },
+                    {
+                        "code": 3,
+                        "name": "Native Grass"
+                    },
+                    {
+                        "code": 4,
+                        "name": "Town Owned Property"
+                    },
+                    {
+                        "code": 5,
+                        "name": "Turf"
+                    },
+                    {
+                        "code": 6,
+                        "name": "Other"
+                    }
+                ],
+                "description": "Parks Vegetation Type",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "ParksVeg",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "modelName": "VEG_TYPE",
+            "name": "VEG_TYPE",
+            "nullable": true,
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "Irgg Type",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": 1,
+                        "name": "Irrigated"
+                    },
+                    {
+                        "code": 2,
+                        "name": "Non Irrigated"
+                    },
+                    {
+                        "code": 3,
+                        "name": "Other"
+                    },
+                    {
+                        "code": 4,
+                        "name": "Unknown"
+                    }
+                ],
+                "description": "Parks Irrigation Type",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "ParksIrig",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "modelName": "IRRG_TYPE",
+            "name": "IRRG_TYPE",
+            "nullable": true,
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "Prop Type",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": 1,
+                        "name": "Airport"
+                    },
+                    {
+                        "code": 2,
+                        "name": "Boulder County"
+                    },
+                    {
+                        "code": 3,
+                        "name": "Cemetery"
+                    },
+                    {
+                        "code": 4,
+                        "name": "Conservation Easment"
+                    },
+                    {
+                        "code": 5,
+                        "name": "Detention"
+                    },
+                    {
+                        "code": 6,
+                        "name": "Facilities"
+                    },
+                    {
+                        "code": 7,
+                        "name": "Golf Course"
+                    },
+                    {
+                        "code": 8,
+                        "name": "Golf Club"
+                    },
+                    {
+                        "code": 9,
+                        "name": "Housing"
+                    },
+                    {
+                        "code": 10,
+                        "name": "Landscape"
+                    },
+                    {
+                        "code": 11,
+                        "name": "Library"
+                    },
+                    {
+                        "code": 12,
+                        "name": "Open Space"
+                    },
+                    {
+                        "code": 13,
+                        "name": "Open Space/Farm"
+                    },
+                    {
+                        "code": 14,
+                        "name": "Park"
+                    },
+                    {
+                        "code": 15,
+                        "name": "Private Amenity"
+                    },
+                    {
+                        "code": 16,
+                        "name": "Right of Way"
+                    },
+                    {
+                        "code": 17,
+                        "name": "Reservoir"
+                    },
+                    {
+                        "code": 18,
+                        "name": "School Property"
+                    },
+                    {
+                        "code": 19,
+                        "name": "Spine Trail"
+                    },
+                    {
+                        "code": 21,
+                        "name": "Undeveloped"
+                    },
+                    {
+                        "code": 20,
+                        "name": "Pocket Park"
+                    },
+                    {
+                        "code": 22,
+                        "name": "Drainage"
+                    },
+                    {
+                        "code": 23,
+                        "name": "Open Space/Drainage"
+                    },
+                    {
+                        "code": 24,
+                        "name": "Other"
+                    },
+                    {
+                        "code": 25,
+                        "name": "Parkland Native"
+                    }
+                ],
+                "description": "Parks Property Type",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "ParksProp",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "modelName": "PROP_TYPE",
+            "name": "PROP_TYPE",
+            "nullable": true,
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "alias": "Acres",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "modelName": "ACRES",
+            "name": "ACRES",
+            "nullable": true,
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Location Description",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 300,
+            "modelName": "DESCRIPTION",
+            "name": "DESCRIPTION",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Status",
+            "defaultValue": null,
+            "domain": {
+                "codedValues": [
+                    {
+                        "code": "Proposed",
+                        "name": "Proposed"
+                    },
+                    {
+                        "code": "Preliminary",
+                        "name": "Preliminary"
+                    },
+                    {
+                        "code": "Dedicated",
+                        "name": "Dedicated"
+                    },
+                    {
+                        "code": "Recently Acquired",
+                        "name": "Recently Acquired"
+                    },
+                    {
+                        "code": "Existing",
+                        "name": "Existing"
+                    }
+                ],
+                "description": "Status of Green Space",
+                "mergePolicy": "esriMPTDefaultValue",
+                "name": "GreenSpaceStatus",
+                "splitPolicy": "esriSPTDefaultValue",
+                "type": "codedValue"
+            },
+            "editable": true,
+            "length": 75,
+            "modelName": "STATUS",
+            "name": "STATUS",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "Shape.STArea()",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "modelName": "Shape.STArea()",
+            "name": "Shape__Area",
+            "nullable": false,
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "Shape.STLength()",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "modelName": "Shape.STLength()",
+            "name": "Shape__Length",
+            "nullable": false,
+            "type": "esriFieldTypeDouble"
+        },
+        {
+            "alias": "HOA_ENTITYID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 50,
+            "modelName": "HOA_ENTITYID",
+            "name": "HOA_ENTITYID",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "MD_ENTITYID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": true,
+            "length": 20,
+            "modelName": "MD_ENTITYID",
+            "name": "MD_ENTITYID",
+            "nullable": true,
+            "type": "esriFieldTypeString"
+        },
+        {
+            "alias": "GlobalID",
+            "defaultValue": null,
+            "domain": null,
+            "editable": false,
+            "length": 38,
+            "modelName": "GlobalID",
+            "name": "GlobalID",
+            "nullable": false,
+            "type": "esriFieldTypeGlobalID"
+        }
+    ],
+    "geometryField": {
+        "alias": "Shape",
+        "defaultValue": null,
+        "domain": null,
+        "editable": false,
+        "modelName": "Shape",
+        "name": "Shape",
+        "nullable": true,
+        "type": "esriFieldTypeGeometry"
+    },
+    "geometryProperties": {
+        "shapeAreaFieldName": "Shape__Area",
+        "shapeLengthFieldName": "Shape__Length",
+        "units": "esriFeet"
+    },
+    "geometryType": "esriGeometryPolygon",
+    "globalIdField": "GlobalID",
+    "hasAttachments": false,
+    "hasGeometryProperties": true,
+    "hasM": false,
+    "hasMetadata": true,
+    "hasZ": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "id": 2,
+    "indexes": [
+        {
+            "description": "",
+            "fields": "OBJECTID",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "R237_pk"
+        },
+        {
+            "description": "",
+            "fields": "Shape",
+            "isAscending": true,
+            "isUnique": true,
+            "name": "S222_idx"
+        }
+    ],
+    "isCoGoEnabled": false,
+    "isDataArchived": false,
+    "isDataBranchVersioned": false,
+    "isDataReplicaTracked": false,
+    "isDataVersioned": true,
+    "maxRecordCount": 10000,
+    "maxRecordCountFactor": 1,
+    "maxScale": 0,
+    "minScale": 0,
+    "name": "Green Space",
+    "objectIdField": "OBJECTID",
+    "onlyAllowTrueCurveUpdatesByTrueCurveClients": false,
+    "ownershipBasedAccessControlForFeatures": null,
+    "parentLayer": null,
+    "preferredTimeReference": null,
+    "relationships": [],
+    "serviceItemId": "59d45e099c734736946dcaf771d49a21",
+    "sourceSpatialReference": {
+        "falseM": 0,
+        "falseX": -118265500,
+        "falseY": -95180100,
+        "falseZ": 0,
+        "latestWkid": 2876,
+        "mTolerance": 0.001,
+        "mUnits": 1,
+        "wkid": 2876,
+        "xyTolerance": 0.003280833333333333,
+        "xyUnits": 3048.0060960121928,
+        "zTolerance": 0.001,
+        "zUnits": 1
+    },
+    "standardMaxRecordCount": 4000,
+    "standardMaxRecordCountNoGeometry": 32000,
+    "subtypeField": "",
+    "supportedQueryFormats": "JSON, geoJSON, PBF",
+    "supportsASyncCalculate": true,
+    "supportsAdvancedQueries": true,
+    "supportsApplyEditsWithGlobalIds": false,
+    "supportsCalculate": true,
+    "supportsCoordinatesQuantization": true,
+    "supportsDatumTransformation": true,
+    "supportsExceedsLimitStatistics": true,
+    "supportsQuantizationEditMode": true,
+    "supportsRollbackOnFailureParameter": false,
+    "supportsStatistics": true,
+    "supportsValidateSQL": true,
+    "syncCanReturnChanges": true,
+    "templates": [],
+    "tileMaxRecordCount": 4000,
+    "type": "Feature Layer",
+    "typeIdField": "PROP_TYPE",
+    "types": [
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 1,
+            "name": "Airport",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Airport",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 1
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 10,
+            "name": "Landscape",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Landscape",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 10
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 11,
+            "name": "Library",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Library",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 11
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 12,
+            "name": "Open Space",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Open Space",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 12
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 13,
+            "name": "Open Space/Farm",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Open Space/Farm",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 13
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 14,
+            "name": "Park",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Park",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 14
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 15,
+            "name": "Private Amenity",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Private Amenity",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 15
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 16,
+            "name": "Right of Way",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Right of Way",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 16
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 17,
+            "name": "Reservoir",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Reservoir",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 17
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 18,
+            "name": "School Property",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "School Property",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 18
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 19,
+            "name": "Spine Trail",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Spine Trail",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 19
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 2,
+            "name": "Boulder County",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Boulder County",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 2
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 20,
+            "name": "Pocket Park",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Pocket Park",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 20
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 21,
+            "name": "Undeveloped",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Undeveloped",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 21
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 3,
+            "name": "Cemetery",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Cemetery",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 3
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 4,
+            "name": "Conservation Easment",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Conservation Easment",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 4
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 5,
+            "name": "Detention",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Detention",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 5
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 6,
+            "name": "Facilities",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Facilities",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 6
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 7,
+            "name": "Golf Course",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Golf Course",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 7
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 8,
+            "name": "Golf Club",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Golf Club",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 8
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "domains": {
+                "IRRG_TYPE": {
+                    "type": "inherited"
+                },
+                "MAINTENANCE": {
+                    "type": "inherited"
+                },
+                "OWNER": {
+                    "type": "inherited"
+                },
+                "PROP_TYPE": {
+                    "type": "inherited"
+                },
+                "PUBLIC_ACCESS": {
+                    "type": "inherited"
+                },
+                "STATUS": {
+                    "type": "inherited"
+                },
+                "VEG_TYPE": {
+                    "type": "inherited"
+                }
+            },
+            "id": 9,
+            "name": "Housing",
+            "templates": [
+                {
+                    "description": "",
+                    "drawingTool": "esriFeatureEditToolPolygon",
+                    "name": "Housing",
+                    "prototype": {
+                        "attributes": {
+                            "PROP_TYPE": 9
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "useStandardizedQueries": true
+}
