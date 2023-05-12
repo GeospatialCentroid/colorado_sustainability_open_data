@@ -441,12 +441,19 @@ class Filter_Manager {
         for (var i in match){
             if ($.inArray(i,this.omit_result_item)==-1){
                 var link = match[i]
-                if (link.indexOf("http")==0){
+                if ((typeof link === 'string' || link instanceof String) && link.indexOf("http")==0){
                    link="<a href='"+link+"' target='_blank'>"+link+"</a>"
                 }
                 html+="<span class='font-weight-bold'>"+i+":</span> "+link+"<br/>"
             }
         }
+        // generate a table from the table_data_cols
+        // these could be any number of columns of the same size so they can be combined into a table
+        var table_data =[]
+        for (var c in this.table_data_col){
+            table_data.push(match[this.table_data_col[c]].split(','))
+        }
+        html+=this.table_manager.get_combined_table_html(this.table_data_col,table_data)
         $("#details_view").html(html)
 
     }
