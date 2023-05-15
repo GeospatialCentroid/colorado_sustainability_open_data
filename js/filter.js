@@ -72,6 +72,16 @@ class Filter_Manager {
      process_csv(data,obj_ref){
        obj_ref.json_data= $.csv.toObjects(data)
 
+       if(obj_ref?.include_col){
+        var temp_json=[]
+         for (var i=0;i<obj_ref.json_data.length;i++){
+            if(obj_ref.json_data[i][obj_ref.include_col]=='y'){
+                temp_json.push(obj_ref.json_data[i])
+            }
+         }
+         obj_ref.json_data = temp_json
+       }
+
        obj_ref.generate_filters()
 
         var first_key=Object.keys(obj_ref.params)[0]

@@ -12,7 +12,8 @@ $( function() {
         sub_title_col:"Organization",
         params:getParams(window.location.href),
         table_data_col:["column name","column field name","column types","column description"],
-        table_manager: new Table_Manager({})
+        table_manager: new Table_Manager({}),
+        include_col:'include'// values with 'y' will show-up in list
      })
 
      // initialize this filtering system
