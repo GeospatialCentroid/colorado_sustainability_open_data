@@ -109,7 +109,7 @@ class Filter_Manager {
      generate_filters(){
         var obj_ref=this;
         // create a catalog of all the unique options for each of attributes
-        var catalog={}
+        this.catalog={}
         for (var i=0;i<this.json_data.length;i++){
             var obj=this.json_data[i]
             //add a unique id
@@ -125,29 +125,12 @@ class Filter_Manager {
                if ($.isArray(obj[a])){
                     // need to add all the items into the catalog
                     for(var i in obj[a]){
-                        console.log("Loop over each of the values")
-                        if(typeof(catalog[a])=="undefined"){
-                           catalog[a]=[obj[a][i]]
-                        }else{
-                            //populate with any new value
-                            if ($.inArray(obj[a][i],catalog[a])==-1){
-                                catalog[a].push(obj[a][i])
+                        this.add_to_catalog(a,obj[a][i])
 
-                            }
-                        }
 
                     }
                }else{
-
-                    if(typeof(catalog[a])=="undefined"){
-                       catalog[a]=[obj[a]]
-                    }else{
-                        //populate with any new value
-                        if ($.inArray(obj[a],catalog[a])==-1){
-                            catalog[a].push(obj[a])
-
-                        }
-                    }
+                    this.add_to_catalog(a,obj[a])
                }
 
             }
@@ -156,14 +139,14 @@ class Filter_Manager {
 
         // sort all the items
         // create controls - Note  column names are used for ids - spaces replaced with __
-         for (var a in catalog){
-               catalog[a]=catalog[a].sort();
+         for (var a in this.catalog){
+               this.catalog[a]=this.catalog[a].sort();
                // generate control html based on data type (use last value to workaround blank first values)
-               if (catalog[a].length>0 && $.inArray(a,obj_ref.omit_filter_item)==-1){
-                if( $.isNumeric(catalog[a][catalog[a].length-1])){
+               if (this.catalog[a].length>0 && $.inArray(a,obj_ref.omit_filter_item)==-1){
+                if( $.isNumeric(this.catalog[a][this.catalog[a].length-1])){
                     //create a range slider for numbers - https://jqueryui.com/slider/#range
-                     var min = Math.min.apply(Math, catalog[a]);
-                     var max = Math.max.apply(Math, catalog[a]);
+                     var min = Math.min.apply(Math, this.catalog[a]);
+                     var max = Math.max.apply(Math, this.catalog[a]);
                      $("#filters").append(this.get_range_slider(a,min,max))
                      //to allow  fine-tuning - add min and max values
                      var ext="_slider"
@@ -188,7 +171,7 @@ class Filter_Manager {
 
                 }else{
 
-                    $("#filters").append(this.get_multi_select(a,catalog[a]))
+                    $("#filters").append(this.get_multi_select(a,this.catalog[a]))
                 }
 
            }
@@ -209,7 +192,17 @@ class Filter_Manager {
             obj_ref.filter(true)
         });
     }
+    add_to_catalog(col,val){
+        if(typeof(this.catalog[col])=="undefined"){
+               this.catalog[col]=[val]
+            }else{
+                //populate with any new value
+                if ($.inArray(val,this.catalog[col])==-1){
+                    this.catalog[col].push(val)
 
+                }
+            }
+    }
      get_multi_select(id,options){
         var html=""
         var _id = id.replaceAll(" ", "__");
