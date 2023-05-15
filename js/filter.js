@@ -110,6 +110,8 @@ class Filter_Manager {
         var obj_ref=this;
         // create a catalog of all the unique options for each of attributes
         this.catalog={}
+        // create a separate obj to track the occurrences of each unique option
+        this.catalog_counts={}
         for (var i=0;i<this.json_data.length;i++){
             var obj=this.json_data[i]
             //add a unique id
@@ -136,6 +138,7 @@ class Filter_Manager {
             }
 
         }
+        console.log( this.catalog_counts)
 
         // sort all the items
         // create controls - Note  column names are used for ids - spaces replaced with __
@@ -195,11 +198,15 @@ class Filter_Manager {
     add_to_catalog(col,val){
         if(typeof(this.catalog[col])=="undefined"){
                this.catalog[col]=[val]
+               this.catalog_counts[col]=[1]
             }else{
                 //populate with any new value
-                if ($.inArray(val,this.catalog[col])==-1){
+                var array_index=$.inArray(val,this.catalog[col])
+                if (array_index==-1){
                     this.catalog[col].push(val)
-
+                    this.catalog_counts[col].push(1)
+                }else{
+                    this.catalog_counts[col][array_index]+=1
                 }
             }
     }
