@@ -81,8 +81,15 @@ class Filter_Manager {
          }
          obj_ref.json_data = temp_json
        }
-
-       obj_ref.generate_filters()
+       //account for comma separated columns
+        if(obj_ref?.comma_separated_col){
+            for (var i=0;i<obj_ref.json_data.length;i++){
+                for (var c in obj_ref.comma_separated_col){
+                    obj_ref.json_data[i][obj_ref.comma_separated_col[c]] =  obj_ref.json_data[i][ obj_ref.comma_separated_col[c]].split(",")
+                 }
+            }
+        }
+        obj_ref.generate_filters()
 
         var first_key=Object.keys(obj_ref.params)[0]
         if(first_key!=""){
@@ -108,20 +115,40 @@ class Filter_Manager {
             //add a unique id
             obj["id"]=i;
             for (var a in obj){
+
+
                //start with a check for numeric
                if ($.isNumeric(obj[a])){
                 obj[a]=parseInt(obj[a])
                }
 
-                if(typeof(catalog[a])=="undefined"){
-                   catalog[a]=[obj[a]]
-                }else{
-                    //populate with any new value
-                    if ($.inArray(obj[a],catalog[a])==-1){
-                        catalog[a].push(obj[a])
+               if ($.isArray(obj[a])){
+                    // need to add all the items into the catalog
+                    for(var i in obj[a]){
+                        console.log("Loop over each of the values")
+                        if(typeof(catalog[a])=="undefined"){
+                           catalog[a]=[obj[a][i]]
+                        }else{
+                            //populate with any new value
+                            if ($.inArray(obj[a][i],catalog[a])==-1){
+                                catalog[a].push(obj[a][i])
+
+                            }
+                        }
 
                     }
-                }
+               }else{
+
+                    if(typeof(catalog[a])=="undefined"){
+                       catalog[a]=[obj[a]]
+                    }else{
+                        //populate with any new value
+                        if ($.inArray(obj[a],catalog[a])==-1){
+                            catalog[a].push(obj[a])
+
+                        }
+                    }
+               }
 
             }
 
