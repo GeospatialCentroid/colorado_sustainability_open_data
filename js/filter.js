@@ -85,7 +85,7 @@ class Filter_Manager {
         if(obj_ref?.comma_separated_col){
             for (var i=0;i<obj_ref.json_data.length;i++){
                 for (var c in obj_ref.comma_separated_col){
-                    obj_ref.json_data[i][obj_ref.comma_separated_col[c]] =  obj_ref.json_data[i][ obj_ref.comma_separated_col[c]].split(",")
+                   obj_ref.json_data[i][obj_ref.comma_separated_col[c]] =  obj_ref.json_data[i][ obj_ref.comma_separated_col[c]].split(",")
                  }
             }
         }
@@ -126,10 +126,9 @@ class Filter_Manager {
 
                if ($.isArray(obj[a])){
                     // need to add all the items into the catalog
-                    for(var i in obj[a]){
-                        this.add_to_catalog(a,obj[a][i])
 
-
+                    for (var j = 0; j<obj[a].length;j++){
+                        this.add_to_catalog(a,obj[a][j])
                     }
                }else{
                     this.add_to_catalog(a,obj[a])
@@ -138,8 +137,12 @@ class Filter_Manager {
             }
 
         }
-        console.log( this.catalog_counts)
-
+        //prepend the count of each unique value
+//          for (var a in this.catalog){
+//                for (var i in this.catalog[a]){
+//                    this.catalog[a][i]="("+this.catalog_counts[a][i]+") "+this.catalog[a][i]
+//                }
+//            }
         // sort all the items
         // create controls - Note  column names are used for ids - spaces replaced with __
          for (var a in this.catalog){
@@ -174,7 +177,7 @@ class Filter_Manager {
 
                 }else{
 
-                    $("#filters").append(this.get_multi_select(a,this.catalog[a]))
+                    $("#filters").append(this.get_multi_select(a,this.catalog[a],this.catalog_counts[a]))
                 }
 
            }
@@ -210,13 +213,18 @@ class Filter_Manager {
                 }
             }
     }
-     get_multi_select(id,options){
+     get_multi_select(id,options,counts){
         var html=""
         var _id = id.replaceAll(" ", "__");
         html+="<label class='form-label' for='"+_id+"'>"+id+"</label>"
         html+="<select class='checkbox-list' name='"+_id+"' id='"+_id+"' multiple>"
         for (var o in options){
-         html+="<option value='"+options[o]+"'>"+options[o]+"</option>"
+            var val = options[o]
+            var text = options[o]
+            if (counts){
+                text = "("+counts[o]+") "+ options[o]
+            }
+         html+="<option value='"+val+"'>"+text+"</option>"
         }
 
         html+=" </select>"
@@ -337,7 +345,7 @@ class Filter_Manager {
         this.populate_search(subset,select_item)
     }
 
-    populate_search(data,select_item){
+    populate_search(data,_select_item){
        var obj_ref = this
         // loop over the data and add 'value' and 'key' items for use in the autocomplete input element
        this.subset_data =
@@ -367,7 +375,7 @@ class Filter_Manager {
         }
 
       });
-      if(select_item){
+      if(_select_item){
           // select the first item in the list
           if (this.subset_data.length){
             this.select_item(this.subset_data[0].value)
@@ -384,6 +392,25 @@ class Filter_Manager {
           }
 
       }
+      this.show_results()
+    }
+    hide_bounds(){
+
+    }
+    show_results(){
+         // loop over the subset of items and create entries in the 'results_view'
+        console.log(this.subset_data)
+        var html= '<ul class="list-group"' +'">'
+        for (var s in this.subset_data){
+             html += "<li class='list-group-item' "
+             html +=  " onmouseleave='filter_manager.hide_bounds()' >"
+             html+= ""+this.subset_data[s].label
+             html +="<button type='button' class='btn btn-primary' onclick='filter_manager.select_item("+this.subset_data[s].value+")'>"+'Select'+"</button>"
+             html+="</li>"
+        }
+        html+="</ul>"
+
+         $("#results_view").html(html)
     }
     select_item(id){
         // use the id of the csv
@@ -398,7 +425,7 @@ class Filter_Manager {
         this.save_filter_params()
 
         //update the paging control
-        $("#result_length").html((this.page_num+1)+" of "+this.subset_data.length)
+        $("#result_length").html(this.subset_data.length)
         //
         $("#prev").removeClass('disabled');
         $("#next").removeClass('disabled');

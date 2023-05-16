@@ -142,3 +142,62 @@
 margin-left: -40px;
 z-index: 100;
 }
+
+.ui-autocomplete {
+    max-height: 100px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+  }
+  /* IE 6 doesn't support max-height
+   * we use height instead, but this forces the menu to always be this tall
+   */
+  * html .ui-autocomplete {
+    height: 100px;
+  }
+
+  .btn {
+  box-shadow: none !important;
+  outline: 0;
+  font-size: .8rem;
+  padding: .275rem .55rem;
+  margin: .1rem;
+}
+.btn:active,.btn:focus {
+ /*outline: 1px solid e4e4e4;*/
+}
+.btn-primary:focus {
+ /*border-width:2px;
+ outline-offset:2px;
+  border-color: #01395c50;*/
+}
+
+.list-group-item:last-child {
+
+   border-bottom-right-radius: 0;
+     border-bottom-left-radius: 0;
+}
+.list-group-item{
+
+ width: 100%;
+
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0290ce;
+    border-color: #0290ce;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #01395c;
+    border-color: #01395c;
+
+}
+
+.btn-primary:hover{
+    background-color: #01395c;
+    border-color: #01395c;
+
+}
