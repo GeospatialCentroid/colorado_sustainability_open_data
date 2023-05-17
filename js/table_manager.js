@@ -29,7 +29,10 @@ class Table_Manager {
 
             for (var c in cols){
                 var text = cols[c][i]
-                html+="<td>"+text+"</td>"
+                if(text!=undefined){
+                    html+="<td>"+text+"</td>"
+                }
+
             }
             html+="<tr>"
         }

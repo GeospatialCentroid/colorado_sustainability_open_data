@@ -13,8 +13,8 @@ $( function() {
         params:getParams(window.location.href),
         table_data_col:["column name","column field name","column types","column description"],
         table_manager: new Table_Manager({}),
-        include_col:'include',// values with 'y' will show-up in list
-        comma_separated_col:['Keywords']
+        //include_col:'include',// values with 'y' will show-up in list
+        comma_separated_col:['Keywords',"column name","Topic"]
      })
 
      // initialize this filtering system

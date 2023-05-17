@@ -45,16 +45,6 @@ class Filter_Manager {
 
     this.load_csv(this.csv,this.process_csv)
 
-    $("#prev").click(function(){
-        if(!$(this).hasClass('disabled')){
-            obj.go_to_page(-1)
-        }
-    })
-    $("#next").click(function(){
-        if(!$(this).hasClass('disabled')){
-            obj.go_to_page(1)
-        }
-    })
   }
 
    load_csv(file_name,func){
@@ -70,7 +60,8 @@ class Filter_Manager {
     }
 
      process_csv(data,obj_ref){
-       obj_ref.json_data= $.csv.toObjects(data)
+        // strip any extraneous tabs //.replaceAll('\t', '')
+       obj_ref.json_data= $.csv.toObjects(data.replaceAll('\t', ''))
 
        if(obj_ref?.include_col){
         var temp_json=[]
@@ -85,7 +76,8 @@ class Filter_Manager {
         if(obj_ref?.comma_separated_col){
             for (var i=0;i<obj_ref.json_data.length;i++){
                 for (var c in obj_ref.comma_separated_col){
-                   obj_ref.json_data[i][obj_ref.comma_separated_col[c]] =  obj_ref.json_data[i][ obj_ref.comma_separated_col[c]].split(",")
+
+                   obj_ref.json_data[i][obj_ref.comma_separated_col[c]] = obj_ref.json_data[i][obj_ref.comma_separated_col[c]].split(",")
                  }
             }
         }
@@ -137,16 +129,31 @@ class Filter_Manager {
             }
 
         }
-        //prepend the count of each unique value
-//          for (var a in this.catalog){
-//                for (var i in this.catalog[a]){
-//                    this.catalog[a][i]="("+this.catalog_counts[a][i]+") "+this.catalog[a][i]
-//                }
-//            }
         // sort all the items
         // create controls - Note  column names are used for ids - spaces replaced with __
          for (var a in this.catalog){
-               this.catalog[a]=this.catalog[a].sort();
+                // join with counts and sort by prevalence
+
+               var catalog_and_counts=[]
+               for(var j=0;j<this.catalog[a].length;j++){
+                    catalog_and_counts.push([this.catalog_counts[a][j],this.catalog[a][j]])
+               }
+
+                catalog_and_counts.sort(function (a, b) {
+                    if (a[0] === b[0]) {
+                        return 0;
+                    }
+                    else {
+                        return (a[0] > b[0]) ? -1 : 1;
+                    }
+                });
+               // now extract the values
+               this.catalog[a]=[]
+               this.catalog_counts[a]=[]
+               for(var j=0;j<catalog_and_counts.length;j++){
+                    this.catalog[a].push(catalog_and_counts[j][1])
+                    this.catalog_counts[a].push(catalog_and_counts[j][0])
+               }
                // generate control html based on data type (use last value to workaround blank first values)
                if (this.catalog[a].length>0 && $.inArray(a,obj_ref.omit_filter_item)==-1){
                 if( $.isNumeric(this.catalog[a][this.catalog[a].length-1])){
@@ -319,6 +326,7 @@ class Filter_Manager {
         var subset=[]
         //loop though the items in the list
         for (var i=0;i<this.json_data.length;i++){
+
             // compare each to the filter set to create a subset
             var meets_criteria=true; // a boolean to determine if the item should be included
             var obj=this.json_data[i]
@@ -331,9 +339,19 @@ class Filter_Manager {
                         }
                     }else{
                         // match the elements
-                        if ($.inArray(obj[a],this.filters[a])==-1){
-                            meets_criteria=false
-                        }
+                        // make and exception for searching through array values
+                         if ($.isArray(obj[a])){
+                            // loop over the filters array checking if its in the object attribute array
+                            for(var j=0;j<this.filters[a].length;j++){
+                                 if ($.inArray(this.filters[a][j],obj[a])==-1){
+                                    meets_criteria=false
+                                 }
+                            }
+                         }else{
+                            if ($.inArray(obj[a],this.filters[a])==-1){
+                                meets_criteria=false
+                            }
+                         }
                     }
                 }
             }
@@ -375,15 +393,19 @@ class Filter_Manager {
         }
 
       });
+      $(document).on("keydown", "#search", function(e) {
+            if(e.keyCode==13){
+                console.log("ENTER pressed")
+                $("#search").autocomplete("search");
+            }
+        })
       if(_select_item){
           // select the first item in the list
           if (this.subset_data.length){
             this.select_item(this.subset_data[0].value)
           }else{
             // no page to show
-            $("#prev").addClass('disabled');
-            $("#next").addClass('disabled');
-            $("#result_length").html(0+" of "+0)
+
             $('.overlay').fadeIn(500)
             $("iframe").attr("src","")
             // hide spinner
@@ -395,11 +417,10 @@ class Filter_Manager {
       this.show_results()
     }
     hide_bounds(){
-
+        // todo when we have a map with bounds
     }
     show_results(){
          // loop over the subset of items and create entries in the 'results_view'
-        console.log(this.subset_data)
         var html= '<ul class="list-group"' +'">'
         for (var s in this.subset_data){
              html += "<li class='list-group-item' "
@@ -427,15 +448,7 @@ class Filter_Manager {
         //update the paging control
         $("#result_length").html(this.subset_data.length)
         //
-        $("#prev").removeClass('disabled');
-        $("#next").removeClass('disabled');
-        //set disabled to page controls
-        if(this.page_num==0){
-            $("#prev").addClass('disabled');
-        }
-        if(this.page_num==this.subset_data.length-1){
-            $("#next").addClass('disabled');
-        }
+
     }
     get_page_num(id){
         //the page number is based on the item position in the filtered list
@@ -515,7 +528,12 @@ class Filter_Manager {
         // these could be any number of columns of the same size so they can be combined into a table
         var table_data =[]
         for (var c in this.table_data_col){
-            table_data.push(match[this.table_data_col[c]].split(','))
+            if(match[this.table_data_col[c]].indexOf(",")>-1){
+                table_data.push(match[this.table_data_col[c]].split(','))
+            }else{
+                table_data.push(match[this.table_data_col[c]])
+            }
+
         }
         html+=this.table_manager.get_combined_table_html(this.table_data_col,table_data)
         $("#details_view").html(html)
