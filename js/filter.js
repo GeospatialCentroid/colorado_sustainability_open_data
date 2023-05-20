@@ -23,6 +23,7 @@ class Filter_Manager {
     }
     //keep reference to the the loaded spreadsheet data - source of filtering, selection and display
     this.json_data;
+    this.mode='data';
     // store the subset of results for use
     this.subset_data;
     // store the item in the list
@@ -59,47 +60,73 @@ class Filter_Manager {
          });
     }
 
-     process_csv(data,obj_ref){
+     process_csv(data,$this){
         // strip any extraneous tabs //.replaceAll('\t', '')
-       obj_ref.json_data= $.csv.toObjects(data.replaceAll('\t', ''))
+       $this.json_data= $.csv.toObjects(data.replaceAll('\t', ''))
 
-       if(obj_ref?.include_col){
+       if($this?.include_col){
         var temp_json=[]
-         for (var i=0;i<obj_ref.json_data.length;i++){
-            if(obj_ref.json_data[i][obj_ref.include_col]=='y'){
-                temp_json.push(obj_ref.json_data[i])
+         for (var i=0;i<$this.json_data.length;i++){
+            if($this.json_data[i][$this.include_col]=='y'){
+                temp_json.push($this.json_data[i])
             }
          }
-         obj_ref.json_data = temp_json
+         $this.json_data = temp_json
        }
        //account for comma separated columns
-        if(obj_ref?.comma_separated_col){
-            for (var i=0;i<obj_ref.json_data.length;i++){
-                for (var c in obj_ref.comma_separated_col){
+        if($this?.comma_separated_col){
+            for (var i=0;i<$this.json_data.length;i++){
+                for (var c in $this.comma_separated_col){
 
-                   obj_ref.json_data[i][obj_ref.comma_separated_col[c]] = obj_ref.json_data[i][obj_ref.comma_separated_col[c]].split(",")
+                   $this.json_data[i][$this.comma_separated_col[c]] = $this.json_data[i][$this.comma_separated_col[c]].split(",")
                  }
             }
         }
-        obj_ref.generate_filters()
+        $this.generate_filters()
 
-        var first_key=Object.keys(obj_ref.params)[0]
+        var first_key=Object.keys($this.params)[0]
         if(first_key!=""){
-            //populate the filters is set
-            obj_ref.set_filters()
+            //populate the filters if set
+            $this.set_filters()
         }else{
-            obj_ref.populate_search(obj_ref.json_data,true);
+            $this.populate_search($this.json_data,true);
         }
 
         //
         //hide loader
-        clearInterval(obj_ref.progress_interval)
+        clearInterval($this.progress_interval)
         $("#loader").css("width", 100 + "%")
         setTimeout( function() {$(".progress").fadeOut()},200);
+        ///--------
+        $('input[type=radio][name=search_type]').change(function() {
+        $this.mode=this.value
+        });
 
+        $("#search").focus();
+        $("#search_clear").click(function(){
+            $("#search").val("")
+
+        })
+        
+         $("#search_but").click(function(){
+    
+            if($this.mode=="data"){
+               $this.add_filter(false,[$("#search").val()])
+               $this.filter(true)
+            }else{
+            console.log("location search")
+//                $.get($this.place_url, { q: $("#search").val() }, function(data) {
+//                    try{
+//                        $this.show_place_bounds(data[0].boundingbox)
+//                        $("#search").val(data[0].display_name)
+//                    }catch(e){}
+//
+//                  })
+            }
+        })
     }
      generate_filters(){
-        var obj_ref=this;
+        var $this=this;
         // create a catalog of all the unique options for each of attributes
         this.catalog={}
         // create a separate obj to track the occurrences of each unique option
@@ -155,7 +182,7 @@ class Filter_Manager {
                     this.catalog_counts[a].push(catalog_and_counts[j][0])
                }
                // generate control html based on data type (use last value to workaround blank first values)
-               if (this.catalog[a].length>0 && $.inArray(a,obj_ref.omit_filter_item)==-1){
+               if (this.catalog[a].length>0 && $.inArray(a,$this.omit_filter_item)==-1){
                 if( $.isNumeric(this.catalog[a][this.catalog[a].length-1])){
                     //create a range slider for numbers - https://jqueryui.com/slider/#range
                      var min = Math.min.apply(Math, this.catalog[a]);
@@ -175,8 +202,8 @@ class Filter_Manager {
                         $("#"+id+"_handle0").text(ui.values[ 0 ])
                         $("#"+id+"_handle1").text(ui.values[ 1 ])
                         //add the filter
-                        obj_ref.add_filter(_id,ui.values)
-                        obj_ref.filter(true)
+                        $this.add_filter(_id,ui.values)
+                        $this.filter(true)
                       }
 
                     });
@@ -190,20 +217,20 @@ class Filter_Manager {
            }
          }
 
-       // and format the filter controls
-       $('.checkbox-list').multiselect({
-                buttonContainer: '<div class="checkbox-list-container"></div>',
-                buttonClass: '',
-                templates: {
-                    button: '',
-                    ul: '<div class="multiselect-container checkbox-list"></div>',
-                    li: '<a class="multiselect-option text-dark text-decoration-none"></a>'
-                }
-            });
-       $('.checkbox-list').change( function() {
-            obj_ref.add_filter($(this).attr('id'),$(this).val());
-            obj_ref.filter(true)
+        $('.filter_list').change( function() {
+           var id = $(this).attr('id')
+           var vals=[]
+           $(this).find(":checked").each(function() {
+                vals.push($(this).val())
+
+           })
+           if(vals.length==0){
+            vals=null
+           }
+           $this.add_filter($(this).attr('id'),vals);
+           $this.filter(true)
         });
+
     }
     add_to_catalog(col,val){
         if(typeof(this.catalog[col])=="undefined"){
@@ -224,17 +251,19 @@ class Filter_Manager {
         var html=""
         var _id = id.replaceAll(" ", "__");
         html+="<label class='form-label' for='"+_id+"'>"+id+"</label>"
-        html+="<select class='checkbox-list' name='"+_id+"' id='"+_id+"' multiple>"
+        html+="<div class='form-group filter_list' name='"+_id+"' id='"+_id+"' >"
         for (var o in options){
             var val = options[o]
-            var text = options[o]
+            var count = ""
             if (counts){
-                text = "("+counts[o]+") "+ options[o]
+               count = counts[o]
             }
-         html+="<option value='"+val+"'>"+text+"</option>"
+            html+='<label class="list-group-item d-flex justify-content-between list-group-item-action">'
+            html+='<span><input class="form-check-input me-1 align-left" type="checkbox" value="'+options[o]+'">'+options[o]+'</span>'
+            html+='<span class="badge bg-primary rounded-pill">'+count+'</span></label>'
         }
 
-        html+=" </select>"
+        html+=" </div>"
         return html
 
     }
@@ -247,7 +276,11 @@ class Filter_Manager {
     }
 
     add_filter(_id,value){
-
+        if (_id ==false){
+            _id = LANG.SEARCH.CHIP_SUBMIT_BUT_LABEL
+            // add text to the search field
+            $("#search").val(value)
+        }
         // remove the __ to get the true id
         var id = _id.replaceAll("__", " ");
         this.filters[id]=value
@@ -276,7 +309,7 @@ class Filter_Manager {
         var ext = "__chip"
         var id =_id+ext
         // add a close button
-        text+="<a class='fa fa-times btn' style='padding-left: 20px; margin-right:-20px;'></a>"
+        text+="<a class='bi bi-x btn' style='margin-right:-10px;'></a>"
         //create a list of selected filters to easily keep track
         var html="<div class='chip blue lighten-4' id='"+id+"'>"+text+"</div>"
         //if exists update it
@@ -331,7 +364,13 @@ class Filter_Manager {
             var meets_criteria=true; // a boolean to determine if the item should be included
             var obj=this.json_data[i]
             for (var a in this.filters){
-                if (a!='p'){
+                if (a==LANG.SEARCH.CHIP_SUBMIT_BUT_LABEL){
+                    // if search term not found in both title and sub title
+                    if(obj[this.title_col].indexOf(this.filters[a][0]) == - 1 &&  obj[this.sub_title_col].indexOf(this.filters[a][0])==-1){
+                        meets_criteria=false
+                    }
+
+                }else if (a!='p'){
                     if ($.isNumeric(this.filters[a][0])){
                         //we are dealing with a numbers - check range
                         if (obj[a]<this.filters[a][0] || obj[a]>this.filters[a][1]){
@@ -364,13 +403,13 @@ class Filter_Manager {
     }
 
     populate_search(data,_select_item){
-       var obj_ref = this
+       var $this = this
         // loop over the data and add 'value' and 'key' items for use in the autocomplete input element
        this.subset_data =
        $.map(data, function(item){
-            var label =item[obj_ref.title_col]
-            if (obj_ref.hasOwnProperty('sub_title_col')){
-                label +=" ("+item[obj_ref.sub_title_col]+")"
+            var label =item[$this.title_col]
+            if ($this.hasOwnProperty('sub_title_col')){
+                label +=" ("+item[$this.sub_title_col]+")"
             }
 
             return {
@@ -385,7 +424,7 @@ class Filter_Manager {
           select: function( event, ui ) {
                 event.preventDefault();
                 $("#search").val(ui.item.label);
-               obj_ref.select_item(ui.item.value);
+               $this.select_item(ui.item.value);
             },
         focus: function(event, ui) {
             event.preventDefault();
@@ -395,26 +434,14 @@ class Filter_Manager {
       });
       $(document).on("keydown", "#search", function(e) {
             if(e.keyCode==13){
-                console.log("ENTER pressed")
-                $("#search").autocomplete("search");
+                $("#search_but").trigger("click")
             }
         })
-      if(_select_item){
-          // select the first item in the list
-          if (this.subset_data.length){
-            this.select_item(this.subset_data[0].value)
-          }else{
-            // no page to show
 
-            $('.overlay').fadeIn(500)
-            $("iframe").attr("src","")
-            // hide spinner
-             $('#iframe_spinner').hide();
-
-          }
-
-      }
       this.show_results()
+
+      //update counts
+      this.update_results_info(this.subset_data.length)
     }
     hide_bounds(){
         // todo when we have a map with bounds
@@ -442,12 +469,17 @@ class Filter_Manager {
         this.page_id=id
         this.page_num=this.get_page_num(id)
         // add the page number to the address for quicker access via link sharing
-        this.filters['p']=this.page_num
+        //this.filters['p']=this.page_num
         this.save_filter_params()
 
-        //update the paging control
-        $("#result_length").html(this.subset_data.length)
         //
+        this.slide_position("details")
+    }
+     update_results_info(num){
+
+        $(".total_results").text(LANG.RESULT.FOUND+" "+num+" "+LANG.RESULT.RESULTS)
+        $(".spinner-border").hide();
+
 
     }
     get_page_num(id){
@@ -489,28 +521,11 @@ class Filter_Manager {
         // @param match: a json object with details (including a page path to load 'path_col')
 
         var obj=this
-        // add a little extra height for scroll bars
-        $('.overlay').height($(".wrapper").height()+50)
-        //only fade in 2nd time
 
-        if ($('#frame').attr("src")!="") {
-             $('#iframe_spinner').show();
-            $.when($('.overlay').fadeIn(500)).done(function() {
-               obj.show_page(match)
-            });
-        }else{
-             obj.show_page(match)
-
-        }
-
-
+         $("#result_total .spinner-border").show();
+         this.show_details(match)
     }
-    show_page(match){
-        // @param match: a json object with details (including a page path to load 'path_col')
-        $('#frame').attr('src',match[this.path_col]);
-        this.show_details(match)
 
-    }
     show_details(match){
         // @param match: a json object with details (including a page path to load 'path_col')
         //create html details to show
@@ -582,7 +597,7 @@ class Filter_Manager {
           var options = $(this).slider( 'option' );
           $(this).slider( 'values', [ options.min, options.max ] );
         });
-       $(".checkbox-list").multiselect("deselectAll", false);
+       $(".form-check-input").prop('checked', false);
        this.filters={}
        this.filter(true)
        $("#filter_box").empty()
@@ -624,14 +639,19 @@ class Filter_Manager {
         });
 
      }else{
-        $("#"+id+".checkbox-list").val(list);
-        $("#"+id+".checkbox-list").multiselect("refresh");
+        for(var l = 0;l<list.length;l++){
+             $("#"+id+" input[value='"+list[l]+"']").prop('checked', true);
+        }
+
+        //$("#"+id+".checkbox-list").multiselect("refresh");
      }
   }
   reset_filter(id){
         // take the id (maybe dropdown or slider) and remove the selection
         //TODO - make this more specific to variable type (i.e numeric vs categorical)
-        $("#"+id+".checkbox-list").multiselect("deselectAll", false);
+
+        $("#"+id+" input").prop('checked', false);
+
         $("#"+id+'_slider').each(function(){
           var options = $(this).slider( 'option' );
 
@@ -645,6 +665,60 @@ class Filter_Manager {
 
     var win = window.open(match[this.path_col], '_blank');
   }
+
+  slide_position(panel_name){
+        var pos=0
+        var width=$("#side_bar").width()
+         var nav_text=""
+         this.panel_name=panel_name
+         switch(panel_name) {
+              case 'results':
+                pos=width
+                nav_text=LANG.NAV.BACK_BROWSE +" <i class='bi bi-chevron-left'></i>"
+                break;
+              case 'details':
+                    pos=width*2
+                    nav_text=LANG.NAV.BACK_RESULTS+" <i class='bi bi-chevron-left'></i>"
+                    break;
+              case 'layers':
+                    pos=width*3
+                    nav_text=LANG.NAV.BACK_RESULTS+" <i class='bi bi-chevron-left'></i>"
+                    break;
+              case 'sub_details':
+                    pos=width*4
+                    nav_text=LANG.NAV.BACK_LAYERS+" <i class='bi bi-chevron-left'></i>"
+                    break;
+              default:
+                //show the browse
+                nav_text="<i class='bi bi-chevron-right'></i> "+LANG.NAV.BACK_RESULTS
+                pos=0
+
+            }
+             $("#panels").animate({ scrollLeft: pos });
+             $("#nav").html(nav_text)
+
+             $("#search_tab").trigger("click")
+    }
+    go_back(){
+
+        // based on the panel position choose the movement
+        var go_to_panel=""
+        if(this.panel_name == 'results'){
+            go_to_panel = "browse"
+        }else if(this.panel_name == 'browse'){
+            go_to_panel = "results"
+        }else if(this.panel_name == 'details'){
+            go_to_panel = "results"
+        }else if(this.panel_name == 'layers'){
+            go_to_panel = "results"
+        }else if(this.panel_name == 'sub_details'){
+            go_to_panel = "layers"
+        }else{
+            go_to_panel = "results"
+        }
+        this.slide_position(go_to_panel)
+    }
+
 }
  
 
