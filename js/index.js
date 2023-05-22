@@ -1,9 +1,11 @@
 //create a filter manager to control the selection of items from a CSV file
 var filter_manager;
+var table_manager;
 var usp={};// the url params object to be populated
 var LANG;
 var map_manager;
 var layer_manager;
+var analytics_manager;
 if (typeof(params)=="undefined"){
     var params = {}
 }
@@ -29,7 +31,7 @@ $( function() {
 
 
             // update paging
-            filter_manager.update_results_info($("#result_wrapper .content_right ul"))
+
             filter_manager.update_parent_toggle_buttons(".content_right")
             filter_manager.update_parent_toggle_buttons("#details_panel")
             filter_manager.update_toggle_button()
@@ -63,8 +65,12 @@ function initialize_interface(){
 
     $("#radio_place_label").text(LANG.SEARCH.RADIO_PLACE_LABEL)
     //
+
+    table_manager = new Table_Manager({})
     setup_filters()
      setup_map()
+
+     analytics_manager = new Analytics_Manager();
 //    disclaimer_manager.init();
 //    //
 //    table_manager.init();
@@ -85,9 +91,10 @@ function setup_filters(){
         sub_title_col:"Organization",
         params:getParams(window.location.href),
         table_data_col:["column name","column field name","column types","column description"],
-        table_manager: new Table_Manager({}),
+        table_manager: table_manager,
         include_col:'include',// values with 'y' will show-up in list
-        comma_separated_col:['Keywords',"column name","Topic"]
+        comma_separated_col:['Keywords',"column name","Topic"],
+        bounds_col:'bbox'
      })
 
      // initialize this filtering system
@@ -229,3 +236,47 @@ function window_resize() {
 
 
  }
+ function save_params(){
+    // access the managers and store the info URL sharing
+    return
+    var p = "/?f="+encodeURIComponent(rison.encode_array(filter_manager.filters))
+    +"&e="+rison.encode(map_manager.params)
+
+    if(layer_manager && typeof(layer_manager.layers_list)!="undefined"){
+        p+="&l="+rison.encode(layer_manager.layers_list)
+    }
+
+    p+='&t='+$("#tabs").find(".active").attr("id")
+    if(typeof(filter_manager.panel_name)!="undefined"){
+        // add the panel if available
+        p+="/"+filter_manager.panel_name;
+    }
+    if(typeof(filter_manager.display_resource_id)!="undefined"){
+        // add the display_resource_id if available
+        p+="/"+filter_manager.display_resource_id;
+    }
+
+    if (filter_manager.page_rows){
+        p +="&rows="+(filter_manager.page_start+filter_manager.page_rows)
+    }
+    if (filter_manager.page_start){
+        p +="&start=0"
+    }
+    if (filter_manager.sort_str){
+        p +="&sort="+filter_manager.sort_str
+    }
+//    if (filter_manager.fq_str){
+//        p +="&fq="+filter_manager.fq_str
+//    }
+    // retain debug mode
+    if (DEBUGMODE){
+        p +="&d=1"
+    }
+
+    // before saving the sate, let's make sure they are not the same
+    if(JSON.stringify(p) != JSON.stringify(last_params) && !browser_control){
+        window.history.pushState(p, null, p.replaceAll(" ", "+").replaceAll("'", "~"))
+        last_params = p
+    }
+
+}

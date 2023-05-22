@@ -111,6 +111,15 @@ class Map_Manager {
         drawnItems.addLayer(e.layer);
     });
 
+    this.map.on('draw:edited', function (e) {
+      //get bounds str (West, East, North, South)
+      var b = drawnItems.getBounds()
+     var str =b.getWest()+","+b.getSouth()+","+b.getEast()+","+b.getNorth();
+        var copy_link =" <a href='javascript:navigator.clipboard.writeText(\""+str+"\")' >copy</a>"
+     $(".leaflet-control-attribution").html(str+copy_link);
+
+    });
+
   }
   init() {
     // separate call to add the interactivity to the map so it can call out to the filter_manager

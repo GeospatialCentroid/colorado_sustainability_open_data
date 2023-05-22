@@ -451,9 +451,10 @@ class Filter_Manager {
         var html= '<ul class="list-group"' +'">'
         for (var s in this.subset_data){
              html += "<li class='list-group-item' "
-             html +=  " onmouseleave='filter_manager.hide_bounds()' >"
-             html+= ""+this.subset_data[s].label
-             html +="<button type='button' class='btn btn-primary' onclick='filter_manager.select_item("+this.subset_data[s].value+")'>"+'Select'+"</button>"
+             html +=  "onmouseleave='filter_manager.hide_bounds()' "
+             html+= "onmouseenter='filter_manager.show_bounds("+this.subset_data[s].value+")' >"
+             html+= this.subset_data[s].label
+             html +="<button type='button' class='btn btn-primary' onclick='filter_manager.select_item("+this.subset_data[s].value+")'>"+LANG.RESULT.DETAILS+"</button>"
              html+="</li>"
         }
         html+="</ul>"
@@ -474,6 +475,27 @@ class Filter_Manager {
 
         //
         this.slide_position("details")
+    }
+    show_bounds(_resource_id){
+        var resource = this.get_match(_resource_id)
+        // parse the envelope - remove beginning and end
+
+        if(resource?.[this['bounds_col']]){
+            console.log("looking for bounds",resource?.[this['bounds_col']])
+             var b = resource[this['bounds_col']].split(',')
+              map_manager.show_highlight_rect([[b[1],b[0]],[b[3],b[2]]])
+        }
+
+    }
+    bounds_change_handler(){
+
+        // when the map bounds changes and the search tab is visible
+        if ($('#filter_bounds_checkbox').is(':checked') && "search_tab"==$("#tabs").find(".active").attr("id")){
+         this.update_bounds_search()
+         this.filter()
+
+        }
+
     }
      update_results_info(num){
 
@@ -719,6 +741,34 @@ class Filter_Manager {
         this.slide_position(go_to_panel)
     }
 
+   update_toggle_button(){
+        //scan through the loaded layers
+
+        for (var j=0;j<layer_manager.layers.length;j++){
+            $("."+layer_manager.layers[j].id+"_toggle").addClass("active")
+            $("."+layer_manager.layers[j].id+"_toggle").text(LANG.RESULT.REMOVE)
+
+        }
+
+    }
+    update_parent_toggle_buttons(elm){
+       $(elm).find("[id$='_toggle']").each(function( index ) {
+            var arr = $(this).attr("data-child_arr").split(",")
+            //if any of the child layers are shown - update the button text
+            var child_count=0
+            for (var i=0;i<arr.length;i++){
+                for (var j=0;j<layer_manager.layers.length;j++){
+                    if(layer_manager.layers[j].id==arr[i]){
+                        child_count+=1
+
+                    }
+                }
+            }
+            $(this).find("span").first().text(child_count)
+        });
+
+
+    }
 }
  
 
