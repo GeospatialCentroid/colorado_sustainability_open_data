@@ -4,33 +4,48 @@ var usp={};// the url params object to be populated
 var LANG;
 var map_manager;
 var layer_manager;
+if (typeof(params)=="undefined"){
+    var params = {}
+}
+var last_params={}
+var usp={};// the url params object to be populated
+
 $( function() {
-
-
 
     $.getJSON('i18n/en.json', function(data){
             LANG=data
             initialize_interface()
     });
-    // adjust the size of the windows depending on the view
-    /*
-    ____________
-    |  header  |
-    ------------
-    |c1|c2| c3 |
 
-    */
-    $( window ).resize(function() {
-        var header_height=$("#header").height();
-        var window_height= $(window).height()
-        var window_width= $(window).width()
+    $( window ).resize( window_resize);
+    setTimeout(function(){
+             $( window ).trigger("resize");
 
-        $("#filter_area").height(window_height-header_height-40)
+             // leave on the dynamic links - turn off the hrefs
+             $("#browse_panel .card-body a").attr('href', "javascript: void(0)");
 
-        $("#content").height(window_height-header_height-40)
+             // rely on scroll advance for results
+             $("#next_link").hide();
+
+
+            // update paging
+            filter_manager.update_results_info($("#result_wrapper .content_right ul"))
+            filter_manager.update_parent_toggle_buttons(".content_right")
+            filter_manager.update_parent_toggle_buttons("#details_panel")
+            filter_manager.update_toggle_button()
+            if(! DEBUGMODE){
+                $("#document .page_nav").hide()
+            }else{
+                //append d=1, so that debug mode remains
+                $("#document .page_nav a").each(function() {
+                   $(this).attr("href",  $(this).attr("href") + '&d=1');
+                });
+            }
+    },500)
+        //update the height of the results area when a change occurs
+        $('#side_header').bind('resize', function(){
+        $("#result_wrapper").height($("#panels").height()-$("#result_total").height()- $('#side_header'))
     });
-    $( window ).trigger("resize")
-
 });
 
 function initialize_interface(){
@@ -49,7 +64,7 @@ function initialize_interface(){
     $("#radio_place_label").text(LANG.SEARCH.RADIO_PLACE_LABEL)
     //
     setup_filters()
-
+     setup_map()
 //    disclaimer_manager.init();
 //    //
 //    table_manager.init();
@@ -82,6 +97,25 @@ function setup_filters(){
             $("#search").val("")
         })
 
+}
+function setup_map(){
+    map_manager = new Map_Manager(
+     {params:params['e'] ,
+        lat:36.25408922222581,
+        lng: -98.7485718727112,
+        z:3,
+        limit:100 // max results for identify
+        })
+
+     map_manager.init()
+     map_manager.init_image_map()
+
+      layer_manager = new Layer_Manager({
+        map:map_manager.map,
+        layers_list:params['l']
+      })
+
+      layer_manager.add_basemap_control()
 }
 
 function init_tabs(){
@@ -122,3 +156,76 @@ function move_to_tab(tab_str){
    //auto click the tab for state saving
    $("#"+tab_parts[0]).trigger("click")
 }
+
+function window_resize() {
+        var data_table_height=0
+         if( $("#data_table_wrapper").is(":visible")){
+           data_table_height= $("#data_table_wrapper").height()
+        }
+        var header_height=$("#header").outerHeight();
+        var window_height= $(window).outerHeight()
+        var window_width= $(window).width()
+
+       $("#content").height(window_height-header_height)
+
+       $("#map_wrapper").height(window_height-header_height-data_table_height)
+
+       $("#panels").height(window_height-header_height-$("#side_header").outerHeight()-$("#tabs").outerHeight()-$("#nav_wrapper").outerHeight())
+       var p_height=$("#panels").outerHeight()
+       $(".panel").height(p_height)
+       $("#result_wrapper").height(p_height-$("#result_total").outerHeight())
+
+
+        $("#map_panel_wrapper").height(window_height-$("#tabs").height()-header_height)
+        $("#map_panel_scroll").height(window_height-$("#tabs").height()-header_height)
+
+            //
+//       $("#tab_panels").css({'top' : ($("#tabs").height()+header_height) + 'px'});
+
+//       .col-xs-: Phones (<768px)
+//        .col-sm-: Tablets (≥768px)
+//        .col-md-: Desktops (≥992px)
+//        .col-lg-: Desktops (≥1200px)
+
+
+       if (window_width >768){
+
+            // hide the scroll bars
+            $('html, body').css({
+                overflow: 'hidden',
+                height: '100%'
+            });
+            $("#map_wrapper").width(window_width-$("#side_bar").width()-1)
+            $("#data_table_wrapper").width(window_width-$("#side_bar").width()-1)
+
+            map_manager.map.scrollWheelZoom.enable();
+       }else{
+             //mobile view
+
+             // scroll as needed
+             $('html, body').css({
+                overflow: 'auto',
+                height: 'auto'
+            });
+
+            // drop the map down for mobile
+            $("#map_wrapper").width(window_width)
+            $("#data_table_wrapper").width(window_width)
+
+            map_manager.map.scrollWheelZoom.disable();
+       }
+        //final sets
+        $("#panels").width($("#side_bar").width())
+        $(".panel").width($("#side_bar").width())
+        if(map_manager){
+            map_manager.map.invalidateSize()
+        }
+        // slide to position
+         $("#panels").stop(true, true)
+         // if we are on the search tab, make sure the viewable panel stays when adjusted
+        if("search_tab"==$("#tabs").find(".active").attr("id")){
+            filter_manager.slide_position(filter_manager.panel_name)
+        }
+
+
+ }

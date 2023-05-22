@@ -5,6 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Northern Colorado Open Data Catalog</title>
+    
+    
+     <script type="text/javascript" src='plugins/leaflet/leaflet.js'></script>
+    <script type="text/javascript" src='plugins/esri-leaflet/esri-leaflet.js'></script>
+<!--    <script type="module" src='plugins/leaflet/proj4.js'></script>-->
+<!--    <script type="module" src='plugins/leaflet/proj4leaflet.js'></script>-->
+     <script type="text/javascript" src='plugins/leaflet/side-by-side/leaflet-side-by-side.js'></script>
+
+
+    <link rel="stylesheet" href="plugins/leaflet/leaflet.css" />
+
+    <script type="text/javascript" src='plugins/leaflet/leaflet-locatecontrol/L.Control.Locate.js'></script>
+    <link rel="stylesheet" href="plugins/leaflet/leaflet-locatecontrol/L.Control.Locate.css" />
+
+    <script type="text/javascript" src='plugins/leaflet/leaflet-geosearch/geo-search.min.js'></script>
+    <link rel="stylesheet" href="plugins/leaflet/leaflet-geosearch/geo-search.css" />
+
+    <script type="text/javascript" src='plugins/leaflet/leaflet-ruler/leaflet-ruler.js'></script>
+    <link rel="stylesheet" href="plugins/leaflet/leaflet-ruler/leaflet-ruler.css" />
+
+     <!--leaflet draw-->
+    <link rel="stylesheet" href="plugins/leaflet/Leaflet.draw/leaflet.draw.css" />
+    <script src="plugins/leaflet/Leaflet.draw/Leaflet.draw.js"></script>
+
+    <script src="plugins/leaflet/Leaflet.draw/edit/handler/Edit.Poly.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/edit/handler/Edit.SimpleShape.js"></script>
+     <script src="plugins/leaflet/Leaflet.draw/edit/handler/Edit.CircleMarker.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/edit/handler/Edit.Circle.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/edit/handler/Edit.Rectangle.js"></script>
+
+    <script src="plugins/leaflet/Leaflet.draw/draw/handler/Draw.Feature.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/draw/handler/Draw.Polyline.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/draw/handler/Draw.Polygon.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/draw/handler/Draw.SimpleShape.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/draw/handler/Draw.Rectangle.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/draw/handler/Draw.Marker.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/draw/handler/Draw.CircleMarker.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/draw/handler/Draw.Circle.js"></script>
+
+
+    <script src="plugins/leaflet/Leaflet.draw/ext/TouchEvents.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/ext/LatLngUtil.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/ext/GeometryUtil.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/ext/LineUtil.Intersect.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/ext/Polyline.Intersect.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/ext/Polygon.Intersect.js"></script>
+
+    <script src="plugins/leaflet/Leaflet.draw/Control.Draw.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/Tooltip.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/Toolbar.js"></script>
+
+    <script src="plugins/leaflet/Leaflet.draw/draw/DrawToolbar.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/edit/EditToolbar.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/edit/handler/EditToolbar.Edit.js"></script>
+    <script src="plugins/leaflet/Leaflet.draw/edit/handler/EditToolbar.Delete.js"></script>
+
+    <script src="plugins/leaflet/Leaflet.draw/Leaflet.Draw.Event.js"></script>
+
+    <script src="plugins/leaflet/leaflet-iiif.js"></script>
+
+    <script type="text/javascript" src='plugins/leaflet/Leaflet.DistortableImage/vendor.js'></script>
+    <link rel="stylesheet" href="plugins/leaflet/Leaflet.DistortableImage/vendor.css" />
+    <script type="text/javascript" src='plugins/leaflet/Leaflet.DistortableImage/leaflet.distortableimage.js'></script>
+    <link rel="stylesheet" href="plugins/leaflet/Leaflet.DistortableImage/leaflet.distortableimage.css" />
+
+    <script type="text/javascript" src='plugins/leaflet/esri-leaflet-cluster.js'></script>
+
+    <script type="text/javascript" src='plugins/leaflet/Leaflet.markercluster-1.4.1/dist/leaflet.markercluster.js'></script>
+    <link rel="stylesheet" href="plugins/leaflet/Leaflet.markercluster-1.4.1/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="plugins/leaflet/Leaflet.markercluster-1.4.1/dist/MarkerCluster.Default.css">
+
+
+     <script type="module" src='plugins/leaflet/esri-leaflet-vector.js'></script>
+     <script type="module" src='plugins/leaflet/turf.js'></script>
 
     <!-- from https://jqueryui.com/download/ -->
     <link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.css">
@@ -12,6 +86,14 @@
 
     <script src="plugins/jquery-ui/external/jquery/jquery.js"></script>
     <script src="plugins/jquery-ui/jquery-ui.js"></script>
+
+     <script type="text/javascript" src="plugins/jquery/jquery.drawrpalette-min.js"></script>
+    <script type="text/javascript" src="plugins/jquery/jquery-dateformat.min.js"></script>
+    <script type="text/javascript" src="plugins/jquery/jquery.datetimepicker.js"></script>
+    <script type="text/javascript" src="plugins/jquery/jquery.datetimepicker.full.min.js"></script>
+    <link rel="stylesheet" href="plugins/jquery/jquery.datetimepicker.css">
+
+    <script type="text/javascript" src="plugins/jquery/jquery.cookie.js"></script>
 
     <script src="plugins/jquery.csv.js"></script>
 
@@ -26,6 +108,8 @@
      <script src="js/utils.js"></script>
      <script src="js/table_manager.js"></script>
      <script src="js/filter.js"></script>
+     <script src="js/map_manager.js"></script>
+     <script src="js/layer_manager.js"></script>
     <link rel="stylesheet" href="css/style.css" />
 
 
