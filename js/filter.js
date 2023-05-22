@@ -115,13 +115,15 @@ class Filter_Manager {
                $this.filter(true)
             }else{
             console.log("location search")
-//                $.get($this.place_url, { q: $("#search").val() }, function(data) {
+                $.get($this.place_url, { q: $("#search").val() }, function(data) {
 //                    try{
-//                        $this.show_place_bounds(data[0].boundingbox)
-//                        $("#search").val(data[0].display_name)
-//                    }catch(e){}
+                        $this.show_place_bounds(data[0].boundingbox)
+                        $("#search").val(data[0].display_name)
+//                    }catch(e){
 //
-//                  })
+//                    }
+
+                  })
             }
         })
     }
@@ -299,8 +301,6 @@ class Filter_Manager {
         if (value==null){
            this.remove_filter(_id)
         }
-        //
-        this.save_filter_params()
 
     }
      show_filter_selection(_id,text){
@@ -400,6 +400,7 @@ class Filter_Manager {
 
         }
         this.populate_search(subset,select_item)
+        this.save_filter_params()
     }
 
     populate_search(data,_select_item){
@@ -443,9 +444,7 @@ class Filter_Manager {
       //update counts
       this.update_results_info(this.subset_data.length)
     }
-    hide_bounds(){
-        // todo when we have a map with bounds
-    }
+
     show_results(){
          // loop over the subset of items and create entries in the 'results_view'
         var html= '<ul class="list-group"' +'">'
@@ -487,6 +486,18 @@ class Filter_Manager {
         }
 
     }
+     hide_bounds(){
+        map_manager.hide_highlight_rect()
+    }
+      show_place_bounds(b){
+        var sw = L.latLng(Number(b[0]), Number(b[2])),
+            ne = L.latLng(Number(b[1]), Number(b[3])),
+            bounds = L.latLngBounds(sw, ne);
+            map_manager.map_zoom_event(bounds)
+
+            map_manager.show_copy_link(b[2],b[0],b[3],b[1])
+
+  }
     bounds_change_handler(){
 
         // when the map bounds changes and the search tab is visible

@@ -94,7 +94,8 @@ function setup_filters(){
         table_manager: table_manager,
         include_col:'include',// values with 'y' will show-up in list
         comma_separated_col:['Keywords',"column name","Topic"],
-        bounds_col:'bbox'
+        bounds_col:'bbox',
+        place_url:'https://nominatim.openstreetmap.org/search?format=json'
      })
 
      // initialize this filtering system
@@ -238,7 +239,7 @@ function window_resize() {
  }
  function save_params(){
     // access the managers and store the info URL sharing
-    return
+  
     var p = "/?f="+encodeURIComponent(rison.encode_array(filter_manager.filters))
     +"&e="+rison.encode(map_manager.params)
 

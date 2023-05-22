@@ -114,11 +114,14 @@ class Map_Manager {
     this.map.on('draw:edited', function (e) {
       //get bounds str (West, East, North, South)
       var b = drawnItems.getBounds()
-     var str =b.getWest()+","+b.getSouth()+","+b.getEast()+","+b.getNorth();
-        var copy_link =" <a href='javascript:navigator.clipboard.writeText(\""+str+"\")' >copy</a>"
-     $(".leaflet-control-attribution").html(str+copy_link);
+     $this.show_copy_link([b.getWest(),b.getSouth(),b.getEast(),b.getNorth()])
 
     });
+  }
+  show_copy_link(w,s,e,n){
+     var str =w+","+s+","+e+","+n;
+        var copy_link =" <a href='javascript:navigator.clipboard.writeText(\""+str+"\")' >copy</a>"
+     $(".leaflet-control-attribution").html(str+copy_link);
 
   }
   init() {
