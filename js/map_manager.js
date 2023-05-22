@@ -113,7 +113,7 @@ class Map_Manager {
     this.map.on('draw:edited', function (e) {
       //get bounds str (West, East, North, South)
       var b = drawnItems.getBounds()
-     $this.show_copy_link([b.getWest(),b.getSouth(),b.getEast(),b.getNorth()])
+     $this.show_copy_link(b.getWest(),b.getSouth(),b.getEast(),b.getNorth())
 
     });
   }
