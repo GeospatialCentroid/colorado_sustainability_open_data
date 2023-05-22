@@ -35,7 +35,7 @@ class Map_Manager {
     }else{
         this.params={}
     }
-    console_log("Map_Manager params are:", this.params)
+    console.log("Map_Manager params are:", this.params)
     this.layer_clicked=false
     this.selected_feature_id;
     this.highlighted_feature;

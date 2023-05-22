@@ -12,6 +12,8 @@ if (typeof(params)=="undefined"){
 var last_params={}
 var usp={};// the url params object to be populated
 
+var browser_control=false; //flag for auto selecting to prevent repeat cals
+
 $( function() {
 
     $.getJSON('i18n/en.json', function(data){
@@ -66,6 +68,7 @@ function initialize_interface(){
     $("#radio_place_label").text(LANG.SEARCH.RADIO_PLACE_LABEL)
     //
 
+    setup_params()
     table_manager = new Table_Manager({})
     setup_filters()
      setup_map()
@@ -79,7 +82,32 @@ function initialize_interface(){
 
     init_tabs()
 
-    //layer_manager.add_basemap_control()
+    layer_manager.add_basemap_control()
+}
+function setup_params(){
+    if (window.location.search.substring(1)!="" && $.isEmptyObject(params)){
+        usp = new URLSearchParams(window.location.search.substring(1).replaceAll("~", "'").replaceAll("+", " "))
+
+        if (usp.get('f')!=null){
+            params['f'] = rison.decode("!("+usp.get("f")+")")
+        }
+        if (usp.get('e')!=null){
+            params['e'] =  rison.decode(usp.get('e'))
+        }
+
+        if (usp.get('l')!=null && usp.get('l')!="!()"){
+            params['l'] =  rison.decode(usp.get('l'))
+        }
+
+        // debug mode
+        if (usp.get('d')!=null){
+           DEBUGMODE=true
+        }
+
+
+
+    }
+
 }
 function setup_filters(){
     filter_manager = new Filter_Manager({
@@ -89,7 +117,7 @@ function setup_filters(){
         path_col:"Webpage",// the url to the dataset landing page
         title_col:"Title",
         sub_title_col:"Organization",
-        params:getParams(window.location.href),
+        params:params['f'],
         table_data_col:["column name","column field name","column types","column description"],
         table_manager: table_manager,
         include_col:'include',// values with 'y' will show-up in list
@@ -164,7 +192,35 @@ function move_to_tab(tab_str){
    //auto click the tab for state saving
    $("#"+tab_parts[0]).trigger("click")
 }
+// enable back button support
+window.addEventListener('popstate', function(event) {
+    var _params={}
+    usp = new URLSearchParams(window.location.search.substring(1).replaceAll("~", "'").replaceAll("+", " "))
 
+        if (usp.get('f')!=null){
+            _params['f'] = rison.decode("!("+usp.get("f")+")")
+        }
+        if (usp.get('e')!=null){
+            _params['e'] =  rison.decode(usp.get('e'))
+        }
+
+        if (usp.get('l')!=null && usp.get('l')!="!()"){
+            _params['l'] =  rison.decode(usp.get('l'))
+        }
+        browser_control=true
+        filter_manager.remove_filters()
+        filter_manager.filters=[]
+        $("#filter_bounds_checkbox").prop("checked", false)
+        filter_manager.set_filters(_params['f'])
+        filter_manager.filter()
+
+        move_to_tab( usp.get("t"))
+
+
+        map_manager.move_map_pos( _params['e'])
+        browser_control=false
+
+}, false);
 function window_resize() {
         var data_table_height=0
          if( $("#data_table_wrapper").is(":visible")){
@@ -239,8 +295,8 @@ function window_resize() {
  }
  function save_params(){
     // access the managers and store the info URL sharing
-  
-    var p = "/?f="+encodeURIComponent(rison.encode_array(filter_manager.filters))
+
+    var p = "/?f="+encodeURIComponent(rison.encode(filter_manager.filters))
     +"&e="+rison.encode(map_manager.params)
 
     if(layer_manager && typeof(layer_manager.layers_list)!="undefined"){

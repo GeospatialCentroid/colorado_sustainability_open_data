@@ -84,8 +84,7 @@ class Filter_Manager {
         }
         $this.generate_filters()
 
-        var first_key=Object.keys($this.params)[0]
-        if(first_key!=""){
+        if($this.params){
             //populate the filters if set
             $this.set_filters()
         }else{
@@ -114,16 +113,15 @@ class Filter_Manager {
                $this.add_filter(false,[$("#search").val()])
                $this.filter(true)
             }else{
-            console.log("location search")
                 $.get($this.place_url, { q: $("#search").val() }, function(data) {
-//                    try{
+                    try{
                         $this.show_place_bounds(data[0].boundingbox)
                         $("#search").val(data[0].display_name)
-//                    }catch(e){
-//
-//                    }
+                    }catch(e){
 
-                  })
+                    }
+
+              })
             }
         })
     }
@@ -297,7 +295,7 @@ class Filter_Manager {
                 text_val=value.join(", ")
             }
         }
-        this.show_filter_selection(_id,id+": "+text_val)
+        this.show_filter_selection(_id.replaceAll( " ", "__"),id+": "+text_val)
         if (value==null){
            this.remove_filter(_id)
         }
@@ -321,6 +319,7 @@ class Filter_Manager {
 
        //Add remove functionality
        $("#"+id+" a").click(function(){
+            console.log($(this).parent().attr("id"))
             var id=$(this).parent().attr("id")
             var _id= id.substring(0,id.length-ext.length)
             //remove the visual
@@ -331,16 +330,17 @@ class Filter_Manager {
        })
     }
     save_filter_params(){
-        var json=this.filters
-        var json_str = "";
-        for (var key in json) {
-            if (json_str != "") {
-                json_str += "&";
-            }
-
-            json_str += (key.replaceAll(" ","__") + "=" + encodeURIComponent(json[key]));
-        }
-        window.history.replaceState(null, null, "?"+json_str);
+        save_params()
+//        var json=this.filters
+//        var json_str = "";
+//        for (var key in json) {
+//            if (json_str != "") {
+//                json_str += "&";
+//            }
+//
+//            json_str += (key.replaceAll(" ","__") + "=" + encodeURIComponent(json[key]));
+//        }
+//        window.history.replaceState(null, null, "?"+json_str);
     }
 
 
@@ -639,17 +639,20 @@ class Filter_Manager {
     set_filters(){
         var select_item =true
         //loop over all the set url params and set the form
-        for(var a in this.params){
-            var val = this.params[a]
-            this.set_filter(a,val.split(","))
-            var id = a.replaceAll("__", " ");
+
+        var filters=this.params[0]
+        for(var a in filters){
+            var val = filters[a]
+            var id = a.replaceAll(" ", "__");
+            this.set_filter(id,val)
+
             // make exception for page
             if (a=='p'){
                 this.filters[id]=val
                 this.page_num=Number(val)
                 select_item =false
             }else{
-                this.add_filter(a,val.split(","))
+                this.add_filter(a,val)
             }
 
         }
