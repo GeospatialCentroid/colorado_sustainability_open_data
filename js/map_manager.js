@@ -35,7 +35,7 @@ class Map_Manager {
     }else{
         this.params={}
     }
-    console.log("Map_Manager params are:", this.params)
+    console_log("Map_Manager params are:", this.params)
     this.layer_clicked=false
     this.selected_feature_id;
     this.highlighted_feature;
@@ -45,7 +45,6 @@ class Map_Manager {
 
     this.map = L.map('map',options).setView([this.lat, this.lng], this.z);
 
-    console.log(this.map)
     L.control.locate({"flyTo":true,"initialZoomLevel":19}).addTo(this.map);
 
     // create a reference to this for use during interaction

@@ -569,7 +569,7 @@ class Filter_Manager {
                 if ((typeof link === 'string' || link instanceof String) && link.indexOf("http")==0){
                    link="<a href='"+link+"' target='_blank'>"+link+"</a>"
                 }
-                html+="<span class='font-weight-bold'>"+i+":</span> "+link+"<br/>"
+                html+="<span class='fw-bold'>"+i+":</span> "+link+"<br/>"
             }
         }
         // generate a table from the table_data_cols
