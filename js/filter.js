@@ -449,7 +449,7 @@ class Filter_Manager {
          // loop over the subset of items and create entries in the 'results_view'
         var html= '<ul class="list-group"' +'">'
         for (var s in this.subset_data){
-             html += "<li class='list-group-item' "
+             html += "<li class='list-group-item d-flex justify-content-between list-group-item-action' "
              html +=  "onmouseleave='filter_manager.hide_bounds()' "
              html+= "onmouseenter='filter_manager.show_bounds("+this.subset_data[s].value+")' >"
              html+= this.subset_data[s].label

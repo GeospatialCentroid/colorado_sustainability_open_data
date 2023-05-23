@@ -112,7 +112,7 @@ function setup_params(){
 function setup_filters(){
     filter_manager = new Filter_Manager({
         csv:"https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8j9KmPpm_fwMVy8bIdSowQx40EP1cqvkG4JZEsvTSYXMYVmv73p_RHirS1gttOA/pub?gid=1308010111&single=true&output=csv",
-        omit_result_item:["id","column name","column field name","column types","column description"], // define which attributes not to show when a selection is made
+        omit_result_item:["id","column name","column field name","column types","column description","Local file name"], // define which attributes not to show when a selection is made
         omit_filter_item:["id","Title","Description","Webpage","Download link","Web service","Local file name","Metadata link","column field name","column types","column description","No. Records","Date Accessed","Contact Name","Contact Phone","Contact Email","Has data download","Notes","bbox"],
         path_col:"Webpage",// the url to the dataset landing page
         title_col:"Title",
@@ -233,11 +233,10 @@ function window_resize() {
        $("#content").height(window_height-header_height)
 
        $("#map_wrapper").height(window_height-header_height-data_table_height)
-
-       $("#panels").height(window_height-header_height-$("#side_header").outerHeight()-$("#tabs").outerHeight()-$("#nav_wrapper").outerHeight())
-       var p_height=$("#panels").outerHeight()
-       $(".panel").height(p_height)
-       $("#result_wrapper").height(p_height-$("#result_total").outerHeight())
+       var scroll_height=window_height-header_height-$("#side_header").outerHeight()-$("#tabs").outerHeight()-$("#nav_wrapper").outerHeight()-20
+       $("#panels").height(scroll_height)
+       $(".panel").height(scroll_height)
+       $("#result_wrapper").height(scroll_height)
 
 
         $("#map_panel_wrapper").height(window_height-$("#tabs").height()-header_height)
