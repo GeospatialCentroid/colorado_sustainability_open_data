@@ -296,7 +296,7 @@ function window_resize() {
  function save_params(){
     // access the managers and store the info URL sharing
 
-    var p = "/?f="+encodeURIComponent(rison.encode(filter_manager.filters))
+    var p = "?f="+encodeURIComponent(rison.encode(filter_manager.filters))
     +"&e="+rison.encode(map_manager.params)
 
     if(layer_manager && typeof(layer_manager.layers_list)!="undefined"){
@@ -332,7 +332,8 @@ function window_resize() {
 
     // before saving the sate, let's make sure they are not the same
     if(JSON.stringify(p) != JSON.stringify(last_params) && !browser_control){
-        window.history.pushState(p, null, p.replaceAll(" ", "+").replaceAll("'", "~"))
+        console.log(window.location.pathname)
+       window.history.pushState(p, null, window.location.pathname+p.replaceAll(" ", "+").replaceAll("'", "~"))
         last_params = p
     }
 
