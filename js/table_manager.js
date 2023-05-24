@@ -156,6 +156,7 @@ class Table_Manager {
     layer_manager.map.invalidateSize(true);
     $(window).trigger("resize");
 
+    console.log("get layer data",_layer_id)
     this.get_data(_layer_id,this.show_response)
     this.show_layer_select(_layer_id)
 
@@ -205,6 +206,7 @@ class Table_Manager {
 
   }
   get_data(_layer_id,func,no_page){
+    console_log("get data...")
    $("#data_table_total .spinner-border").show();
     var $this=this
 
@@ -212,8 +214,9 @@ class Table_Manager {
     if (!layer?.layer_obj){
         console.log("no layer_obj",layer)
 
-    return
+        return
     }
+    console_log(layer.layer_obj,layer.layer_obj?.data)
     if (layer.layer_obj?.data){
         // when the data is already loaded - i.e geojson
         $this.generate_table(layer.layer_obj.data)
@@ -227,7 +230,8 @@ class Table_Manager {
      $("#advanced_table_filters").show()
     // when a mapserver is requested for table view need to specify the layer id in question
     // temporarily look at the first layer todo expand to more more flexible
-    var url= layer.layer_obj.service.options.url
+    var url= layer.layer_obj.usable_links[0]
+    console.log(url,"url...",layer.layer_obj)
     if ( url.endsWith("/MapServer/")){
         url=url+"0/"
     }

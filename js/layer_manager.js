@@ -96,25 +96,12 @@ class Layer_Manager {
     console_log("toggle_layer",_resource_id)
     var $this=layer_manager;
 
-    if(!disclaimer_manager.check_status(_resource_id,z,$this.toggle_layer)){
-         console_log("Accept disclaimer first")
-         return
-    }
+//    if(!disclaimer_manager.check_status(_resource_id,z,$this.toggle_layer)){
+//         console_log("Accept disclaimer first")
+//         return
+//    }
     // either add or hide a layer
-    var resource = filter_manager.get_resource(_resource_id)
-
-    if(!resource){
-         // we need to load the resource information
-         filter_manager.load_json(filter_manager.base_url+"q=dct_identifier_sm:"+_resource_id,filter_manager.loaded_resource,_resource_id);
-         console_log("try again!!!")
-         return
-    }
-    try{
-        var json_refs = JSON.parse(resource.dct_references_s)
-    }catch(e){
-        console_log("Error parsing JSON")
-        console_log(resource.dct_references_s)
-    }
+    var resource = filter_manager.get_match(_resource_id)
 
     if($this.is_on_map(_resource_id)){
         $this.remove_feature_layer(_resource_id);
@@ -136,57 +123,61 @@ class Layer_Manager {
                 }
             }
 
-        }
-        //find the link in the array of links
-         var usable_links=[]
-            for (var r in json_refs){
-                //check if it's an acceptable format
-                for (var i=0;i<$this.service_method.length;i++){
-                   if (r==$this.service_method[i].ref){
-                        usable_links.push(r)
-                   }
+    }
+    //find the link in the array of links
+    resource.usable_links=[]
+    for (var l in filter_manager["viz_col"]){
+        //check if it's an acceptable format
+        if(resource[filter_manager["viz_col"][l]]!=""){
+            var link = resource[filter_manager["viz_col"][l]]
+            for (var s in services){
+                 // look through the second slot of each type
+                 if(services[s]?.pattern){
+                     for (var p in services[s].pattern){
 
-                }
+                        if(link.indexOf(services[s].pattern[p])>-1){
+                             resource.usable_links.push([link,services[s]])
+                        }
+                     }
+              }
             }
 
-         //choose the preferred viz options
-         var priority = $this.get_priority(usable_links)
-            if ( usable_links.length>0){
-            var type =""
-//            if (resource?.gbl_resourceType_sm){
-//                type = resource.gbl_resourceType_sm
-//                if (Array.isArray(type)){
-//                    type=type[0]
-//                }
-//              }
-            type = $this.get_service_method(priority).name
 
-            $this.add_layer(_resource_id,json_refs[priority],resource["drawing_info"],z,priority,type)
+
+        }
+    }
+
+    if (  resource.usable_links.length>0){
+
+            // choose the first one for now todo make this more intelligent
+            var usable_link =  resource.usable_links[0]
+            console_log(usable_link)
+            $this.add_layer(_resource_id,usable_link[0],resource["drawing_info"],z,usable_link[1]["ref"],usable_link[1]["name"])
 
             $this.add_to_map_tab(_resource_id,z);
             filter_manager.update_parent_toggle_buttons(".content_right");
 
-            analytics_manager.track_event("side_bar","add_layer","layer_id",_resource_id)
+            //analytics_manager.track_event("side_bar","add_layer","layer_id",_resource_id)
         }else{
             console_log("WE NO NOT KNOW HOW TO HANDLE THIS DATA LAYER!!!")
         }
   }
-  get_priority(usable_links){
-        //pick the best one - for now just image before iiif since we can map images
-        var link_priority=["urn:x-esri:serviceType:ArcGIS#DynamicMapLayer",
-        "urn:x-esri:serviceType:ArcGIS#TiledMapLayer",
-        "https://www.ogc.org/standards/wmts",
-        "https://schema.org/ImageObject",
-        "http://iiif.io/api/image"]
-        for(var p in link_priority){
-            for (var l in usable_links){
-                if (usable_links[l]==link_priority[p]){
-                    return usable_links[l]
-                }
-            }
-        }
-        return usable_links[0]
-  }
+//  get_priority(usable_links){
+//        //pick the best one - for now just image before iiif since we can map images
+//        var link_priority=["urn:x-esri:serviceType:ArcGIS#DynamicMapLayer",
+//        "urn:x-esri:serviceType:ArcGIS#TiledMapLayer",
+//        "https://www.ogc.org/standards/wmts",
+//        "https://schema.org/ImageObject",
+//        "http://iiif.io/api/image"]
+//        for(var p in link_priority){
+//            for (var l in usable_links){
+//                if (usable_links[l]==link_priority[p]){
+//                    return usable_links[l]
+//                }
+//            }
+//        }
+//        return usable_links[0]
+//  }
     add_to_map_tab(_resource_id,_z){
         var $this = this;
         // use this.layers[] for reference since filter_manager can change with filter response.
@@ -197,8 +188,8 @@ class Layer_Manager {
         }
         var resource = layer.resource_obj
         var o = layer.layer_obj.options
-        var id = resource.dct_identifier_sm
-        var title = resource.dct_title_s
+        var id = resource["id"]
+        var title = resource[filter_manager["title_col"]]
         var title_limit=25
         if(title.length>title_limit){
             title = title.substring(0,title_limit)+"..."
@@ -223,7 +214,7 @@ class Layer_Manager {
 
         console_log("the type is ",layer.type)
         if ($.inArray(layer.type,$this.table_types)>-1){
-            html +="<button type='button' class='btn btn-primary' onclick='layer_manager.show_table_data(\""+id+"\")'><i class='fa fa-table'></i></button>"
+            html +="<button type='button' class='btn btn-primary' onclick='layer_manager.show_table_data(\""+id+"\")'><i class='bi bi-table'></i></button>"
         }
 
         if (typeof(o.color)!="undefined"){
@@ -251,9 +242,7 @@ class Layer_Manager {
 
   }
   show_details(_resource_id){
-    var resource =  this.get_layer_obj(_resource_id).resource_obj
-
-    filter_manager.show_details(_resource_id,resource)
+   filter_manager.select_item(_resource_id)
 
     analytics_manager.track_event("side_bar","show_details","layer_id",_resource_id)
   }
@@ -440,9 +429,9 @@ class Layer_Manager {
   }
 
     get_service_method(r){
-        for (var i=0;i<this.service_method.length;i++){
-               if (r==this.service_method[i].ref){
-                    return this.service_method[i]
+        for (var i=0;i<services.length;i++){
+               if (r==services[i].ref){
+                    return services[i]
                }
         }
     }
@@ -454,11 +443,12 @@ class Layer_Manager {
     var update_url=false
     // create layer at pane
 
-    var resource = filter_manager.get_resource(_resource_id)
-    console.log(url)
+    var resource = filter_manager.get_match(_resource_id)
+    console_log(url)
     var layer_options = this.get_layer_options(_resource_id,url,_drawing_info)
 
     //create a pane for the resource
+    console_log(_resource_id,"_resource_id")
     var pane = this.map.createPane(_resource_id);
     // set the z if not already
     if(typeof(_z)=="undefined"){
@@ -469,7 +459,7 @@ class Layer_Manager {
 
     var service_method = this.get_service_method(service_type)
 
-    console.log(layer_options.url)
+    console_log(layer_options.url)
     //todo attempt overcoming cors
 //     layer_options.url='http://localhost:8000/sr/'+encodeURIComponent(layer_options.url)
      //check for a legend
@@ -488,8 +478,8 @@ class Layer_Manager {
         filter_manager.load_json(layer_options.url+'legend?f=json',layer_manager.create_legend,_resource_id)
     }
     console_log(service_method,"service_method")
-     console.log(layer_options.url)
-    console.log(layer_options,"layer_options")
+     console_log(layer_options.url)
+    console_log(layer_options,"layer_options")
 
     if (service_method._class=="distortableImageOverlay"){
         // get the corners from the solr field
@@ -530,7 +520,7 @@ class Layer_Manager {
     }else if(service_method._method=="" || service_method._method==null){
         //todo - get this from the service
         layer_options.maxZoom= 21
-        console.log(service_method,service_method._class,service_method._method)
+        console_log(service_method,service_method._class,service_method._method)
         var layer_obj =  L[service_method._class](layer_options.url,layer_options).addTo(this.map);
 
     }else if(service_method?._method && service_method._method.indexOf(".")>-1){
@@ -545,7 +535,7 @@ class Layer_Manager {
             this.load_ajax(url,layer_obj,_resource_id)
 
       }else{
- console.log("Passed in",layer_options)/*filter_manager.get_bounds(resource.locn_geometry),*/ // pass in the bounds
+ console_log("Passed in",layer_options)/*filter_manager.get_bounds(resource.locn_geometry),*/ // pass in the bounds
        var layer_obj =  L[service_method._class][service_method._method](layer_options).addTo(this.map);
       }
 
@@ -622,11 +612,13 @@ class Layer_Manager {
 
     $("<style type='text/css'> ."+resource_marker_class+"{ border: "+layer_options.weight+"px solid "+layer_options.color+"; background-color:"+layer_options.fillColor+";} </style>").appendTo("head");
 
-
+    console_log("AJAX",url)
     $.ajax({
             dataType: "json",
             url: url,
             success: function(data) {
+
+                     console_log("AJAX","Loaded")
                  var markers = L.markerClusterGroup();
                  var unique_id=0;
                 L["geoJSON"](data,{
@@ -659,24 +651,23 @@ class Layer_Manager {
 
                          //temp add service options
                          layer_obj.service= {options:{url:url}}
-
                          geo.on('click', function(e) { $this.layer_click(e,_resource_id) });
-
-
-
-                          markers.addLayer(geo);
-
+                         markers.addLayer(geo);
                     }
                 })
                 layer_obj.addLayer(markers)
                 layer_obj.data = data
                 layer_obj.addTo($this.map);
+                //
+                console.log(layer_obj)
 
-
+                var b = markers.getBounds();
+                 console.log(b,"bounds")
+               map_manager.show_copy_link(b.getWest(),b.getSouth(),b.getEast(),b.getNorth())
                 $this.layer_load_complete({layer_id:_resource_id})
             }
         }).error(function() {
-             console.log("Lets overcome CORS!!!")
+             console_log("Lets overcome CORS!!!")
              var prefix="/sr/"
              if(url.indexOf(prefix)==-1){
                 $this.load_ajax(prefix+url,layer_obj,_resource_id)
@@ -698,13 +689,13 @@ class Layer_Manager {
         map_manager.click_x_y=e.containerPoint
 
         map_manager.popup_show();
-         console.log(e)
+         console_log(e)
         try{
               map_manager.selected_feature_id=layer_manager.get_object_id(e.layer.feature);
               map_manager.show_popup_details([e.layer.feature])
         }catch(error){
             // could be an artificial click
-             console.log(e)
+             console_log(e)
         }
          //map_manager.layer_clicked=false
   }
@@ -724,7 +715,8 @@ class Layer_Manager {
     $("."+elm.layer_id+"_toggle").text(LANG.RESULT.REMOVE)
     // update the maps ta
     this.update_layer_count();
-    download_manager.add_downloadable_layers()
+    console_log("Add download link")
+    //download_manager.add_downloadable_layers()
   }
 
 
@@ -903,7 +895,7 @@ class Layer_Manager {
                     skip=true
                 }
             }
-            var title = this.layers[i].resource_obj.dct_title_s;
+            var title = this.layers[i].resource_obj[filter_manager["title_col"]];
             title = title.clip_text(30)
             if ($.inArray(this.layers[i].type,this.table_types)>-1 || !is_table){
                 // omit the selected value if flag set
@@ -1049,7 +1041,7 @@ class Layer_Manager {
     }
     remove_legend(_resource_id){
         $("#legend_"+_resource_id).remove()
-        console.log($('#legend').children().length)
+        console_log($('#legend').children().length)
         if ( $('#legend').children().length > 0 ) {
             $('.legend').show()
         }else{

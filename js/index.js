@@ -69,7 +69,9 @@ function initialize_interface(){
     //
 
     setup_params()
-    table_manager = new Table_Manager({})
+    table_manager = new Table_Manager({
+    elm_wrap:"data_table_wrapper",
+          elm:"data_table"})
     setup_filters()
      setup_map()
 
@@ -123,7 +125,9 @@ function setup_filters(){
         include_col:'include',// values with 'y' will show-up in list
         comma_separated_col:['Keywords',"column name","Topic"],
         bounds_col:'bbox',
-        place_url:'https://nominatim.openstreetmap.org/search?format=json'
+        place_url:'https://nominatim.openstreetmap.org/search?format=json',
+        viz_col:["Download link","Web service"],
+        download_link:"Download link"
      })
 
      // initialize this filtering system
@@ -331,7 +335,6 @@ function window_resize() {
 
     // before saving the sate, let's make sure they are not the same
     if(JSON.stringify(p) != JSON.stringify(last_params) && !browser_control){
-        console.log(window.location.pathname)
        window.history.pushState(p, null, window.location.pathname+p.replaceAll(" ", "+").replaceAll("'", "~"))
         last_params = p
     }

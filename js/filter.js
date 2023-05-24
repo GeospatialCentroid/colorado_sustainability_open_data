@@ -133,8 +133,8 @@ class Filter_Manager {
         this.catalog_counts={}
         for (var i=0;i<this.json_data.length;i++){
             var obj=this.json_data[i]
-            //add a unique id
-            obj["id"]=i;
+            //add a unique id, prepend 'item_' for use as a variable
+            obj["id"]="item_"+i;
             for (var a in obj){
 
 
@@ -366,7 +366,12 @@ class Filter_Manager {
             for (var a in this.filters){
                 if (a==LANG.SEARCH.CHIP_SUBMIT_BUT_LABEL){
                     // if search term not found in both title and sub title
-                    if(obj[this.title_col].indexOf(this.filters[a][0]) == - 1 &&  obj[this.sub_title_col].indexOf(this.filters[a][0])==-1){
+//                    if(obj[this.title_col].indexOf(this.filters[a][0]) == - 1 &&  obj[this.sub_title_col].indexOf(this.filters[a][0])==-1){
+//                        meets_criteria=false
+//                    }
+                    // convert to string for search
+                    var obj_str = JSON.stringify(obj)
+                    if(obj_str.indexOf(this.filters[a][0])==-1){
                         meets_criteria=false
                     }
 
@@ -449,11 +454,15 @@ class Filter_Manager {
          // loop over the subset of items and create entries in the 'results_view'
         var html= '<ul class="list-group"' +'">'
         for (var s in this.subset_data){
+             var id = this.subset_data[s].value
              html += "<li class='list-group-item d-flex justify-content-between list-group-item-action' "
              html +=  "onmouseleave='filter_manager.hide_bounds()' "
-             html+= "onmouseenter='filter_manager.show_bounds("+this.subset_data[s].value+")' >"
+             html+= "onmouseenter='filter_manager.show_bounds(\""+id+"\")' >"
              html+= this.subset_data[s].label
-             html +="<button type='button' class='btn btn-primary' onclick='filter_manager.select_item("+this.subset_data[s].value+")'>"+LANG.RESULT.DETAILS+"</button>"
+             html +="<span><button type='button' class='btn btn-primary' onclick='filter_manager.select_item(\""+this.subset_data[s].value+"\")'>"+LANG.RESULT.DETAILS+"</button>"
+             html+="<button type='button' id='"+id+"' class='btn btn-primary "+id+"' onclick='layer_manager.toggle_layer(\""+id+"\",this)'>Add</button>"
+             html+="</span>"
+
              html+="</li>"
         }
         html+="</ul>"
@@ -478,7 +487,6 @@ class Filter_Manager {
     show_bounds(_resource_id){
         var resource = this.get_match(_resource_id)
         // parse the envelope - remove beginning and end
-
         if(resource?.[this['bounds_col']]){
             console.log("looking for bounds",resource?.[this['bounds_col']])
              var b = resource[this['bounds_col']].split(',')
@@ -560,6 +568,7 @@ class Filter_Manager {
     }
 
     show_details(match){
+        console.log("show_details",match)
         // @param match: a json object with details (including a page path to load 'path_col')
         //create html details to show
         var html="";
@@ -781,6 +790,16 @@ class Filter_Manager {
             $(this).find("span").first().text(child_count)
         });
 
+
+    }
+    get_download_link(resource){
+        // look for a download link
+        //note there might be more than 1
+
+       if(resource?.[this["download_link"]]){
+
+            return "<button type='button' class='btn btn-primary' onclick='window.open(\""+resource[this["download_link"]]+"\")'>"+LANG.DOWNLOAD.DOWNLOAD_BUT+"</button>"
+       }
 
     }
 }
