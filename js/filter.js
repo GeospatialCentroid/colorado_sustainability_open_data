@@ -46,6 +46,12 @@ class Filter_Manager {
 
     this.load_csv(this.csv,this.process_csv)
 
+    $('#filter_bounds_checkbox').change(
+        function(){
+             filter_manager.update_bounds_search($(this))
+        }
+    );
+
   }
 
    load_csv(file_name,func){
@@ -289,7 +295,7 @@ class Filter_Manager {
         var text_val=""
         //for number range use dash - separator
         if (value!=null){
-            if($.isNumeric(value[0])){
+            if($.isNumeric(value[0]) && value.length<=2){
                 text_val=value[0]+" - "+value[1]
             }else{
                 text_val=value.join(", ")
@@ -373,6 +379,33 @@ class Filter_Manager {
                     var obj_str = JSON.stringify(obj)
                     if(obj_str.indexOf(this.filters[a][0])==-1){
                         meets_criteria=false
+                    }
+
+                }else if (a=='bounds'){
+                     if(obj?.[this['bounds_col']]){
+                         var b = obj[this['bounds_col']].split(',')
+                          var poly1 = turf.polygon([[
+                            [b[1],b[0]],
+                            [b[1],b[2]],
+                            [b[3],b[2]],
+                            [b[3],b[0]],
+                            [b[1],b[0]]
+                            ]])
+                          var b = layer_manager.map.getBounds()
+                          var poly2 = turf.polygon([[
+                          [b._southWest.lat,b._southWest.lng],
+                          [b._southWest.lat,b._northEast.lng],
+                          [b._northEast.lat,b._northEast.lng],
+                          [b._northEast.lat,b._southWest.lng],
+                           [b._southWest.lat,b._southWest.lng]
+                          ]])
+
+                          if (!turf.booleanIntersects(poly1, poly2)){
+                            meets_criteria=false
+                          }
+                    }else{
+                         // no coordinates
+                         meets_criteria=false
                     }
 
                 }else if (a!='p'){
@@ -488,11 +521,16 @@ class Filter_Manager {
         var resource = this.get_match(_resource_id)
         // parse the envelope - remove beginning and end
         if(resource?.[this['bounds_col']]){
-            console.log("looking for bounds",resource?.[this['bounds_col']])
              var b = resource[this['bounds_col']].split(',')
               map_manager.show_highlight_rect([[b[1],b[0]],[b[3],b[2]]])
         }
 
+    }
+    zoom_layer(geom){
+        var b = geom.split(',')
+
+        var bounds = L.latLngBounds([[b[1],b[0]],[b[3],b[2]]])
+        map_manager.zoom_rect(bounds)
     }
      hide_bounds(){
         map_manager.hide_highlight_rect()
@@ -515,6 +553,17 @@ class Filter_Manager {
 
         }
 
+    }
+    update_bounds_search(){
+        if ($('#filter_bounds_checkbox').is(':checked')){
+            var b =layer_manager.map.getBounds()
+            //search lower-left corner as the start of the range and the upper-right corner as the end of the range
+            filter_manager.add_filter("bounds",[b._southWest.lat.toFixed(3),b._southWest.lng.toFixed(3),b._northEast.lat.toFixed(3),b._northEast.lng.toFixed(3)])
+
+        }else{
+           //Remove bound filter
+           this.remove_and_update_filters('bounds')
+        }
     }
      update_results_info(num){
 
@@ -660,6 +709,8 @@ class Filter_Manager {
                 this.filters[id]=val
                 this.page_num=Number(val)
                 select_item =false
+            }else if(a=="bounds"){
+                  $("#filter_bounds_checkbox").prop("checked", true)
             }else{
                 this.add_filter(a,val)
             }

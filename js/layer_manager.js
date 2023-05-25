@@ -206,7 +206,7 @@ class Layer_Manager {
         //
         html +="<button type='button' id='"+id+"_toggle' class='btn btn-primary "+id+"_toggle' onclick='layer_manager."+add_func+"(\""+id+"\")'>"+add_txt+"</button>"
         //
-        html +="<button type='button' class='btn btn-primary' onclick='filter_manager.zoom_layer(\""+dcat_bbox+"\")'>"+LANG.RESULT.ZOOM+"</button>"
+        html +="<button type='button' class='btn btn-primary' onclick='filter_manager.zoom_layer(\""+resource[filter_manager['bounds_col']]+"\")'>"+LANG.RESULT.ZOOM+"</button>"
         if(download_link){
               html +=download_link;
          }
@@ -933,7 +933,7 @@ class Layer_Manager {
 
 
          $('#basemap_layer_dropdown li').on('click', function () {
-
+            console.log("Click...")
             if($this.basemap_layer){
                 $this.map.removeLayer($this.basemap_layer);
             }
@@ -956,7 +956,7 @@ class Layer_Manager {
         // get all the basemaps and show the images in a dropdown
         var first_item = basemaps[Object.keys(basemaps)[0]];
         var html= "<div class='item_title font-weight-bold'>"+LANG.BASEMAP.TITLE+"</div> "
-        html+= '<button style="float:left" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" title="'+LANG.BASEMAP.TIP+'" aria-expanded="false">'
+        html+= '<button style="float:left;max-height:none;" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" title="'+LANG.BASEMAP.TIP+'" aria-expanded="false">'
         html+='<img id="basemap_layer_img" class="thumbnail_small" src="'+first_item.image+'"/>'
         html+='</button>'
         html+= '<ul id="basemap_layer_dropdown" class="dropdown-menu">'

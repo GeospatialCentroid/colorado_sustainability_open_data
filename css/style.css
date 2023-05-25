@@ -289,9 +289,8 @@ margin-left:-15px;
 #panels .btn,#map_panel .btn {
   padding: 3px;
   margin-right:3px;
-  max-height: 25px
+  max-height: 25px;
 }
-
 
 .btn {
   box-shadow: none !important;

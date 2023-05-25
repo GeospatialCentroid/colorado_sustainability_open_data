@@ -83,8 +83,6 @@ function initialize_interface(){
 //    download_manager.init();
 
     init_tabs()
-
-    layer_manager.add_basemap_control()
 }
 function setup_params(){
     if (window.location.search.substring(1)!="" && $.isEmptyObject(params)){

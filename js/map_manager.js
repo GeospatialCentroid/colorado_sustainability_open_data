@@ -630,7 +630,6 @@ class Map_Manager {
         }
 
         var zoom_level = this.map.getBoundsZoom(bounds)
-        console.log(zoom_level,_bounds)
         //prevent zooming in too close
         if (zoom_level>19){
             this.map.flyTo(bounds.getCenter(),19);
