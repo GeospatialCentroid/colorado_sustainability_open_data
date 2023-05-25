@@ -459,7 +459,7 @@ class Map_Manager {
      popup_show(){
 
         var $this=this
-        var html = '<div id="popup_content"><div class="spinner_wrapper" style="text-align:center"><div class="spinner-border spinner-border-sm" role="status"><span class="sr-only">Loading...</span></div></div></div>'
+        var html = '<div id="popup_content"><div class="spinner_wrapper" style="text-align:center"><div class="spinner-border spinner-border-sm" role="status"><span class="sr-only"></span></div></div></div>'
 
         this.popup= L.popup(this.popup_options)
             .setLatLng(this.click_lat_lng)

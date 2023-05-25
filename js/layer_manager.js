@@ -124,28 +124,6 @@ class Layer_Manager {
             }
 
     }
-    //find the link in the array of links
-    resource.usable_links=[]
-    for (var l in filter_manager["viz_col"]){
-        //check if it's an acceptable format
-        if(resource[filter_manager["viz_col"][l]]!=""){
-            var link = resource[filter_manager["viz_col"][l]]
-            for (var s in services){
-                 // look through the second slot of each type
-                 if(services[s]?.pattern){
-                     for (var p in services[s].pattern){
-
-                        if(link.indexOf(services[s].pattern[p])>-1){
-                             resource.usable_links.push([link,services[s]])
-                        }
-                     }
-              }
-            }
-
-
-
-        }
-    }
 
     if (  resource.usable_links.length>0){
 
@@ -162,22 +140,30 @@ class Layer_Manager {
             console_log("WE NO NOT KNOW HOW TO HANDLE THIS DATA LAYER!!!")
         }
   }
-//  get_priority(usable_links){
-//        //pick the best one - for now just image before iiif since we can map images
-//        var link_priority=["urn:x-esri:serviceType:ArcGIS#DynamicMapLayer",
-//        "urn:x-esri:serviceType:ArcGIS#TiledMapLayer",
-//        "https://www.ogc.org/standards/wmts",
-//        "https://schema.org/ImageObject",
-//        "http://iiif.io/api/image"]
-//        for(var p in link_priority){
-//            for (var l in usable_links){
-//                if (usable_links[l]==link_priority[p]){
-//                    return usable_links[l]
-//                }
-//            }
-//        }
-//        return usable_links[0]
-//  }
+ set_usable_links(resource){
+    //find the link in the array of links
+    resource.usable_links=[]
+    for (var l in filter_manager["viz_col"]){
+        //check if it's an acceptable format
+        if(resource[filter_manager["viz_col"][l]]!=""){
+            var link = resource[filter_manager["viz_col"][l]]
+            for (var s in services){
+                 // look through the second slot of each type
+                 if(typeof(link) !="undefined" && services[s]?.pattern){
+                     for (var p in services[s].pattern){
+
+                        if(link.indexOf(services[s].pattern[p])>-1){
+                             resource.usable_links.push([link,services[s]])
+                        }
+                     }
+              }
+            }
+
+
+
+        }
+    }
+  }
     add_to_map_tab(_resource_id,_z){
         var $this = this;
         // use this.layers[] for reference since filter_manager can change with filter response.
@@ -534,16 +520,21 @@ class Layer_Manager {
             var layer_obj = L.layerGroup();
             this.load_ajax(url,layer_obj,_resource_id)
 
+      }else if (service_method._method=="csv"){
+           var layer_obj = L.layerGroup();
+           this.load_tabular_data(url,layer_obj,_resource_id);
+
       }else{
- console_log("Passed in",layer_options)/*filter_manager.get_bounds(resource.locn_geometry),*/ // pass in the bounds
+        console_log("Passed in",layer_options)/*filter_manager.get_bounds(resource.locn_geometry),*/ // pass in the bounds
        var layer_obj =  L[service_method._class][service_method._method](layer_options).addTo(this.map);
+       console.log("Loaded to map!!")
       }
 
     }
 
 
     try{
-        layer_obj.setBounds(filter_manager.get_bounds(resource.locn_geometry))
+       //layer_obj.setBounds(filter_manager.get_bounds(resource.locn_geometry))
         console_log("Success",resource)
     }catch(e){
         console_log(e)
@@ -594,11 +585,32 @@ class Layer_Manager {
      }
 
      layer_obj.on('load', function (e) {
+
+        console.log("LOAD complete.............######")
         $this.layer_load_complete(this);
 
     });
 
     this.layer_list_change();
+  }
+  load_tabular_data(url,layer_obj,_resource_id){
+   var $this = this;
+     $.ajax({
+            type: "GET",
+            url: url,
+            dataType: "text",
+            success: function(data) {
+
+                layer_obj.data =  $.csv.toObjects(data.replaceAll('\t', ''))
+
+
+                console.log(layer_obj)
+
+                $this.layer_load_complete({layer_id:_resource_id})
+                layer_manager.show_table_data(_resource_id)
+            }
+         });
+
   }
   load_ajax(url,layer_obj,_resource_id){
     var $this = this
@@ -613,6 +625,8 @@ class Layer_Manager {
     $("<style type='text/css'> ."+resource_marker_class+"{ border: "+layer_options.weight+"px solid "+layer_options.color+"; background-color:"+layer_options.fillColor+";} </style>").appendTo("head");
 
     console_log("AJAX",url)
+
+
     $.ajax({
             dataType: "json",
             url: url,
@@ -711,6 +725,8 @@ class Layer_Manager {
         return _feature["id"]
   }
   layer_load_complete(elm){
+
+    console.log("layer_load_complete",elm.layer_id,  $("."+elm.layer_id+"_toggle"))
     $("."+elm.layer_id+"_toggle").removeClass("progress-bar-striped progress-bar-animated")
     $("."+elm.layer_id+"_toggle").text(LANG.RESULT.REMOVE)
     // update the maps ta
@@ -1018,21 +1034,22 @@ class Layer_Manager {
     }
     create_legend(data,_resource_id){
         var html = '<div id="legend_'+_resource_id+'">'
+        if(data?.['layers']){
+            for (var i=0;i<data['layers'].length;i++){
+                var l = data['layers'][i]
+                var layer_name=l.layerName
+                layer_name = layer_name.clip_text(15)
+                html += '<span class="legend_title">'+layer_name+'</span>'
 
-        for (var i=0;i<data['layers'].length;i++){
-            var l = data['layers'][i]
-            var layer_name=l.layerName
-            layer_name = layer_name.clip_text(15)
-            html += '<span class="legend_title">'+layer_name+'</span>'
+                for (var j=0;j<l['legend'].length;j++){
 
-            for (var j=0;j<l['legend'].length;j++){
+                    var label =  l['legend'][j].label
+                     var id =  l['legend'][j].url
+                   html+='<label>'
+                   html+='<img alt="'+label+'" src="data:image/png;base64,'+l['legend'][j].imageData+'" border="0" width="20" height="20" class="legend_symbol">'
+                   html+='<span class="legend_label">'+label+'</span></label><br/>'
 
-                var label =  l['legend'][j].label
-                 var id =  l['legend'][j].url
-               html+='<label>'
-               html+='<img alt="'+label+'" src="data:image/png;base64,'+l['legend'][j].imageData+'" border="0" width="20" height="20" class="legend_symbol">'
-               html+='<span class="legend_label">'+label+'</span></label><br/>'
-
+                }
             }
         }
        html += "</div>"

@@ -1,5 +1,5 @@
 /**
- * Description. A filter system used to navigate a spreadsheet linked to html pages.
+ * Description. A filter system used to navigate a spreadsheet linked to resources.
     The features include a search system, filter controls, and paging system to navigate rows in a csv linked to html pages.
  *
  * @file   This files defines the Filter_Manager class.
@@ -41,6 +41,7 @@ class Filter_Manager {
           $("#loader").css("width", current_progress + "%")
           if (current_progress >= 90)
               clearInterval(obj.progress_interval);
+
       }, 100);
     //
 
@@ -51,8 +52,42 @@ class Filter_Manager {
              filter_manager.update_bounds_search($(this))
         }
     );
+    //
+    //date search
+    $('#filter_date_checkbox').change(
+        function(){
+          filter_manager.delay_date_change();
+        }
+    );
+    var start =new Date("1800-01-01T00:00:00")
+    var end =new Date();
+    $("#filter_start_date").datepicker({ dateFormat: 'yy-mm-dd'}).val($.format.date(start, 'yyyy-MM-dd'))
+    $("#filter_end_date").datepicker({ dateFormat: 'yy-mm-dd'}).val($.format.date(end, 'yyyy-MM-dd'))
 
+    $("#filter_start_date").change( function() {
+        filter_manager.delay_date_change()
+
+    });
+    $("#filter_end_date").change( function() {
+      filter_manager.delay_date_change()
+    });
+
+    var values = [start.getTime(),end.getTime()]
+    $("#filter_date .filter_slider_box").slider({
+            range: true,
+            min: values[0],
+            max: values[1],
+            values:values,
+            slide: function( event, ui ) {
+
+               $("#filter_start_date").datepicker().val($.format.date(new Date(ui.values[0]), 'yyyy-MM-dd'))
+               $("#filter_end_date").datepicker().val($.format.date(new Date(ui.values[1]), 'yyyy-MM-dd'))
+               filter_manager.delay_date_change()
+
+         }
+    })
   }
+
 
    load_csv(file_name,func){
         var obj=this
@@ -74,7 +109,9 @@ class Filter_Manager {
         var temp_json=[]
          for (var i=0;i<$this.json_data.length;i++){
             if($this.json_data[i][$this.include_col]=='y'){
+                layer_manager.set_usable_links($this.json_data[i])
                 temp_json.push($this.json_data[i])
+
             }
          }
          $this.json_data = temp_json
@@ -101,7 +138,13 @@ class Filter_Manager {
         //hide loader
         clearInterval($this.progress_interval)
         $("#loader").css("width", 100 + "%")
-        setTimeout( function() {$(".progress").fadeOut()},200);
+        setTimeout( function() {
+
+            $(".overlay").fadeOut("slow", function () {
+                $(this).css({display:"none",'background-color':"none"});
+            });
+        },200);
+
         ///--------
         $('input[type=radio][name=search_type]').change(function() {
         $this.mode=this.value
@@ -118,6 +161,8 @@ class Filter_Manager {
             if($this.mode=="data"){
                $this.add_filter(false,[$("#search").val()])
                $this.filter(true)
+               //go to results
+               $this.slide_position("results")
             }else{
                 $.get($this.place_url, { q: $("#search").val() }, function(data) {
                     try{
@@ -462,8 +507,8 @@ class Filter_Manager {
           minLength: 0,
           select: function( event, ui ) {
                 event.preventDefault();
-                $("#search").val(ui.item.label);
-               $this.select_item(ui.item.value);
+                $("#search").val(ui.item.label.substring(0,ui.item.label.indexOf("(")-1));
+                $("#search_but").trigger("click")
             },
         focus: function(event, ui) {
             event.preventDefault();
@@ -493,7 +538,10 @@ class Filter_Manager {
              html+= "onmouseenter='filter_manager.show_bounds(\""+id+"\")' >"
              html+= this.subset_data[s].label
              html +="<span><button type='button' class='btn btn-primary' onclick='filter_manager.select_item(\""+this.subset_data[s].value+"\")'>"+LANG.RESULT.DETAILS+"</button>"
-             html+="<button type='button' id='"+id+"' class='btn btn-primary "+id+"' onclick='layer_manager.toggle_layer(\""+id+"\",this)'>Add</button>"
+             if(this.get_match(id).usable_links.length>0){
+
+                html+="<button type='button' id='"+id+"' class='btn btn-primary "+id+"_toggle' onclick='layer_manager.toggle_layer(\""+id+"\",this)'>"+LANG.RESULT.ADD+"</button>"
+             }
              html+="</span>"
 
              html+="</li>"
@@ -617,10 +665,13 @@ class Filter_Manager {
     }
 
     show_details(match){
-        console.log("show_details",match)
         // @param match: a json object with details (including a page path to load 'path_col')
         //create html details to show
         var html="";
+        var id =match.id
+         if(match.usable_links.length>0){
+            html+="<button type='button' id='"+id+"' class='btn btn-primary "+id+"_toggle' onclick='layer_manager.toggle_layer(\""+id+"\",this)'>"+LANG.RESULT.ADD+"</button>"
+         }
         for (var i in match){
             if ($.inArray(i,this.omit_result_item)==-1){
                 var link = match[i]
@@ -852,6 +903,54 @@ class Filter_Manager {
             return "<button type='button' class='btn btn-primary' onclick='window.open(\""+resource[this["download_link"]]+"\")'>"+LANG.DOWNLOAD.DOWNLOAD_BUT+"</button>"
        }
 
+    }
+    delay_date_change(){
+        var $this=this
+        // prevent multiple calls when editing filter parameters
+        if(this.timeout){
+            clearTimeout(this.timeout);
+        }
+        this.timeout=setTimeout(function(){
+              $this.update_date_filter()
+              $this.timeout=false
+
+        },500)
+     }
+     //todo add date filtering
+    update_date_filter(){
+         // Add date filter
+         if ($('#filter_date_checkbox').is(':checked')){
+            var start = $.format.date(new Date($("#filter_start_date").val()), 'yyyy-MM-dd')//T00:00:00Z
+            var end = $.format.date(new Date($("#filter_end_date").val()), 'yyyy-MM-dd')//T00:00:00Z
+
+            filter_manager.add_filter("dct_issued_s","[ "+start+" TO "+end+" ]")
+
+         }else{
+            this.remove_and_update_filters('dct_issued_s')
+        }
+    }
+    load_json(file_name,call_back,extra){
+        // A generic loader of json
+        $.ajax({
+            type: "GET",
+            extra:extra,
+            url: file_name,
+            dataType: "json",
+            success: function(data) {
+                // store the facet json for future use
+
+                call_back(data,extra)
+            },
+            error: function(xhr, status, error) {
+                try{
+                    var err = eval("(" + xhr.responseText + ")");
+                    alert(err.Message);
+                }catch(e){
+                    console_log("ERROR",xhr)
+                }
+
+            }
+         });
     }
 }
  

@@ -230,11 +230,12 @@ class Table_Manager {
      $("#advanced_table_filters").show()
     // when a mapserver is requested for table view need to specify the layer id in question
     // temporarily look at the first layer todo expand to more more flexible
-    var url= layer.layer_obj.usable_links[0]
-    console.log(url,"url...",layer.layer_obj)
-    if ( url.endsWith("/MapServer/")){
-        url=url+"0/"
-    }
+
+    var url= layer.resource_obj.usable_links[0]
+ console.log(url)
+//    if ( url.endsWith("/MapServer/")){
+//        url=url+"0/"
+//    }
     var query = L.esri.query({
       url: url
     });
@@ -332,8 +333,13 @@ class Table_Manager {
     var first_row = _features[0]
     var csv_array=[]
     var cols=[]
+    var props=first_row.properties
+    if(!props){
+        // for csu
+       props=first_row
+    }
 
-    for (var p in first_row.properties){
+    for (var p in props){
         //todo add domain names (alias) for headers and pass database name to function for sorting
           if(p!="_id"){
              var sort_icon="<i/>"
@@ -342,7 +348,7 @@ class Table_Manager {
              }
              html +="<th><span onclick='table_manager.sort(this,\""+p+"\")'>"+p+" "+sort_icon+"</span></th>";
              cols.push(p)
-            csv_array.push(p)
+             csv_array.push(p)
             }
     }
     this.csv=csv_array.join(",")+"\n"
@@ -358,10 +364,14 @@ class Table_Manager {
 
   }
   get_rows_html(_rows,_cols){
-    if(!_cols && _rows.length>0){
+    if(!_cols && _rows.length>0 && _rows[0]?.properties){
         _cols=_rows[0].properties
+    }else{
+        var _cols =[]
+        for(var p in _rows[0]){
+            _cols.push(p)
+        }
     }
-
     var html="";
 
     //determine the id, which isn;t always the same for each geojson
@@ -374,12 +384,21 @@ class Table_Manager {
     }
     for(var i =0;i<_rows.length;i++){
 
-        var id=_rows[i].properties[this.id]
+        var id=""
+        if(_rows[i]?.properties){
+            _rows[i].properties[this.id]
+        }
         var csv_array=[]
         html+="<tr onclick='table_manager.highlight_feature(this,\""+id+"\")' ondblclick='table_manager.zoom_feature(this,\""+id+"\")'>"
         for (var p in _cols){
             if(p!="_id"){
-                  var text = _rows[i].properties[p]
+                  var text = ""
+                  if(_rows[i]?.properties){
+                    text=_rows[i].properties[p]
+                  }else{
+
+                    text=_rows[i][_cols[p]]
+                  }
                   csv_array.push(String(text))
                   if(typeof text === 'string'){
                     text = text.hyper_text()

@@ -11,6 +11,11 @@ body {
     color: #333;
 
 }
+.header_text{
+font-weight: bold;
+font-size: 18px;
+}
+
 #map_wrapper{
     float:left;
 
@@ -934,4 +939,21 @@ a[aria-disabled="true"] {
     overflow-y: auto;
     border: 1px solid rgba(0,0,0,.15);
     border-radius: 0.25rem;
+}
+
+.overlay {
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+
+  background-color: #fff;
+  z-index: 10006;
+  display: flex;
+    align-items: center;
+}
+.progress{
+    width:200px;
+    margin: auto;
+
 }
