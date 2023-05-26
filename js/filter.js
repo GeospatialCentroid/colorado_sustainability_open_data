@@ -382,16 +382,6 @@ class Filter_Manager {
     }
     save_filter_params(){
         save_params()
-//        var json=this.filters
-//        var json_str = "";
-//        for (var key in json) {
-//            if (json_str != "") {
-//                json_str += "&";
-//            }
-//
-//            json_str += (key.replaceAll(" ","__") + "=" + encodeURIComponent(json[key]));
-//        }
-//        window.history.replaceState(null, null, "?"+json_str);
     }
 
 
@@ -484,6 +474,7 @@ class Filter_Manager {
         }
         this.populate_search(subset,select_item)
         this.save_filter_params()
+        this.slide_position("results");
     }
 
     populate_search(data,_select_item){
@@ -575,6 +566,7 @@ class Filter_Manager {
 
     }
     zoom_layer(geom){
+        console.log("Zoom layer",geom)
         var b = geom.split(',')
 
         var bounds = L.latLngBounds([[b[1],b[0]],[b[3],b[2]]])

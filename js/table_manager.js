@@ -156,7 +156,7 @@ class Table_Manager {
     layer_manager.map.invalidateSize(true);
     $(window).trigger("resize");
 
-    console.log("get layer data",_layer_id)
+    console_log("get layer data",_layer_id)
     this.get_data(_layer_id,this.show_response)
     this.show_layer_select(_layer_id)
 
@@ -231,8 +231,8 @@ class Table_Manager {
     // when a mapserver is requested for table view need to specify the layer id in question
     // temporarily look at the first layer todo expand to more more flexible
 
-    var url= layer.resource_obj.usable_links[0]
- console.log(url)
+    var url= layer.resource_obj.usable_links[0][0]
+    console_log(url)
 //    if ( url.endsWith("/MapServer/")){
 //        url=url+"0/"
 //    }
@@ -383,10 +383,9 @@ class Table_Manager {
         this.id ="OBJECTID"
     }
     for(var i =0;i<_rows.length;i++){
-
         var id=""
         if(_rows[i]?.properties){
-            _rows[i].properties[this.id]
+            var id=_rows[i].properties[this.id]
         }
         var csv_array=[]
         html+="<tr onclick='table_manager.highlight_feature(this,\""+id+"\")' ondblclick='table_manager.zoom_feature(this,\""+id+"\")'>"
@@ -418,7 +417,7 @@ class Table_Manager {
   highlight_feature(elm,_id){
     //take the currently selected layer and the id to make a selection
     var feature = this.get_feature(_id)
-
+    console_log(feature)
     map_manager.show_highlight_geo_json(feature.geometry)
 
     $(".fixed_headers tr").removeClass('highlight');

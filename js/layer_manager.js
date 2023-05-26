@@ -527,11 +527,9 @@ class Layer_Manager {
       }else{
         console_log("Passed in",layer_options)/*filter_manager.get_bounds(resource.locn_geometry),*/ // pass in the bounds
        var layer_obj =  L[service_method._class][service_method._method](layer_options).addTo(this.map);
-       console.log("Loaded to map!!")
       }
 
     }
-
 
     try{
        //layer_obj.setBounds(filter_manager.get_bounds(resource.locn_geometry))
@@ -586,8 +584,11 @@ class Layer_Manager {
 
      layer_obj.on('load', function (e) {
 
-        console.log("LOAD complete.............######")
+        console.log("LOAD complete.............######",this)
+        console.log(this.layer_id,$this.get_layer_obj(this.layer_id))
         $this.layer_load_complete(this);
+
+        //$this.show_bounds($this.get_layer_obj(this.layer_id).layer_obj.getBounds())
 
     });
 
@@ -675,23 +676,24 @@ class Layer_Manager {
                 //
                 console.log(layer_obj)
 
-                var b = markers.getBounds();
-                 console.log(b,"bounds")
-               map_manager.show_copy_link(b.getWest(),b.getSouth(),b.getEast(),b.getNorth())
+                $this.show_bounds(markers.getBounds())
+
                 $this.layer_load_complete({layer_id:_resource_id})
             }
-        }).error(function() {
-             console_log("Lets overcome CORS!!!")
-             var prefix="/sr/"
-             if(url.indexOf(prefix)==-1){
-                $this.load_ajax(prefix+url,layer_obj,_resource_id)
-
-             }else{
-                // show load error
-             }
+        }).error(function(e) {
+             console_log("Error",e)
+//             var prefix="/sr/"
+//             if(url.indexOf(prefix)==-1){
+//                $this.load_ajax(prefix+url,layer_obj,_resource_id)
+//
+//             }else{
+//                // show load error
+//             }
         });
   }
-
+  show_bounds(b){
+    map_manager.show_copy_link(b.getWest(),b.getSouth(),b.getEast(),b.getNorth())
+  }
   get_attribution(resource){
     return "<a href='javascript:void(0);' onclick=\"filter_manager.show_details('"+resource["id"]+"')\" >"+resource["dct_title_s"]+"</a>"
   }

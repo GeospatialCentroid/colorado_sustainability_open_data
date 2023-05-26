@@ -169,15 +169,15 @@ function init_tabs(){
          var tab_panel_name = $(this).attr("id").substring(0,$(this).attr("id").indexOf("_"))+"_panel_wrapper"
 
          $("#"+tab_panel_name).show()
-        // save_params()
+         save_params()
 
     });
      filter_manager.slide_position()
     // click the tab and slide to the panel as appropriate
-//    if( !$.isEmptyObject(usp) && usp.get("t")){
-//
-//       move_to_tab(usp.get("t"))
-//    }
+    if( !$.isEmptyObject(usp) && usp.get("t")){
+
+       move_to_tab(usp.get("t"))
+    }
 }
 
 function move_to_tab(tab_str){
