@@ -684,9 +684,72 @@ class Filter_Manager {
             }
 
         }
-        html+=this.table_manager.get_combined_table_html(this.table_data_col,table_data)
-        $("#details_view").html(html)
 
+      //check that there is data
+      if(table_data[0].length==1 && match.usable_links.length>0){
+         // temporarily get the details from the ESRI metadata
+         this.load_json(match.usable_links[0][0]+"?f=json",this.show_loaded_columns)
+
+      }else{
+            html+=this.table_manager.get_combined_table_html(this.table_data_col,table_data)
+
+        }
+        $("#details_view").html(html)
+    }
+    show_loaded_columns(data){
+         console.log("show_loaded_columns",data)
+        //table_data_col:["column name","column field name","column types","column description"],
+        //ESRI .alias,.name,
+        //.type (to be converted to conform with Socrata)
+        var type_conversions= [["Number",["esriFieldTypeInteger","esriFieldTypeDouble","esriFieldTypeOID"]],["Calendar date",["esriFieldTypeDate"]],["Text",["esriFieldTypeString"]]];
+        //https://doc.arcgis.com/en/insights/latest/get-started/supported-types-from-databases.htm
+         var table_data =[[],[],[],[]]
+         for(var i=0;i<data.fields.length;i++){
+            table_data[0].push(data.fields[i].alias);
+            table_data[1].push(data.fields[i].name);
+            //convert type
+            var type = data.fields[i].type
+            for(var j=0;j<type_conversions.length;j++){
+                if($.inArray(type, type_conversions[j][1])>-1){
+                    type=type_conversions[j][0]
+                }
+            }
+            table_data[2].push(type);
+
+            var desc= ""
+            if(data.fields[i].domain!=null && data.fields[i].domain?.codedValues){
+                 //.domain if available look for .codedValues array - convert to format codedValues:name=code;
+
+                 for(var j=0;j<data.fields[i].domain.codedValues.length;j++){
+                    //only add the domain if it contains added value
+                    if(data.fields[i].domain.codedValues[j].name!=data.fields[i].domain.codedValues[j].code){
+                        desc+=data.fields[i].domain.codedValues[j].name+"="+data.fields[i].domain.codedValues[j].code+"; "
+                    }
+                 }
+                 if(desc!=""){
+                     desc="Values: "+desc
+                 }
+            }
+            table_data[3].push(desc);
+         }
+        // now inject the table
+         var html="<table ><tr>"
+          html+="<td>"+table_data[0]+"</td>"
+          html+="<td>"+table_data[1]+"</td>"
+          html+="<td>"+table_data[2]+"</td>"
+          html+="<td>"+table_data[3]+"</td>"
+          html+="</tr></table>"
+
+          //show the last modified date
+          if(data?.editingInfo?.lastEditDate){
+            var last_edit_date = new Date(data.editingInfo.lastEditDate);
+            $("#details_view").append($.format.date(last_edit_date, 'yyyy-MM-dd')+"<br/>")
+          }
+
+           var copy_link =" <a href='javascript:navigator.clipboard.writeText(\""+html+"\")' >copy</a>"
+          $("#details_view").append(copy_link+table_manager.get_combined_table_html(filter_manager.table_data_col,table_data));
+          //also show the extent
+          map_manager.show_copy_link(data.extent.xmin,data.extent.ymin,data.extent.xmax,data.extent.ymax)
     }
 
     toggle_filters(elm){

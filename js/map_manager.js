@@ -119,8 +119,9 @@ class Map_Manager {
   }
   show_copy_link(w,s,e,n){
      var str =w+","+s+","+e+","+n;
-        var copy_link =" <a href='javascript:navigator.clipboard.writeText(\""+str+"\")' >copy</a>"
-     $(".leaflet-control-attribution").html(str+copy_link);
+     var copy_link =" <a href='javascript:navigator.clipboard.writeText(\""+str+"\")' >copy</a>"
+     this.map.attributionControl.setPrefix(str+copy_link);
+
 
   }
   init() {

@@ -16,7 +16,7 @@ var services = [
 "ref": "urn:x-esri:serviceType:ArcGIS#ImageMapLayer",
 "_class": "esri",
 "_method": "imageMapLayer",
-"pattern":["/MapServer/"]
+"pattern":[]
 },
 {
 "name": "tms",
@@ -47,7 +47,7 @@ var services = [
 "ref": "urn:x-esri:serviceType:ArcGIS#FeatureLayer",
 "_class": "esri",
 "_method": "featureLayer",
-"pattern":["/FeatureServer/"]
+"pattern":["/FeatureServer/","/MapServer/"]
 },
 {
 "name": "GeoJSON",
