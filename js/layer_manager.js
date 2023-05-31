@@ -951,7 +951,6 @@ class Layer_Manager {
 
 
          $('#basemap_layer_dropdown li').on('click', function () {
-            console.log("Click...")
             if($this.basemap_layer){
                 $this.map.removeLayer($this.basemap_layer);
             }
@@ -974,13 +973,13 @@ class Layer_Manager {
         // get all the basemaps and show the images in a dropdown
         var first_item = basemaps[Object.keys(basemaps)[0]];
         var html= "<div class='item_title font-weight-bold'>"+LANG.BASEMAP.TITLE+"</div> "
-        html+= '<button style="float:left;max-height:none;" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" title="'+LANG.BASEMAP.TIP+'" aria-expanded="false">'
+        html+= '<button id="basemap_layer_but" style="float:left;max-height:none;" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" title="'+LANG.BASEMAP.TIP+'" data-bs-toggle="dropdown" aria-expanded="false">'
         html+='<img id="basemap_layer_img" class="thumbnail_small" src="'+first_item.image+'"/>'
         html+='</button>'
-        html+= '<ul id="basemap_layer_dropdown" class="dropdown-menu">'
+        html+= '<ul id="basemap_layer_dropdown" class="dropdown-menu" aria-labelledby="basemap_layer_but">'
         for(var b in basemaps){
 
-            html+= '<li value="'+b+'"><div><a><img alt="'+basemaps[b].title+'" class="thumbnail" src="'+basemaps[b].image+'"/></a><span>'+basemaps[b].title+'</span></div></li>'
+            html+= '<li value="'+b+'"><div><a class="dropdown-item"><img alt="'+basemaps[b].title+'" class="thumbnail" src="'+basemaps[b].image+'"/></a><span>'+basemaps[b].title+'</span></div></li>'
         }
         html+='</ul>'
         return html

@@ -304,13 +304,17 @@ class Filter_Manager {
         html+="<label class='form-label' for='"+_id+"'>"+id+"</label>"
         html+="<div class='form-group filter_list' name='"+_id+"' id='"+_id+"' >"
         for (var o in options){
-            var val = options[o]
+            var val = options[o];
+            var text=options[o];
+            if(text==""){
+                text=LANG.SEARCH.BLANK
+            }
             var count = ""
             if (counts){
                count = counts[o]
             }
             html+='<label class="list-group-item d-flex justify-content-between list-group-item-action">'
-            html+='<span><input class="form-check-input me-1 align-left" type="checkbox" value="'+options[o]+'">'+options[o]+'</span>'
+            html+='<span><input class="form-check-input me-1 align-left" type="checkbox" value="'+val+'">'+text+'</span>'
             html+='<span class="badge bg-primary rounded-pill">'+count+'</span></label>'
         }
 

@@ -124,7 +124,8 @@
 			"OLDEST":			{"name": "Publish date: oldest", "search": "gbl_mdModified_dt asc"},
 			"LARGEST":			{"name": "Area: largest", "search": "geom_area desc"},
 			"SMALLEST":			{"name": "Area: smallest", "search": "geom_area asc"}
-		}
+		},
+		"BLANK": "(blank)"
 	},
 	"DOWNLOAD": {
 		"DOWNLOAD_BUT": 		"Download",
