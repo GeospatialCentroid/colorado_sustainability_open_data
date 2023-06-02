@@ -630,11 +630,11 @@ class Filter_Manager {
             var b =layer_manager.map.getBounds()
             //search lower-left corner as the start of the range and the upper-right corner as the end of the range
             filter_manager.add_filter("bounds",[b._southWest.lat.toFixed(3),b._southWest.lng.toFixed(3),b._northEast.lat.toFixed(3),b._northEast.lng.toFixed(3)])
-            this.filter()
         }else{
            //Remove bound filter
-           this.remove_and_update_filters('bounds')
+           this.remove_filter('bounds')
         }
+        this.filter()
     }
      update_results_info(num){
 

@@ -101,7 +101,7 @@ function setup_map(){
 function setup_filters(){
     filter_manager = new Filter_Manager({
         csv:"https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8j9KmPpm_fwMVy8bIdSowQx40EP1cqvkG4JZEsvTSYXMYVmv73p_RHirS1gttOA/pub?gid=1308010111&single=true&output=csv",
-        omit_result_item:["id","usable_links","column name","column field name","column types","column description","Local file name"], // define which attributes not to show when a selection is made
+        omit_result_item:["id","usable_links","drawing_info_retrieve","drawing_info","column name","column field name","column types","column description","Local file name"], // define which attributes not to show when a selection is made
         omit_filter_item:["id","Last Updated","Login required (y/n)","include","Date coverage","usable_links","Title","Description","Webpage","Download link","Web service","Local file name","Metadata link","column field name","column types","column description","No. Records","Date Accessed","Contact Name","Contact Phone","Contact Email","Has data download","Notes","bbox"],
         path_col:"Webpage",// the url to the dataset landing page
         title_col:"Title",
