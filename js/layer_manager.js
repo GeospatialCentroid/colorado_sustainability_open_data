@@ -93,7 +93,7 @@ class Layer_Manager {
   }
   toggle_layer(_resource_id,z){
 
-    console_log("toggle_layer",_resource_id)
+    console.log("toggle_layer",_resource_id)
     var $this=layer_manager;
 
 //    if(!disclaimer_manager.check_status(_resource_id,z,$this.toggle_layer)){

@@ -173,8 +173,8 @@ class Filter_Manager {
             $(".overlay").fadeOut("slow", function () {
                 $(this).css({display:"none",'background-color':"none"});
             });
-        },250);
-
+        },300);
+        after_filters();
     }
      generate_filters(_data){
         // create a list of all the unique values
@@ -570,6 +570,7 @@ class Filter_Manager {
         html+="</ul>"
 
          $("#results_view").html(html)
+         $("#results_view").scrollTop()
     }
     select_item(id){
         // use the id of the csv

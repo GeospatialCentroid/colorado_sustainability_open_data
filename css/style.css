@@ -1,6 +1,6 @@
 html, body {
    height: 100%;
-
+    overflow: hidden;
 }
 
 
@@ -9,7 +9,6 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
-
 }
 .header_text{
 font-weight: bold;
@@ -39,6 +38,7 @@ font-size: 18px;
 #content{
     width:100%;
     background-color: #999;
+    display:none;
 }
 #header {
   height: 22px;
@@ -331,6 +331,8 @@ margin-left:-15px;
 .total_results{
     font-size: .75rem;
     font-weight: bold;
+    float:right;
+    margin-right:3px;
 }
 .total_showing{
     font-size: .68rem;

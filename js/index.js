@@ -21,35 +21,7 @@ $( function() {
             initialize_interface()
     });
 
-    $( window ).resize( window_resize);
-    setTimeout(function(){
-             $( window ).trigger("resize");
 
-             // leave on the dynamic links - turn off the hrefs
-             $("#browse_panel .card-body a").attr('href', "javascript: void(0)");
-
-             // rely on scroll advance for results
-             $("#next_link").hide();
-
-
-            // update paging
-
-            filter_manager.update_parent_toggle_buttons(".content_right")
-            filter_manager.update_parent_toggle_buttons("#details_panel")
-            filter_manager.update_toggle_button()
-            if(! DEBUGMODE){
-                $("#document .page_nav").hide()
-            }else{
-                //append d=1, so that debug mode remains
-                $("#document .page_nav a").each(function() {
-                   $(this).attr("href",  $(this).attr("href") + '&d=1');
-                });
-            }
-    },500)
-        //update the height of the results area when a change occurs
-        $('#side_header').bind('resize', function(){
-        $("#result_wrapper").height($("#panels").height()-$("#result_total").height()- $('#side_header'))
-    });
 });
 
 function initialize_interface(){
@@ -73,16 +45,14 @@ function initialize_interface(){
     elm_wrap:"data_table_wrapper",
           elm:"data_table"})
     table_manager.init()
+   setup_map();
     setup_filters()
-    setup_map()
 
-     analytics_manager = new Analytics_Manager();
-//    disclaimer_manager.init();
-
-//    download_manager.init();
-
-    init_tabs()
 }
+
+
+
+
 function setup_params(){
     if (window.location.search.substring(1)!="" && $.isEmptyObject(params)){
         usp = new URLSearchParams(window.location.search.substring(1).replaceAll("~", "'").replaceAll("+", " "))
@@ -108,6 +78,26 @@ function setup_params(){
     }
 
 }
+function setup_map(){
+    map_manager = new Map_Manager(
+     {params:params['e'] ,
+        lat:36.25408922222581,
+        lng: -98.7485718727112,
+        z:3,
+        limit:100 // max results for identify
+        })
+
+     map_manager.init()
+     map_manager.init_image_map()
+
+      layer_manager = new Layer_Manager({
+        map:map_manager.map,
+        layers_list:params['l']
+      })
+
+      layer_manager.add_basemap_control()
+
+}
 function setup_filters(){
     filter_manager = new Filter_Manager({
         csv:"https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8j9KmPpm_fwMVy8bIdSowQx40EP1cqvkG4JZEsvTSYXMYVmv73p_RHirS1gttOA/pub?gid=1308010111&single=true&output=csv",
@@ -130,25 +120,26 @@ function setup_filters(){
      // initialize this filtering system
      filter_manager.init();
 }
-function setup_map(){
-    map_manager = new Map_Manager(
-     {params:params['e'] ,
-        lat:36.25408922222581,
-        lng: -98.7485718727112,
-        z:3,
-        limit:100 // max results for identify
-        })
+function after_filters(){
 
-     map_manager.init()
-     map_manager.init_image_map()
+   run_resize()
+    add_back_but_support();
+     analytics_manager = new Analytics_Manager();
+    //    disclaimer_manager.init();
 
-      layer_manager = new Layer_Manager({
-        map:map_manager.map,
-        layers_list:params['l']
-      })
+    //    download_manager.init();
 
-      layer_manager.add_basemap_control()
+    init_tabs();
+    if ( layer_manager.layers_list){
+         for (var i =0;i<layer_manager.layers_list.length;i++){
+            console.log(layer_manager.layers_list[i])
+            layer_manager.toggle_layer(layer_manager.layers_list[i].id,i)
+        }
+    }
+
+
 }
+
 
 function init_tabs(){
     $("#search_tab").text(LANG.TAB_TITLES.BROWSE_TAB)
@@ -188,36 +179,70 @@ function move_to_tab(tab_str){
    //auto click the tab for state saving
    $("#"+tab_parts[0]).trigger("click")
 }
-// enable back button support
-window.addEventListener('popstate', function(event) {
-    var _params={}
-    usp = new URLSearchParams(window.location.search.substring(1).replaceAll("~", "'").replaceAll("+", " "))
+function add_back_but_support(){
+    // enable back button support
+    window.addEventListener('popstate', function(event) {
+        var _params={}
+        usp = new URLSearchParams(window.location.search.substring(1).replaceAll("~", "'").replaceAll("+", " "))
 
-        if (usp.get('f')!=null){
-            _params['f'] = rison.decode("!("+usp.get("f")+")")
-        }
-        if (usp.get('e')!=null){
-            _params['e'] =  rison.decode(usp.get('e'))
-        }
+            if (usp.get('f')!=null){
+                _params['f'] = rison.decode("!("+usp.get("f")+")")
+            }
+            if (usp.get('e')!=null){
+                _params['e'] =  rison.decode(usp.get('e'))
+            }
 
-        if (usp.get('l')!=null && usp.get('l')!="!()"){
-            _params['l'] =  rison.decode(usp.get('l'))
-        }
-        browser_control=true
-         console.log("BACK buttton handeler")
-//        filter_manager.remove_filters()
-//        filter_manager.filters=[]
-//        $("#filter_bounds_checkbox").prop("checked", false)
-//        filter_manager.set_filters(_params['f'])
-//        filter_manager.filter()
+            if (usp.get('l')!=null && usp.get('l')!="!()"){
+                _params['l'] =  rison.decode(usp.get('l'))
+            }
+            browser_control=true
+             console.log("BACK buttton handeler")
+    //        filter_manager.remove_filters()
+    //        filter_manager.filters=[]
+    //        $("#filter_bounds_checkbox").prop("checked", false)
+    //        filter_manager.set_filters(_params['f'])
+    //        filter_manager.filter()
 
-        move_to_tab( usp.get("t"))
+            move_to_tab( usp.get("t"))
 
 
-        map_manager.move_map_pos( _params['e'])
-        browser_control=false
+            map_manager.move_map_pos( _params['e'])
+            browser_control=false
 
-}, false);
+    }, false);
+}
+function run_resize(){
+    $( window ).resize( window_resize);
+    setTimeout(function(){
+             $( window ).trigger("resize");
+
+             // leave on the dynamic links - turn off the hrefs
+             $("#browse_panel .card-body a").attr('href', "javascript: void(0)");
+
+             // rely on scroll advance for results
+             $("#next_link").hide();
+
+
+            // update paging
+            filter_manager.update_parent_toggle_buttons(".content_right")
+            filter_manager.update_parent_toggle_buttons("#details_panel")
+            filter_manager.update_toggle_button()
+            if(! DEBUGMODE){
+                $("#document .page_nav").hide()
+            }else{
+                //append d=1, so that debug mode remains
+                $("#document .page_nav a").each(function() {
+                   $(this).attr("href",  $(this).attr("href") + '&d=1');
+                });
+            }
+            $("#content").show();
+             map_manager.map.invalidateSize()
+    },100)
+        //update the height of the results area when a change occurs
+        $('#side_header').bind('resize', function(){
+        $("#result_wrapper").height($("#panels").height()-$("#result_total").height()- $('#side_header'))
+    });
+}
 function window_resize() {
         var data_table_height=0
          if( $("#data_table_wrapper").is(":visible")){
