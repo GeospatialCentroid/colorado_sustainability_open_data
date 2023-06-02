@@ -184,44 +184,44 @@
 
 			"Topographic":{
 				"title": "Topographic",
-				"image": "/images/topo.png",
+				"image": "images/topo.png",
 				"attribution":"Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community",
 				"url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"
 			},
 		  "Streets":{
 					"title": "Streets",
-					"image": "/images/world_street_map.jpg",
+					"image": "images/world_street_map.jpg",
 						"attribution":"Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012",
 						"url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}"
 		  },
 		  "NationalGeographic":{
 						"title": "National Geographic",
-						"image": "/images/natgeo.jpg",
+						"image": "images/natgeo.jpg",
 						"attribution":"Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC",
 						"url": "https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}"
 		   },
 
 		   "Gray":{
 						"title": "Gray",
-						"image": "/images/light_gray.jpg",
+						"image": "images/light_gray.jpg",
 						"attribution":"Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ",
 						"url": "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}"
 			},
 		   "DarkGray":{
 						"title": "Dark Gray",
-						"image": "/images/dark_grey.png",
+						"image": "images/dark_grey.png",
 						"attribution":"Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ",
 						"url": "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}"
 			},
 		   "Imagery":{
 						"title": "Imagery",
-						"image": "/images/esri_imagery.png",
+						"image": "images/esri_imagery.png",
 						"attribution":"Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
 						"url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
 			},
 			"OpenStreetMap":{
 						"title": "OpenStreetMap",
-						"image": "/images/osm.jpg",
+						"image": "images/osm.jpg",
 						"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright\">OpenStreetMap contributors</a>",
 						"url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 			}
