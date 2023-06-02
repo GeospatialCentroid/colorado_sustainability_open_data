@@ -113,23 +113,18 @@ class Layer_Manager {
         return
     }
 
-    if (resource["drawing_info"] && typeof(resource["drawing_info"][0])!="undefined"){
-            var drawing_info = $this.convert_text_to_json(resource["drawing_info"][0])
-            resource["drawing_info"]=drawing_info
-            // also decode the fields
-            if (resource.fields){
-                for(var i=0;i<resource.fields.length;i++){
-                    resource.fields[i] = $this.convert_text_to_json(resource.fields[i])
-                }
-            }
-
-    }
-
-    if (  resource.usable_links.length>0){
+    if (resource.usable_links.length>0 ){
 
             // choose the first one for now todo make this more intelligent
-            var usable_link =  resource.usable_links[0]
-            console_log(usable_link)
+            var usable_link = resource.usable_links[0]
+            if(!resource?.drawing_info && !resource.drawing_info_retrieve && resource.usable_links[0][1].name!="GeoJSON"){
+                 // store a variable indicating that we attempted to get the
+                 resource.drawing_info_retrieve=true
+
+                 filter_manager.load_json(usable_link[0]+"?f=json",this.drawing_info_include,resource)
+                 return
+            }
+
             $this.add_layer(_resource_id,usable_link[0],resource["drawing_info"],z,usable_link[1]["ref"],usable_link[1]["name"])
 
             $this.add_to_map_tab(_resource_id,z);
@@ -139,6 +134,13 @@ class Layer_Manager {
         }else{
             console_log("WE NO NOT KNOW HOW TO HANDLE THIS DATA LAYER!!!")
         }
+  }
+  drawing_info_include(data,resource){
+    if(data?.drawingInfo){
+       resource.drawing_info = data.drawingInfo
+        layer_manager.toggle_layer(resource.id)
+    }
+
   }
  set_usable_links(resource){
     //find the link in the array of links
@@ -430,7 +432,8 @@ class Layer_Manager {
     // create layer at pane
 
     var resource = filter_manager.get_match(_resource_id)
-    console_log(url)
+    console.log(url)
+
     var layer_options = this.get_layer_options(_resource_id,url,_drawing_info)
 
     //create a pane for the resource
@@ -674,7 +677,7 @@ class Layer_Manager {
                 layer_obj.data = data
                 layer_obj.addTo($this.map);
                 //
-                console.log(layer_obj)
+                console_log(layer_obj)
 
                 $this.show_bounds(markers.getBounds())
 

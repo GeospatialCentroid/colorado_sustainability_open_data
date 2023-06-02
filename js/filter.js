@@ -508,7 +508,8 @@ class Filter_Manager {
        this.subset_data =
        $.map(data, function(item){
             var label =item[$this.title_col]
-            if ($this.hasOwnProperty('sub_title_col') && $this.hasOwnProperty('sub_title_col')!=""){
+            console.log()
+            if ($this.hasOwnProperty('sub_title_col') && item[$this.sub_title_col]!=""){
                 label +=" ("+item[$this.sub_title_col]+")"
             }
 
@@ -691,8 +692,9 @@ class Filter_Manager {
         var html="";
         var id =match.id
          if(match.usable_links.length>0){
-            html+="<button type='button' id='"+id+"' class='btn btn-primary "+id+"_toggle' onclick='layer_manager.toggle_layer(\""+id+"\",this)'>"+LANG.RESULT.ADD+"</button>"
+            html+="<button type='button' id='"+id+"' class='btn btn-primary "+id+"_toggle' onclick='layer_manager.toggle_layer(\""+id+"\",this)'>"+LANG.RESULT.ADD+"</button><br/>"
          }
+
         for (var i in match){
             if ($.inArray(i,this.omit_result_item)==-1){
                 var link = match[i]
@@ -1029,7 +1031,7 @@ class Filter_Manager {
             error: function(xhr, status, error) {
                 try{
                     var err = eval("(" + xhr.responseText + ")");
-                    alert(err.Message);
+                    console_log(err.Message);
                 }catch(e){
                     console_log("ERROR",xhr)
                 }

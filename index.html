@@ -120,7 +120,7 @@
 <body>
 <div class="overlay justify-content-center">
     <div class="progress">
-          <div id="loader" class="progress-bar progress-bar-success progress-bar-striped active align-middle" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+          <div id="loader" class="progress-bar progress-bar-success progress-bar-striped active align-middle bg-info" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
             <span id="current-progress"></span>
           </div>
          </div>
@@ -197,7 +197,7 @@
                      <div id="filter_box"></div>
                 </div>
                 <div id="nav_wrapper">
-                    <a id="nav" href="javascript:filter_manager.go_back()"></a>
+                   <button id="nav" class="btn  btn-primary" onclick="javascript:filter_manager.go_back()"></button>
                     <span class="total_results"></span>
                 </div>
 
