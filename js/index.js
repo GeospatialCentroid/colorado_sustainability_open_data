@@ -129,11 +129,6 @@ function setup_filters(){
 
      // initialize this filtering system
      filter_manager.init();
-        $("#search").focus();
-        $("#search_clear").click(function(){
-            $("#search").val("")
-        })
-
 }
 function setup_map(){
     map_manager = new Map_Manager(
@@ -209,11 +204,12 @@ window.addEventListener('popstate', function(event) {
             _params['l'] =  rison.decode(usp.get('l'))
         }
         browser_control=true
-        filter_manager.remove_filters()
-        filter_manager.filters=[]
-        $("#filter_bounds_checkbox").prop("checked", false)
-        filter_manager.set_filters(_params['f'])
-        filter_manager.filter()
+         console.log("BACK buttton handeler")
+//        filter_manager.remove_filters()
+//        filter_manager.filters=[]
+//        $("#filter_bounds_checkbox").prop("checked", false)
+//        filter_manager.set_filters(_params['f'])
+//        filter_manager.filter()
 
         move_to_tab( usp.get("t"))
 
@@ -298,6 +294,7 @@ function window_resize() {
 
     var p = "?f="+encodeURIComponent(rison.encode(filter_manager.filters))
     +"&e="+rison.encode(map_manager.params)
+
 
     if(layer_manager && typeof(layer_manager.layers_list)!="undefined"){
         p+="&l="+rison.encode(layer_manager.layers_list)

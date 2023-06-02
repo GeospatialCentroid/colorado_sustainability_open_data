@@ -33,20 +33,47 @@ class Filter_Manager {
     this.progress_interval;
    }
   init() {
-    var obj=this
+    var $this=this
      //simulate progress - load up to 90%
       var current_progress = 0;
       this.progress_interval = setInterval(function() {
           current_progress += 5;
           $("#loader").css("width", current_progress + "%")
           if (current_progress >= 90)
-              clearInterval(obj.progress_interval);
+              clearInterval($this.progress_interval);
 
       }, 100);
     //
 
     this.load_csv(this.csv,this.process_csv)
+    //
+    $("#search").focus();
+    $("#search_clear").click(function(){
+        $("#search").val("")
+    })
+    ///--------
+    $('input[type=radio][name=search_type]').change(function() {
+        $this.mode=this.value
+    });
 
+     $("#search_but").click(function(){
+        if($this.mode=="data"){
+           $this.add_filter(false,[$("#search").val()])
+           $this.filter()
+           //go to results
+           $this.slide_position("results")
+        }else{
+            $.get($this.place_url, { q: $("#search").val() }, function(data) {
+                try{
+                    $this.show_place_bounds(data[0].boundingbox)
+                    $("#search").val(data[0].display_name)
+                }catch(e){
+
+                }
+
+          })
+        }
+    })
     $('#filter_bounds_checkbox').change(
         function(){
              filter_manager.update_bounds_search($(this))
@@ -74,35 +101,34 @@ class Filter_Manager {
 
     var values = [start.getTime(),end.getTime()]
     $("#filter_date .filter_slider_box").slider({
-            range: true,
-            min: values[0],
-            max: values[1],
-            values:values,
-            slide: function( event, ui ) {
+        range: true,
+        min: values[0],
+        max: values[1],
+        values:values,
+        slide: function( event, ui ) {
 
-               $("#filter_start_date").datepicker().val($.format.date(new Date(ui.values[0]), 'yyyy-MM-dd'))
-               $("#filter_end_date").datepicker().val($.format.date(new Date(ui.values[1]), 'yyyy-MM-dd'))
-               filter_manager.delay_date_change()
+           $("#filter_start_date").datepicker().val($.format.date(new Date(ui.values[0]), 'yyyy-MM-dd'))
+           $("#filter_end_date").datepicker().val($.format.date(new Date(ui.values[1]), 'yyyy-MM-dd'))
+           filter_manager.delay_date_change()
 
-         }
+     }
     })
   }
-
-
    load_csv(file_name,func){
-        var obj=this
+        var $this=this
         $.ajax({
             type: "GET",
             url: file_name,
             dataType: "text",
             success: function(data) {
-                func(data,obj);
+                func(data,$this);
             }
          });
     }
 
      process_csv(data,$this){
-        // strip any extraneous tabs //.replaceAll('\t', '')
+        // convert the csv file to json and create a subset of the records as needed
+       // strip any extraneous tabs
        $this.json_data= $.csv.toObjects(data.replaceAll('\t', ''))
 
        if($this?.include_col){
@@ -111,30 +137,34 @@ class Filter_Manager {
             if($this.json_data[i][$this.include_col]=='y'){
                 layer_manager.set_usable_links($this.json_data[i])
                 temp_json.push($this.json_data[i])
-
             }
          }
          $this.json_data = temp_json
        }
-       //account for comma separated columns
+       //account for comma separated columns, to be treated as separed values
         if($this?.comma_separated_col){
             for (var i=0;i<$this.json_data.length;i++){
                 for (var c in $this.comma_separated_col){
-
                    $this.json_data[i][$this.comma_separated_col[c]] = $this.json_data[i][$this.comma_separated_col[c]].split(",")
                  }
             }
         }
-        $this.generate_filters()
-
+        ///---
+        // now that we have the records we need create a filter menu
+        $this.generate_filters($this.json_data)
+        $this.add_filter_watcher()
+        $this.ids_added=true;//to prevent future ids
         if($this.params){
             //populate the filters if set
+            browser_control=true
             $this.set_filters()
+            $this.filter()
+            browser_control=false
         }else{
             $this.populate_search($this.json_data,true);
         }
 
-        //
+        //-------------
         //hide loader
         clearInterval($this.progress_interval)
         $("#loader").css("width", 100 + "%")
@@ -143,60 +173,35 @@ class Filter_Manager {
             $(".overlay").fadeOut("slow", function () {
                 $(this).css({display:"none",'background-color':"none"});
             });
-        },200);
+        },250);
 
-        ///--------
-        $('input[type=radio][name=search_type]').change(function() {
-        $this.mode=this.value
-        });
-
-        $("#search").focus();
-        $("#search_clear").click(function(){
-            $("#search").val("")
-
-        })
-        
-         $("#search_but").click(function(){
-    
-            if($this.mode=="data"){
-               $this.add_filter(false,[$("#search").val()])
-               $this.filter(true)
-               //go to results
-               $this.slide_position("results")
-            }else{
-                $.get($this.place_url, { q: $("#search").val() }, function(data) {
-                    try{
-                        $this.show_place_bounds(data[0].boundingbox)
-                        $("#search").val(data[0].display_name)
-                    }catch(e){
-
-                    }
-
-              })
-            }
-        })
     }
-     generate_filters(){
+     generate_filters(_data){
+        // create a list of all the unique values
+        // then create controls to allow users to filter items
+        // these controls will update their counts when filters are selected
+        console_log("generate filters")
+        $("#filters").empty()
         var $this=this;
         // create a catalog of all the unique options for each of attributes
         this.catalog={}
         // create a separate obj to track the occurrences of each unique option
         this.catalog_counts={}
-        for (var i=0;i<this.json_data.length;i++){
-            var obj=this.json_data[i]
-            //add a unique id, prepend 'item_' for use as a variable
-            obj["id"]="item_"+i;
+        for (var i=0;i<_data.length;i++){
+            var obj=_data[i]
+            //add a unique id, prepend 'item_' for use as a variable, only do this on first pass
+            if(!this.ids_added){
+              obj["id"]="item_"+i;
+            }
+
             for (var a in obj){
-
-
                //start with a check for numeric
                if ($.isNumeric(obj[a])){
                 obj[a]=parseInt(obj[a])
                }
-
+               // see if we hve and array
                if ($.isArray(obj[a])){
-                    // need to add all the items into the catalog
-
+                    // need to add all the array items into the catalog
                     for (var j = 0; j<obj[a].length;j++){
                         this.add_to_catalog(a,obj[a][j])
                     }
@@ -208,10 +213,9 @@ class Filter_Manager {
 
         }
         // sort all the items
-        // create controls - Note  column names are used for ids - spaces replaced with __
+        // create controls - Note column names are used for ids - spaces replaced with '__'
          for (var a in this.catalog){
                 // join with counts and sort by prevalence
-
                var catalog_and_counts=[]
                for(var j=0;j<this.catalog[a].length;j++){
                     catalog_and_counts.push([this.catalog_counts[a][j],this.catalog[a][j]])
@@ -254,7 +258,7 @@ class Filter_Manager {
                         $("#"+id+"_handle1").text(ui.values[ 1 ])
                         //add the filter
                         $this.add_filter(_id,ui.values)
-                        $this.filter(true)
+                        $this.filter()
                       }
 
                     });
@@ -268,20 +272,27 @@ class Filter_Manager {
            }
          }
 
+
+
+    }
+    add_filter_watcher(){
+        var $this=this;
+        // watch at the filter list level
         $('.filter_list').change( function() {
            var id = $(this).attr('id')
+            // create a new list of selected values
            var vals=[]
            $(this).find(":checked").each(function() {
                 vals.push($(this).val())
 
            })
            if(vals.length==0){
-            vals=null
+                vals=null
            }
+           console_log("add_filter_watcher",$(this).attr('id'),vals)
            $this.add_filter($(this).attr('id'),vals);
-           $this.filter(true)
+           $this.filter()
         });
-
     }
     add_to_catalog(col,val){
         if(typeof(this.catalog[col])=="undefined"){
@@ -331,6 +342,7 @@ class Filter_Manager {
     }
 
     add_filter(_id,value){
+        console_log("add_filter with a chip",_id,value)
         if (_id ==false){
             _id = LANG.SEARCH.CHIP_SUBMIT_BUT_LABEL
             // add text to the search field
@@ -338,8 +350,9 @@ class Filter_Manager {
         }
         // remove the __ to get the true id
         var id = _id.replaceAll("__", " ");
+        // set the filters value
         this.filters[id]=value
-
+        console_log("And the filters are...",this.filters)
         //create text for filter chip
         var text_val=""
         //for number range use dash - separator
@@ -372,23 +385,21 @@ class Filter_Manager {
             $("#filter_box").append(html)
         }
 
-       //Add remove functionality
+       //set remove functionality
        $("#"+id+" a").click(function(){
-            console.log($(this).parent().attr("id"))
+            console_log($(this).parent().attr("id"))
             var id=$(this).parent().attr("id")
             var _id= id.substring(0,id.length-ext.length)
             //remove the visual
              obj.reset_filter(_id)
              obj.remove_filter(_id)
-             obj.filter(true);
+             obj.filter();
 
        })
     }
     save_filter_params(){
         save_params()
     }
-
-
     remove_filter(_id){
         var id = _id.replaceAll("__", " ");
         delete this.filters[id]
@@ -398,9 +409,8 @@ class Filter_Manager {
     remove_filter_selection(_id){
        $("#"+_id+"__chip").remove()
     }
-    filter(select_item){
+    filter(){
         // create a subset of the items based on the set filters
-        // @param select_item: boolean to determine in the first item in the list should be selected
         var subset=[]
         //loop though the items in the list
         for (var i=0;i<this.json_data.length;i++){
@@ -476,18 +486,29 @@ class Filter_Manager {
             }
 
         }
-        this.populate_search(subset,select_item)
+        this.populate_search(subset)
+        this.generate_filters(subset)
+        // be sure to set the filter_manager params for setting filters during menu regeneration
+
+        this.params=[this.filters]
+        console_log( "params were set",this.filters)
+        this.set_filters();
         this.save_filter_params()
-        this.slide_position("results");
+
+        this.add_filter_watcher();
+
+        //this.slide_position("results");
     }
 
-    populate_search(data,_select_item){
+    populate_search(data){
+       // to make it easy to select a dataset, an autocomplete control is used and populated based on entered values
+
        var $this = this
         // loop over the data and add 'value' and 'key' items for use in the autocomplete input element
        this.subset_data =
        $.map(data, function(item){
             var label =item[$this.title_col]
-            if ($this.hasOwnProperty('sub_title_col')){
+            if ($this.hasOwnProperty('sub_title_col') && $this.hasOwnProperty('sub_title_col')!=""){
                 label +=" ("+item[$this.sub_title_col]+")"
             }
 
@@ -532,10 +553,14 @@ class Filter_Manager {
              html +=  "onmouseleave='filter_manager.hide_bounds()' "
              html+= "onmouseenter='filter_manager.show_bounds(\""+id+"\")' >"
              html+= this.subset_data[s].label
-             html +="<span><button type='button' class='btn btn-primary' onclick='filter_manager.select_item(\""+this.subset_data[s].value+"\")'>"+LANG.RESULT.DETAILS+"</button>"
+             html +="<span><button type='button' class='btn btn-primary' onclick='filter_manager.select_item(\""+id+"\")'>"+LANG.RESULT.DETAILS+"</button>"
              if(this.get_match(id).usable_links.length>0){
-
-                html+="<button type='button' id='"+id+"' class='btn btn-primary "+id+"_toggle' onclick='layer_manager.toggle_layer(\""+id+"\",this)'>"+LANG.RESULT.ADD+"</button>"
+                //
+                var but_text=LANG.RESULT.ADD
+                if(this.get_match(id).usable_links[0][1].name=='CSV'){
+                    but_text="<i class='bi bi-table'></i>"
+                }
+                html+="<button type='button' id='"+id+"' class='btn btn-primary "+id+"_toggle' onclick='layer_manager.toggle_layer(\""+id+"\",this)'>"+but_text+"</button>"
              }
              html+="</span>"
 
@@ -570,7 +595,7 @@ class Filter_Manager {
 
     }
     zoom_layer(geom){
-        console.log("Zoom layer",geom)
+        console_log("Zoom layer",geom)
         var b = geom.split(',')
 
         var bounds = L.latLngBounds([[b[1],b[0]],[b[3],b[2]]])
@@ -593,7 +618,7 @@ class Filter_Manager {
         // when the map bounds changes and the search tab is visible
         if ($('#filter_bounds_checkbox').is(':checked') && "search_tab"==$("#tabs").find(".active").attr("id")){
          this.update_bounds_search()
-         this.filter()
+
 
         }
 
@@ -603,7 +628,7 @@ class Filter_Manager {
             var b =layer_manager.map.getBounds()
             //search lower-left corner as the start of the range and the upper-right corner as the end of the range
             filter_manager.add_filter("bounds",[b._southWest.lat.toFixed(3),b._southWest.lng.toFixed(3),b._northEast.lat.toFixed(3),b._northEast.lng.toFixed(3)])
-
+            this.filter()
         }else{
            //Remove bound filter
            this.remove_and_update_filters('bounds')
@@ -701,7 +726,7 @@ class Filter_Manager {
         $("#details_view").html(html)
     }
     show_loaded_columns(data){
-         console.log("show_loaded_columns",data)
+         console_log("show_loaded_columns",data)
         //table_data_col:["column name","column field name","column types","column description"],
         //ESRI .alias,.name,
         //.type (to be converted to conform with Socrata)
@@ -800,11 +825,12 @@ class Filter_Manager {
         });
        $(".form-check-input").prop('checked', false);
        this.filters={}
-       this.filter(true)
+       this.filter()
        $("#filter_box").empty()
 
   }
     set_filters(){
+        console_log("set_filters",this.params[0])
         var select_item =true
         //loop over all the set url params and set the form
 
@@ -827,7 +853,7 @@ class Filter_Manager {
 
         }
 
-        this.filter(select_item)
+
         if(!select_item){
             //use the page_num to go to the param page
             this.go_to_page(0)
@@ -835,6 +861,7 @@ class Filter_Manager {
 
     }
     set_filter(id,list){
+     console_log("set_filter",id,list)
      //check if numeric
      if(list.length>1 && $.isNumeric(list[0])){
         $("#"+id+'_slider').each(function(){
@@ -849,7 +876,6 @@ class Filter_Manager {
              $("#"+id+" input[value='"+list[l]+"']").prop('checked', true);
         }
 
-        //$("#"+id+".checkbox-list").multiselect("refresh");
      }
   }
   reset_filter(id){
