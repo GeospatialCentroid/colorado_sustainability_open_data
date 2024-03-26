@@ -19,6 +19,8 @@
 
 # https://api.us.socrata.com/api/catalog/v1?domains=opendata.fcgov.com&limit=3000
 
+# Another useful endpoint would be the CDC but it's national data https://api.us.socrata.com/api/catalog/v1?domains=data.cdc.gov&only=dataset&limit=3000
+
 import argparse
 import csv
 
